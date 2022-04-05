@@ -1,9 +1,6 @@
 # 简介
 
-技术栈。
+我的读书笔记
 
-
-
-## 学习笔记
-
+书籍来源于此[reading-list](https://xiaozhiliaoo.github.io/reading-list/)
 

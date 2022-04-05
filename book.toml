@@ -3,7 +3,7 @@ authors = ["lili"]
 language = "zh_CN"
 multilingual = false
 src = "src"
-title = "学习笔记"
+title = "读书笔记"
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
@@ -11,7 +11,7 @@ command = "mdbook-mermaid"
 [output.html]
 theme = "mytheme"
 default-theme = "rust"
-git-repository-url = "https://github.com/xiaozhiliaoo/mdbook"
+git-repository-url = "https://github.com/xiaozhiliaoo/reading-lists"
 additional-js = ["mermaid.min.js", "mermaid-init.js", "smart-anchor.js"]
 mathjax-support = true
 
@@ -28,7 +28,7 @@ level = 0
 
 [preprocessor.rss]
 files-glob = "chapter_*/**/*.md"
-url-base = "https://github.com/xiaozhiliaoo/mdbook/"
+url-base = "https://github.com/xiaozhiliaoo/reading-lists"
 
 # [output.latex]
 # latex    = true  # default = true
