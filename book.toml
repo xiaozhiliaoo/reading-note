@@ -1,0 +1,38 @@
+[book]
+authors = ["lili"]
+language = "zh_CN"
+multilingual = false
+src = "src"
+title = "学习笔记"
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output.html]
+theme = "mytheme"
+default-theme = "rust"
+git-repository-url = "https://github.com/xiaozhiliaoo/mdbook"
+additional-js = ["mermaid.min.js", "mermaid-init.js", "smart-anchor.js"]
+mathjax-support = true
+
+[output.html.playground]
+editable = true
+copy-js = true
+
+
+# 用来控制文章列表的展开
+[output.html.fold]
+enable = true
+level = 0
+
+
+[preprocessor.rss]
+files-glob = "chapter_*/**/*.md"
+url-base = "https://github.com/xiaozhiliaoo/mdbook/"
+
+# [output.latex]
+# latex    = true  # default = true
+# pdf      = true  # default = false
+# markdown = true  # default = false
+
+
