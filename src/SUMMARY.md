@@ -9,9 +9,10 @@
 - [语言](./chapter_2/toc.md)
 
 - [数据库](./chapter_3/toc.md)
-
-- [分布式与中间件](./chapter_4/toc.md)
+    - [NoSQL精粹](chapter_4/nosql-distilled)
+- [分布式与中间件](./chapter_4/summary.md)
     - [mongodb权威指南第二版](./chapter_4/mongodb-the-definitive-guide-2nd.md)
+    - [NoSQL实践指南](./chapter_4/nosql-for-mere-mortals.md)
 
 - [框架](./chapter_5/toc.md)
 
