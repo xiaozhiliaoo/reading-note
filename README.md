@@ -1,6 +1,8 @@
-# mdbook-template
+# 阅读笔记
 
-访问地址：https://xiaozhiliaoo.github.io/reading-lists/
+阅读笔记主要包括，书籍，论文。
+
+访问地址：https://xiaozhiliaoo.github.io/reading-note/
 
 
 ## Run

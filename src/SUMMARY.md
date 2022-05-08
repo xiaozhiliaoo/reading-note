@@ -35,5 +35,9 @@
     - [16-技术与商业案例解读-徐飞](./geektime/技术与商业案例解读.md)
 
 
+- [论文](./paper/toc.md)
+    - [A Survey on the Evolution of Stream Processing Systems](./paper/Stream-System-Evolution.md)
+
+
 - [参考资料](./reference/reference.md)
     - [参考资料](./reference/reference.md)
