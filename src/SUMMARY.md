@@ -7,15 +7,19 @@
 - [计算机科学](./cs/toc.md)
 
 - [语言](./language/toc.md)
+    - [Java并发编程实战](language/java-concurrency-in-practoce.md)
+
 
 - [数据库](./database/toc.md)
     - [NoSQL精粹](database/nosql-distilled.md)
     - [Cassandra权威指南-第二版](database/cassandra-the-definitive-guide-2nd.md)
+    - [数据密集型应用系统设计](database/ddia.md)
 
 - [分布式与中间件](./middleware/summary.md)
     - [mongodb权威指南第二版](./middleware/mongodb-the-definitive-guide-2nd.md)
     - [NoSQL实践指南](./middleware/nosql-for-mere-mortals.md)
     - [基于Apache Flink的流处理](./middleware/streaming-processing-with-apache-flink.md)
+    - [深入理解分布式系统](./middleware/deep-understanding-of-distributed-systems.md)
 
 - [框架](./framework/toc.md)
 
