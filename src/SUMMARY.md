@@ -8,12 +8,14 @@
 
 - [语言](./language/toc.md)
     - [Java并发编程实战](language/java-concurrency-in-practoce.md)
+    - [Java并发编程-设计原则与模式](language/concurrent-programming-in-java.md)
 
 
 - [数据库](./database/toc.md)
     - [NoSQL精粹](database/nosql-distilled.md)
     - [Cassandra权威指南-第二版](database/cassandra-the-definitive-guide-2nd.md)
-    - [数据密集型应用系统设计](database/ddia.md)
+    - [数据密集型应用系统设计-中文](database/ddia-cn.md)
+    - [数据密集型应用系统设计-英文](database/ddia-en.md)
 
 - [分布式与中间件](./middleware/summary.md)
     - [mongodb权威指南第二版](./middleware/mongodb-the-definitive-guide-2nd.md)
