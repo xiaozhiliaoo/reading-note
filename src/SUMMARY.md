@@ -42,6 +42,7 @@
 
 
 - [论文](./paper/toc.md)
+    - [Highly Available Transactions: Virtues and Limitations](./paper/HAT.md)
     - [A Survey on the Evolution of Stream Processing Systems](./paper/Stream-System-Evolution.md)
 
 
