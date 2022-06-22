@@ -2,7 +2,7 @@
 
 [paper](docs/hat-vldb2014.pdf)
 
-2022-06-21
+阅读时间：2022-06-21
 
 ## Word
 

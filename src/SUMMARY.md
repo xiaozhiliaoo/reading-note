@@ -43,8 +43,12 @@
 
 - [论文](./paper/toc.md)
     - [Highly Available Transactions: Virtues and Limitations](./paper/HAT.md)
+    - [A Critique of the CAP Theorem](./paper/cap-critique.md)
+    - [Consistency Tradeoffs in Modern Distributed Database System Design](./paper/pacelc.md)
     - [A Survey on the Evolution of Stream Processing Systems](./paper/Stream-System-Evolution.md)
 
+- [电子书](./ebook/toc.md)
+    - [Java并发编程之美](./ebook/java-concurreny-beautify.md)
 
 - [参考资料](./reference/reference.md)
     - [参考资料](./reference/reference.md)
