@@ -45,7 +45,9 @@
     - [Highly Available Transactions: Virtues and Limitations](./paper/HAT.md)
     - [A Critique of the CAP Theorem](./paper/cap-critique.md)
     - [Consistency Tradeoffs in Modern Distributed Database System Design](./paper/pacelc.md)
+    - [Consensus in the Cloud: Paxos Systems Demystified](./paper/consensus-in-the-cloud.md)
     - [Understanding Replication in Databases and Distributed Systems](./paper/replication-in-db-and-ds.md)
+    - [Eventually Consistent](./paper/eventually-consistent.md)
     - [A Survey on the Evolution of Stream Processing Systems](./paper/Stream-System-Evolution.md)
 
 - [电子书](./ebook/toc.md)
