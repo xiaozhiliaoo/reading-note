@@ -2,12 +2,10 @@
 
 ## 为**读万卷书**而奋斗！
 
-该项目创建于2022-04-05，主要用于汇总阅读笔记以及好的资料。书的类别主要分为：技术和社科，技术主要集中于前2-14小节，社科主要17以后。
-
-[Github地址](https://github.com/xiaozhiliaoo/reading-note)
-
+该项目创建于2022-04-05，内容在[Github地址](https://github.com/xiaozhiliaoo/reading-note) 维护。
+，主要用于汇总阅读笔记以及好的资料。书的类别主要分为：技术和社科，技术主要集中于前2-14小节，社科主要17以后。
 技术的书籍来源于此[reading-list](https://xiaozhiliaoo.github.io/reading-list/)
-，社科的书籍主要包括投资金融与经济，国学等等，汇总地址在[这里](https://xiaozhiliaoo.github.io/reading-note/reference/booklist.html)
+。社科的书籍主要包括投资金融与经济，国学等等，汇总地址在[这里](https://xiaozhiliaoo.github.io/reading-note/reference/booklist.html)
 
 # 统一笔记格式
 
