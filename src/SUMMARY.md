@@ -69,6 +69,7 @@
         - [国学](./reference/booklist/chinese-ancient-literature.md)
         - [经典各学科210本](./reference/booklist/210.md)
         - [金融投资100本](./reference/booklist/invest-100.md)
+        - [金融投资400本](./reference/booklist/invest-400.md)
         - [投资学分类书籍](./reference/booklist/invest-classify.md)
         - [和君推荐企业家和投行家书籍](./reference/booklist/hejun-consulting.md)
         - [中学生阅读指南](./reference/booklist/middle-student.md)
