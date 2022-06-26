@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>金融投资100本 - 读书笔记</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><li class="part-title">目录</li><li class="chapter-item "><a href="../../index.html"><strong aria-hidden="true">1.</strong> 介绍</a></li><li class="chapter-item "><a href="../../cs/toc.html"><strong aria-hidden="true">2.</strong> 计算机科学</a></li><li class="chapter-item "><a href="../../language/toc.html"><strong aria-hidden="true">3.</strong> 语言</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../language/java-concurrency-in-practoce.html"><strong aria-hidden="true">3.1.</strong> Java并发编程实战</a></li><li class="chapter-item "><a href="../../language/concurrent-programming-in-java.html"><strong aria-hidden="true">3.2.</strong> Java并发编程-设计原则与模式</a></li></ol></li><li class="chapter-item "><a href="../../database/toc.html"><strong aria-hidden="true">4.</strong> 数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../database/nosql-distilled.html"><strong aria-hidden="true">4.1.</strong> NoSQL精粹</a></li><li class="chapter-item "><a href="../../database/cassandra-the-definitive-guide-2nd.html"><strong aria-hidden="true">4.2.</strong> Cassandra权威指南-第二版</a></li><li class="chapter-item "><a href="../../database/ddia-cn.html"><strong aria-hidden="true">4.3.</strong> 数据密集型应用系统设计-中文</a></li><li class="chapter-item "><a href="../../database/ddia-en.html"><strong aria-hidden="true">4.4.</strong> 数据密集型应用系统设计-英文</a></li></ol></li><li class="chapter-item "><a href="../../middleware/summary.html"><strong aria-hidden="true">5.</strong> 分布式与中间件</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../middleware/mongodb-the-definitive-guide-2nd.html"><strong aria-hidden="true">5.1.</strong> mongodb权威指南第二版</a></li><li class="chapter-item "><a href="../../middleware/nosql-for-mere-mortals.html"><strong aria-hidden="true">5.2.</strong> NoSQL实践指南</a></li><li class="chapter-item "><a href="../../middleware/streaming-processing-with-apache-flink.html"><strong aria-hidden="true">5.3.</strong> 基于Apache Flink的流处理</a></li><li class="chapter-item "><a href="../../middleware/deep-understanding-of-distributed-systems.html"><strong aria-hidden="true">5.4.</strong> 深入理解分布式系统</a></li></ol></li><li class="chapter-item "><a href="../../framework/toc.html"><strong aria-hidden="true">6.</strong> 框架</a></li><li class="chapter-item "><a href="../../engineering/toc.html"><strong aria-hidden="true">7.</strong> 软件工程</a></li><li class="chapter-item "><a href="../../design/toc.html"><strong aria-hidden="true">8.</strong> 设计</a></li><li class="chapter-item "><a href="../../certificate/toc.html"><strong aria-hidden="true">9.</strong> 考试和考证</a></li><li class="chapter-item "><a href="../../product/toc.html"><strong aria-hidden="true">10.</strong> 产品</a></li><li class="chapter-item "><a href="../../system/toc.html"><strong aria-hidden="true">11.</strong> 系统</a></li><li class="chapter-item "><a href="../../others/toc.html"><strong aria-hidden="true">12.</strong> 其他</a></li><li class="chapter-item "><a href="../../geektime/toc.html"><strong aria-hidden="true">13.</strong> 极客时间</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../geektime/技术与商业案例解读.html"><strong aria-hidden="true">13.1.</strong> 16-技术与商业案例解读-徐飞</a></li></ol></li><li class="chapter-item "><a href="../../paper/toc.html"><strong aria-hidden="true">14.</strong> 论文</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../paper/HAT.html"><strong aria-hidden="true">14.1.</strong> Highly Available Transactions: Virtues and Limitations</a></li><li class="chapter-item "><a href="../../paper/cap-critique.html"><strong aria-hidden="true">14.2.</strong> A Critique of the CAP Theorem</a></li><li class="chapter-item "><a href="../../paper/pacelc.html"><strong aria-hidden="true">14.3.</strong> Consistency Tradeoffs in Modern Distributed Database System Design</a></li><li class="chapter-item "><a href="../../paper/consensus-in-the-cloud.html"><strong aria-hidden="true">14.4.</strong> Consensus in the Cloud: Paxos Systems Demystified</a></li><li class="chapter-item "><a href="../../paper/replication-in-db-and-ds.html"><strong aria-hidden="true">14.5.</strong> Understanding Replication in Databases and Distributed Systems</a></li><li class="chapter-item "><a href="../../paper/eventually-consistent.html"><strong aria-hidden="true">14.6.</strong> Eventually Consistent</a></li><li class="chapter-item "><a href="../../paper/Stream-System-Evolution.html"><strong aria-hidden="true">14.7.</strong> A Survey on the Evolution of Stream Processing Systems</a></li></ol></li><li class="chapter-item "><a href="../../ebook/toc.html"><strong aria-hidden="true">15.</strong> 电子书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../ebook/java-concurreny-beautify.html"><strong aria-hidden="true">15.1.</strong> Java并发编程之美</a></li></ol></li><li class="chapter-item "><a href="../../english/toc.html"><strong aria-hidden="true">16.</strong> 英语书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../english/the-little-prince.html"><strong aria-hidden="true">16.1.</strong> 小王子</a></li></ol></li><li class="chapter-item "><a href="../../philosophy/toc.html"><strong aria-hidden="true">17.</strong> 哲学</a></li><li class="chapter-item "><a href="../../psychology/toc.html"><strong aria-hidden="true">18.</strong> 心理学</a></li><li class="chapter-item "><a href="../../chinese-ancient/toc.html"><strong aria-hidden="true">19.</strong> 国学</a></li><li class="chapter-item "><a href="../../finance/toc.html"><strong aria-hidden="true">20.</strong> 经济与金融</a></li><li class="chapter-item expanded "><a href="../../reference/reference.html"><strong aria-hidden="true">21.</strong> 参考资料</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../reference/booklist.html"><strong aria-hidden="true">21.1.</strong> 书单</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../reference/booklist/chinese-ancient-literature.html"><strong aria-hidden="true">21.1.1.</strong> 国学</a></li><li class="chapter-item "><a href="../../reference/booklist/210.html"><strong aria-hidden="true">21.1.2.</strong> 经典各学科210本</a></li><li class="chapter-item expanded "><a href="../../reference/booklist/invest-100.html" class="active"><strong aria-hidden="true">21.1.3.</strong> 金融投资100本</a></li><li class="chapter-item "><a href="../../reference/booklist/invest-classify.html"><strong aria-hidden="true">21.1.4.</strong> 投资学分类书籍</a></li><li class="chapter-item "><a href="../../reference/booklist/hejun-consulting.html"><strong aria-hidden="true">21.1.5.</strong> 和君推荐企业家和投行家书籍</a></li><li class="chapter-item "><a href="../../reference/booklist/middle-student.html"><strong aria-hidden="true">21.1.6.</strong> 中学生阅读指南</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-600.html"><strong aria-hidden="true">21.1.7.</strong> 商务汉译世界学术名著丛书·600本</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-500.html"><strong aria-hidden="true">21.1.8.</strong> 商务汉译世界学术名著丛书·分科本500本</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-400.html"><strong aria-hidden="true">21.1.9.</strong> 商务汉译世界学术名著丛书·珍藏本400本</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-120.html"><strong aria-hidden="true">21.1.10.</strong> 汉译世界学术名著丛书·120年纪念版</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-china-105.html"><strong aria-hidden="true">21.1.11.</strong> 中华现代学术名著丛书·105本</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">读书笔记</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/xiaozhiliaoo/reading-lists" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="金融投资100本"><a class="header" href="#金融投资100本">金融投资100本</a></h1>
+<p>必读投资书目100本</p>
+<ul>
+<li>1.《格栅理论》小罗伯特•汉格斯特龙  机械工业出版社</li>
+<li>2.《漫步华尔街》  伯顿•麦基尔   上海财经大学出版社 &amp; 机械工业出版社</li>
+<li>3.《战胜华尔街》  约翰•迈吉  机械工业出版社</li>
+<li>4.《股票作手回忆录》 爱德温•李费佛  海南出版社 &amp; 上海财经大学出版社</li>
+<li>5.《股市晴雨表》 威廉•彼得•汉密尔顿   海南出版社 &amp; 机械工业出版社</li>
+<li>6.《伟大的博弈》 约翰•S•戈登  中信出版社</li>
+<li>7.《艾略特波浪理论》 小罗伯特•普莱切特   机械工业出版社</li>
+<li>8.《艾略特名著集》  小罗伯特•普莱切特   机械工业出版社</li>
+<li>9.《投资者的未来》  杰里米•希格尔  机械工业出版社</li>
+<li>10.《江恩华尔街四十五年》  威廉•D•江恩  机械工业出版社</li>
+<li>11.《投资收益百年史》 伦敦商学院合著  中国财政经济出版社</li>
+<li>12.《最佳金钱故事》 安德烈•科斯托拉尼  海南出版社</li>
+<li>13.《投资圣经》 安迪•基尔帕特里克  机械工业出版社</li>
+<li>14.《与天为敌》 彼得•伯恩斯坦 机械工业出版社</li>
+<li>15.《超级金钱》 亚当•史密斯   机械工业出版社</li>
+<li>16.《以交易为生》 亚历山大•埃尔德  机械工业出版社</li>
+<li>17.《怎样选择成长股》  菲利普•费雪  海南出版社</li>
+<li>18.《股市趋势技术分析》 约翰•迈吉  机械工业出版社</li>
+<li>19.《乌合之众》 古斯塔夫•勒庞  中央编译出版</li>
+<li>20.《共同基金常识》 约翰•博格  百家出版社</li>
+<li>21.《金融炼金术》 乔治•索罗斯  海南出版社</li>
+<li>22.《证券分析》 本杰明•格雷厄姆  海南出版社</li>
+<li>23.《聪明的投资者》本杰明•格雷厄姆 江苏人民出版社</li>
+<li>24.《客户的游艇在哪里》小弗雷德•施维德 海南出版社</li>
+<li>25.《说谎者的扑克牌》 麦克尔•刘易斯  海南出版社</li>
+<li>26.《彼得林奇的成功投资》彼得•林奇 机械工业出版社</li>
+<li>27.《沃伦巴菲特之路》 罗伯特•汉格斯特龙  清华大学出版社</li>
+<li>28.《华尔街巨人》 华尔街日报合著  海南出版社</li>
+<li>29.《投资骑士》 吉姆•罗杰斯  中信出版社</li>
+<li>30.《长线法宝》又名《股史风云话投资》 杰里米•希格尔 清华大学出版社 &amp; 海南出版社</li>
+<li>31.《利润通行证》  马克•默比乌斯  中信出版社</li>
+<li>32.《笑傲股市》  威廉•欧奈尔  中国财政经济出版社</li>
+<li>33.《1929年股市大崩盘》 约翰•肯尼斯•加尔布雷恩  上海财经大学出版社</li>
+<li>34.《查理芒格传》 珍妮特•洛尔  海南出版社</li>
+<li>35.《散户至上》  阿瑟•莱维特  中信出版社</li>
+<li>36.《逆向思考的艺术》 尼尔  海南出版社</li>
+<li>37.《投机与骗局》 查尔斯•马凯等著  海南出版社</li>
+<li>38.《数字的谎言》 亚历克斯•贝伦森  中信出版社</li>
+<li>39.《全面解读巴菲特》 罗伯特•P•迈尔斯   高等教育出版社</li>
+<li>40.《投资心理学》  约翰•诺夫辛格  北京大学出版社</li>
+<li>41.《战胜华尔街》 彼得•林奇  上海财经大学出版社 &amp;  机械工业出版社</li>
+<li>42.《统计陷阱》 达赖尔•哈夫  上海财经大学出版社</li>
+<li>43.《专业投机原理》 维克多•斯波朗迪  宇航出版社 &amp;  机械工业出版社</li>
+<li>44.《证券交易新空间》 比尔•威廉姆  地震出版社 </li>
+<li>45.《香港股史》 黄绍伦等  东方出版中心</li>
+<li>46.《巴菲特与索罗斯的投资习惯》 马克•泰尔  中信出版社</li>
+<li>47.《华尔街梦之队》 妮姬•罗斯   海南出版社</li>
+<li>48.《巴菲特至股东的信》沃伦•巴菲特 机械工业出版社</li>
+<li>49.《沃伦巴菲特传》 罗杰•洛文斯坦  海南出版社  &amp;  中信出版社</li>
+<li>50.《股市博弈论》  杨新宇  陕西师范大学出版社</li>
+<li>51.《短线交易大师》  奥利弗•瓦莱士  地震出版社</li>
+<li>52.《道氏理论》 罗伯特•雷亚  地震出版社</li>
+<li>53.《市场群氓和暴乱—对群体狂热的现代观点》 罗伯特•门斯切  上海财经大学出版社</li>
+<li>54.《至高无上—来自最为大证券交易者的经验》 约翰•波伊克  上海财经大学出版社</li>
+<li>55.《解读华尔街》 杰弗里•B•里特  上海财经大学出版社</li>
+<li>56.《绝境与生机》斯蒂芬•韦恩斯 上海财经大学出版社</li>
+<li>57.《股市十八岁》 周焕涛  山东出版社</li>
+<li>58.《克罗谈投资策略》 斯坦利•克罗  中国经济出版社</li>
+<li>59.《金融市场技术分析》 约翰•墨菲  上海人民出版社</li>
+<li>60.《期货市场技术分析》  约翰•墨菲  地震出版社</li>
+<li>61.《证券混沌操作法》  比尔•威廉姆  宇航出版社</li>
+<li>62.《专业交易人士技术分析》 康斯坦斯•布朗  海南出版社</li>
+<li>63.《亚当理论》 威尔德  中国经济出版社</li>
+<li>64.《格雷厄姆论价值投资》 珍妮特•洛尔  海南出版社</li>
+<li>65.《非理性繁荣》 罗伯特•席勒  中国人民大学出版社</li>
+<li>66.《江恩股市法则》  威廉•D•江恩  清华大学出版社</li>
+<li>67.《江恩股市定律》  威廉•D•江恩  清华大学出版社</li>
+<li>68.《江恩选股方略》  威廉•D•江恩  清华大学出版社</li>
+<li>69.《挚爱成就梦想》  威廉•D•江恩  清华大学出版社</li>
+<li>70.《股市无敌》  小理查德•阿姆斯  清华大学出版社</li>
+<li>71.《股票投资就问两个问题》  肯尼斯•费雪  中国书店&amp;黑龙江科学技术出版社 </li>
+<li>72.《操盘建议》 阿尔佩西•帕特尔  华夏出版社</li>
+<li>73.《技术分析》 马丁•普林格  中国财政金融出版社</li>
+<li>74.《华尔街史》  查理斯•R•吉斯特  经济科学出版社</li>
+<li>75.《巴菲特年度报告》  沃伦•巴菲特  打印</li>
+<li>76.《华尔街股市投资经典》  詹姆斯•P•奥肖内西   经济科学出版社</li>
+<li>77.《投资的艺术》  亚历克•埃灵厄  机械工业出版社</li>
+<li>78.《随机致富的傻瓜》 纳西姆•塔勒布  中信出版社</li>
+<li>79.《像巴菲特那样管理资金》又《沃伦•巴菲特全传》詹姆斯•奥洛克林 中国青年出版社</li>
+<li>80.《华尔街的恶魔天才》  小爱德华•J•勒内汉   中信出版社</li>
+<li>81.《对冲基金风云录》  比格斯  中信出版社</li>
+<li>82.《如何从商品期货中获利》 威廉•D•江恩   机械工业出版社</li>
+<li>83.《华尔街50年》  亨利•克鲁斯   机械工业出版社</li>
+<li>84.《蜡烛图方法》  斯蒂芬•W•比加洛  机械工业出版社</li>
+<li>85.《技术分析原理》 黄柏中  经济科学出版社</li>
+<li>86.《像格雷厄姆学思考，像巴菲特学投资》  劳伦斯•科尼厄姆  中国财政经济出版社</li>
+<li>87.《花旗帝国》  莫尼卡•兰利   中信出版社</li>
+<li>88.《桑迪韦尔自传》  桑迪•韦尔   中信出版社</li>
+<li>89.《股市技术分析》  雪峰  地震出版社</li>
+<li>90.《高盛文化》 里莎•埃迪里奇  华夏出版社</li>
+<li>91.《摩根传》  琼•斯特劳斯   华夏出版社</li>
+<li>92.《股票培训班》  安德烈•科斯托拉尼   地震出版社</li>
+<li>93.《沸腾的岁月》  布鲁克斯   中信出版社</li>
+<li>94.《卖空的艺术》凯思琳•斯泰莱 上海财经大学出版社</li>
+<li>95.《技术分析精解》  林康史  东北财经大学出版社</li>
+<li>96.《储备与稳定》 本杰明•格雷厄姆  海南出版社</li>
+<li>97.《长赢投资》  约翰•博格  中信出版社</li>
+<li>98.《伯格投资》  约翰•伯格  机械工业出版社</li>
+<li>99.《伯格谈共同基金》  约翰•伯格   中国青年出版社</li>
+<li>100.《约翰•聂夫的成功投资》  约翰•聂夫   机械工业出版社</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../reference/booklist/210.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../reference/booklist/invest-classify.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../reference/booklist/210.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../reference/booklist/invest-classify.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../../mermaid.min.js"></script>
+        <script type="text/javascript" src="../../mermaid-init.js"></script>
+        <script type="text/javascript" src="../../smart-anchor.js"></script>
+        <script src="https://utteranc.es/client.js"
+        repo="RustMagazine/rust_magazine_2021"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>
+
+    </body>
+</html>
