@@ -53,5 +53,27 @@
 - [电子书](./ebook/toc.md)
     - [Java并发编程之美](./ebook/java-concurreny-beautify.md)
 
+- [英语书](./english/toc.md)
+    - [小王子](./english/the-little-prince.md)
+
+- [哲学](./philosophy/toc.md)
+
+- [心理学](./psychology/toc.md)
+
+- [国学](./chinese-ancient/toc.md)
+
+- [经济与金融](./finance/toc.md)
+
 - [参考资料](./reference/reference.md)
-    - [参考资料](./reference/reference.md)
+    - [书单](./reference/booklist.md)
+        - [国学](./reference/booklist/chinese-ancient-literature.md)
+        - [经典各学科210本](./reference/booklist/210.md)
+        - [金融投资100本](./reference/booklist/invest-100.md)
+        - [投资学分类书籍](./reference/booklist/invest-classify.md)
+        - [和君推荐企业家和投行家书籍](./reference/booklist/hejun-consulting.md)
+        - [中学生阅读指南](./reference/booklist/middle-student.md)
+        - [商务汉译世界学术名著丛书·600本](./reference/booklist/shangwu-world-600.md)
+        - [商务汉译世界学术名著丛书·分科本500本](./reference/booklist/shangwu-world-500.md)
+        - [商务汉译世界学术名著丛书·珍藏本400本](./reference/booklist/shangwu-world-400.md)
+        - [汉译世界学术名著丛书·120年纪念版](./reference/booklist/shangwu-world-120.md)
+        - [中华现代学术名著丛书·105本](./reference/booklist/shangwu-china-105.md)
