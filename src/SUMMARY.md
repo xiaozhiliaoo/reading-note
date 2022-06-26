@@ -2,7 +2,7 @@
 
 # 目录
 
-- [介绍](./README.md)
+- [简介](./README.md)
 
 - [计算机科学](./cs/toc.md)
 
