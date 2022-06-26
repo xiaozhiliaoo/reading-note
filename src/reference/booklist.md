@@ -1,5 +1,7 @@
 # 书单
 
+- [我的技术书籍](https://xiaozhiliaoo.github.io/reading-list/) （我的技术阅读清单）
+
 - [国学-经史子集](booklist/chinese-ancient-literature.md) （包括佛学13经，儒学13经，经史子集等）
 
 - [经典各学科210本](booklist/210.md) （包括经济学，投资学，管理学，修身处世，名人传记，心理励志，谋略经典。科普经典等）
@@ -23,5 +25,3 @@
 - [汉译世界学术名著丛书·120年纪念版](booklist/shangwu-world-120.md) （世界分类学术名著：包括哲学，历史，地理，政治，法律，社会学，经济学，语言类等）
 
 - [中华现代学术名著丛书·105本](booklist/shangwu-china-105.md) （中国现代学术名著）
-
-- [我的技术书籍](https://xiaozhiliaoo.github.io/reading-list/) （我的阅读清单）
