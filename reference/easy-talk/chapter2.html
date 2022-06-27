@@ -1,0 +1,1207 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第二章 - 读书笔记</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><li class="part-title">目录</li><li class="chapter-item "><a href="../../index.html"><strong aria-hidden="true">1.</strong> 简介</a></li><li class="chapter-item "><a href="../../cs/toc.html"><strong aria-hidden="true">2.</strong> 计算机科学</a></li><li class="chapter-item "><a href="../../language/toc.html"><strong aria-hidden="true">3.</strong> 语言</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../language/java-concurrency-in-practoce.html"><strong aria-hidden="true">3.1.</strong> Java并发编程实战</a></li><li class="chapter-item "><a href="../../language/concurrent-programming-in-java.html"><strong aria-hidden="true">3.2.</strong> Java并发编程-设计原则与模式</a></li></ol></li><li class="chapter-item "><a href="../../database/toc.html"><strong aria-hidden="true">4.</strong> 数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../database/nosql-distilled.html"><strong aria-hidden="true">4.1.</strong> NoSQL精粹</a></li><li class="chapter-item "><a href="../../database/cassandra-the-definitive-guide-2nd.html"><strong aria-hidden="true">4.2.</strong> Cassandra权威指南-第二版</a></li><li class="chapter-item "><a href="../../database/ddia-cn.html"><strong aria-hidden="true">4.3.</strong> 数据密集型应用系统设计-中文</a></li><li class="chapter-item "><a href="../../database/ddia-en.html"><strong aria-hidden="true">4.4.</strong> 数据密集型应用系统设计-英文</a></li></ol></li><li class="chapter-item "><a href="../../middleware/summary.html"><strong aria-hidden="true">5.</strong> 分布式与中间件</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../middleware/mongodb-the-definitive-guide-2nd.html"><strong aria-hidden="true">5.1.</strong> mongodb权威指南第二版</a></li><li class="chapter-item "><a href="../../middleware/nosql-for-mere-mortals.html"><strong aria-hidden="true">5.2.</strong> NoSQL实践指南</a></li><li class="chapter-item "><a href="../../middleware/streaming-processing-with-apache-flink.html"><strong aria-hidden="true">5.3.</strong> 基于Apache Flink的流处理</a></li><li class="chapter-item "><a href="../../middleware/deep-understanding-of-distributed-systems.html"><strong aria-hidden="true">5.4.</strong> 深入理解分布式系统</a></li></ol></li><li class="chapter-item "><a href="../../framework/toc.html"><strong aria-hidden="true">6.</strong> 框架</a></li><li class="chapter-item "><a href="../../engineering/toc.html"><strong aria-hidden="true">7.</strong> 软件工程</a></li><li class="chapter-item "><a href="../../design/toc.html"><strong aria-hidden="true">8.</strong> 设计</a></li><li class="chapter-item "><a href="../../certificate/toc.html"><strong aria-hidden="true">9.</strong> 考试和考证</a></li><li class="chapter-item "><a href="../../product/toc.html"><strong aria-hidden="true">10.</strong> 产品</a></li><li class="chapter-item "><a href="../../system/toc.html"><strong aria-hidden="true">11.</strong> 系统</a></li><li class="chapter-item "><a href="../../others/toc.html"><strong aria-hidden="true">12.</strong> 其他</a></li><li class="chapter-item "><a href="../../geektime/toc.html"><strong aria-hidden="true">13.</strong> 极客时间</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../geektime/技术与商业案例解读.html"><strong aria-hidden="true">13.1.</strong> 16-技术与商业案例解读-徐飞</a></li></ol></li><li class="chapter-item "><a href="../../paper/toc.html"><strong aria-hidden="true">14.</strong> 论文</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../paper/HAT.html"><strong aria-hidden="true">14.1.</strong> Highly Available Transactions: Virtues and Limitations</a></li><li class="chapter-item "><a href="../../paper/cap-critique.html"><strong aria-hidden="true">14.2.</strong> A Critique of the CAP Theorem</a></li><li class="chapter-item "><a href="../../paper/pacelc.html"><strong aria-hidden="true">14.3.</strong> Consistency Tradeoffs in Modern Distributed Database System Design</a></li><li class="chapter-item "><a href="../../paper/consensus-in-the-cloud.html"><strong aria-hidden="true">14.4.</strong> Consensus in the Cloud: Paxos Systems Demystified</a></li><li class="chapter-item "><a href="../../paper/replication-in-db-and-ds.html"><strong aria-hidden="true">14.5.</strong> Understanding Replication in Databases and Distributed Systems</a></li><li class="chapter-item "><a href="../../paper/eventually-consistent.html"><strong aria-hidden="true">14.6.</strong> Eventually Consistent</a></li><li class="chapter-item "><a href="../../paper/Stream-System-Evolution.html"><strong aria-hidden="true">14.7.</strong> A Survey on the Evolution of Stream Processing Systems</a></li></ol></li><li class="chapter-item "><a href="../../ebook/toc.html"><strong aria-hidden="true">15.</strong> 电子书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../ebook/java-concurreny-beautify.html"><strong aria-hidden="true">15.1.</strong> Java并发编程之美</a></li></ol></li><li class="chapter-item "><a href="../../english/toc.html"><strong aria-hidden="true">16.</strong> 英语书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../english/the-little-prince.html"><strong aria-hidden="true">16.1.</strong> 小王子</a></li></ol></li><li class="chapter-item "><a href="../../philosophy/toc.html"><strong aria-hidden="true">17.</strong> 哲学</a></li><li class="chapter-item "><a href="../../psychology/toc.html"><strong aria-hidden="true">18.</strong> 心理学</a></li><li class="chapter-item "><a href="../../chinese-ancient/toc.html"><strong aria-hidden="true">19.</strong> 国学</a></li><li class="chapter-item "><a href="../../finance/toc.html"><strong aria-hidden="true">20.</strong> 经济与金融</a></li><li class="chapter-item expanded "><a href="../../reference/reference.html"><strong aria-hidden="true">21.</strong> 参考资料</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../reference/booklist.html"><strong aria-hidden="true">21.1.</strong> 书单</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../reference/booklist/chinese-ancient-literature.html"><strong aria-hidden="true">21.1.1.</strong> 国学</a></li><li class="chapter-item "><a href="../../reference/booklist/210.html"><strong aria-hidden="true">21.1.2.</strong> 经典各学科210本</a></li><li class="chapter-item "><a href="../../reference/booklist/invest-100.html"><strong aria-hidden="true">21.1.3.</strong> 金融投资100本</a></li><li class="chapter-item "><a href="../../reference/booklist/invest-400.html"><strong aria-hidden="true">21.1.4.</strong> 金融投资400本</a></li><li class="chapter-item "><a href="../../reference/booklist/invest-classify.html"><strong aria-hidden="true">21.1.5.</strong> 投资学分类书籍</a></li><li class="chapter-item "><a href="../../reference/booklist/hejun-consulting.html"><strong aria-hidden="true">21.1.6.</strong> 和君推荐企业家和投行家书籍</a></li><li class="chapter-item "><a href="../../reference/booklist/middle-student.html"><strong aria-hidden="true">21.1.7.</strong> 中学生阅读指南</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-600.html"><strong aria-hidden="true">21.1.8.</strong> 商务汉译世界学术名著丛书·600本</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-500.html"><strong aria-hidden="true">21.1.9.</strong> 商务汉译世界学术名著丛书·分科本500本</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-400.html"><strong aria-hidden="true">21.1.10.</strong> 商务汉译世界学术名著丛书·珍藏本400本</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-120.html"><strong aria-hidden="true">21.1.11.</strong> 汉译世界学术名著丛书·120年纪念版</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-china-105.html"><strong aria-hidden="true">21.1.12.</strong> 中华现代学术名著丛书·105本</a></li></ol></li><li class="chapter-item expanded "><a href="../../reference/easy-talk.html"><strong aria-hidden="true">21.2.</strong> 1000条</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../reference/easy-talk/chapter1.html"><strong aria-hidden="true">21.2.1.</strong> 第一章</a></li><li class="chapter-item expanded "><a href="../../reference/easy-talk/chapter2.html" class="active"><strong aria-hidden="true">21.2.2.</strong> 第二章</a></li><li class="chapter-item "><a href="../../reference/easy-talk/chapter3.html"><strong aria-hidden="true">21.2.3.</strong> 第三章</a></li><li class="chapter-item "><a href="../../reference/easy-talk/chapter4.html"><strong aria-hidden="true">21.2.4.</strong> 第四章</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">读书笔记</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/xiaozhiliaoo/reading-lists" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <ul>
+<li>1.伟大即是被误解。</li>
+<li>2.离你最近的地方，路途最远；最简单的音调，需要最艰苦的学习。</li>
+<li>3.我们唯有献出生命，才能得到生命。</li>
+<li>4.如果你把错误关在门外，真理也要被光在门外了。</li>
+<li>5.世界的事最好一笑了之。</li>
+<li>6.最好的东西不是独来的，他伴了所有的东西同来。</li>
+<li>7.所有人类的错误无非是无耐心。</li>
+<li>8.但艺术自由的唯一目的是保证让艺术家安逸舒适时，他就没有多少价值了。</li>
+<li>9.凡是值得思考的事情，没有没被思考过；我们必须做的只是试图重新加以思考而已。</li>
+<li>10.战斗不但使人勇敢，也增添了涵养。</li>
+<li>11.经验是生活的肥料，有什么样的经验便可成为什么样的人。</li>
+<li>12.有矛盾乃蓬勃生机的明证。</li>
+<li>13.生活之中的逆境总是绝对的，顺境总是相对的。</li>
+<li>14.宇宙间没有什么比人更神明。</li>
+<li>15.一个人必须学会正确的观察自己。</li>
+<li>16.智慧乃是没有别的东西可以代替的快乐。</li>
+<li>17.真正的美是那么特别，那么新奇，以致于我们看不出那是一种美。</li>
+<li>18.死的奥秘，只能向“生命”之中寻找，才可能找到答案。</li>
+<li>19.真实永远是文学的最难模式。</li>
+<li>20.心境清逸，不慕名利，方可从事于画。</li>
+<li>21.世誉不足慕，功名一破甑，越无人识越实用。</li>
+<li>22.作画乃神形兼备，不可画的太像，太像则匠，又不能花的不像，不像则弃。</li>
+<li>23.吾画虾几十年，始得其神。</li>
+<li>24.余画小鸡二十年，十年得以形似，十年得以神似。</li>
+<li>25.一切学术之共同目的，追寻造物之真理而已。</li>
+<li>26.天才是长期勤奋得来的智慧累积。</li>
+<li>27.师古人之迹，先古人之心。</li>
+<li>28.大抵艺事，最初纯有古人，继则溶古人而有我，终乃古人与我俱之，始臻化境。</li>
+<li>29.激励不但乃艺术之源泉，也可窥探自然宇宙万物之全貌，养成开阔的心胸。</li>
+<li>30.一数到了最后的境界，都是通的，唯一不同是所用的工具，和风俗习惯。</li>
+<li>31.谁不尊重生命，谁就不配有生命。</li>
+<li>32.我们与自然竞赛，人的智慧不用就会枯萎。</li>
+<li>33.做最好的瞰望（瞰）即使从高山上滚下去，也不会摔坏什么。</li>
+<li>34.把所有的细节都加起来，就成为完美了。</li>
+<li>35.美，就是性格和表现。</li>
+<li>36.没有太阳就没有绘画。</li>
+<li>37.艺术，就是人被加到自然里去，这自然是把他解放出来。</li>
+<li>38.艺术乃是一种手段，人类借以弥补混乱，无聊和大部分邪恶的是人生的体验。</li>
+<li>39.把金钱和权力交给政府，如同把威士忌和汽车钥匙给孩子。</li>
+<li>40.重要的不是人们如何谈论你，而是如何嘀咕你。</li>
+<li>41.沉思乃精神之花朵，散发着迷人的芬芳。</li>
+<li>42.我相信，告诉我你爱的人，我就告诉你你是什么人。</li>
+<li>43.对一只挨过打的狗，晃晃鞭子就够了。</li>
+<li>44.好人就是好人，无论他是否在教堂里。</li>
+<li>45.人类可以变成动物，也可以取得需要，看他的需要。</li>
+<li>46.艺术是我，科学是我们。</li>
+<li>47.除了我们明白我们能做什么，我们不会知道我们是谁。</li>
+<li>48.谁也不会失去他从来没有过的东西。</li>
+<li>49.重要的不是谁正确，而是什么正确。</li>
+<li>50.结论出在你绻于思考的地方。</li>
+<li>51.对于有些人，成功是靠出名，对另一些人来说，则是靠不被人发现。</li>
+<li>52.井枯方知水的珍贵。</li>
+<li>53.野草只是功效尚未被发现的植物。</li>
+<li>54.做好事要不厌其烦。</li>
+<li>55.坏天气是不存在的，只是种类不同的好天气。</li>
+<li>56.顺境中友情价值并不高。</li>
+<li>57.态度软弱的人，人格也是如此。</li>
+<li>58.近代学术的历程，是从人性到民族性→兽性</li>
+<li>59.最伟大的大脑既可以行最伟大的善，也可以作最大的恶。</li>
+<li>60.老年乃是人生之裁决。</li>
+<li>61.永远都要核实你所选用的资料。</li>
+<li>62.获取只是的三种办法：观察自然（收集事实）、思考（整合事实）、实验（验证其整合的结果）。</li>
+<li>63.与其做一个成功的人，不如做一个有价值的人。</li>
+<li>64.真的说服者是我们的欲望、恐惧。</li>
+<li>65.存在即是可变价值的存在。</li>
+<li>66.水质跟真土质变，人随着朋友变。</li>
+<li>67.变换节奏，是所有优秀表演的一个基础。</li>
+<li>68.历史是一个巨大的预警系统。</li>
+<li>69.自传为揭露别人真相的无上媒介。</li>
+<li>70.度假就是终日无所事事，又无所事事终日。</li>
+<li>71.没有哪个伟大的人物白活了，世界的历史不过是他们的传记，饥渴，肉欲，天天更新，天天徒劳。</li>
+<li>72.山谷中看的很大的山峰上看的就小。</li>
+<li>73.所有学校或学院都具有两个最伟大的功能：提供隐藏有价值的知识。</li>
+<li>74.计算是无用的，只能给你答案。</li>
+<li>75.当狼还有别的想法时，羊通过素食主义法案是无效的。</li>
+<li>76.用户在Computer行业；白痴的代名词。</li>
+<li>77.英国人之格言：(Business as usual)照常营业。</li>
+<li>78.只有好奇的人可以学习，而坚定的人才能克服其中的障碍。</li>
+<li>79.工作先是拯救，既而又毁掉我们。</li>
+<li>80.我不知道我们在干什么，就不叫研究了。</li>
+<li>81.我们是通过不同之处而理解。</li>
+<li>82.最大的地主反最少的地租。</li>
+<li>83.最大的挑战是有人依赖你，最大的满足是维护他的期约。</li>
+<li>84.只有死亡包括有病。</li>
+<li>85.修道生活是奋斗，而不是赞美诗。</li>
+<li>86.与欢乐者同乐。</li>
+<li>87.紧张的学习是为了学会放松，让智慧和理性做主。</li>
+<li>88.我们的大作家，都幸运的避开了“正规”的教育。</li>
+<li>89.去了解人们真实的想法；关注与他们做的而不是说的。</li>
+<li>90.统治世界是人类的本性；而不是政府和政体。</li>
+<li>91.战略是运用时间和空间的艺术，生存就是恢复。</li>
+<li>92.成功的伟大秘诀就是工作，永远的工作。</li>
+<li>93.朋友不是交出来的，是认出来的。</li>
+<li>94.思想形成中的伟大决策，重大的发现，许多问题的解只能有孤独中的单个才能解决。</li>
+<li>95.错误的方式总是显得更有理。</li>
+<li>96.人对真实的忍耐是有限度的。</li>
+<li>97.对于任何作用，总有一个相等的反作用。</li>
+<li>98.如果你能同样地对待输赢，那就是巨大的成就。</li>
+<li>99.政治的全部艺术在于合理地指导人们的不合理。</li>
+<li>100.空着肚子无法进行理性的思考，但是大多数人即便吃饱了，还是不行。</li>
+<li>101.在一个完全健全的社会里，疯狂的是唯一的理由。</li>
+<li>102.优秀的律师就是伟大的推销员。</li>
+<li>103.把自己卖给你自己，是你一生中最重要的销售。</li>
+<li>104.50岁的悲哀不是你改变的太多，而是太少。</li>
+<li>105.自由是危险的，但是他不是（也是）我们拥有的最安全的东西。</li>
+<li>106.不要贪图保险，保险就是最大的风险。</li>
+<li>107.一盘美味的色拉可能是糟糕晚餐的前奏。</li>
+<li>108.安逸和懒惰会腐蚀你的思想。</li>
+<li>109.想象力统治着这个世界。人是落败的神。</li>
+<li>110.艺术教会我们摆脱艺术规则本身。</li>
+<li>111.无论是谁，在什么地方，粗暴总是错误的。</li>
+<li>112.人们惧怕思想超过惧怕世界的一切。</li>
+<li>113.我不希望任何人都活到八十岁。那是一个所有腐烂的东西都浮上表面的年龄。</li>
+<li>114.地球是圆的，看似终点的地方，亦是起点。</li>
+<li>115.大师的标志是：20年后所有的人拜服在其观念的四周。</li>
+<li>116.过去的危险是人们变成奴隶。将来变成marchine.(mcarchine)</li>
+<li>117.当你的实力只能低语时，就不能让思想咆哮。</li>
+<li>118.完全取消贸易：产生抢劫。</li>
+<li>119.你必须唤醒自己全部力量，然后才能撇下自己的全部假像。</li>
+<li>120.不肯早起的人一事无成。</li>
+<li>121.冷嘲热讽：乃真理之试金石。</li>
+<li>122.任何时候做正确的事，总是正确的。</li>
+<li>123.哲学之恰当的主义：只是热爱智慧。</li>
+<li>124.进步不光是给未来新的可能性，还是新的限制。</li>
+<li>125.不要害怕完美，因为你永远也达不到完美。</li>
+<li>126.繁荣乃是消耗的结果。</li>
+<li>127.在青年和美人当中，智慧极少。</li>
+<li>128.无知会让你觉得无所不能。</li>
+<li>129.最好的婚姻还是要门当户对。</li>
+<li>130.不再逆境中怨天尤人，这才是智慧的标志。</li>
+<li>131.政治让无线电广播制造了更多的喜剧演员。</li>
+<li>132.美国的所有艺术是一项巨大的产业，它是由不道德的男人为不健康的女人运作的。</li>
+<li>133.我引用别人是为了更好的表达自己。</li>
+<li>134.职业作家就是锲而不舍的业余作家。</li>
+<li>135.重要的是如何平静的接受一切。</li>
+<li>136.做的好就是做得快。</li>
+<li>137.重要的是不要停止质疑，这乃是成功的状态。</li>
+<li>138.几乎每一个人都要耗费一部分生命，试图显现他不具备的资格。</li>
+<li>139.统计是定量方法的胜利，定量方法乃贫乏和僵死的胜利。</li>
+<li>140.战争中四分之三靠士气，四分之一是实力对比。</li>
+<li>141.他们砍到好书做成坏报纸。</li>
+<li>142.未来使用现在来买的。</li>
+<li>143.纯粹的数学科学，可以说人类精神最独特的状态。</li>
+<li>144.自大可以使一个人膨胀起来，大不会支撑他。</li>
+<li>145.出版之前先放他10年。</li>
+<li>146.生活之中唯一精明的就是专心。</li>
+<li>147.财富对于有些人只做了一件事，“使他们担心失去财富”。</li>
+<li>148.对于你不明白的事，不要赞扬，指责。</li>
+<li>149.奇迹是崇拜的基础。（Wonder is lasis of worship）</li>
+<li>150.政府为人类文明最大的失败。</li>
+<li>151.最疯的疯汉是发了疯的圣贤。</li>
+<li>152.真正智慧（智），知其所应当知，为其所应当为。</li>
+<li>153.你的价值在于你是什么，而不是你有什么。</li>
+<li>154.没有意志力，所有的才能，美德毫无价值。</li>
+<li>155.懒中嫌毛重。</li>
+<li>156.许多出门寻羊毛的，回到家里修剪他们自己。</li>
+<li>157.所有的女人都会像他们的母亲，所有的男人都不想他们母亲。</li>
+<li>158.仅有机灵是不够的，他还必须有足够的智慧，防止机灵过头了。</li>
+<li>159.国家不是被“废止”，而是漫漫枯萎的。</li>
+<li>160.没有谁能挡住战胜自己的人。</li>
+<li>161.你可以假装严肃，但不可以假装风趣。</li>
+<li>162.狼不会为羊的数量发愁。</li>
+<li>163.有些智慧你必须向智慧者学习。</li>
+<li>164.人的衣服应该像一张铁丝网，护身但不挡眼。</li>
+<li>165.我只相信一件事：意志力。</li>
+<li>166.狂风扑面，使人清醒。</li>
+<li>167.上帝只通过你为你做事情。你自己在99%的方面是看不见的，摸不着的。</li>
+<li>168.健康就是年轻，无债就是富有。</li>
+<li>169.有热情就可以获得知识，而成功多依靠热情而不是能力。</li>
+<li>170.想懂得今天，就必须研究昨天。</li>
+<li>171.进攻时唯一的秘诀，世界向勇士屈服。</li>
+<li>172.冷静的呆着，认真的倾听，勇敢地拼搏。</li>
+<li>173.只要一个人还有别的东西可以数，我是不会数他的年龄。</li>
+<li>174.一个人越写越能写。</li>
+<li>175.在美国只有成功的作家是重要的；在法国所有的作家都是重要的；在英国没有什么作家是重要的；在澳大利亚，你要解释什么是作家。</li>
+<li>176.写作乃信仰之行动，不是写作之技巧。</li>
+<li>177.绘画的历史比文字的历史长三倍，同样为悠久历史之表达方式。</li>
+<li>178.要敢于犯错，敢于梦想。</li>
+<li>179.自由之做错人得权力，不是做错事的权力。</li>
+<li>180.Nature可能拒绝回答，但不会答错。</li>
+<li>181.一个下定决心用一把生锈的扳手所做的事情，比一个心不在焉却拥有一个机械修理丁的人能做的更多。</li>
+<li>182.与我们格斗的人让我们神经更坚强，技术更娴熟，我们的敌手也是我们的帮手。</li>
+<li>183.你必须唤醒你的学生心中的伟大。</li>
+<li>184.我的人生哲学就是工作（学习）。</li>
+<li>185.乌托邦里到处是圆形的轨迹。</li>
+<li>186.所有中产阶级都是三角恋，所有上层社会的小说都有多头的通奸，所有革命小说都是模范。</li>
+<li>187.从未有哪一个国家因贸易而亡。</li>
+<li>188.最强大的传统我们无法描述，甚至无从知道。</li>
+<li>189.给孩子最好的训练，让他们自己训练自己。</li>
+<li>190.对于大多数人来说，这个世界最大的折磨就是思考。</li>
+<li>191.一般旅游我的地方都是旅游没有去的地方。</li>
+<li>192.害怕做的多的人总是做的太少。</li>
+<li>193.树，永远死在最高处。</li>
+<li>194.身体是灵魂的坟墓。</li>
+<li>195.都市生活：几百万人一起感到寂寞。</li>
+<li>196.不受干扰之圣地只有卫生间了。</li>
+<li>197.懒惰是你在疲劳之前就休息的习惯。</li>
+<li>198.政治的基本要素是时机。</li>
+<li>199.绝少有人即能思想又能行动。</li>
+<li>200.如果一个人不浪费时间：就可以少年好成。</li>
+<li>201.风越劲，树越壮。</li>
+<li>202.诗人就适合独行。</li>
+<li>203.图书馆是知识的圣殿；比任何战争中解放的人都多。</li>
+<li>204.冷静、节制、你就能健康。</li>
+<li>205.艺术家的气质是折磨业余人士的病。</li>
+<li>206.老练就是你想了没说的没说的那一部分。</li>
+<li>207.你必须把意念也当作是一种行动。</li>
+<li>208.紧竖耳，缓开口，慢发火。</li>
+<li>209.反穿你的衣服，那样子讨人喜欢的多。</li>
+<li>210.科学乃经验的系统合类。</li>
+<li>211.化粪池边草定绿一点。</li>
+<li>212.教会总愿意把天堂的财产换作现钞。</li>
+<li>213.我发现TV极具教育意义，每当一个人打开，我就去另一个房间看书。</li>
+<li>214.文明就是鼓励差异，成了民主的同义词。</li>
+<li>215.剽窃者总是疑心被剽窃。</li>
+<li>216.一个人是否有能力是由环境证明的。</li>
+<li>217.你不能制止海浪，但你可以冲浪。</li>
+<li>218.一份好的报纸如同一个国家同自己交谈。</li>
+<li>219.没有谁迷信像无神论那样彻底。</li>
+<li>220.有些人的爱情只不过是一顿丰盛晚餐后的结果。</li>
+<li>221.自卑和自大是同一回事，都源于恐惧。</li>
+<li>222.劳动高于资本。</li>
+<li>223.多余的东西并不便宜，为不需要的东西花一分钱都是贵的。</li>
+<li>224.教学乃通向学问的坦途。</li>
+<li>225.控制你的情绪，以免它控制你。</li>
+<li>226.所有人都相信自己垂涎的东西，从彩票到上天堂的护照。</li>
+<li>227.任何地方的非正式对所有地方的正义都是一种威胁。</li>
+<li>228.只有不朽才可以教育凡人如何死亡。</li>
+<li>229.世界上所有王冠都是荆棘编成的。</li>
+<li>230.说话是所有人的天赋，而思考则是少数人的。</li>
+<li>231.我知道一切是从30岁以后学到的。</li>
+<li>232.或许这个世界是另一个行星的地狱。</li>
+<li>233.一百万人中有一千个思想者，而其中只有一个反思者。</li>
+<li>234.一千个反思者中，只有一个以思考为行动。</li>
+<li>235.我们看事物通常不是客观的，是主观的。</li>
+<li>236.好赋也需十年之功。</li>
+<li>237.这个世界充满庸俗肤浅的人。</li>
+<li>238.不利的时运有其科学价值，这是优秀的学习者不应错过的机会。</li>
+<li>239.焚书的地方最后也会呛人。</li>
+<li>240.考虑以下事，从哪儿来，到哪儿去，和什么人打交道。</li>
+<li>241.我深信理论物理就是现行哲学。</li>
+<li>242.成为一个有专长的人。</li>
+<li>243.轻率和肤浅是20世纪的精神通病，最能反映于出版和媒体。当然还有太多的神经质。</li>
+<li>244.一个人是他行动的总和是他已经做和能够做的。</li>
+<li>245.只有一种成功，以自己的方式度过一生。</li>
+<li>246.所有的旧爱不敌新欢。</li>
+<li>247.郊区就是让城市若即若离的一种尝试。</li>
+<li>248.增智而减欲，是幸福之旅，征服欲望。</li>
+<li>249.风格不是什么，但没有风格什么都不是。</li>
+<li>250.像常人一样谈吐、智者一样思考。</li>
+<li>251.面对生活，你必须坚定。</li>
+<li>252.笛卡尔从他的书房中比拿破仑王座上更多的支配了未来。</li>
+<li>253.永远是一名学生。</li>
+<li>254.在巨大的劣势面前，可以显示的就是毅力和顽强。</li>
+<li>255.强者为其所为，弱者受其所必受。</li>
+<li>256.光线强的地方，阴影也重。</li>
+<li>257.我们肯定要么进攻，要么挨打。</li>
+<li>258.魅力引人注目，美德赢得人心。</li>
+<li>259.判断一个人，看他树立了什么样的敌人。</li>
+<li>260.人们不应该试图回避压力，如同不回避食物，爱情，锻炼。</li>
+<li>261.人在山中做出的伟业，在城市中很难做出来。</li>
+<li>262.首先读最好的书，要不然就没有机会读了。</li>
+<li>263.如果你抛弃了恐惧，就不会有更精的事情干扰你。</li>
+<li>264.不怕死本身就是对敌人巨大的恫吓。</li>
+<li>265.批评的自由是对民主之考验。</li>
+<li>266.战场是将军的课堂，考验或证明他们技巧或无知。</li>
+<li>267.写好散文三个步骤：像音乐般构思，建筑般构造，纺织品那样编织。</li>
+<li>268.心态比事实更为重要。</li>
+<li>269.我感谢那些平凡和不思考的人，如果不是他们，我不会成功。</li>
+<li>270.偷窃不会让你富有，施舍不会让你贫穷。</li>
+<li>271.几个世纪来：神学家根据不知道的东西解释不可能知道的东西。</li>
+<li>272.所有的罪恶都容易上瘾，终点为毁灭。</li>
+<li>273.所有的人都容易犯错误，在许多情况下，大多数人都是受到感情和利益的引诱。</li>
+<li>274.天才就是只长到10岁的孩子。</li>
+<li>275.当一个人不理解另外一个人时，倾向于把他当成傻瓜。</li>
+<li>276.政府通常不是解决问题，而是重新排列他们。</li>
+<li>277.人类的最大temptation满足于一点点。</li>
+<li>278.每个人之人生都是有天生之天真开始，经过诱惑，抵达美德，或是罪恶。</li>
+<li>279.成长需暂时交出学安全。</li>
+<li>280.我们有许多受过高等教育的奴隶。</li>
+<li>281.为将者，智取不亚于豪夺。</li>
+<li>282.在战略上，重要的是视近若远，视远若近。</li>
+<li>283.商战如同战争，战略只要正确，战术犯许多错误也是成功的。</li>
+<li>284.克服自己的愤怒不亚于战胜强敌。</li>
+<li>285.宇宙万物曲线前进，笔直没有。</li>
+<li>286.伟大的诗歌永远是由那些尽力超越自己能力极限的人造就的。</li>
+<li>287.图书馆为思想之冷库。</li>
+<li>288.不再寻求更好，人也就不再寻求更好了。</li>
+<li>289.只要你坚持的时间足够长，可以做到任何事。</li>
+<li>290.人生乃一次进步，而非一次停滞。</li>
+<li>291.伟大心灵产生神秘的力量，引发伟大的事件。</li>
+<li>292.懦夫是残忍的，只有勇士热爱仁慈，乐于拯救。</li>
+<li>293.湍急的河水中有石头和灌木，高强的智力中也有稠密和混沌的思想。</li>
+<li>294.只有看待一个人对于工作的努力程度，你会知道那就是他是否会在某个专业中成为出类拔萃的试金石。</li>
+<li>295.国家之命运取决于国民教育。</li>
+<li>
+<ol start="296">
+<li></li>
+</ol>
+</li>
+<li>297.没有什么依靠像依靠自己那么可靠。</li>
+<li>298.所有的迷人都隐瞒了一些东西。</li>
+<li>299.没有什么比平庸更可怕，更伤人，更让人泄气了。</li>
+<li>300.问题不在于任何观点，而在于有多深刻。</li>
+<li>301.要么默默无闻，要么载入史册。</li>
+<li>302.放弃手段的人也同时放弃了目的。</li>
+<li>303.批评应该是描述的，而不是指示的。</li>
+<li>304.只有那些每天必须战胜自我的人才能享受生命和自由。</li>
+<li>305.大自然是绚烂的，大多数人则是平庸的。</li>
+<li>306.那些可能摧毁我们的东西是我们更坚强。</li>
+<li>307.懦夫是残忍的；只有勇士热爱仁慈，乐于拯救。</li>
+<li>308.湍急的河流中有石头和灌木，高强的智力中也有稠密和混沌的思想。</li>
+<li>309.守全是危险之母，毁灭之祖。</li>
+<li>310.忧虑是不健康、破坏性的精神习惯。</li>
+<li>311.不可能和可能之间区别一个人的决心。</li>
+<li>312.我们决定我们的行动，一如行动决定我们。</li>
+<li>313.成长的最高形式是自制。</li>
+<li>314.报纸是让无知者更无知的疯狂者更疯狂的一种设备。</li>
+<li>315.或许我们形体美较差时，才会更多的开发我们真正的本性。</li>
+<li>316.神学是魔鬼的逻辑。</li>
+<li>317.所有的革命都会吞噬他们自己的孩子。</li>
+<li>318.除非你有虔诚的态度，否则一事无成。</li>
+<li>319.事实不是科学，就像字典不是文学。</li>
+<li>320.如果一个人没有找到他愿意为之献身的事情，他就不配活着。</li>
+<li>321.观点的差异并非原则性的差异。</li>
+<li>322.不同的语言也许就是不同的人生观。</li>
+<li>323.判断自己比判断别人难得多。</li>
+<li>324.容易获得的美德分文不值。</li>
+<li>325.所有的事情在它变得容易之前都是困难的。</li>
+<li>326.一个困难也不足以构成一个疑虑。</li>
+<li>327.美食往往不易消化。</li>
+<li>328.学习不是碰巧得到。以热情求索，以勤奋关照。</li>
+<li>329.一个人的书本知识在一定程度上缩小了他关于世界的知识。</li>
+<li>330.所有的战争意味着外交的失败。</li>
+<li>331.外交，为自己国家撒谎的爱国的艺术。</li>
+<li>332.做正确事从来不需要记得了，总是简单而且直接的。</li>
+<li>333.每一种不利中都含着有利的种子。</li>
+<li>334.如果你上错了火车，在向反方向跑也是没用的。</li>
+<li>335.建造糟糕产品的代价高昂。</li>
+<li>336.浪费时间是一切花费中最为昂贵奢侈的。</li>
+<li>337.一次冷静的判断&gt;一次草率的会议，我们所做的事是提供光而不是热。</li>
+<li>338.并非每种能估价的东西都有价值；也并非每种有价值的东西都能估价。</li>
+<li>339.懦夫在战场但没有投入战斗。</li>
+<li>340.王宫之内，人人为己。</li>
+<li>341.仁爱将掩饰许多罪恶。</li>
+<li>342.许多书最精彩的是封面和书背。</li>
+<li>343.懦夫在死之前已精死过好几次了。</li>
+<li>344.至少有两种（Cowazd）：一种是自己独处，害怕面对世界；另一种是沉溺于事故，害怕面对自己。</li>
+<li>345.良心和怯懦真实是一种东西。</li>
+<li>346.人生只是摇篮到墓地的一次短暂的散步。</li>
+<li>347.写作是一门手艺而非艺术。</li>
+<li>348.社会用欲望和广告把人追疯。</li>
+<li>349.艺术作品的创造里有两种力量：人的和时代的力量。</li>
+<li>350.武器和书籍要天天看。</li>
+<li>351.人生只是一件接一件的讨厌事。</li>
+<li>352.人生主要的危险来自于想要改变的一切，或什么也不想改变的人。</li>
+<li>353.一个恶魔的冷静会使他更加危险。</li>
+<li>354.一种思想如果不具备某些危险，那就全然不能称之为思想。</li>
+<li>355.我们必须敢于去想不可想象的事。</li>
+<li>356.行夜路的人最先见到朝阳。</li>
+<li>357.心智健全非常罕见；几乎每一个人都有一点疯狂。</li>
+<li>358.核战之后，生者会嫉妒死者。</li>
+<li>359.理想需要wisdow，如果听众都是聋子，音乐毫无价值。</li>
+<li>360.学会不要用许多话说一点点东西，要用一点话说很多东西。</li>
+<li>361.你可以见到光明，但之前你必须面对黑暗。</li>
+<li>362.作家和马贩子的差别是，马听不懂马贩子的话。</li>
+<li>363.无论牧师告诉你什么，你必须相信God。</li>
+<li>364.自以为聪明过人才会真正受骗。</li>
+<li>365.熟悉滋生轻蔑。</li>
+<li>366.热爱荣誉可以造就一位伟大的受难者，而蔑视荣誉才能造就一个伟大的人。</li>
+<li>367.绝不要去和没什么可以失去的人争斗。</li>
+<li>368.当我们不能在我们自己这里找到满足时，在其他地方寻找也是徒劳。</li>
+<li>369.在任何力量与耐心的角逐中，把耐心押在耐心一边。</li>
+<li>370.我们只有通过战胜自己来提高自己。</li>
+<li>371.俚语是不停流淌的“河流”。</li>
+<li>372.我们不断地遭遇重大的机会，绚烂地伪装成不可解决的问题。</li>
+<li>373.勇敢地面对和解决最跟本 棘手的问题那就是你的机会。</li>
+<li>374.有人把机会等于运气认为唾手可得：可笑！</li>
+<li>375.对于一发难收之事须慎于其始。</li>
+<li>376.人格培养始于幼年，持续到我们去世。</li>
+<li>377.英雄主义是与人类的意象相矛盾的，有时也是伟大和好人的意思相矛盾的。</li>
+<li>378.奇迹并不与自然矛盾，只是与你所知道的自然矛盾。</li>
+<li>379.大众永远不会成为最优秀的成员水平。</li>
+<li>380.智慧和勇气就是伟大。</li>
+<li>381.控制食欲对于控制思想很有帮助。</li>
+<li>382.如果你不在乎谁可以完成荣誉，那你就会有令人惊异的完成。</li>
+<li>383.轻信是成人的弱点，但却是孩子的力量。</li>
+<li>384.关爱下属，尊重上司，下行忠诚，上行忠诚。</li>
+<li>385.成功的革命家是政治家，失败的是罪犯。</li>
+<li>386.政治的历史太过病态和罪恶不适合年轻人学习。</li>
+<li>387.危机让那个人摘下面具。</li>
+<li>388.批评要比正确容易的多。</li>
+<li>389.批评自由为民主的试金石。</li>
+<li>390.说去年的庄家不会得到任何好处。</li>
+<li>391.好种子才有好的收成。</li>
+<li>392.喊得最响的，不是伤最重的。</li>
+<li>393.所有的残忍都是出自软弱。</li>
+<li>394.真理是所有人的呼声，但极少有人行动。</li>
+<li>395.了解世界上曾说过，想过，做过最好的东西。</li>
+<li>396.怯于勇气者必长于奸诈。</li>
+<li>397.少些对人的好奇，多些对思想的好奇。</li>
+<li>398.救治一个管理不善的国度，第一个是通货膨胀，第二个是WAR。（对于人，第一是失业，第二是死亡）。</li>
+<li>399.掌握过去的人掌握未来，掌握现在的人掌握过去。</li>
+<li>400.能支配时间是我们真正的财富。</li>
+<li>401.我不怕它引起争议，怕的是不引起争议。</li>
+<li>402.当你愤怒时，不是为真理，而是为自己。</li>
+<li>403.我们应该责怪的不是人性，而是扭曲人性的习俗。</li>
+<li>404.你必须与所有的浅薄，所有的习俗，所有的空虚和所有的错觉断绝关系。</li>
+<li>405.独坐灯下，展卷悦读，与未曾谋面的前辈高士交心。</li>
+<li>406.城市的主要功能就是把力量转化为形式，把精力转化为文化，把死物转化为活的符号，把生物繁殖转化为社会创造。</li>
+<li>407.别人做错了，并不表明你是正确的。</li>
+<li>408.世界上即便是便宜货也是要花钱的。</li>
+<li>409.保持冷静，你可以指挥任何人。</li>
+<li>410.与邪恶不合作就是与善良合作，两种职责同样重大。</li>
+<li>411.只是临摹自然永远产生不了伟大的作品。</li>
+<li>412.成功是危险的</li>
+<li>413.一个人开始抄袭他自己，这比抄袭别人更危险，会使思想贫瘠。</li>
+<li>414.我相信森林，我相信牧场，我相信粮食在黑夜是生长的</li>
+<li>415.有限公司：一种获取个人利益而无需要承担个人责任的精巧的装置。</li>
+<li>416.你仍有力量：决定的力量。</li>
+<li>417.无合越高，朋友越少。深刻为经历苦难者的物权。</li>
+<li>418.我必须通过精读而非泛读来构筑我的思想。</li>
+<li>419.害怕失败者注定要失败。</li>
+<li>420.所有保守都出于自身的缺陷。</li>
+<li>421.大自然中，不能自卫者不受到保护。</li>
+<li>422.教育乃国际之首要任务。</li>
+<li>423.定义一个事物就是以定义代替事物的本身。</li>
+<li>424.当你判断另外的人时，你不是在画他们，而是用他们画自己。</li>
+<li>425.在动物界，吃或者被吃，人在社会，限定或者被限定。</li>
+<li>426.彼此相爱，彼此提升。</li>
+<li>427.必须要像写作那样审慎且有保留的去阅读。</li>
+<li>428.研究一个人的沉默比研究一个人的声音更重要，花费更多的时间，努力，细心，耐心。</li>
+<li>429.反对我们的人给我们责难，就是他们给我们最高的prize。</li>
+<li>430.孤独的人总是滔滔不绝的解释他自己。</li>
+<li>431.商业最终会和文化融合。</li>
+<li>432.商业世界的好处是：在所有的地方你都可以发现财富。</li>
+<li>433.常识不是人人都有的知识，而是常见事物的知识。</li>
+<li>434.人的才干的增长一般是以人格为代价。</li>
+<li>435.真正的诗篇在在其被理解前就能感染人。</li>
+<li>436.重视有效的沟通。</li>
+<li>437.好的交流如同黑咖啡，兴奋而且睡不着。</li>
+<li>438.社会上只有一个阶层的富人，对金钱想得更多，那就是穷人。</li>
+<li>439.耐心为智慧的伙伴。</li>
+<li>440.我从来没有发现过比孤独更好的伙伴。</li>
+<li>441.观其反而知其人。</li>
+<li>442.没有什么快乐比得上和真理活到一边。</li>
+<li>443.所有的偷窃只是相对的。</li>
+<li>444.知道一百分美元到底是什么的人相当的少。</li>
+<li>445.只有将本民族的语言和其他民族的语言相比较时，你才能真正懂得你自己的语言。</li>
+<li>446.伟大天才的作品只有彼此相互比较才能显出伟大。</li>
+<li>447.没有谁不是从比较中获得幸福。</li>
+<li>448.耐心使得万事可为。</li>
+<li>449.美强迫我们，而理性只算是勾引。</li>
+<li>450.你在世界的目的是创造，而不是争斗。</li>
+<li>451.你在政府中遇到唯一一件令人兴奋的东西——能力，因为太过罕见。</li>
+<li>452.忙家不会，会家不忙。</li>
+<li>453.抱怨最多的人招人怨。</li>
+<li>454.每个人都抱怨自己的记忆力，但没有人抱怨自己的判断力。</li>
+<li>455.今天的抱怨不会通向明天的赞扬。</li>
+<li>456.我们只能喜欢我们理解的东西，而绝不能理解我们不爱的东西。</li>
+<li>457.技巧控制复杂，创造把握简单。</li>
+<li>458.极度复杂中会显出极度简单。</li>
+<li>459.艺术家首先是行动者，而后是发现者，最后是思想者。</li>
+<li>460.我喜欢简单的事物，但那必须来自复杂的简单。</li>
+<li>461.女人受到恭维从来不会放松戒备，而男人受到奉承总会忘乎所以。</li>
+<li>462.一个国家的价值说到底是组成其每一个人的value。</li>
+<li>463.真正的写作中没有任何运气，容不得半点诡计。</li>
+<li>464.开始悔恨就是开始新生。</li>
+<li>465.创新就是掩饰出处的艺术。</li>
+<li>466.真正的危险不是计算机像人们那样思考，而是人们开始像计算机那样思考。</li>
+<li>467.全神贯注于你的缺点，改正他。</li>
+<li>468.一位真正的思想家，就像是得不到旁人任何帮助，用一件乐器开音乐会的艺术家。</li>
+<li>469.城市是我们集中偏见、愚蠢，同时表达他们的地方。</li>
+<li>470.一旦你作出让步，你就不可能撤销之不可能，让事物回到从前。</li>
+<li>471.力作都是简洁的，如同一个钩子，应该没有不必要的词汇，一个段落没有不必要的句子；同样一幅画没有不必要的线条，一台机器没有不必要的部件。</li>
+<li>472.大多数人靠教条而生，为了教条而死，没有谁为了一个结论而当烈士。</li>
+<li>473.广告的第一定律就是避免具体的承诺，开发悦人的含糊。</li>
+<li>474.许多人赞赏那些坏东西，没人责备好东西。</li>
+<li>475.诗歌是反映一个民族文化的镜子。</li>
+<li>476.只有在显赫之时更能驾驭好自己的人才是有德之士。</li>
+<li>477.掌握获得知识、智慧的手段，延长生命，拓展生存范围。</li>
+<li>478.任何想医活自己无知的人首先要承认自己的无知。</li>
+<li>479.音乐是发明来确认人类的孤独的。</li>
+<li>480.论据只是被人们用来证实自己的观点。</li>
+<li>481.时间摧毁人们的联想，而确认自然的规律。</li>
+<li>482.最大的冲突不是发生在两个人之间，而是发生在他和自己之间。</li>
+<li>483.不能把伟大的城市和人口众多的城市相混淆。</li>
+<li>484.无论何时面对敌手，用你的爱征服他，</li>
+<li>485.只有面对问题时，我们才思考。</li>
+<li>486.如果你不能使人们信服，让他们糊涂。</li>
+<li>487.在我看来，手段的完美和目标的混乱，构成我们时代的特征。</li>
+<li>488.有时我们会庆幸自己由梦中醒来，死了之后我们也会这样吧！</li>
+<li>489.思考意味着对事物联想。如果事物之间不存联系，思考也就停止了。</li>
+<li>490.创造性就是在看似无关的事物之间建立联系。</li>
+<li>491.这个世界没有什么比诚挚的无知和尽责的愚蠢更可怕的事情了。</li>
+<li>492.只有通过历史，一个民族才能完全地认识到自己。</li>
+<li>493.人类的无意识就是上帝的意识。</li>
+<li>494.生命就是一种知觉形态。</li>
+<li>495.大自然既无报答，也无惩罚，有的只是结果。</li>
+<li>496.大自然是以运动而生，这种运动只能是永远正常的结果，nature是反常得以保存。</li>
+<li>497.我认为神学为道德的诡辩术。</li>
+<li>498.智慧在于对结果的预料之中。</li>
+<li>499.通过不断地自律和自控，就能培养出伟大的人格。</li>
+<li>500.腐败是制度解体最可靠地征兆。</li>
+<li>501.绝大数人再将老之时，定喜欢金钱和安全，而不喜欢创造和建设。</li>
+<li>502.从每一次失败中都可以得到建设性的东西。</li>
+<li>503.每颗种子要有收成，就必须破茧而出。</li>
+<li>504.战争发端于人们心中。</li>
+<li>505.没有比耗费大部分生命去谋生更要命的Wrong了。</li>
+<li>506.我们生活与恐惧之中，我们所有的媒体似乎都期待灾难。</li>
+<li>507.并非所有的权力都属于所有的人。</li>
+<li>508.智者不会知道一切，无所不知才是傻瓜。</li>
+<li>509.在通向真理的道路上，人们常犯两种错误:一是没有尝试全部道路；二是根本就没有出发。</li>
+<li>510.妨碍我们求知的常常是我们认为我们已经知道了的东西。</li>
+<li>511.不做选择也是一种选择。</li>
+<li>512.哪里有祭坛，哪里就有文明。</li>
+<li>513.没有调整余地的建设不是好建设。</li>
+<li>514.历史告诉我们人们和国家都是在耗尽所有别的选择之后才学会了聪明。</li>
+<li>515.所有的人都称赞耐心极少有人实现他。</li>
+<li>516.人们在过去犯得错误，将来也会犯错误。在判断是非时尤其如此。</li>
+<li>517.不是美国发明了人权，而是人权创造了美国。</li>
+<li>518.美国脑力劳动：Reading,Though,Writing来实现。</li>
+<li>519.除了比照经验之外，我不知道靠什么预测未来。</li>
+<li>520.科学是解析的，描述的，情报的。</li>
+<li>521.完美的人是最好的动物，离开Low和正义的人是所有动物中最坏的。</li>
+<li>522.野蛮不以杀戮为乐，而人却是。</li>
+<li>523.我们期待的事情很少出现，而意外的事却经常发生。</li>
+<li>524.赞美古物不应为其陈旧而是自然。</li>
+<li>525.希望是独立于逻辑系统之外的。</li>
+<li>526.性感一半是你具有的，另一半是人们的想象。</li>
+<li>527.闲散乃是高贵的附属品。</li>
+<li>528.寡欲才能聚财。</li>
+<li>529.大众的欢呼随风转向。</li>
+<li>530.没有什么应用的科学，只有科学的应用。</li>
+<li>531.人类在争论，而自然在行动。</li>
+<li>532.最好的争论是避免的。</li>
+<li>533.音乐是声音的艺术，光学是光线的几何。</li>
+<li>534.所有的武器也武装不了胆怯。</li>
+<li>535.一方面做最抽象的思考，一方面不忽略。</li>
+<li>536.战争是最困难条件压迫之下的行为艺术。</li>
+<li>537.理想是一个人，一个团队，一个组织永远不可或缺的精神教义和目标。</li>
+<li>538.由于人类本身固有的思考方式的限制，简单的信念比复杂的信念更加有利于人的思考和决策。</li>
+<li>539.执着为迷 割舍为道。</li>
+<li>540.读书和受教育是为了训练你的独立思考。</li>
+<li>541.达芬奇手稿之见：科学需要艺术的思考，他们在某一方向上均为形象的艺术。</li>
+<li>542.组织门萨（高智商者）俱乐部：聪明的人聚在一起会很好玩的。</li>
+<li>543.人类是不是只能认识规律的一种现象。</li>
+<li>544.我们都期待创造，创新，打破传统看看你周围的人有没有什么非凡之举。</li>
+<li>545.你需要的只是不受群众心理影响的性格。</li>
+<li>546.研究自然只是为了获得更多的影响力。</li>
+<li>547.中医之成就：不是在医方，诊法，而是其整个的思想体系，也就是他的思想。具体而言世界观（以天地为师，学习宇宙中的变化之道，作为一个整体去认识，研究和理解）心中始终存在谦虚和敬畏之心，仔细观察和分析，认识和谨慎的作出判断。这也同时就是学习之道，为人之道。</li>
+<li>548.大厦之木出幽谷，汝辈岂是修真人。</li>
+<li>549.生活之中唯一的精明就是专心。</li>
+<li>550.所有的经济活动，就本质而言，都是由公众的心态状态推动的。</li>
+<li>551.正义的代价就是永恒的公开。</li>
+<li>552.一个富裕的傻瓜是让人忧心的负担。</li>
+<li>553.防不是原则，只是一种权宜之术。</li>
+<li>554.文明就意味着到处到有文学和食物，人人都有食物和小说刊物，身体得到的是一流的蛋白质，精神得到的是四流的爱情小说。</li>
+<li>555.没有必要畏惧失败的前景，而去决心如何不失败。</li>
+<li>556.语言乃是艺术，无论其确定性和不确定性的。</li>
+<li>557.如果不去学习历史上的愚蠢 无知和非理性，在现实中很容易就会被其传染上。</li>
+<li>558.今天有的是哲学教授，而非哲学家。</li>
+<li>559.如果你发现了一条没有障碍的路，它大概不会将你带到什么地方。</li>
+<li>560.招致侮辱的最好方式就是忍受它们。</li>
+<li>561.万物源于虚无，归于无限。</li>
+<li>562.消费的社会里，难免出现两种奴隶：上瘾的，嫉妒的。</li>
+<li>563.对于泰勒斯来说：首要的不是我们知道什么，而是如何知道。</li>
+<li>564.如果你必须有政策指南：看“十戒”。</li>
+<li>565.唯一好的模仿就是嘲弄愿望。</li>
+<li>566.一般来说，学生是传递思想的最佳载体。</li>
+<li>567.批评是别的看似有理的偏见。</li>
+<li>568.闹剧和喜剧最好公演，而悲剧则在家里阅读。</li>
+<li>569.商人和海盗在很长时间就是同一伙人。</li>
+<li>570.投身政治的结果总是拿起枪。</li>
+<li>571.翻过山包：我们的速度会加快。</li>
+<li>572.力量不单来自于身体能力而是来自于不屈食物意志。</li>
+<li>573.胜利属于最能坚持之人。</li>
+<li>574.愚者如同坚持自己的愚蠢也有可能变成智者。</li>
+<li>575.广告不是科学，是劝导，劝导的艺术。</li>
+<li>576.我们是为坚持而造就的，从坚持中我们能发现我们自己是什么。</li>
+<li>577.幸福是不幸间的间隙，不幸只是幸福间的间隙。</li>
+<li>578.步行的真正魅力不在于走 看而是谈话。</li>
+<li>579.世界只有两种力量：笔，刀。</li>
+<li>580.对于公司而言，最为重要的就是雇佣和培养人。</li>
+<li>581.自由，自由的生活并不意味着没有成本。</li>
+<li>582.商业可以不失去灵魂同时还可以盈利。</li>
+<li>583.不要只想着赚钱，你需要一心一意的把事情做好，利润自然会有。</li>
+<li>584.永远不要忽视农业，即是跟，也是未来，还有农产品。</li>
+<li>585.看看全世界最为优秀的主营业务：由A—Z。</li>
+<li>586.如果不能改变命运，就该变态度。</li>
+<li>587.养兵千日，用在一时：“所有的时间都用在准备上”。</li>
+<li>588.最好的东西总是被一小撮人占有着。</li>
+<li>589.打破常规的学习速度，你的学习速度可能提高十倍。（抓住事物的根本，由思——悟——练技——神明）</li>
+<li>590.蒙古马不见得是历史上最好的马，但是在成吉思汗的战略方向战术上是最好的武器。</li>
+<li>591.一些钻石的年龄比星星都长，一等就是几十亿年。</li>
+<li>592.如果你不知道你自己是谁，市场会因此让你们出昂贵的代价来认识。</li>
+<li>593.回棋较之象棋更加抽象，简单而且复杂。</li>
+<li>594.一个人不能获得成功一般来说都是自己的过错。</li>
+<li>595.想拥有天才吗？像对待天才一样爱他、期望他、教育他、训练他，让他正确的思考、行动。</li>
+<li>596.这个世界上最伟大的事就是智者的降生。</li>
+<li>597.不问问题就听不到谎言。</li>
+<li>598.延迟是机会的杀手。</li>
+<li>599.怀疑和嫉妒没有在任何情况下帮助过任何人。</li>
+<li>600.态度比一切都重要。</li>
+<li>601.记忆是专注的艺术。</li>
+<li>602.要有伟大的诗人，必须有伟大的听众。</li>
+<li>603.自动装置意味着你不能信任它们。</li>
+<li>604.贫穷需要一些，奢侈需要很多，贪婪需要一切。</li>
+<li>605.改变一个人由改变他对自己的认识开始。</li>
+<li>606.远离战场，人人都是勇士。</li>
+<li>607.教育的艺术就是帮助发现的艺术。</li>
+<li>608.或许本性就是我们不朽的最好的保证。</li>
+<li>609.人是由他们的想象所支配，更确切地说由他们想象的弱点所支配。</li>
+<li>610.大自然总是取最佳路线。</li>
+<li>611.两个强大的武士是耐心和时间。</li>
+<li>612.和平腐蚀掉的不比战争毁掉的少。</li>
+<li>613.废纸篓乃是作家的最好朋友。</li>
+<li>614.衡量一个男人的品德不能看他妻子在场时的行为。</li>
+<li>615.专注的警惕可以避免一切灾祸。</li>
+<li>616.魔鬼留心一切机会。</li>
+<li>617.一本画册犹如一个没有围墙的博物馆。</li>
+<li>618.现代的建筑大多成了花哨的壁纸。</li>
+<li>619.维护和平最有效的手段之一就是准备打仗。</li>
+<li>620.火山有两个作用：创造和毁灭。</li>
+<li>621.即使没有战争，生活也是危险的。</li>
+<li>622.只有出于自愿，道德才是道德的。</li>
+<li>623.文明是运动而不是状态，是航行而非港口。</li>
+<li>624.一切属于等待着——即使是正义。</li>
+<li>625.你还要在等待中浪费多少人生。</li>
+<li>626.所有伟大的思想都是在漫步中构思的。</li>
+<li>627.必胜的决心是重要的，但准备的决心生死攸关。</li>
+<li>628.或许本性是我们不朽的最好的保证。</li>
+<li>629.绝不能低估人类愚蠢的力量。</li>
+<li>630.你飞得越高，对于不能飞的人，你就越小。</li>
+<li>631.最后我深深的看到：每一次恐惧的另一面是自由。</li>
+<li>632.从个体开始，你会发现你创造了一个典型，从典型开始你会发现你什么也没创造</li>
+<li>633.好的东西在短缺是好处倍增</li>
+<li>634.乌龟的脑子里满脑子乌龟</li>
+<li>635.你自己对你自己负责的那一天是你人生之转折点</li>
+<li>636.除非受控制，蒸汽不会带来任何东西</li>
+<li>637.所有伟大的真理在开始时候都被认为是亵渎</li>
+<li>638.千万别相信那个对所有人说好话的人</li>
+<li>639.你越早的把她当作什么人，他就越早成为什么人</li>
+<li>640.翻译的艺术不光在外语知识，更在于母语知识</li>
+<li>641.名誉的真正的陷阱在意他不可抗拒</li>
+<li>642.领袖的职责是超越专家</li>
+<li>643.我们必须为战争训练的不是一支军队而是一个国家</li>
+<li>644.你如果不走这条路，你会有如此足够的时间来证明你如何浪费时间不学无术和无知</li>
+<li>645.历史的每一次重复，代价就会多付出一些</li>
+<li>646.你必须证明你做这件事的足够热情</li>
+<li>647.你并没有尽力，当你遇到困难时，你通常会先遇到自己</li>
+<li>648.人的基本职责就是不受蒙蔽</li>
+<li>649.生产太多有用的物品会导致大多无用的人</li>
+<li>650.嬉笑怒骂，皆是禅机</li>
+<li>651.比别人多50%的努力，最后可能就多20%的回报</li>
+<li>652.欢迎来到合伙人股东大会，这是一小撮顽固分子大会</li>
+<li>653.达芬奇：“一支手写，另一只手些。”</li>
+<li>654.富豪们在工作上投入的时间超过普通人</li>
+<li>655.对虚伪价值的溺爱，要对真理践踏得来</li>
+<li>656.大多的时候我们赞扬是为了被赞扬</li>
+<li>657.抄写是对作者最直观的接触</li>
+<li>658.当人们同时朝着同一个方向做同一个运动的时候，疯狂的年代就产生了</li>
+<li>659.你公司最重要的资源，就是你们的智慧和品德</li>
+<li>660.我的时间关：总是一天当两天用</li>
+<li>661.比赛中首要的原则就是——战胜自己</li>
+<li>662.投机者，万无一失是失败的代名词</li>
+<li>663.你不是在记事情，只是在表达你的情绪</li>
+<li>664.图书馆是你终身受教育的地方</li>
+<li>665.文艺复兴时，科学和艺术是不分家的，自古以来就是如此，而我们现在的学习方式，让我们受害</li>
+<li>666.真正的美德是在理智引导下生活</li>
+<li>667.我们必须想着我们惧怕的方向前进</li>
+<li>668.思考不是同意或不同意→那是表决</li>
+<li>669.你必须经历训练的痛苦</li>
+<li>670.灾难是艺术最古老的主题之一</li>
+<li>671.错误是我们前进时受到的训练</li>
+<li>672.一个人在描绘性格时最显露自己的性格</li>
+<li>673.爱国三大工作准则：混乱中发现简单；从无序中发现和谐；在困难中找到机会</li>
+<li>674.错误乃是发现的入口</li>
+<li>675.你早晚都要学会慎重</li>
+<li>676.伟大的头脑浸泡思想，平庸的头脑是盲目的行动</li>
+<li>677.人生最愉快的时刻莫过于向下堕落</li>
+<li>678.任何时候世界上阅读和读懂柏拉图的人没有超过一打</li>
+<li>679.人类是彻底的疯狂，不能创作一条虫儿，可以成捆的创造出神</li>
+<li>680.只有那些几乎耗尽作者生命的作品才能是生命的作品</li>
+<li>681.假若你想让旁人落泪，首先你要自己悲伤</li>
+<li>682.自由意味着责任，不要给大多数人自由</li>
+<li>683.如果顺风顺水，一个人飘着也可以成功</li>
+<li>684.批评家是认识会不会开导的人</li>
+<li>685.天涯何处无碧水，并非滴滴是甘露</li>
+<li>686.一个人的后半生完全由于前半生的习惯造成</li>
+<li>687.你可以攀登最高峰，你不能留在那里</li>
+<li>688.当人们可以自由行事时，他们常常相互模仿</li>
+<li>689.我们总是在地震后的早晨起来学地质学</li>
+<li>690.有人听到回声却以为是他们自己发出的声音</li>
+<li>691.经济学作为经济学家的一种就业形式，是极其有用的</li>
+<li>692.哲学的真正的功能是教会我们推理的原则</li>
+<li>693.书是人类历史上曾经发明过的技术效益最高的机器</li>
+<li>694.只有感到痛苦时，努力才算得上努力</li>
+<li>695.除非你知道什么比足够更多，否则你永远不会足够</li>
+<li>696.小机遇通常为大事的开端</li>
+<li>697.没有娱乐像读书那样经济，持久</li>
+<li>698.世界在你面前，不是期盼这重复，而是创造</li>
+<li>699.好的艺术家从来不把艺术当作消遣和逃避</li>
+<li>700.人的进步方式有两条：一是发展自己的特长，一是改正自己的缺点</li>
+<li>701.要把“本领”练成“本能”</li>
+<li>702.艺术不和自然接触变不可能有所发现</li>
+<li>703.不要临摹自然，而是要表现自然</li>
+<li>704.只要是行为正当，那么勇气会使你获得一切</li>
+<li>705.谈论音乐最好的方法是保持缄默</li>
+<li>706.真正的修养是清楚地表达自己</li>
+<li>707.人很容易被自己喜爱的事物所欺骗</li>
+<li>708.应当不间断的学习，思考，实践，创新</li>
+<li>709.越客观少主观判断，你的思路不是越来越窄而是越来越宽</li>
+<li>710.学问不在教条之中，而在自然之中</li>
+<li>711.自然界是解决科学难题最好，最客观的老师</li>
+<li>712.集合学并不研究它涉及的客观同经济客观之间的关系，而只是研究这些观念本身之间的逻辑关系</li>
+<li>713.纯粹的思维可以能够把握实在</li>
+<li>714.逻辑简单的东西，当然不一定是物理上真实的东西，但物理上真是的东西一定是逻辑上简单的东西</li>
+<li>715.从简单的事物中，人们将认识真理</li>
+<li>716.了解科学并不容易，你必须参与其中，才会知道什么是可靠的观念</li>
+<li>717.科学的一切的栽培者共同寻求的东西不是事实，而是对事实的解释或认识</li>
+<li>718.科学仍是少数杰出人物的事业</li>
+<li>719.从事科学研究需要专业知识，但广博的知识有益于专业的突破。</li>
+<li>720.我读所有的东西，一切皆让我兴趣倍增，因此得以理解世界。</li>
+<li>721.人的天职在于勇于探求真理</li>
+<li>722.一旦胆怯就有无尽的烦恼和忧虑</li>
+<li>723.如果不尝试就永远不会成功，要培养自己的耐性，置身于传媒，但却能取得成果的思实验之中。</li>
+<li>724.懒鬼起来吧，将来坟墓里有你睡觉的时间</li>
+<li>725.我从来不认为5分钟是微不足道的。</li>
+<li>726.大学不会教会你如何生存，同样的道理，大学教授也未此道。</li>
+<li>727.不把学习当做一个任务，而是一个机会。</li>
+<li>728.学习不在于没有人教，而在于自己的觉悟，恒心。</li>
+<li>729.荣誉通常会让一个人变得越来越蠢。</li>
+<li>730.成功的奥秘在于多动手。</li>
+<li>731.追求科学需要特殊的勇气。</li>
+<li>732.要做科学的粗话，研究事实，对比事实，积累事实。</li>
+<li>733.发展独立思考和独立判断是首要工作的第一位。</li>
+<li>734.科学是是人的精神变成勇敢的最好的途径。</li>
+<li>735.大多数的人已经放弃自己。</li>
+<li>736.金字塔不是有上面开始建造的。</li>
+<li>737.大多数的人已经放弃了自己。</li>
+<li>738.人们无法容忍别人和自己有一样的缺点。</li>
+<li>739.习惯为人的第二天性，对于大多说人来数，那是他唯一的天性。</li>
+<li>740.许多人只会爬行，却想教别人走路。</li>
+<li>741.当苦恼达到了顶点，变如同解放一般。</li>
+<li>742.富有是一种病，如同贫穷一样。</li>
+<li>743.写作和交谈，教学是清楚的思考。</li>
+<li>744.信任是好事，亲眼目睹则更好。</li>
+<li>745.人只有忘却伟大的事物时，才能算是真正的伟大。</li>
+<li>746.艺术当中的界限为阶段而非人种。</li>
+<li>747.让所有的小肚鸡肠和心胸狭窄都见鬼去吧！</li>
+<li>748.信仰就本质而言，完全是思想层面上的东西，需要真正的觉悟和坚持，才可能有所作为。</li>
+<li>
+<ol start="749">
+<li></li>
+</ol>
+</li>
+<li>750.人们总是逃避思考，因为这的确是一件很辛苦的需要用毅力和坚持才能完成的事。</li>
+<li>751.你的生活所有内容中最为重要的一个，一定有伟人，要么成为伟人，要么跟着他走。</li>
+<li>752.你可以学习大自然用永恒的耐心去创造一切。</li>
+<li>753.要想获得成功，就必须有充足的自由时间或者没有。</li>
+<li>754.市场中的价格永远都是错的，你需要认识价格运动的趋势。</li>
+<li>755.能够认识到自己的错误应该是一件很自豪的事。</li>
+<li>756.坚定的人，都是真正思考过的人。</li>
+<li>757.胜者只是拥有的可以失败的本钱。</li>
+<li>758.最容易被学会和模仿的东西，往往是恶习和坏习惯。</li>
+<li>759.世界上最强大的武装是思想，用其加以装备的人是战无不胜的。</li>
+<li>760.去研究、研究战争论，那是极端的人类行为，有着极其丰富的内涵。</li>
+<li>761.“贼喊捉贼”的现象充斥于社会的各个层面。</li>
+<li>762.无忧无虑会助长你的愚蠢和无知</li>
+<li>763.用思想去赚钱是最高的境界</li>
+<li>764.超现实乃是最为最可能的现实</li>
+<li>765.越接近目标，困难就越多</li>
+<li>766.慢些我们可以更快</li>
+<li>767.谋无不当，举必有功</li>
+<li>768.偷安者后危，虑近着忧远</li>
+<li>769.君子有终身之忧，而无一朝之患</li>
+<li>770.善疑者，不疑人之所疑，而疑人之所不疑</li>
+<li>771.可纪念的胜利，都是从可奋斗的悲剧中来</li>
+<li>772.苦难是任何一个杰出人物的命运</li>
+<li>773.事者，生于虑，成于务，失于傲</li>
+<li>774.不为不可成，不求不可待，不处不可欠，不行不可复</li>
+<li>775.力量，是争取胜利的最好方法</li>
+<li>776.懒惰和疲乏表面特征是完全相同</li>
+<li>777.防事于未萌，避难于无形</li>
+<li>778.凡事多成于难知而败于可睹</li>
+<li>779.灾难是你忘了他之后来临的</li>
+<li>780.知者举事也，满则虑溢，平则虑险，安则虑危，曲则必直，君子慎乎所不察</li>
+<li>781.多余的财富只能换取多余奢侈的生活而心灵的必需品是无需用钱买的</li>
+<li>782.越无知的人越好猜疑，疯狂的虚荣心是利己主义的根源 </li>
+<li>783.你有自己的创造（计算，画，字，思想）的手稿吗？</li>
+<li>784.只有危机带来真正的变革</li>
+<li>785.修行不光是在风和日丽的记忆中，也同时在风雨暴戾的逆境中</li>
+<li>786.公生明，廉生成，恕则性平，俭则足用</li>
+<li>787.青山不   ，绿水无弦万面琴</li>
+<li>788.不可执于无为，不可形于有作</li>
+<li>789.顺则人，逆则仙，只在中间颠倒颠</li>
+<li>790.无思无虑始知道，无处无服始安道，无从无边始</li>
+<li>791.离了己身不是道，执着己身也是空</li>
+<li>792.千江有水千江月，万里无云万里天</li>
+<li>793.身居城市性居山，傀儡场中事等闲</li>
+<li>794.笼鸟有食汤锅近，野鹤无粮天地宽</li>
+<li>795.朴素，天下莫能与之争美</li>
+<li>796.有形则有坏，无形道自真</li>
+<li>797.骄傲多半基于无知，没有耐性便没有一切</li>
+<li>798.只要你向前走，没有比脚更高的山</li>
+<li>799.智慧由持之以恒开始</li>
+<li>800.天下之事，不难于应法，而难于法之必行</li>
+<li>801.君主为国家而设，国家非为君主而设</li>
+<li>802.我是我自己+我的环境，如不可以拯救我的环境，就不能拯救我自己</li>
+<li>803.坚持自己作为独立的个体的独立性</li>
+<li>804.最盲目的服从是奴隶们所仅存的美德</li>
+<li>805.人一思考，上帝发笑，别让舌头超越我们的思想</li>
+<li>806.忌妒我的人在不知不觉中赞扬了我</li>
+<li>807.复杂的不是问题，而是看问题的眼睛</li>
+<li>808.猴子穿衣即现形</li>
+<li>809.以金钱维持的忠实，必以金钱而取之</li>
+<li>810.要相信每一高人，不过一定要切磋</li>
+<li>811.生活告诉我们没有缺点的人也很少有优点</li>
+<li>812.在事实缺乏的地方专家很多</li>
+<li>813.事实本身没有任何意义，只有把它与某个想法联系起来或者把它作为一个证据时</li>
+<li>814.如同表象是虚构的事实一样，事实是历史的表象</li>
+<li>815.如果事实和理论不吻合就改变事实</li>
+<li>816.不存在事实，只存在解释</li>
+<li>817.任何事实都包含有无穷多的假设，你看的越多你领悟的越多</li>
+<li>818.所有股份制公司存在的意义，是为了股东的投资提供回报</li>
+<li>819.好的交易是对双方都有利得东西</li>
+<li>820.对于富人来说唯一喜欢的就是他们的钱</li>
+<li>821.人们很容易上当，荣誉就是证明</li>
+<li>822.一帆风顺可以使人学到很多东西，但逆境可以使人学到更多东西</li>
+<li>823.富有意味着影响力</li>
+<li>824.除了生命之外，世界上没有任何财富</li>
+<li>825.失败是我们最重要的收获</li>
+<li>826.没有众多的恐惧和灾难，就没有繁荣，没有舒适和希望</li>
+<li>827.向前冲的时候可能会停下来，但后退时就不这样</li>
+<li>828.99%的失败发生在那些有制造借口习惯的人身边 </li>
+<li>829.尝试你所做不到的事情，尝试失败然后再尝试，那对我来说就根据我们经历的失败的价值来衡量</li>
+<li>830.我从不起眼的，不幸事件中学到很多东西</li>
+<li>831.人类需要挫折，挫折有助于健康</li>
+<li>832.一旦学会后退，放纵，他就会成为一种习惯</li>
+<li>833.不犯错的人，一事无成</li>
+<li>834.如果我们不成功就会面临失败的风险</li>
+<li>835.我已经看到未来，他的确存在</li>
+<li>836.他们大部分都在期待过去</li>
+<li>837.从来没有一个国家是被贸易摧毁的</li>
+<li>838.当人们问我是靠什么维持生计的时候，我告诉他们我靠的是我的智慧和他们的愚蠢</li>
+<li>839.他们喜欢最新的骗人理论，就像小狗喜欢塑料骨头，婴儿喜欢假奶嘴</li>
+<li>840.在你周围到处都是怨天尤人的人</li>
+<li>841.劳动不会让任何人丢脸，但有时人们会不劳动</li>
+<li>842.美满生活的三个要素：学习、赚钱、理想</li>
+<li>843.信心和进取心必懒惰和聪明重要</li>
+<li>844.一个人被淹死并非由于下池的缘故</li>
+<li>845.先上让混乱盛行，然后再混乱中统治</li>
+<li>846.我雇佣的是一个人而非他的历史</li>
+<li>847.我们雇佣那些态度端正的人。然后给他们所需要的职能</li>
+<li>848.工厂里生产的是化妆品，而商店里出售的是希望</li>
+<li>849.如果一个人没有在很长的时间里忘记海岸，那他就不会发现大陆</li>
+<li>850.除非你的想法受到专家、世俗和传统的  落，否则它毫无价值</li>
+<li>851.让那些想改变世界的人先改变自己</li>
+<li>852.什么事情都不做是这个世界上最困难的事，同时也是最明智的事</li>
+<li>853.在他们说“但是”的时候，我已解决问题</li>
+<li>854.喜欢站在中间立场为人类的本性</li>
+<li>855.信息不是知识，知识不是智慧，智慧不是真理，真理不是美，美不是音乐，音乐才是最美好的</li>
+<li>856.逻辑就一门使人们有信心去做错事的艺术</li>
+<li>857.我从来没有利用思维推理发现任何问题</li>
+<li>858.时间可以把资产变成负债，赚钱的东西是钱</li>
+<li>859.学习是一种新型的劳动</li>
+<li>860.知识和信息：不仅包括科学知识，还包括新闻建议，娱乐，交流和服务----已经成为了经济的原材料和最重要的产品</li>
+<li>861.知识就是我们所买卖的东西</li>
+<li>862.不够生动的原因是因为不够精准（达芬奇）</li>
+<li>863.大量的照片和图片资料的整理，收集！！！</li>
+<li>864.当周围一片黑暗，沉睡，达芬奇已早早醒来</li>
+<li>865.卢浮宫是应该去的，用科学的方法可以使你的手法和眼法有更深刻本质和精确的认知里（达芬奇）</li>
+<li>866.回到那个年代去想像他可能接触到的人和可能学到的知识，就可以更加准确的认知了（达芬奇）</li>
+<li>867.我们一直都在被观察的</li>
+<li>868.记住在你面前是一个新的等待认知的世界，而不是这群或是那群人</li>
+<li>869.除了芬奇的作品，绝大多数艺术只是代表肤浅和庸俗</li>
+<li>870.大多数人只是自命不凡的旅鼠</li>
+<li>871.怎样控制那些伟大使他看上去不像疯狂</li>
+<li>872.如何放弃那些称之为疯狂的想象力</li>
+<li>873.听了我的话简单一点会让你想上几天，深入一点觉得自己是高蠢货，其实这早就是一个事实，只是周围相似的人太多，不能够互相证明他们是什么样的人，要想到世界看透：你必须看到世界多样背后的本质，你必须几十年的阅读手稿，思考，顿悟</li>
+<li>874.和我一起走：我带你去探险，精神上的历险，要么平庸的了此残生</li>
+<li>875.学习所有的科学原理，那时自然的全能会逐渐清晰起来</li>
+<li>876.一直去想那些无比沉重和深刻的问题，会让你的人生真正轻松和自由起来</li>
+<li>877.绘画已成为头脑智力发展所必须掌握的一种技能或者说是一种表达方式</li>
+<li>878.自然界最常见之物，乃是表达其秘密最为多的一面（电、磁、聚变、引力、场力、力、运动…..）</li>
+<li>879.艺术展览应该经常去看</li>
+<li>880.几何：培养直觉和洞察力</li>
+<li>881.代数：序列特征、比例特征、逻辑特征</li>
+<li>882.坐冷板凳的学者，不是你得一个学位就能得到的</li>
+<li>883.学问是“坐”出来的</li>
+<li>884.10岁以下就背13经，否则成大学问很难</li>
+<li>885.扫清现代汉语词典的字</li>
+<li>886.两大翻译：辜鸿铭、林语堂</li>
+<li>887.生物研究形态和功能：和几何体是相似的（由其是在分子层面上的）</li>
+<li>888.你一定要问问题，否则computer的计算能力就没有用</li>
+<li>889.适用公司的价值体系同样适用于家庭</li>
+<li>890.那些就是我的原则，如果你不喜欢我还有另一些</li>
+<li>891.人类是唯一能够有能力借鉴别人经验的群体，同时在拒绝借鉴别人的经验方面也十分出色的</li>
+<li>892.经验并不是指发生在一个人身上的事，而是指一个人如何处理发生在他身上的事</li>
+<li>893.那些不能记住过去的人必定要重蹈覆辙</li>
+<li>894.当我不知道我在做什么的时候，我所做的基础研究</li>
+<li>895.所有伟大的时间的本质都是不精确的</li>
+<li>896.把它写下来用3个月，构思只用了3分钟，收集相关数据则要用一生</li>
+<li>897.任何一个事实包含无穷的假设，你看得越多，你就领悟的越多</li>
+<li>898.钱在某一点上如同可卡因会磨掉人的雄心壮志</li>
+<li>899.你在失去所有钱财之后的价值，才是你的财富的真正衡量</li>
+<li>900.荣誉是暂时的，而默默无闻是永恒的</li>
+<li>901.就算一切都失败了，至少错误时不朽的</li>
+<li>902.越是成功，就越是不堪一击</li>
+<li>903.长期来看，失败是唯一具有可预见性的东西</li>
+<li>904.我所学的大部分东西都不是刻意去得到的而是从偶然事件和失败中学到的</li>
+<li>905.成功会掩盖许多重大的过错</li>
+<li>906.愤怒的情感不能体现上帝的正义</li>
+<li>907.凡以暴力压别人信仰的人，肯定具有本身的目的和私利</li>
+<li>908.讲私情没有好处，他使人们为了得到一块面包而破坏法律</li>
+<li>909.有些人藐视一切他们不懂得事物，以轻蔑来掩盖自身的无知</li>
+<li>910.在世人的想象中，似乎财富是一座堡垒，因财富毁掉的人远必被财富所救得人多些</li>
+<li>911.柏拉图“一切知识不过是旧知的回忆”</li>
+<li>912.他们看似新奇，事实上只是被人们遗忘而已，什么是真理，许多人提到这个问题根本不期望得到回答。人们宁可相信谎言，而不愿去追随真理的原因，不仅由于探索真理是艰苦的，而是因为谎言更能迎合人类某些恶劣的本性</li>
+<li>913.喜欢孤独的人不是野兽便是神灵</li>
+<li>914.人的性格与生俱来，知识能塑造人的性格</li>
+<li>915.如果你不是平庸的，你就要成为最好的</li>
+<li>916.所有的问题以最简单最直接也最有效的方式进行</li>
+<li>917.本性的流露永远胜过豪言壮语</li>
+<li>918.在顺其自然中努力，在努力中顺其自然</li>
+<li>919.真实和朴实天才的宝贵品质</li>
+<li>920.想做出自然的样子最使我们显得不自然</li>
+<li>921.艺术把描述变成事实</li>
+<li>922.真理的步子迈得很慢，但是到末了，什么也挡不住</li>
+<li>923.道德的最大秘密就是爱</li>
+<li>924.真正的伟大决不抛弃童贞</li>
+<li>925.每一次克制自己，就意味着比以前更强大</li>
+<li>926.冷漠之柔，硬于一切</li>
+<li>927.敢于冲撞命运才是天才</li>
+<li>928.有的人一辈子没老过，有的人一辈子没年轻过</li>
+<li>929.真正的伟大是像神那样无所畏惧的凡人</li>
+<li>930.要记住：历史让所有伟大的成就都是由于战胜看来是不可能的事情而取得的</li>
+<li>931.毅力是永久的享受</li>
+<li>932.天才就是无止境刻苦勤奋的能力</li>
+<li>933.我的字典里没有“不可能”这个词</li>
+<li>934.瀑布之所以形成奇观是因为它有绝处求生的勇气</li>
+<li>935.成功就是对一件事坚持足够长的时间</li>
+<li>936.除了通过黑暗的道路，人们不能到达黎明</li>
+<li>937.独立性是天才的基本特征</li>
+<li>938.是懦夫把自己变成懦夫，是英雄把自己变成英雄</li>
+<li>939.构成一个人生命特殊性的，并不是他对本能的顺从</li>
+<li>940.从某种意义上讲，我们都是拯救者与被拯救者</li>
+<li>941.周密的计划和训练可以把任何恐惧都消磨掉</li>
+<li>942.信心并不只是心灵拥有的一种想法，而是一种拥有心灵的想法</li>
+<li>943.95%的人思想都没有目的，没有结论。反正……</li>
+<li>944.多思考你能办到的事</li>
+<li>945.培养一种富于吸引力的个性</li>
+<li>946.让你的精神从平庸走向高尚</li>
+<li>947.真正的宗教存在于真正的勇气之中</li>
+<li>948.我们所遇到的失败之事，不是事情本身的错</li>
+<li>949.无聊是一种危险的游戏</li>
+<li>950.在衡量成功这个问题上，有一个重要的指标那就是如何利用时间</li>
+<li>951.假设我们每月工作35-40小时，仍有许多空间可以利用</li>
+<li>952.请牢记在心：你把身体调教成什么样子，他就是什么样子</li>
+<li>953.追求真正美好生活的最基本秘密是，克服任何阻碍你的理想的负面影响，包括来自你的亲人、朋友、工作伙伴以及其他人的压力</li>
+<li>954.头脑是用来解决问题的</li>
+<li>955.一个人储备的精神力量是取之不尽用之不竭的，人们凭借这种力量无往不利，无坚不摧</li>
+<li>956.发现并增加自己的价值</li>
+<li>957.每个人在受教育的当中，都会有一段时间确信，嫉妒是愚昧的，模仿只会毁了自己，每个人的好坏都是自身的一部分。纵使宇宙间充满美好的东西但如果不努力你什么也得不到</li>
+<li>958.你内心的力量是独一无二的，只有你自己知道自己在做什么，但除非你真正的去做，否则连你也不知道你真正的做些什么</li>
+<li>959.从来就没有什么是梦想，只有现在还没想到一直到未来必然会实现的现实</li>
+<li>960.人们除了惊叹将别无选择</li>
+<li>961.未来是渺茫的是一个巨大的未知数，只有偶然的几处被传奇的光忙照耀着</li>
+<li>962.站到伟大理论的否定而同样是伟大的理论</li>
+<li>963.认真开始研究这可不是儿戏</li>
+<li>964.最高的训练境界，训练你的意念（每天训练你的意念）</li>
+<li>965.最终极的训练寻求优势</li>
+<li>966.表演不分时间和场合</li>
+<li>967.数学使许多学科变成了科学</li>
+<li>968.把提升学习效率和提升学习效果，拓展生命之长度和宽度。变成日常之战略</li>
+<li>969.你必须制造平衡或加入平衡的一端</li>
+<li>970.所有的人最终买的只是一个价值</li>
+<li>971.创造一个理念，给予他们准确的市场定位</li>
+<li>972.你最好相信吧，因为数学是不会撒谎的</li>
+<li>973.有些宇宙中的事情，像你这样的凡人是很难掌握的</li>
+<li>974.透过活生生的数字，看大到活生生的世界</li>
+<li>975.记住：一个意志坚定的人，一个坚持到底的人可以成为众人之领袖</li>
+<li>976.孤独、艰苦和没有尽头的路，你能有坚持的信念吗？</li>
+<li>977.着急的都是不重要的，不着急的是重要的</li>
+<li>978.所有的学习都只是自我认知的开始，所有的学习最终的目的都是为了超越自己</li>
+<li>979.真正的命运只能通过奋斗才能揭示</li>
+<li>980.要理解每日荒诞的生活，没有欲求，我们就可以看到事情的来由拥有欲求可以看到事情的终结</li>
+<li>981.圣人必须每天进行祭奠仪式。进行自我净化</li>
+<li>982.你必须下决心，清心寡欲、严于律己，如果你能做到这几点，一切就会迎刃而解</li>
+<li>983.水：保持仁爱，为他人之不为赋予众人以生命，不要别有用心帮助别人寻找自然之路，你似乎就在附近，但实际上不在这里</li>
+<li>984.保持虚空才可不断的充实，因为财富会引起忧虑和奢华，所以不抛头露面，保持自身价值永不失去，事成之后视之为无，继续漫游成为万物的真知</li>
+<li>985.培育大得，轮子的轴心（恒久、有信、平和、不露声色）</li>
+<li>986.名利是身外之物，拥有他们只能招来耻辱和灾难。之寻找内在的东西，培养内在的能力，保持心理平静纯洁一切会随之而来</li>
+<li>987.我让你们安居乐业，但不要你们感恩戴德给他们传播宁静和和谐的理念给他们目标带领他们寻找自己的归宿</li>
+<li>988.不要用二元对立的方法看待世界，两者的性质其实是一回事，要跳出二元去看待问题，你才会抛头露面</li>
+<li>989.如果你能领悟成功和失败的背后是什么，你就开始悟道了</li>
+<li>990.为众人领路，但不要抛头露面</li>
+<li>991.宁静中圣人前来统治这个大千世界，他知道这个世界不能用感知来治理，只能够顺其自然</li>
+<li>992.人类的智慧和力量不足以指导我们，我们必须依靠精神的力量</li>
+<li>993.不要为区区小事上花费精力和情感</li>
+<li>994.不要为事态所失控，相反，你要控制大局</li>
+<li>995.不要被发生的事件遮住你的视线，这样才能够以冷静谦虚和自控的心态率领众人</li>
+<li>996.成功的专业人士在开始赚钱之前，都花了2-5年的时间专业而且专心的学习，为从业做认真的准备</li>
+<li>997.必须弄明白准备交易的各股总股本的发行量和流通量，以及换手总量</li>
+<li>998.集中精力专注于你的事业，你就会成功</li>
+<li>999.最大限度的获取标记有以往月度最高价和月度最低价的股票行情变化图</li>
+<li>1000.要能正确的解读大盘，就可能看到他们在干什么</li>
+<li>1001.看护好投资如同看护好身体一样，预防永远比治疗有作用，以及重要</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../reference/easy-talk/chapter1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../reference/easy-talk/chapter3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../reference/easy-talk/chapter1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../reference/easy-talk/chapter3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../../mermaid.min.js"></script>
+        <script type="text/javascript" src="../../mermaid-init.js"></script>
+        <script type="text/javascript" src="../../smart-anchor.js"></script>
+        <script src="https://utteranc.es/client.js"
+        repo="RustMagazine/rust_magazine_2021"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>
+
+    </body>
+</html>
