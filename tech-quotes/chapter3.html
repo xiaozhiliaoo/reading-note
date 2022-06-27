@@ -1,0 +1,1024 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第三章 - 读书笔记</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><li class="part-title">目录</li><li class="chapter-item "><a href="../index.html"><strong aria-hidden="true">1.</strong> 简介</a></li><li class="chapter-item expanded "><a href="../tech-quotes/toc.html"><strong aria-hidden="true">2.</strong> 技术札记</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../tech-quotes/chapter1.html"><strong aria-hidden="true">2.1.</strong> 第一章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter2.html"><strong aria-hidden="true">2.2.</strong> 第二章</a></li><li class="chapter-item expanded "><a href="../tech-quotes/chapter3.html" class="active"><strong aria-hidden="true">2.3.</strong> 第三章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter4.html"><strong aria-hidden="true">2.4.</strong> 第四章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter5.html"><strong aria-hidden="true">2.5.</strong> 第五章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter6.html"><strong aria-hidden="true">2.6.</strong> 第六章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter7.html"><strong aria-hidden="true">2.7.</strong> 第七章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter8.html"><strong aria-hidden="true">2.8.</strong> 第八章</a></li></ol></li><li class="chapter-item "><a href="../cs/toc.html"><strong aria-hidden="true">3.</strong> 计算机科学</a></li><li class="chapter-item "><a href="../language/toc.html"><strong aria-hidden="true">4.</strong> 语言</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../language/java-concurrency-in-practoce.html"><strong aria-hidden="true">4.1.</strong> Java并发编程实战</a></li><li class="chapter-item "><a href="../language/concurrent-programming-in-java.html"><strong aria-hidden="true">4.2.</strong> Java并发编程-设计原则与模式</a></li></ol></li><li class="chapter-item "><a href="../database/toc.html"><strong aria-hidden="true">5.</strong> 数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../database/nosql-distilled.html"><strong aria-hidden="true">5.1.</strong> NoSQL精粹</a></li><li class="chapter-item "><a href="../database/cassandra-the-definitive-guide-2nd.html"><strong aria-hidden="true">5.2.</strong> Cassandra权威指南-第二版</a></li><li class="chapter-item "><a href="../database/ddia-cn.html"><strong aria-hidden="true">5.3.</strong> 数据密集型应用系统设计-中文</a></li><li class="chapter-item "><a href="../database/ddia-en.html"><strong aria-hidden="true">5.4.</strong> 数据密集型应用系统设计-英文</a></li></ol></li><li class="chapter-item "><a href="../middleware/summary.html"><strong aria-hidden="true">6.</strong> 分布式与中间件</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../middleware/mongodb-the-definitive-guide-2nd.html"><strong aria-hidden="true">6.1.</strong> mongodb权威指南第二版</a></li><li class="chapter-item "><a href="../middleware/nosql-for-mere-mortals.html"><strong aria-hidden="true">6.2.</strong> NoSQL实践指南</a></li><li class="chapter-item "><a href="../middleware/streaming-processing-with-apache-flink.html"><strong aria-hidden="true">6.3.</strong> 基于Apache Flink的流处理</a></li><li class="chapter-item "><a href="../middleware/deep-understanding-of-distributed-systems.html"><strong aria-hidden="true">6.4.</strong> 深入理解分布式系统</a></li></ol></li><li class="chapter-item "><a href="../framework/toc.html"><strong aria-hidden="true">7.</strong> 框架</a></li><li class="chapter-item "><a href="../engineering/toc.html"><strong aria-hidden="true">8.</strong> 软件工程</a></li><li class="chapter-item "><a href="../design/toc.html"><strong aria-hidden="true">9.</strong> 设计</a></li><li class="chapter-item "><a href="../certificate/toc.html"><strong aria-hidden="true">10.</strong> 考试和考证</a></li><li class="chapter-item "><a href="../product/toc.html"><strong aria-hidden="true">11.</strong> 产品</a></li><li class="chapter-item "><a href="../system/toc.html"><strong aria-hidden="true">12.</strong> 系统</a></li><li class="chapter-item "><a href="../others/toc.html"><strong aria-hidden="true">13.</strong> 其他</a></li><li class="chapter-item "><a href="../geektime/toc.html"><strong aria-hidden="true">14.</strong> 极客时间</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../geektime/技术与商业案例解读.html"><strong aria-hidden="true">14.1.</strong> 16-技术与商业案例解读-徐飞</a></li></ol></li><li class="chapter-item "><a href="../paper/toc.html"><strong aria-hidden="true">15.</strong> 论文</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../paper/HAT.html"><strong aria-hidden="true">15.1.</strong> Highly Available Transactions: Virtues and Limitations</a></li><li class="chapter-item "><a href="../paper/cap-critique.html"><strong aria-hidden="true">15.2.</strong> A Critique of the CAP Theorem</a></li><li class="chapter-item "><a href="../paper/pacelc.html"><strong aria-hidden="true">15.3.</strong> Consistency Tradeoffs in Modern Distributed Database System Design</a></li><li class="chapter-item "><a href="../paper/consensus-in-the-cloud.html"><strong aria-hidden="true">15.4.</strong> Consensus in the Cloud: Paxos Systems Demystified</a></li><li class="chapter-item "><a href="../paper/replication-in-db-and-ds.html"><strong aria-hidden="true">15.5.</strong> Understanding Replication in Databases and Distributed Systems</a></li><li class="chapter-item "><a href="../paper/eventually-consistent.html"><strong aria-hidden="true">15.6.</strong> Eventually Consistent</a></li><li class="chapter-item "><a href="../paper/Stream-System-Evolution.html"><strong aria-hidden="true">15.7.</strong> A Survey on the Evolution of Stream Processing Systems</a></li></ol></li><li class="chapter-item "><a href="../ebook/toc.html"><strong aria-hidden="true">16.</strong> 电子书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../ebook/java-concurreny-beautify.html"><strong aria-hidden="true">16.1.</strong> Java并发编程之美</a></li></ol></li><li class="chapter-item "><a href="../english/toc.html"><strong aria-hidden="true">17.</strong> 英语书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../english/the-little-prince.html"><strong aria-hidden="true">17.1.</strong> 小王子</a></li></ol></li><li class="chapter-item "><a href="../philosophy/toc.html"><strong aria-hidden="true">18.</strong> 哲学</a></li><li class="chapter-item "><a href="../psychology/toc.html"><strong aria-hidden="true">19.</strong> 心理学</a></li><li class="chapter-item "><a href="../chinese-ancient/toc.html"><strong aria-hidden="true">20.</strong> 国学</a></li><li class="chapter-item "><a href="../finance/toc.html"><strong aria-hidden="true">21.</strong> 经济与金融</a></li><li class="chapter-item "><a href="../reference/reference.html"><strong aria-hidden="true">22.</strong> 参考资料</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../reference/booklist.html"><strong aria-hidden="true">22.1.</strong> 书单</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../reference/booklist/chinese-ancient-literature.html"><strong aria-hidden="true">22.1.1.</strong> 国学</a></li><li class="chapter-item "><a href="../reference/booklist/210.html"><strong aria-hidden="true">22.1.2.</strong> 经典各学科210本</a></li><li class="chapter-item "><a href="../reference/booklist/invest-100.html"><strong aria-hidden="true">22.1.3.</strong> 金融投资100本</a></li><li class="chapter-item "><a href="../reference/booklist/invest-400.html"><strong aria-hidden="true">22.1.4.</strong> 金融投资400本</a></li><li class="chapter-item "><a href="../reference/booklist/invest-classify.html"><strong aria-hidden="true">22.1.5.</strong> 投资学分类书籍</a></li><li class="chapter-item "><a href="../reference/booklist/hejun-consulting.html"><strong aria-hidden="true">22.1.6.</strong> 和君推荐企业家和投行家书籍</a></li><li class="chapter-item "><a href="../reference/booklist/middle-student.html"><strong aria-hidden="true">22.1.7.</strong> 中学生阅读指南</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-600.html"><strong aria-hidden="true">22.1.8.</strong> 商务汉译世界学术名著丛书·600本</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-500.html"><strong aria-hidden="true">22.1.9.</strong> 商务汉译世界学术名著丛书·分科本500本</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-400.html"><strong aria-hidden="true">22.1.10.</strong> 商务汉译世界学术名著丛书·珍藏本400本</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-120.html"><strong aria-hidden="true">22.1.11.</strong> 汉译世界学术名著丛书·120年纪念版</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-china-105.html"><strong aria-hidden="true">22.1.12.</strong> 中华现代学术名著丛书·105本</a></li></ol></li><li class="chapter-item "><a href="../reference/easy-talk.html"><strong aria-hidden="true">22.2.</strong> 1000条</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../reference/easy-talk/chapter1.html"><strong aria-hidden="true">22.2.1.</strong> 第一章</a></li><li class="chapter-item "><a href="../reference/easy-talk/chapter2.html"><strong aria-hidden="true">22.2.2.</strong> 第二章</a></li><li class="chapter-item "><a href="../reference/easy-talk/chapter3.html"><strong aria-hidden="true">22.2.3.</strong> 第三章</a></li><li class="chapter-item "><a href="../reference/easy-talk/chapter4.html"><strong aria-hidden="true">22.2.4.</strong> 第四章</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">读书笔记</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/xiaozhiliaoo/reading-lists" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第三章"><a class="header" href="#第三章">第三章</a></h1>
+<ul>
+<li>201 干一行，爱一行</li>
+</ul>
+<hr />
+<ul>
+<li>202 为什么要做技术？生存？一个领域有成就？对事物本身的理解？推动业务发展？出人头地？有所成就，有所高度。 有所领悟，有所得失。</li>
+</ul>
+<hr />
+<ul>
+<li>203 真正的学习的以不断完善思考能力为基础的，其次才是记忆。只有记住了大量知识才谈理解，只有理解了才会大量记住，才谈融会贯通。</li>
+</ul>
+<hr />
+<ul>
+<li>204 看完书记不住，因为没有理解。更重要的没有融汇贯通。任督二脉....</li>
+</ul>
+<hr />
+<ul>
+<li>205  所有性能问题都来自：CPU，内存，IO，所有的瓶颈都是这三项。</li>
+</ul>
+<p><img src="assets/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB.png" alt="" /></p>
+<hr />
+<ul>
+<li>206 线程状态</li>
+</ul>
+<p><img src="assets/%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81.png" alt="" /></p>
+<hr />
+<ul>
+<li>207 世界是分形的。一种哲学观点。</li>
+</ul>
+<p><img src="assets/%E5%88%86%E5%BD%A2.jpg" alt="" /></p>
+<p>计算机系统是自下而上的分形系统，在CPU层面看到的东西，在磁盘层面看到的东西，在os层面看到的东西，在软件应用看到的东西，其实都是一个东西，没有特别明显的差异。无非怎么做信号？怎么做相互通知机制？怎么做时间片切换？无非这么几件事。只是不同的层次因为不同的需要而改变。问题本质没变化，无非怎么通信，怎么计算，怎么数据存取，只有这么几件事情。收拢到简单关键词时候，就是树状结构。形成这种认知，往外看，计算机不过如此，特定场景特定的优化而已。大部分特定优化其实并不复杂。多问为什么，问题本质是什么？构造图景理解新的问题就会很快。[DB，应用系统，os，分布式软件最终都要在CPU上执行]</p>
+<hr />
+<ul>
+<li>208 计算机问题：分层与分形。</li>
+</ul>
+<hr />
+<ul>
+<li>209 响应时间级别： <strong>内存</strong>：纳秒，   <strong>网络</strong>：毫秒，5000-10000<strong>时钟周期</strong>：几微秒</li>
+</ul>
+<hr />
+<ul>
+<li>210 数据库的事务和Java中的并发解决方案，本质是一回事。数据库成为操作远程共享数据叫事务，而应用操作本地共享数据，内存中的共享数据叫并发。</li>
+</ul>
+<p><img src="assets/%E4%BA%8B%E5%8A%A1%E5%92%8C%E5%B9%B6%E5%8F%91.png" alt="" /></p>
+<hr />
+<ul>
+<li>211  一个技术的利与弊就是选了他，得到了什么，失去了什么。对于业务取舍了什么，又得到了什么。</li>
+</ul>
+<hr />
+<ul>
+<li>212 世界上解决一个计算机问题最简单的方法：“恰好”不需要解决它！——  <a href="http://i.youku.com/u/UMTcwMTg3NDc1Mg==?from=113-2-1-2">沈询</a></li>
+</ul>
+<hr />
+<ul>
+<li>213 系统如果需要高性能，必然要进行精心的设计。必须有所取舍。计算机解决方案就是一个折中的过程。解决一个问题就会带来另外一个问题。</li>
+</ul>
+<hr />
+<ul>
+<li>214 复杂的模型越难理解，但是性能越好。越简单的模型，性能往往不好。快速排序和冒泡排序。</li>
+</ul>
+<hr />
+<ul>
+<li>215 吞吐量问题(单位时间内处理更多的任务)的解决方案：硬件层面，CPU层面，操作系统层面，应用系统层面。</li>
+</ul>
+<p>高可用问题解决方案：冗余。</p>
+<hr />
+<ul>
+<li>216 程序员觉得程序是顺序执行的，其实在CPU层面是乱序的。什么不能乱？Happen-Before规则。维持有序系统需要付出代价。乱不是目的，目的是高效利用CPU。</li>
+</ul>
+<hr />
+<ul>
+<li>217 消息交互三模型：推，拉，推拉结合。Kafka拉模型，适合海量日志处理，日志处理特点是不需要实时性-》消息堆积能力必然强-》占内存。</li>
+</ul>
+<hr />
+<ul>
+<li>218  协议是合约解决问题的一种方式。一种协议的产生必然会带来另一钟问题的产生。Paxos协议，TCP协议，Zab协议。解决不了问题，加层，加层做什么？加协议。多台机器数据同步，怎么同步？数据层加paxos协议。技术选型就是一个取舍的过程。</li>
+</ul>
+<hr />
+<ul>
+<li>219 并发控制产生根源是CPU宏观并行，微观串行。多线程对共享数据的读读，读写，写读，写写。</li>
+</ul>
+<hr />
+<ul>
+<li>220 性能问题分析：自上而下，自下而上。所有的数据读写问题都可以转化为CPU层面读写问题。</li>
+</ul>
+<hr />
+<ul>
+<li>221 所有的折中都在时间和空间层面折中。时间足够长，所有消息都是有序的，但是没有意义。将时间压缩到空间，追求更加巧妙的设计。</li>
+</ul>
+<hr />
+<ul>
+<li>222我们所得到的和所失去的都会在CPU，内存，IO上得到体现。</li>
+</ul>
+<hr />
+<ul>
+<li>223 这张图代表了什么？</li>
+</ul>
+<p><img src="assets/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170928201820.png" alt="" /></p>
+<hr />
+<ul>
+<li>224 排序算法比较[log2(n) log以2为底的n]</li>
+</ul>
+<table><thead><tr><th align="left"><strong>排序算法</strong></th><th align="left"><strong>最好时间</strong></th><th align="left"><strong>平均时间</strong></th><th align="left"><strong>最坏时间</strong></th><th align="left"><strong>辅助空间</strong></th><th align="left"><strong>稳定性</strong></th></tr></thead><tbody>
+<tr><td align="left">直接插入排序</td><td align="left">O(n)</td><td align="left">O(n^2)</td><td align="left">O(n^2)</td><td align="left">O(1)</td><td align="left">稳定</td></tr>
+<tr><td align="left">希尔排序</td><td align="left">O(n(log2(n))^2)</td><td align="left">O(n^1.3)</td><td align="left"></td><td align="left">O(1)</td><td align="left">不稳定</td></tr>
+<tr><td align="left">直接选择排序</td><td align="left">O(n^2)</td><td align="left">O(n^2)</td><td align="left">O(n^2)</td><td align="left">O(1)</td><td align="left">不稳定</td></tr>
+<tr><td align="left">堆排序</td><td align="left">O(nlog2(n))</td><td align="left">O(nlog2(n))</td><td align="left">O(nlog2(n))</td><td align="left">O(1)</td><td align="left">不稳定</td></tr>
+<tr><td align="left">冒泡排序</td><td align="left">O(n)</td><td align="left">O(n^2)</td><td align="left">O(n^2)</td><td align="left">O(1)</td><td align="left">稳定</td></tr>
+<tr><td align="left">快速排序</td><td align="left">O(nlog2(n))</td><td align="left">O(nlog2(n))</td><td align="left">O(n^2)</td><td align="left">O(log2(n))</td><td align="left">不稳定</td></tr>
+<tr><td align="left">归并排序</td><td align="left">O(nlog2(n))</td><td align="left">O(nlog2(n))</td><td align="left">O(nlog2(n))</td><td align="left">O(n)</td><td align="left">稳定</td></tr>
+<tr><td align="left">基数排序(链式队列)</td><td align="left">O(mn)</td><td align="left">O(mn)</td><td align="left">O(mn)</td><td align="left">O(n)</td><td align="left">稳定</td></tr>
+<tr><td align="left">基数排序(顺序队列)</td><td align="left">O(mn)</td><td align="left">O(mn)</td><td align="left">O(mn)</td><td align="left">O(mn)</td><td align="left">稳定</td></tr>
+</tbody></table>
+<hr />
+<ul>
+<li>225 JMM核心概念：</li>
+<li>原子性(一个操作不可中断)</li>
+<li>可见性(一个线程改变了值，另其他线程立马得知，Volatile)</li>
+<li>有序性(线程内有序，线程间观察无序，指令重排，Happen-Before)。</li>
+</ul>
+<hr />
+<ul>
+<li>226 哪些指令不能重排：Happen-Before。</li>
+</ul>
+<hr />
+<ul>
+<li>227 Volatile作用：可见性和禁止指令重排，比synchronized更轻量级同步机制。</li>
+</ul>
+<p>场景：1 volatile最适用一个线程写，多个线程读的场合  2  检查某个状态标记以判断是否退出循环。</p>
+<p>volatile boolean shutdownRequested;  //不加volatile可能会导致指令重排，-server模式产生死循环
+public void shutdown() { 
+shutdownRequested = true; 
+}
+public void doWork() { 
+while (!shutdownRequested) { 
+// do stuff
+}
+}</p>
+<hr />
+<ul>
+<li>228 加锁可以保证原子性和可见性，但是volatile只能保证可见性。</li>
+</ul>
+<hr />
+<ul>
+<li>229 使用场景：BIO：低负载，低并发    NIO：高负载，高并发    AIO：异步处理</li>
+</ul>
+<hr />
+<ul>
+<li>230 排序算法一览：</li>
+</ul>
+<table><thead><tr><th align="left"><strong>插入排序</strong></th><th align="left"><strong>直接插入</strong></th><th align="left"><strong>希尔排序</strong></th></tr></thead><tbody>
+<tr><td align="left"><strong>选择排序</strong></td><td align="left"><strong>直接选择</strong></td><td align="left"><strong>堆排序</strong></td></tr>
+<tr><td align="left"><strong>交换排序</strong></td><td align="left"><strong>冒泡排序</strong></td><td align="left"><strong>快速排序</strong></td></tr>
+<tr><td align="left"><strong>归并排序</strong></td><td align="left"><strong>桶排序</strong></td><td align="left"></td></tr>
+</tbody></table>
+<p><strong>插入排序：</strong></p>
+<p>直接插入排序：</p>
+<pre><code class="language-java">public static void insertSort(int[] keys) {
+    for (int i = 0; i &lt; keys.length; i++) {
+        int temp = keys[i];
+        int j;
+        for (j = i - 1; j &gt;= 0 &amp;&amp; temp &lt; keys[j]; j--) {
+            keys[j + 1] = keys[j];
+        }
+        keys[j + 1] = temp;
+        System.out.print(&quot;第&quot; + i + &quot;趟 temp=&quot; + temp + &quot;\t&quot;);
+        System.out.println(Arrays.toString(keys));
+    }
+}
+</code></pre>
+<pre><code class="language-java">public static void insertSort2(int[] keys) {
+    for (int i = 0; i &lt; keys.length - 1; i++) {
+        int temp = keys[i + 1];
+        int j = i;
+        while (j &gt; -1 &amp;&amp; temp &lt; keys[j]) {
+            keys[j + 1] = keys[j];
+            j--;
+        }
+        keys[j + 1] = temp;
+        System.out.print(&quot;第&quot; + i + &quot;趟 temp=&quot; + temp + &quot;\t&quot;);
+        System.out.println(Arrays.toString(keys));
+    }
+}
+</code></pre>
+<p>希尔排序:</p>
+<pre><code class="language-java">public static void shellSort1(int[] keys) {
+    //每次增量减半，初始为数组长度
+    for (int delta = keys.length / 2; delta &gt; 0; delta /= 2) {
+        for (int i = delta; i &lt; keys.length; i++) {
+            int temp = keys[i], j;
+            for (j = i - delta; j &gt;= 0 &amp;&amp; temp &lt; keys[j]; j -= delta) {
+                keys[j + delta] = keys[j];
+            }
+            keys[j + delta] = temp;
+        }
+        System.out.print(&quot;delta=&quot; + delta + &quot;  &quot;);
+        System.out.println(Arrays.toString(keys));
+    }
+}
+</code></pre>
+<pre><code class="language-java">/**
+ *
+ * @param keys 数组
+ * @param n  数组个数
+ * @param d  增量数组 [6,3,1]
+ * @param numOfD  增量数组个数 3
+ */
+public static void shellSort2(int[] keys, int n, int[] d, int numOfD) {
+    int i, j, k, m, span, temp;
+    for (m = 0; m &lt; numOfD; m++) {
+        span = d[m];
+        for (k = 0; k &lt; span; k++) {
+            for (i = k; i &lt; n - span; i += span) {
+                temp = keys[i + span];
+                j = i;
+                while (j &gt; -1 &amp;&amp; temp &lt;= keys[j]) {
+                    keys[j + span] = keys[j];
+                    j = j - span;
+                }
+                keys[j + span] = temp;
+            }
+        }
+        System.out.print(&quot;delta=&quot; + span + &quot;  &quot;);
+        System.out.println(Arrays.toString(keys));
+    }
+}
+</code></pre>
+<p><strong>交换排序</strong></p>
+<p>冒泡排序</p>
+<pre><code class="language-java">public static void bubbleSort(int[] keys) {
+    int flag = 1;
+    int n = keys.length;
+    for (int i = 1; i &lt; n &amp;&amp; flag == 1; i++) {
+        flag = 0;
+        for (int j = 0; j &lt; n - i; j++) {
+            if (keys[j] &gt; keys[j + 1]) {
+                int temp = keys[j + 1];
+                keys[j + 1] = keys[j];
+                keys[j] = temp;
+                flag = 1;
+            }
+        }
+        System.out.print(&quot;第&quot; + i + &quot;趟: &quot;);
+        System.out.println(Arrays.toString(keys));
+    }
+}
+</code></pre>
+<pre><code class="language-java">public static void bubbleSort2(int[] keys){
+    boolean exchange = true;
+    for (int i = 1; i &lt; keys.length &amp;&amp; exchange; i++) {
+        exchange = false;
+        for (int j = 0; j &lt; keys.length - i; j++) {
+            if (keys[j] &gt; keys[j + 1]) {
+                int temp = keys[j];
+                keys[j] = keys[j + 1];
+                keys[j + 1] = temp;
+                exchange = true;
+            }
+        }
+        System.out.print(&quot;第&quot; + i + &quot;趟: &quot;);
+        System.out.println(Arrays.toString(keys));
+    }
+}
+</code></pre>
+<p>快速排序</p>
+<pre><code class="language-java">public static void quickSort(int[] keys, int begin, int end) {
+    if (begin &lt; end) {
+        int i = begin;
+        int j = end;
+        int vot = keys[i]; //标准元素
+        while (i != j) {
+            while (i &lt; j &amp;&amp; vot &lt;= keys[j]) j--;
+            if (i &lt; j) {
+                keys[i++] = keys[j];
+            }
+            while (i &lt; j &amp;&amp; keys[i] &lt;= vot) i++;
+            if (i &lt; j) {
+                keys[j--] = keys[i];
+            }
+        }
+        keys[i] = vot;
+        System.out.print(&quot;[&quot;+begin + &quot;-&quot; + end + &quot;],  vot=&quot; + vot + &quot;  &quot;);
+        System.out.println(Arrays.toString(keys));
+        quickSort(keys, begin, j - 1);
+        quickSort(keys, i + 1, end);
+    }
+}
+</code></pre>
+<pre><code class="language-java">public static void quickSort2(int[] keys, int begin, int end) {
+    if (begin &lt; end) {
+        int i = begin;
+        int j = end;
+        int temp = keys[i]; //标准元素
+        while (i &lt; j) {
+            while (i &lt; j &amp;&amp; temp &lt;= keys[j]) j--;
+            if (i &lt; j) {
+                keys[i] = keys[j];
+                i++;
+            }
+            while (i &lt; j &amp;&amp; keys[i] &lt; temp) i++;
+            if (i &lt; j) {
+                keys[j] = keys[i];
+                j--;
+            }
+        }
+        keys[i] = temp;  //插入标准元素
+        System.out.print(&quot;[&quot;+begin + &quot;-&quot; + end + &quot;],  temp=&quot; + temp + &quot;  &quot;);
+        System.out.println(Arrays.toString(keys));
+        quickSort2(keys, begin, i - 1);
+        quickSort2(keys, j + 1, end);
+    }
+}
+</code></pre>
+<p><strong>选择排序</strong></p>
+<p>直接选择排序</p>
+<pre><code class="language-java">public static void selectSort(int[] keys) {
+    for (int i = 0; i &lt; keys.length - 1; i++) {                                                  
+        int min = i;                                     
+        for (int j = i + 1; j &lt; keys.length; j++)           
+            if (keys[j] &lt; keys[min]) {
+                min = j;
+            }
+        if (min != i) {
+            int temp = keys[i];
+            keys[i] = keys[min];
+            keys[min] = temp;
+        }
+        System.out.print(&quot;第&quot; + (i + 1) + &quot;趟: &quot;);
+        System.out.println(Arrays.toString(keys));
+    }
+}
+</code></pre>
+<p>堆排序</p>
+<pre><code class="language-java">public static void heapSort(int[] keys){
+    heapSort(keys,true);
+}
+
+public static void heapSort(int[] keys, boolean minHeap) {
+    for (int i = keys.length / 2 - 1; i &gt;= 0; i--) {
+        //创建最大堆or最小堆
+        sift(keys, i, keys.length - 1, minHeap);
+    }
+    for (int i = keys.length - 1; i &gt; 0; i--) {
+        //交换顶部和底部元素
+        int temp = keys[0];
+        keys[0] = keys[i];
+        keys[i] = temp;
+        sift(keys, 0, i - 1, minHeap);
+        System.out.println(&quot;第&quot; + (keys.length - i) + &quot;趟&quot; + Arrays.toString(keys));
+    }
+}
+
+private static void sift(int[] keys, int parent, int end, boolean minHeap) {
+    //System.out.println(&quot;sift &quot; + parent + &quot;...&quot; + end + &quot;  &quot;);
+    int child = 2 * parent + 1;
+    int value = keys[parent];
+    while (child &lt;= end) {
+        if (child &lt; end &amp;&amp; (minHeap ? keys[child] &gt; keys[child + 1] : 
+                        keys[child] &lt; keys[child + 1])) {
+            child++;
+        }
+        if (minHeap ? value &gt; keys[child] : value &lt; keys[child]) {
+            keys[parent] = keys[child];
+            parent = child;
+            child = 2 * parent + 1;
+        } else {
+            break;
+        }
+    }
+    keys[parent] = value;
+}
+</code></pre>
+<pre><code class="language-java">public static boolean isMinHeap(int[] value) {
+    if (value.length == 0) {
+        return false;
+    }
+    for (int i = value.length / 2 - 1; i &gt;= 0; i--) {
+        int j = 2 * i + 1;
+        if (value[i] &gt; value[j] ||
+                 j + 1 &lt; value.length &amp;&amp; value[i] &gt; value[j + 1]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+public static boolean isMaxHeap(int[] value) {
+    if (value.length == 0) {
+        return false;
+    }
+    for (int i = value.length / 2 - 1; i &gt;= 0; i--) {
+        int j = 2 * i + 1;
+        if (value[i] &lt; value[j] ||
+                 j + 1 &lt; value.length &amp;&amp; value[i] &lt; value[j + 1]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+public static void whatKindOfHeap(int[] value) {
+    if (isMinHeap(value)) {
+        System.out.println(&quot;最小堆&quot;);
+    }else if(isMaxHeap(value)){
+        System.out.println(&quot;最大堆&quot;);
+    }else{
+        System.out.println(&quot;非最大堆或者最小堆&quot;);
+    }
+}
+</code></pre>
+<p><strong>归并排序</strong></p>
+<pre><code class="language-java">public static void mergeSort(int[] X) {
+    System.out.println(&quot;归并排序&quot;);
+    int[] Y = new int[X.length];
+    int n = 1;
+    while (n &lt; X.length) {
+        mergepass(X, Y, n);
+        System.out.println(Arrays.toString(Y));
+        n *= 2;
+        if (n &lt; X.length) {
+            mergepass(Y, X, n);
+            System.out.println(Arrays.toString(X));
+            n *= 2;
+        }
+    }
+}
+
+private static void mergepass(int[] X, int[] Y, int n) {
+    System.out.print(&quot;子序列长度n=&quot; + n + &quot;  &quot;);
+    int i = 0;
+    for (i = 0; i &lt; X.length - 2 * n + 1; i += 2 * n) {
+        merge(X, Y, i, i + n, n);
+    }
+    if (i + n &lt; X.length) {
+        merge(X, Y, i, i + n, n);
+    } else {
+        for (int j = i; j &lt; X.length; j++) {
+            Y[j] = X[j];
+        }
+    }
+}
+
+private static void merge(int[] X, int[] Y, int m, int r, int n) {
+    int i = m, j = r, k = m;
+    while (i &lt; r &amp;&amp; j &lt; r + n &amp;&amp; j &lt; X.length) {
+        if (X[i] &lt; X[j]) {
+            Y[k++] = X[i++];
+        } else {
+            Y[k++] = X[j++];
+        }
+        while (i &lt; r) {
+            Y[k++] = X[i++];
+        }
+        while (j &lt; r + n &amp;&amp; j &lt; X.length) {
+            Y[k++] = X[j++];
+        }
+    }
+}
+</code></pre>
+<hr />
+<ul>
+<li>231 排序算法：<a href="https://gitee.com/xiaozhiliao/algorithm/blob/master/src/main/java/chapter9/sort/Sort.java">算法详情</a></li>
+</ul>
+<hr />
+<ul>
+<li>232 分布式的好处：理论上无限可扩展能力和高可用能力。</li>
+</ul>
+<hr />
+<ul>
+<li>233 消息中间件作用：解耦，异步，最终一致性，并行</li>
+</ul>
+<hr />
+<ul>
+<li>234沈询：“特别注重基础，操作系统、网络、算法数据结构、离散数学、数据库原理与实践，这些看起来枯燥而无味的基础科学，是我目前感到知识最为匮乏，但却最为急需的部分，要了解它们是必须付出非常多的时间才有可能理解通透些。而这些基础的扎实程度，就直接决定了你的高度”。</li>
+</ul>
+<hr />
+<ul>
+<li>235 线程与QPS计算公式(吞吐量提升一倍，服务器数量减少一半)</li>
+</ul>
+<p>线程数 = （线程总时间/瓶颈资源时间） *  瓶颈资源线程并行数</p>
+<p>QPS = （1000/响应时间[线程总时间]）* 线程数 = 1000/瓶颈资源时间 * 瓶颈资源并行数</p>
+<p>QPS和响应时间没有关系，优化响应时间效果不大。</p>
+<hr />
+<ul>
+<li>236 QPS三要素：线程，响应时间，瓶颈资源。</li>
+</ul>
+<p>QPS瓶颈：磁盘IO，网络IO，CPU，内存GC hold，线程限制，线程同步锁，远程系统QPS</p>
+<hr />
+<ul>
+<li>237 JUC</li>
+</ul>
+<blockquote>
+<p><img src="assets/juc.png" alt="" /></p>
+</blockquote>
+<p>JUC <a href="https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/package-summary.html">详情   </a></p>
+<hr />
+<ul>
+<li>238 JUC使用场景：</li>
+</ul>
+<p>ReentantLock (互斥锁,可重入锁,独占锁-Mutex-读读互斥)可定时，可轮询，可中断，公平队列，非块结构加锁。</p>
+<p>ReentrantReadWriteLock  (读写锁-读读共享) 一个共享资源被大量读取操作，而只有少量写操作。</p>
+<p>StampedLock   实现乐观悲观锁</p>
+<p>Volatile  一个线程修改，多个线程读取</p>
+<p>CopyOnWrite  读多写少 白名单，黑名单，商品类目访问和更新</p>
+<p>DelayQueue  缓存系统设计，定时任务调度</p>
+<p>LinkedBlockingDeque  ForkJoinPool 工作窃取算法</p>
+<p>BlockingQueue 生产者消费者模式实现</p>
+<p>ConutDownLatch 等待某个条件满足后才做后面的事情。Zk连接集群的时候。</p>
+<p>AbstractQueuedSynchronizer  实现自己的同步器</p>
+<p>Semaphore 流量控制 资源有限情况。排队场景，线程池，连接池等</p>
+<p>CyclicBarrier N个线程互相等待  用于多线程计算数据，最后合并计算结果</p>
+<p>ForkJoinPool  任务拆分在汇总的计算</p>
+<p>ThreadLocal 线程内变量 Connection，防止对可变单利变量或者全局变量进行共享。</p>
+<p>SynchronousQueue 有足够多消费者，并且总有一个消费者准备好交付工作的情况下使用</p>
+<p>Deque(ArrayDeque,LinkedBlockingDeque) 即是生产者也是消费者问题。执行某个工作时候可能出现更多的工作。</p>
+<p>Exchanger 遗传算法，校对工作(AB-excel)</p>
+<p>ExecutorCompletionService 向Executor提交一组计算任务，计算完成后分别获得计算结果。</p>
+<p>Future.get  指定时间内没有完成，则取消任务    任务没有完成则阻塞   指定时间完成某些任务，<strong>页面渲染器</strong>，指定时间获取广告信息</p>
+<p>守护线程：执行辅助工作，执行“<strong>内部</strong>”任务，周期性从内存的缓存中清除过期数据。不用于应用程序服务的生命周期</p>
+<p>...待补充</p>
+<hr />
+<ul>
+<li>238 优先使用有界队列：1 稳定性和预警  2  单一模块不可用不会造成整个系统不可用  3  强大的资源管理工具，防止产生过多的工作项，使得程序在负载过荷情况下变得更加健壮。</li>
+</ul>
+<p>无界队列：内存撑满问题。</p>
+<hr />
+<ul>
+<li>239 线程池线程数的一种思考：</li>
+</ul>
+<p>1  Tomcat，Nginx 最大限度发挥单机server最大并发量。</p>
+<p>2   CPU密集：N$$cpu$$+1  or N$$cpu$$ -1   IO密集型  2 * N$$cpu$$</p>
+<p>3   IO+CPU差不多：   (N$$cpu$$+1  +  2 * N$$cpu$$)/2</p>
+<hr />
+<ul>
+<li>240 _<strong>线程安全：</strong>_当多个线程访问某个类时，不管运行时环境采用何种调度方式，或者这些线程将如何交替执行，并且在主调代码中不需要任何额外的同步或协同，这个类都能表现出正确的行为，那么就称这个类是线程安全的。</li>
+<li>简单定义：<strong>当多个线程访问某个类的时候，这个类始终表现出正确的行为，那么这个类就是线程安全的。</strong></li>
+</ul>
+<hr />
+<ul>
+<li>241 对象一些状态的<strong>共享</strong>和<strong>可变</strong>决定了对象是否线程安全。线程安全最核心的概念是正确性。正确性是某个类的行为与其规范完全一致。单线程正确性是“所见即所知”。</li>
+</ul>
+<hr />
+<ul>
+<li>242 JUC分类：</li>
+<li><strong>1  并发集合</strong>  BlockingQueue   CopyOnWrite(CopyOnWriteArrayList,CopyOnWriteArraySet)             Concurrent(ConcurrentHashMap,ConcurrentLinkedDeque，ConcurrentLinkedQueue，ConcurrentSkipListMap，ConcurrentSkipListSet)</li>
+<li><strong>2  同步器</strong>   Semphore  CountDownLatch  CyclicBarrier   Exchanger  FutureTask(语义上的)</li>
+<li><strong>3  执行器</strong>   Executors  Callable  ThreadPoolExecutor  Future</li>
+<li><strong>4  锁和条件类</strong>  Synchronized  ReentrantLock  ReentrantReadWriteLock  StampedLock  Condition  LockSupport</li>
+<li><strong>5  原子变量</strong>   AtomicXXX</li>
+</ul>
+<hr />
+<ul>
+<li>243 **AQS **  <img src="assets/aqs.png" alt="" /></li>
+</ul>
+<hr />
+<ul>
+<li>244 <strong>Queue</strong>  <img src="assets/queue.png" alt="" /></li>
+</ul>
+<hr />
+<ul>
+<li>245 **Lock  **<img src="assets/lock.png" alt="" /></li>
+</ul>
+<hr />
+<ul>
+<li>246 实现等待通知</li>
+</ul>
+<table><thead><tr><th align="left">等待/通知</th><th align="left">等待</th><th align="left">通知一个</th><th align="left">通知所有</th></tr></thead><tbody>
+<tr><td align="left">Condition(Lock)</td><td align="left">await</td><td align="left">signal</td><td align="left">signalAll</td></tr>
+<tr><td align="left">Object</td><td align="left">wait</td><td align="left">notify</td><td align="left">notifyAll</td></tr>
+</tbody></table>
+<hr />
+<ul>
+<li>247 所有<strong>并发问题</strong>都可以归结为如何<strong>协调</strong>对<strong>并发状态</strong>的访问。可变状态越少，越容易保证<strong>线程安全性</strong>。</li>
+</ul>
+<hr />
+<ul>
+<li>248 服务器程序应该体现出良好的<strong>吞吐量</strong>和快速的<strong>响应性</strong>。</li>
+</ul>
+<hr />
+<ul>
+<li>249 在一定范围内，增加线程可以提供系统吞吐量，但是超出范围，反而降低性能。(创建开销，资源消耗占内存，GC压力)</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>250 实现一个线程：<strong>Thread</strong>(单继承局限)，<strong>Runnable</strong>(不能返回值或者抛出受检异常，多继承)，<strong>Callable</strong>(有返回值，泛型)</p>
+<p>Runnable和Callable都是对任务的抽象。</p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>251 <strong>同构任务</strong>并行化(真正的性能提升)和<strong>异构任务</strong>并行化(获取重大性能提升很困难)</li>
+</ul>
+<hr />
+<ul>
+<li>252 中断是一种<strong>协作机制</strong>。它不会真正中断运行的线程，而只是发出中断请求，然后线程在下一个合适的时间中断自己。</li>
+</ul>
+<hr />
+<ul>
+<li>253 通常，<strong>中断</strong>是实现取消的最合理方式。也可以循环检测某个**状态位(volatile)**取消。</li>
+</ul>
+<hr />
+<ul>
+<li>254 幂等：多次请求得到结果一样。</li>
+</ul>
+<hr />
+<ul>
+<li>255 Java线程分为两类：普通线程，守护线程。两者唯一区别仅在于：线程退出时候的操作。</li>
+</ul>
+<hr />
+<ul>
+<li>256 提问的技巧：所有问题后面加<strong>实现原理</strong>。AQS<strong>原理</strong>，线程池<strong>原理</strong>，ArrayList<strong>原理</strong>，synchronized** 原理  <strong>，分布式事务</strong>原理**，Condition<strong>原理</strong>，AOP<strong>原理</strong>，Spring事务实现<strong>原理</strong>.......</li>
+</ul>
+<hr />
+<ul>
+<li>257 <strong>ThreadFactory</strong>很受欢迎 ！！！ <img src="assets/threadfactory.png" alt="" /></li>
+</ul>
+<hr />
+<ul>
+<li>258 线程池作用：<em><strong>1</strong></em> <strong>提高执行任务性能</strong>   _ <strong>2</strong> _<strong>资源管理</strong></li>
+</ul>
+<p>从ThreadPoolExecutor理解线程池的原理：Core and maximum pool sizes，On-demand construction，Creating new threads，Keep-alive times，Queuing，Rejected tasks，Hook methods，Queue maintenance，Finalization。</p>
+<p>详情请看 <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ThreadPoolExecutor.html">这里</a></p>
+<pre><code class="language-java">public ThreadPoolExecutor(int corePoolSize,
+                                int maximumPoolSize,
+                                long keepAliveTime,
+                                TimeUnit unit,
+                                BlockingQueue&lt;Runnable&gt; workQueue,
+                                ThreadFactory threadFactory,
+                                RejectedExecutionHandler handler){}
+</code></pre>
+<hr />
+<ul>
+<li>259 阿姆达尔定律告诉我们：光加CPU不一定吞吐量上的去，还要考虑程序串行比。</li>
+</ul>
+<hr />
+<ul>
+<li>260 阿姆达尔定律：在增加计算资源的情况下，程序理论达到的最高加速比取决于程序的串行化比例。</li>
+</ul>
+<hr />
+<ul>
+<li>261<img src="assets/%E9%98%BF%E5%A7%86%E8%BE%BE%E5%B0%94%E5%AE%9A%E5%BE%8B.png" alt="" /></li>
+</ul>
+<hr />
+<ul>
+<li>262 内存栅栏（内存屏障）：刷新缓存使缓存无效，刷新硬件的写缓存以及停止执行管道，抑制编译器优化，实现内存顺序限制，操作是不能被重排序的。</li>
+</ul>
+<hr />
+<ul>
+<li>263 <strong>悲观锁</strong>适合并发争抢比较严重的场景;<strong>乐观锁</strong>适合并发争抢不太严重的场景。</li>
+<li>等待时间较短，适合自旋等待(JVM实现阻塞)。等待时间较长，采取os挂起。</li>
+</ul>
+<hr />
+<ul>
+<li>264 非竞争同步可以在JVM中处理，竞争的同步可能需要os介入。</li>
+</ul>
+<hr />
+<ul>
+<li>265 阻塞的本质是<strong>等</strong>。非阻塞同步算法还是要<strong>等</strong>。等 = for(;;){}</li>
+</ul>
+<hr />
+<ul>
+<li>266 Little定律：在一个稳定系统中，顾客平均数量 = 平均到达率 * 平均停留时间</li>
+<li>系统中物体的<strong>平均数量</strong>等于物体离开系统的<strong>平均速率</strong>和每个物体在系统中<strong>停留的平均时间</strong>的乘积</li>
+</ul>
+<hr />
+<ul>
+<li>267 通常，对象<strong>分配</strong>操作(new )的开销比<strong>同步</strong>开销更低。所以对<strong>对象池</strong>说“不”。</li>
+</ul>
+<hr />
+<ul>
+<li>268  <img src="assets/map.png" alt="" /></li>
+</ul>
+<p>后半段，随着线程数增加，吞吐量趋于稳定，因为大部分时间消耗在上下文切换和调度延迟上。线程太多不好，太少也不好。</p>
+<hr />
+<ul>
+<li>269 上下文切换：运行和阻塞之间转换。</li>
+</ul>
+<hr />
+<ul>
+<li>270 提升<strong>可伸缩性</strong>：1 减少锁持有时间  2  降低锁粒度(锁分解，锁分段)  3  采取非独占锁  4  非阻塞锁代替阻塞锁</li>
+</ul>
+<hr />
+<ul>
+<li>271 一种学习思路：性能调优。log4j性能调优，kafka性能调优，redis性能调优，ngnix性能调优，jvm性能调优，mysql性能调优....</li>
+</ul>
+<hr />
+<ul>
+<li>272 Java中的<strong>锁</strong>(ReentrantLock-非阻塞加锁)必须要和内置锁(Synchronized-阻塞加锁)<strong>必须</strong>提供一样的<strong>内存语义（可见性,原子性,顺序性）</strong>。但是实现可以不同。monitorenter,monitorexit和CAS(CMPXCHG),实现的核心不在于锁，而在于如何实现一样的<strong>内存语义</strong></li>
+</ul>
+<hr />
+<ul>
+<li>273 读写锁：写可以降低为读，而读不能升级为写。因为会发生<strong>死锁</strong>。</li>
+</ul>
+<hr />
+<ul>
+<li>274 hash算法的评估：单调性和平衡性。<strong>一致性hash</strong>主要用在缓存系统。移除/添加一个cache时候，尽可能少的改变已存在的key映射关系，满足单调性。</li>
+</ul>
+<hr />
+<ul>
+<li>275 <strong>一致性hash</strong>映射过程：1  构建环形hash空间  2  对象映射到hash空间  3  cache映射到hash空间  4  对象映射到cache上。</li>
+</ul>
+<hr />
+<ul>
+<li>276 分布式的理论：CAP 。(强一致性，可用性，分区容错性)</li>
+</ul>
+<p>CA-》RDBMS-》ACID-》强一致性</p>
+<p>AP-》NoSQL，DNS，QQ头像修改-》BASE(基本可用，软状态，最终一致性)-》最终一致性</p>
+<p>CP-》分布式DB</p>
+<hr />
+<ul>
+<li>277 **ACID **VS <strong>BASE</strong></li>
+</ul>
+<table><thead><tr><th align="left">比较</th><th align="left">ACID</th><th align="left">BASE</th></tr></thead><tbody>
+<tr><td align="left">一致性</td><td align="left">强一致性</td><td align="left">最终一致性</td></tr>
+<tr><td align="left">特征</td><td align="left">一致性优先</td><td align="left">可用性优先</td></tr>
+<tr><td align="left">方法</td><td align="left">悲观</td><td align="left">乐观</td></tr>
+<tr><td align="left">适应变化</td><td align="left">难以变化</td><td align="left">适应变化</td></tr>
+</tbody></table>
+<hr />
+<ul>
+<li>278 <strong>基础知识</strong>是打通知识体系的针线。对<strong>基本问题</strong>思考越深，对<strong>变化</strong>就会越理解，对<strong>现象</strong>也就越理解。因为计算机学科基础问题决定了上层建筑的扎实程度。</li>
+</ul>
+<hr />
+<ul>
+<li>279 计算机学科基础问题有哪些？</li>
+</ul>
+<hr />
+<ul>
+<li>280  数据库理论很完备了。实际运用可能会完善和补充理论，但是不会超越理论。</li>
+</ul>
+<hr />
+<ul>
+<li>281 请求servlet</li>
+</ul>
+<p><img src="assets/http%E8%AF%B7%E6%B1%82.png" alt="" /></p>
+<hr />
+<ul>
+<li>
+<h2 id="282-cookies原理"><a class="header" href="#282-cookies原理">282 Cookies原理<img src="assets/cookies.png" alt="" /></a></h2>
+</li>
+<li>283 Session原理<img src="assets/session.png" alt="" /></li>
+</ul>
+<hr />
+<ul>
+<li>284 Servlet工作图</li>
+</ul>
+<p><img src="assets/servlet.png" alt="" /></p>
+<hr />
+<ul>
+<li>285 对比</li>
+</ul>
+<p><strong>Cookis</strong>，保留用户上次登录时间，保存浏览记录，登录不用重复输入密码，记录用户喜好(背景色，有无背景音乐)，网站个性化(定制服务)，</p>
+<p><strong>Session</strong> 购物车，全局用户名，防止用户非法登录到某个界面，用户验证码，判断新用户，取得用户操作时间，注销用户，</p>
+<p><strong>ServeltContext</strong>(application对象) 在线人数，累计访问量(db,file,servletContext)，公共聊天室，多个Servlet通过ServeltContext共享数据，获取web初始化参数，读取WEB目录和WEB-INF目录文件，聊天系统，网站在线用户显示，</p>
+<p><img src="assets/serveltContext.png" alt="" /></p>
+<hr />
+<ul>
+<li>286  有生命周期的对象:JVM加载Class对象，SpringBean生命周期，Servlet生命周期，线程生命周期，线程池生命周期，Hibernate对象生命周期，对象生命周期(JVM GC机制核心)。</li>
+</ul>
+<hr />
+<ul>
+<li>287 JSP和Servlet都是单例模式，多个请求对应一个JSP/Servlet。</li>
+</ul>
+<hr />
+<ul>
+<li>288 JSP原理</li>
+</ul>
+<p><img src="assets/jsp%E5%8E%9F%E7%90%86.png" alt="" /></p>
+<hr />
+<ul>
+<li>289 一个类是否是同一个类，有两个条件。 1 包名.类名是否相同。  2  加载这个类的ClassLoader是否是同一个。</li>
+</ul>
+<hr />
+<ul>
+<li>290 同一个ClassLoader不能同时加载两个相同的类，但是同一个类可以被两个不同的ClassLoader加载。</li>
+</ul>
+<hr />
+<ul>
+<li>291 类加载机制</li>
+</ul>
+<p><img src="assets/%E7%B1%BB.png" alt="" /></p>
+<p><img src="assets/%E5%8A%A0%E8%BD%BD%E7%B1%BB.png" alt="" /></p>
+<hr />
+<ul>
+<li>292 GC解决了下面三问题： 1 哪些内存需要回收？(堆和方法区)  中已经&quot;<strong>死</strong>&quot;的对象？ 1 引用计数  2  可达性分析算法</li>
+<li>2  什么时候回收？    3  如何回收？</li>
+</ul>
+<hr />
+<ul>
+<li>293 垃圾收集器</li>
+</ul>
+<p><img src="assets/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.png" alt="" /></p>
+<hr />
+<ul>
+<li>294 垃圾回收算法： 1  标记-清除  2  复制算法  3 标记-整理   4  分代收集算法(hotspot)</li>
+</ul>
+<hr />
+<ul>
+<li>295 Java是一种静态多分派，动态单分派的语言。</li>
+</ul>
+<p>方法调用：1   解析   2  分派(静态分派-重载，动态分派-覆写)</p>
+<hr />
+<ul>
+<li>296 Java是一种动态语言(反射),但是是静态类型语言。</li>
+</ul>
+<hr />
+<ul>
+<li>297  动态类型语言：变量无类型而变量值才有类型。</li>
+</ul>
+<p>动态语言：Java  静态语言：C/C++</p>
+<p>动态类型语言：Js，Python  静态类型语言：C/C++，Java</p>
+<hr />
+<ul>
+<li>298  代码编译的结果从本地机器码转变为字节码，是存储格式发展的一小步，却是编程语言发展的一大步。</li>
+</ul>
+<hr />
+<ul>
+<li>299 Java程序信息分为： 代码(Code属性)和元数据(除去代码外所有的信息，注解，注释，javadoc)。</li>
+</ul>
+<hr />
+<ul>
+<li>300 理解字节码：</li>
+</ul>
+<p><strong>SuppressPropertiesBeanIntrospector.class</strong>和** String.class**</p>
+<p><img src="assets/SuppressProperties.png" alt="" />  @@VS@@<img src="assets/String.png" alt="" /></p>
+<hr />
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../tech-quotes/chapter2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../tech-quotes/chapter4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../tech-quotes/chapter2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../tech-quotes/chapter4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../mermaid.min.js"></script>
+        <script type="text/javascript" src="../mermaid-init.js"></script>
+        <script type="text/javascript" src="../smart-anchor.js"></script>
+        <script src="https://utteranc.es/client.js"
+        repo="RustMagazine/rust_magazine_2021"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>
+
+    </body>
+</html>

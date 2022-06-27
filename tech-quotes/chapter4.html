@@ -1,0 +1,674 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第四章 - 读书笔记</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><li class="part-title">目录</li><li class="chapter-item "><a href="../index.html"><strong aria-hidden="true">1.</strong> 简介</a></li><li class="chapter-item expanded "><a href="../tech-quotes/toc.html"><strong aria-hidden="true">2.</strong> 技术札记</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../tech-quotes/chapter1.html"><strong aria-hidden="true">2.1.</strong> 第一章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter2.html"><strong aria-hidden="true">2.2.</strong> 第二章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter3.html"><strong aria-hidden="true">2.3.</strong> 第三章</a></li><li class="chapter-item expanded "><a href="../tech-quotes/chapter4.html" class="active"><strong aria-hidden="true">2.4.</strong> 第四章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter5.html"><strong aria-hidden="true">2.5.</strong> 第五章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter6.html"><strong aria-hidden="true">2.6.</strong> 第六章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter7.html"><strong aria-hidden="true">2.7.</strong> 第七章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter8.html"><strong aria-hidden="true">2.8.</strong> 第八章</a></li></ol></li><li class="chapter-item "><a href="../cs/toc.html"><strong aria-hidden="true">3.</strong> 计算机科学</a></li><li class="chapter-item "><a href="../language/toc.html"><strong aria-hidden="true">4.</strong> 语言</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../language/java-concurrency-in-practoce.html"><strong aria-hidden="true">4.1.</strong> Java并发编程实战</a></li><li class="chapter-item "><a href="../language/concurrent-programming-in-java.html"><strong aria-hidden="true">4.2.</strong> Java并发编程-设计原则与模式</a></li></ol></li><li class="chapter-item "><a href="../database/toc.html"><strong aria-hidden="true">5.</strong> 数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../database/nosql-distilled.html"><strong aria-hidden="true">5.1.</strong> NoSQL精粹</a></li><li class="chapter-item "><a href="../database/cassandra-the-definitive-guide-2nd.html"><strong aria-hidden="true">5.2.</strong> Cassandra权威指南-第二版</a></li><li class="chapter-item "><a href="../database/ddia-cn.html"><strong aria-hidden="true">5.3.</strong> 数据密集型应用系统设计-中文</a></li><li class="chapter-item "><a href="../database/ddia-en.html"><strong aria-hidden="true">5.4.</strong> 数据密集型应用系统设计-英文</a></li></ol></li><li class="chapter-item "><a href="../middleware/summary.html"><strong aria-hidden="true">6.</strong> 分布式与中间件</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../middleware/mongodb-the-definitive-guide-2nd.html"><strong aria-hidden="true">6.1.</strong> mongodb权威指南第二版</a></li><li class="chapter-item "><a href="../middleware/nosql-for-mere-mortals.html"><strong aria-hidden="true">6.2.</strong> NoSQL实践指南</a></li><li class="chapter-item "><a href="../middleware/streaming-processing-with-apache-flink.html"><strong aria-hidden="true">6.3.</strong> 基于Apache Flink的流处理</a></li><li class="chapter-item "><a href="../middleware/deep-understanding-of-distributed-systems.html"><strong aria-hidden="true">6.4.</strong> 深入理解分布式系统</a></li></ol></li><li class="chapter-item "><a href="../framework/toc.html"><strong aria-hidden="true">7.</strong> 框架</a></li><li class="chapter-item "><a href="../engineering/toc.html"><strong aria-hidden="true">8.</strong> 软件工程</a></li><li class="chapter-item "><a href="../design/toc.html"><strong aria-hidden="true">9.</strong> 设计</a></li><li class="chapter-item "><a href="../certificate/toc.html"><strong aria-hidden="true">10.</strong> 考试和考证</a></li><li class="chapter-item "><a href="../product/toc.html"><strong aria-hidden="true">11.</strong> 产品</a></li><li class="chapter-item "><a href="../system/toc.html"><strong aria-hidden="true">12.</strong> 系统</a></li><li class="chapter-item "><a href="../others/toc.html"><strong aria-hidden="true">13.</strong> 其他</a></li><li class="chapter-item "><a href="../geektime/toc.html"><strong aria-hidden="true">14.</strong> 极客时间</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../geektime/技术与商业案例解读.html"><strong aria-hidden="true">14.1.</strong> 16-技术与商业案例解读-徐飞</a></li></ol></li><li class="chapter-item "><a href="../paper/toc.html"><strong aria-hidden="true">15.</strong> 论文</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../paper/HAT.html"><strong aria-hidden="true">15.1.</strong> Highly Available Transactions: Virtues and Limitations</a></li><li class="chapter-item "><a href="../paper/cap-critique.html"><strong aria-hidden="true">15.2.</strong> A Critique of the CAP Theorem</a></li><li class="chapter-item "><a href="../paper/pacelc.html"><strong aria-hidden="true">15.3.</strong> Consistency Tradeoffs in Modern Distributed Database System Design</a></li><li class="chapter-item "><a href="../paper/consensus-in-the-cloud.html"><strong aria-hidden="true">15.4.</strong> Consensus in the Cloud: Paxos Systems Demystified</a></li><li class="chapter-item "><a href="../paper/replication-in-db-and-ds.html"><strong aria-hidden="true">15.5.</strong> Understanding Replication in Databases and Distributed Systems</a></li><li class="chapter-item "><a href="../paper/eventually-consistent.html"><strong aria-hidden="true">15.6.</strong> Eventually Consistent</a></li><li class="chapter-item "><a href="../paper/Stream-System-Evolution.html"><strong aria-hidden="true">15.7.</strong> A Survey on the Evolution of Stream Processing Systems</a></li></ol></li><li class="chapter-item "><a href="../ebook/toc.html"><strong aria-hidden="true">16.</strong> 电子书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../ebook/java-concurreny-beautify.html"><strong aria-hidden="true">16.1.</strong> Java并发编程之美</a></li></ol></li><li class="chapter-item "><a href="../english/toc.html"><strong aria-hidden="true">17.</strong> 英语书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../english/the-little-prince.html"><strong aria-hidden="true">17.1.</strong> 小王子</a></li></ol></li><li class="chapter-item "><a href="../philosophy/toc.html"><strong aria-hidden="true">18.</strong> 哲学</a></li><li class="chapter-item "><a href="../psychology/toc.html"><strong aria-hidden="true">19.</strong> 心理学</a></li><li class="chapter-item "><a href="../chinese-ancient/toc.html"><strong aria-hidden="true">20.</strong> 国学</a></li><li class="chapter-item "><a href="../finance/toc.html"><strong aria-hidden="true">21.</strong> 经济与金融</a></li><li class="chapter-item "><a href="../reference/reference.html"><strong aria-hidden="true">22.</strong> 参考资料</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../reference/booklist.html"><strong aria-hidden="true">22.1.</strong> 书单</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../reference/booklist/chinese-ancient-literature.html"><strong aria-hidden="true">22.1.1.</strong> 国学</a></li><li class="chapter-item "><a href="../reference/booklist/210.html"><strong aria-hidden="true">22.1.2.</strong> 经典各学科210本</a></li><li class="chapter-item "><a href="../reference/booklist/invest-100.html"><strong aria-hidden="true">22.1.3.</strong> 金融投资100本</a></li><li class="chapter-item "><a href="../reference/booklist/invest-400.html"><strong aria-hidden="true">22.1.4.</strong> 金融投资400本</a></li><li class="chapter-item "><a href="../reference/booklist/invest-classify.html"><strong aria-hidden="true">22.1.5.</strong> 投资学分类书籍</a></li><li class="chapter-item "><a href="../reference/booklist/hejun-consulting.html"><strong aria-hidden="true">22.1.6.</strong> 和君推荐企业家和投行家书籍</a></li><li class="chapter-item "><a href="../reference/booklist/middle-student.html"><strong aria-hidden="true">22.1.7.</strong> 中学生阅读指南</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-600.html"><strong aria-hidden="true">22.1.8.</strong> 商务汉译世界学术名著丛书·600本</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-500.html"><strong aria-hidden="true">22.1.9.</strong> 商务汉译世界学术名著丛书·分科本500本</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-400.html"><strong aria-hidden="true">22.1.10.</strong> 商务汉译世界学术名著丛书·珍藏本400本</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-120.html"><strong aria-hidden="true">22.1.11.</strong> 汉译世界学术名著丛书·120年纪念版</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-china-105.html"><strong aria-hidden="true">22.1.12.</strong> 中华现代学术名著丛书·105本</a></li></ol></li><li class="chapter-item "><a href="../reference/easy-talk.html"><strong aria-hidden="true">22.2.</strong> 1000条</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../reference/easy-talk/chapter1.html"><strong aria-hidden="true">22.2.1.</strong> 第一章</a></li><li class="chapter-item "><a href="../reference/easy-talk/chapter2.html"><strong aria-hidden="true">22.2.2.</strong> 第二章</a></li><li class="chapter-item "><a href="../reference/easy-talk/chapter3.html"><strong aria-hidden="true">22.2.3.</strong> 第三章</a></li><li class="chapter-item "><a href="../reference/easy-talk/chapter4.html"><strong aria-hidden="true">22.2.4.</strong> 第四章</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">读书笔记</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/xiaozhiliaoo/reading-lists" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第四章"><a class="header" href="#第四章">第四章</a></h1>
+<ul>
+<li>301 Synchronized原理分析(Javac+Java虚拟机共同协作，比如JMM层面)：</li>
+</ul>
+<p>方法：常量池flags=<strong>ACC_SYNCHRONIZED</strong></p>
+<p>代码块：字节码指令  <strong>monitorenter</strong>和<strong>monitorexit</strong></p>
+<p>机器码：<strong>lock</strong>(read,load,use),<strong>unlock</strong>(store,write,assign)</p>
+<hr />
+<ul>
+<li>302 世界上没有完美的程序，但是我们不应该沮丧，因为写程序本身就是一个不断追求完美的过程。</li>
+</ul>
+<hr />
+<ul>
+<li>303 执行Java程序<img src="assets/jvm.png" alt="" /></li>
+</ul>
+<hr />
+<ul>
+<li>304 理解<strong>运行时</strong></li>
+</ul>
+<p><img src="assets/jvmrun.png" alt="" /></p>
+<p><img src="assets/run.png" alt="" /></p>
+<p><img src="assets/runtime.png" alt="" /></p>
+<hr />
+<ul>
+<li>305 为什么JVM采用分代回收策略？基于观察事实：1 大部分分配对象的存活时间很短 2 存活时间久的对象很少引用存活时间短的对象。基于弱分带假设。</li>
+</ul>
+<hr />
+<ul>
+<li>306 MinorGc触发条件：Eden没有足够内存空间来分配对象。<img src="assets/mintorgc.png" alt="" /></li>
+</ul>
+<hr />
+<ul>
+<li>307  垃圾回收器工作图解</li>
+</ul>
+<p><img src="assets/gc1.png" alt="" /><img src="assets/gc2.png" alt="" /><img src="assets/gc3.png" alt="" /></p>
+<hr />
+<ul>
+<li>308 Java学的好的标志：掌握从java层到jvm层映射。例如：对象池会加大老年代的存活时间，不好的编程实践，ArrayList给定初始化尺寸，内部数组不断调整，导致不必要的内存分配。</li>
+</ul>
+<hr />
+<ul>
+<li>309 程序怎么优化？1 吞吐量 2  响应性   这些优化映射到CPU，内存，IO层上，在映射到Java层，就体现出掌握JVM内存分配的重要性了。</li>
+</ul>
+<hr />
+<ul>
+<li>310 程序优化本质是一个调整映射过程。代码到jvm到os到机器。区别不同在于自上而下还是自下而上。</li>
+</ul>
+<hr />
+<ul>
+<li>311 MinorGC：新生代垃圾收集。   FullGC：整个堆(新生代+老年代+永久区)收集。</li>
+</ul>
+<p>MinorGC：当Eden区满时，触发Minor GC。</p>
+<p>FullGC：1  System.gc   2  老年代空间不足  3  永久代空间不足   4  CMS GC时出现promotion failed和concurrent mode failure   5   统计得到的Minor GC晋升到旧生代的平均大小大于老年代的剩余空间   6  堆中分配很大的对象</p>
+<hr />
+<ul>
+<li>312 缓存命中率和和缓存大小没有关系。频繁UPDATE操作，缓存设置再大也没有用。命中率取决于工作负载。</li>
+</ul>
+<hr />
+<ul>
+<li>313 InnoDB是大多数情况下最好的选择。</li>
+</ul>
+<hr />
+<ul>
+<li>314 MySQL服务器逻辑架构图：</li>
+</ul>
+<p><img src="assets/import.png" alt="" /></p>
+<hr />
+<ul>
+<li>315 MySQL逻辑详细图</li>
+</ul>
+<p><img src="assets/import2.png" alt="" /></p>
+<hr />
+<ul>
+<li>316 垃圾回收器本质是一种空间管理技术。缓存也是。只不过一个希望对象存活久，一个希望对象存活短。而垃圾回收机制对应缓存的清除策略。反面想，缓存的设计也可以划分为年轻代与老年代。此时对象更希望进入老年代，保持长期有效对象。此时关键在于缓存数据结构的设计。</li>
+</ul>
+<hr />
+<ul>
+<li>317 内存回收技术反面就是内存不回收策略。也就是内存常驻技术。</li>
+</ul>
+<hr />
+<ul>
+<li>318 设计一个垃圾回收器的思路：  1  分布式垃圾回收器，两个jvm运行一段程序 ，n个jvm，n台机器，在提供一个抽象网络jvm层     2    高并发的垃圾回收器     3    反垃圾回收器</li>
+</ul>
+<p>4   插件体系架构类似存储引擎的垃圾回收器，每一部分做成可插拔式的。 精简版，按需定制。对外提供API。开源社区提供插件。</p>
+<hr />
+<ul>
+<li>319  性能优化的前提是监控与统计，否则无从谈起。</li>
+</ul>
+<hr />
+<ul>
+<li>320 MySQL调优顺序：1 Schema与数据类型优化  2   索引优化    3   查询优化   4  优化服务器设置   5   操作系统与硬件优化  6  应用层优化   -《高性能的MySQL》   完美调优不存在，服务器设置是调优时间投入产出很小的调优。而前三者投产比大。</li>
+</ul>
+<hr />
+<ul>
+<li>321 my.cnf的配置：映射到os，io，cpu，内存。zk，nginx也是如此。</li>
+</ul>
+<hr />
+<ul>
+<li>322 进程间通信是所有分布式系统的核心。不谈分布式机器间信息交换机制，对分布式系统研究成了空谈。</li>
+</ul>
+<hr />
+<ul>
+<li>323 对分布式系统研究角度：</li>
+</ul>
+<p>1 体系结构：集中，非集中，混合？</p>
+<p>2  进程：线程实现？虚拟化？客户端？服务端？代码迁移？</p>
+<p>3  通信 ：远程过程调用（同步RPC，异步RPC），消息通信（瞬间与持久）</p>
+<p>4  命名</p>
+<p>5  同步</p>
+<p>6  一致性与复制</p>
+<p>7  容错性</p>
+<p>8 安全性</p>
+<hr />
+<ul>
+<li>324  学习网络其实本质是在学协议栈。如何层与层之间通信，也就是信息交换机制。</li>
+</ul>
+<hr />
+<ul>
+<li>325  协议是解决方法的高级抽象。TCP协议思路也可以应用到应用程序，仅此而已。</li>
+</ul>
+<hr />
+<ul>
+<li>326  <strong>OSI</strong>看所有分布式系统都只是<strong>应用程序</strong>而已。</li>
+<li><img src="assets/network-layer.png" alt="" /></li>
+</ul>
+<p>调整后的网络通信模型。越往下，越通用，越抽象，越不变。</p>
+<p><img src="assets/network-layer2.png" alt="" /></p>
+<hr />
+<ul>
+<li>327  中间件协议：<strong>认证协议</strong>，<strong>授权协议</strong>，<strong>分布式提交协议</strong>（在一组进程内，某种操作要么由全部进程共同完成，要么不执行），<strong>分布式锁定协议</strong>（保护资源免受分布于多台机器上一组进程的并发访问），<strong>通信协议等</strong>。均与应用程序无关的协议。可用来实现通用的中间件服务。</li>
+</ul>
+<hr />
+<ul>
+<li>328  通信模型</li>
+</ul>
+<table><thead><tr><th align="left">分类</th><th align="left">持久通信</th><th align="left">瞬间通信</th></tr></thead><tbody>
+<tr><td align="left">同步通信</td><td align="left">消息队列（请求提交时同步化）</td><td align="left">RPC（请求完全处理后同步化）</td></tr>
+<tr><td align="left">异步通信</td><td align="left">mom</td><td align="left">Berkeley套接字，mpi</td></tr>
+</tbody></table>
+<hr />
+<ul>
+<li>329 参数传递机制：1  call by value  2  call by reference  3  call by copy/restore （Ada语言）取决于语言设计者。</li>
+</ul>
+<hr />
+<ul>
+<li>330 构建服务器的三种方式： 1  单线程  2  多线程  3 有限状态机</li>
+</ul>
+<p><img src="assets/three-way-to-build-server.png" alt="" /></p>
+<hr />
+<ul>
+<li>331  RPC分类：单向RPC，同步RPC，异步RPC（转账，启动远程服务，执行批处理），两步RPC（延迟的同步RPC）</li>
+<li>RPC系统（DCERpc，SunRpc），RPC框架（gRpc偏重于语言）</li>
+</ul>
+<p><img src="assets/rpcmodelt.png" alt="" />，</p>
+<hr />
+<ul>
+<li>332  两个节点交换更新信息方式：1 pull 2 push 3 pull-push  感染算法：传播更新信息。</li>
+</ul>
+<hr />
+<ul>
+<li>333   互联网架构八荣八耻，DevOps</li>
+</ul>
+<p><strong>以可配置为荣，以硬编码为耻</strong></p>
+<p><strong>以系统互备为荣，以系统单点为耻</strong></p>
+<p><strong>以随时可重启为荣，以不能迁移为耻</strong></p>
+<p><strong>以整体交付为荣，以部分交付为耻</strong></p>
+<p><strong>以无状态为荣，以有状态为耻</strong></p>
+<p><strong>以标准化为荣，以以特殊化为耻</strong></p>
+<p><strong>以自动化工具为荣，以人肉操作为耻</strong></p>
+<p><strong>以无人值守为荣，以人工介入为耻</strong></p>
+<hr />
+<ul>
+<li>334 Java八荣八耻</li>
+</ul>
+<p>**以动手实践为荣，以只看不练为耻。 **</p>
+<p>**以打印日志为荣，以出错不报为耻。 **</p>
+<p>**以局部变量为荣，以全局变量为耻。 **</p>
+<p>**以单元测试为荣，以手工测试为耻。 **</p>
+<p>**以代码重用为荣，以复制粘贴为耻。 **</p>
+<p>**以多态应用为荣，以分支判断为耻。 **</p>
+<p>**以定义常量为荣，以魔法数字为耻。 **</p>
+<p><strong>以总结思考为荣，以不求甚解为耻。</strong></p>
+<hr />
+<ul>
+<li>335 python之禅</li>
+</ul>
+<p>Beautiful is better than ugly.Explicit is better than implicit.Simple is better than complex.Complex is better than complicated.Flat is better than nested.Sparse is better than dense.Readability counts.</p>
+<p>Special cases aren't special enough to break the rules.Although practicality beats purity.</p>
+<p>Errors should never pass silently.Unless explicitly silenced.</p>
+<p>In the face of ambiguity, refuse the temptation to guess.</p>
+<p>There should be one-- and preferably only one --obvious way to do it.Although that way may not be obvious at first unless you're Dutch.</p>
+<p>Now is better than never.Although never is often better than  right now.</p>
+<p>If the implementation is hard to explain, it's a bad idea.</p>
+<p>If the implementation is easy to explain, it may be a good idea.</p>
+<p>Namespaces are one honking great idea -- let's do more of those!</p>
+<hr />
+<ul>
+<li>336  一种感悟：XXX性能优化，XXX优化，XXX设计总会归结于几个简单的思考出发点。IO，CPU，内存，磁盘。这是一种在计算机领域相同的思维逻辑，一种统一的思维出发点，无论再难的问题，执行总是在CPU进行读-取-执的过程循环。计算机是一个封闭的系统，系统内有其客观规律存在，不会超越硬件规律。存不存在一种通用的思考出发点去看待所有问题，但是解决方案却是不同的。知识无涯，而道有止。</li>
+</ul>
+<hr />
+<ul>
+<li>337 为什么有时候学了原理好像没有什么用？因为对原理解决的简单问题，问题的演化，其他解决方案没有进行深入探索。出于简单的思考点，一步一步演化，才能真正理解原理。<strong>消息队列的出发点是通信，而不是存储信息的容器，也不是Producer-Consumer模型，更不是Kafka</strong>。而高性能Kafka一定通过其固有模型来映射OS层icmd来体现。但是通用的消息中间件所面临的设计问题的类似。通信方式有<strong>RPC，消息，流，多播通信</strong>。设计模式的出发点是代码复用，重构出发点是旧代码的重设计。</li>
+</ul>
+<hr />
+<ul>
+<li>338 高性能指的是<strong>ICMD</strong>之间的权衡。对外体现给计算机一个任务他可以立马处理完。设计高性能的XXX中间件，离不开ICMD的权衡。Netty高性能也必然体现在此。IO多路复用和网络通道复用异曲同工。计算机处理问题方式和人处理问题方式没太大差别。都是人海战术。一个不行上两个(多线程)。<strong>更多</strong>和<strong>更巧</strong>体现了设计上的差异。</li>
+</ul>
+<hr />
+<ul>
+<li>339 哪一个高才是你所需要突破的？高性能，高可用，高吞吐，高并发，高响应，高可扩，高体验，高收益？</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>340 三星索引设计过程：1  等值谓词放入索引。  2  order by 列放入索引。  3  其余列加入索引。</p>
+<p>一星：最小化索引片宽度。 二星：排除排序  三星：排除回表。</p>
+</li>
+</ul>
+<p>三星索引为什么快？ 一次查询只需要一次磁盘随机读和一次窄索引片的扫描。可能的最好索引。</p>
+<hr />
+<ul>
+<li>341  <img src="assets/indexdesign.png" alt="" /></li>
+</ul>
+<p>为其设计索引？</p>
+<p><strong>两星索引</strong>(CITY,FNAME,LNAME)，(FNAME,CITY,LNAME)</p>
+<p><strong>一星索引</strong>(CITY,LNAME,FNAME)，</p>
+<p><strong>最差</strong>(LNAME,CITY,FNAME)  CITY列不参与索引匹配</p>
+<hr />
+<ul>
+<li>342  好的技术书一般都带设计，模式，原理，高性能，内幕，权威之类的字眼。这类书和XX天精通区别在于一个讲设计和原理，一个在讲应用。会用和会设计书两种能力。</li>
+</ul>
+<hr />
+<ul>
+<li>343 分布式系统设计的公共特性与设计问题（设计层抽象）：</li>
+</ul>
+<p>1  物理模型：硬件模型</p>
+<p>2  体系结构模型：cs/p2p</p>
+<p>3  基础模型：交互模型，故障模型，安全模型</p>
+<p>分布式系统有其<strong>公共的设计问题</strong>，而不同类型的中间件也有其公共的设计问题。消息中间件和NoSql的公共设计问题不同，但是本质是<strong>类似</strong>的。技术选型的过程其实是理解其设计问题背后假设的一个过程，也就是应用场景问题。通用消息中间件设计问题有：消息重复和消息顺序问题。而这个设计问题属于基础模型中的故障模型。两者区别在于设计的抽象层不同。还有通用的RPC框架经典的设计问题等等【NELSON Implementing Remote Procedure Calls】</p>
+<hr />
+<ul>
+<li>344 设计问题需要看Papper。</li>
+</ul>
+<hr />
+<ul>
+<li>345  你能从<strong>支持随机读写</strong>的特性可以推断出其他什么特性？理解某一个开源应用的特性过程其实就是理解其设计问题背后假设的一个过程。可否特性推断，可否产品推断。MYSQL的inndb和myisam的设计问题代表一类软件的设计问题。</li>
+</ul>
+<hr />
+<ul>
+<li>346 设计一个XXX系统？先思考假设是否成立。设计秒杀？这个问题本身就是错误的。抽象成：在极短时间进行对共享资源进行海量读写情况下，如何保证数据一致性以及系统的可用性？继续抽象：高并发的数据一致性问题。继续抽象：ICMD层。设计一个通用场景的解决方案难在<strong>假设的正确性</strong>。</li>
+</ul>
+<hr />
+<ul>
+<li>347  任何“不完美的系统”必然存在某些形式上的妥协。</li>
+</ul>
+<hr />
+<ul>
+<li>348 不完美的系统因为人类思维的局限性。即不可能预测未来。</li>
+</ul>
+<hr />
+<ul>
+<li>349 从解决方案到设计方案的区别在于是否理解<strong>基本的设计问题</strong>。</li>
+</ul>
+<hr />
+<ul>
+<li>350 TCP和UDP之间有趣权衡。UDP提供了简单消息传递机制，有遗漏故障却无性能故障。TCP保证消息传递，但需要以额外的消息高延迟和存储开销作为代价。</li>
+</ul>
+<hr />
+<ul>
+<li>351 Consistent Hashing:本质是减少<strong>remapping</strong>的技术。在分布式中就是当节点离开或者加入时候使得原先节点变动最少。在缓存中意味着减少节点的缓存失效。其核心概念来自<strong>DHT</strong>。</li>
+</ul>
+<hr />
+<ul>
+<li>352  当你不知道系统处于什么状态的情况下，要针对不同情况进行相应的<strong>可接受</strong>的<strong>策略设计</strong>，并设计<strong>不可接受</strong>的<strong>补救措施</strong>。比如悲观情况，乐观情况，最有可能情况，没有情况。分布式系统是一个证伪的技术范畴。作为证伪的系统体系中，你知道<strong>不是</strong>什么很容易，但是知道<strong>是</strong>什么很难。数据库的事务等级也是种假设，对读多写少进行设计是概率，不是必然。所以系统设计总不是完美的，因为你不可能考虑到所有假设情况。</li>
+<li>经典的策略：乐观锁和悲观锁以及自旋锁等。补救措施：锁升级，但是锁升级又会带来设计上的复杂。设计复杂和性能优化的权衡。</li>
+<li>高可用的数据复制策略以及数据刷盘的补救措施。</li>
+</ul>
+<hr />
+<ul>
+<li>353 分布式系统的特点是什么，就是分布式数据库的特点，也就是消息队列的特点，也就是mysql集群的特点。</li>
+</ul>
+<hr />
+<ul>
+<li>354 分布式系统是一个证伪的系统。</li>
+</ul>
+<hr />
+<ul>
+<li>355 一致性问题本质是一个收敛性问题。所有节点值一样的情况下，系统是一种理想的平衡状态。A+B&gt;=2根号(A*B)</li>
+</ul>
+<hr />
+<ul>
+<li>356 读写分离以及主库只写，从库只读。本质是对“<strong>所有节点均可读可写</strong>”的简化。所有节点均可读可写情况下系统可以收敛吗？或者说可以系统状态一致吗？</li>
+</ul>
+<hr />
+<ul>
+<li>357 <a href="https://en.wikipedia.org/wiki/Roger_Needham">Roger Needham</a>  在计算机科学上，所有问题都可以通过某个层次上的间接方式来解决。</li>
+</ul>
+<hr />
+<ul>
+<li>358 <a href="https://en.wikipedia.org/wiki/Jim_Gary">Jim Gary</a> 没有通过消除某种层次上的间接方式解决不了的性能问题。</li>
+</ul>
+<hr />
+<ul>
+<li>359 通信范型中时间与空间的耦合与解耦。</li>
+</ul>
+<p><img src="assets/com.png" alt="" /></p>
+<hr />
+<ul>
+<li>360 计算机最重要的能力是抽象能力，但是编程语言带来不了抽象性，数学可以带来抽象。</li>
+</ul>
+<hr />
+<ul>
+<li>361 什么是计算？</li>
+</ul>
+<hr />
+<ul>
+<li>362 集中式意味着缺少弹性和可伸缩性。更重要的是存在单点故障和性能瓶颈。</li>
+</ul>
+<hr />
+<ul>
+<li>363 pub／sub系统设计体系</li>
+</ul>
+<p><img src="assets/pubsubsystem.png" alt="" /></p>
+<p>Pub/Sub例子</p>
+<p><img src="assets/pubsubexample.png" alt="" /></p>
+<hr />
+<ul>
+<li>364 Do you know the future of jvm？the future of java？the future of data？the future of compute？ the future of language？</li>
+</ul>
+<hr />
+<ul>
+<li>365 设计好的API先从方法命名和方法参数做起。</li>
+</ul>
+<p><img src="assets/apidesign.png" alt="" /></p>
+<hr />
+<ul>
+<li>366 分布式算法(<a href="https://en.wikipedia.org/wiki/Distributed_algorithm">Distributed algorithm</a>)分类：原子提交（2PC，3PC），一致性（Paxos，Raft），分布式查找，领导选举，互斥，资源分配，复制，可靠广播，生成树等。</li>
+</ul>
+<hr />
+<ul>
+<li>367 间接通信总结</li>
+</ul>
+<p><img src="assets/indirectcommunicate.png" alt="" /></p>
+<hr />
+<ul>
+<li>368 CAP理解：</li>
+</ul>
+<p><img src="assets/capmodel.png" alt="" /></p>
+<p>**C+A  **以2阶段提交(2 phase commit)为代表的严格选举协议。当通信中断时算法不具有终止性（即不具备分区容忍性）;</p>
+<p>**C+P  **以Paxos、Raft为代表的多数派选举算法。当不可用的执行过程超过半数时，算法无法得到正确结果（即会出现不可用的情况）;</p>
+<p>**A+P  **以Gossip协议为代表的冲突解决协议。当网络分区存在和执行过程正确时，只能等待分区消失才保持一致性（即不具备强一致性）</p>
+<hr />
+<ul>
+<li>369 人类不可能制造永动机同样也不可能满足flp impossible或cap。cap打破了制造<strong>超级计算机</strong>的幻想。一台有无限存储和计算能力的“超级计算机”，可以提供无穷大的存储容量，并且可以将计算时间降低至无穷小。</li>
+</ul>
+<hr />
+<ul>
+<li>370 分布式系统设计其实就是就权衡<strong>cap</strong>。</li>
+</ul>
+<hr />
+<ul>
+<li>371 cap权衡在nosql中的应用</li>
+</ul>
+<p><img src="assets/cap.png" alt="" /></p>
+<hr />
+<ul>
+<li>372 Lamport逻辑时钟（<a href="https://en.wikipedia.org/wiki/Logical_clock">Logical clock</a>）不能捕获因果关系，但是向量时钟（<a href="https://en.wikipedia.org/wiki/Vector_clock">Vector clock</a>）可以捕获因果关系。</li>
+</ul>
+<hr />
+<ul>
+<li>373 向量时钟有可能确保所有先于某个消息的所有消息接收后才传送这个消息。</li>
+</ul>
+<hr />
+<ul>
+<li>374 A distributed hash table (DHT) is a reliable, scalable, wide-area data storage system that frees programmers from many of the complications of building a distributed system</li>
+</ul>
+<hr />
+<ul>
+<li>375  DHT不是一个算法也不是一个数据结构，而是一个解决分布式问题的一个存储系统。</li>
+</ul>
+<hr />
+<ul>
+<li>376  DHT的优缺点</li>
+</ul>
+<p><img src="assets/dht.png" alt="" /></p>
+<p><img src="assets/dhtbad.png" alt="" /></p>
+<hr />
+<ul>
+<li>377 分布式系统和计算机网络的一个普遍问题是没有全局共享时钟。不同机器上的进程有自己的时间。</li>
+</ul>
+<hr />
+<ul>
+<li>378 时钟概念理解：make程序。</li>
+</ul>
+<hr />
+<ul>
+<li>379 Lamport：Happen-Before，Vector Lock，Logical Lock,Lamport TimeStamps ，Vector TimeStamps....</li>
+</ul>
+<hr />
+<ul>
+<li>380 Lamport：时钟同步是可能的，但是不是必须的。如果两个进程间不进行交互，那么时钟无需同步。重要的不是所有的进程在时间上完全一致，而是他们在事件发生顺序上要达成一致。</li>
+</ul>
+<hr />
+<ul>
+<li>381 互斥算法：</li>
+</ul>
+<p><img src="assets/%E4%BA%92%E6%96%A5.png" alt="" /></p>
+<hr />
+<ul>
+<li>382 进程同步的基础问题：1  时钟   2  互斥  3 选举</li>
+</ul>
+<hr />
+<ul>
+<li>383 时间，时钟，事件顺序。</li>
+</ul>
+<p><img src="assets/lamportlogicalclock.png" alt="" /></p>
+<hr />
+<ul>
+<li>384 复制可以提高可靠性和性能，但是带来多副本间数据不一致的问题和消耗更多网络带宽。复制代价大小取决于进行一致性处理的代价。</li>
+</ul>
+<hr />
+<ul>
+<li>385 一致性实现的<strong>关键思想</strong>：以单个<strong>原子操作</strong>或者<strong>事务的形式</strong>在所有副本上执行更新。</li>
+</ul>
+<hr />
+<ul>
+<li>386 可扩展问题可以通过复制和缓存技术得到缓解，但是保持所有副本一致性通常需要全局同步，而全局同步又会带来严重的性能下降。可行的方法是放宽一致性的限制。如放松以原子操作方式执行的要求。可放宽程度取决于复制数据的访问模式和更新模式更取决于数据的用途。</li>
+</ul>
+<hr />
+<ul>
+<li>389  <a href="http://www.wmrichards.com">Mark Richards</a> 在software architecture patterns一书中将架构分类以及架构特点：</li>
+</ul>
+<p><img src="assets/pattenrs.png" alt="" /></p>
+<p>Overall Agility：整理灵活性   Deployment  部署  Testability  可测性 Performance 性能  Scalability 扩展性  Development 开发</p>
+<hr />
+<ul>
+<li>390 常见的<a href="https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms">编程范式</a>：命令式，申明式，结构化，过程化，函数式，面向对象，事件驱动，基于自动机的（有限状态机）</li>
+</ul>
+<hr />
+<ul>
+<li>391  没人实现Chrome浏览器使用分层架构模式，也没人实现Web网站使用微内核架构模式。但是Web框架本身可以采用插件模式。RPC框架实现用Broker模式。但是RPC本身请求过程可能是分层模式（去Db请求数据）。</li>
+</ul>
+<hr />
+<ul>
+<li>392 POSA1。分类架构模式</li>
+</ul>
+<p><img src="assets/posa1%E5%88%86%E7%B1%BB%E6%9E%B6%E6%9E%84.png" alt="" /></p>
+<hr />
+<ul>
+<li>393 多副本写实现一致性：Lamport时间戳+定序器的对称多播</li>
+</ul>
+<hr />
+<ul>
+<li>394 分布式系统中<strong>向量时间戳</strong>提供了一种表示历史记录的方法。（历史读写操作集合）</li>
+</ul>
+<hr />
+<ul>
+<li>395 原子性是很多应用程序的重要特征。分布式系统（包括分布式事务）中的原子性基础是<strong>分布式提交协议</strong>。</li>
+</ul>
+<hr />
+<ul>
+<li>396 容错的关键技术-----冗余（<a href="https://en.wikipedia.org/wiki/Redundancy_%28engineering%29">Redundancy</a>）</li>
+</ul>
+<hr />
+<ul>
+<li>397 分布式服务器故障模型</li>
+</ul>
+<p><img src="assets/faultmodel.png" alt="" /></p>
+<p>Arbitrary  failure 也叫 Byzantine failure。</p>
+<hr />
+<ul>
+<li>398 CAP<img src="assets/caplearn.png" alt="" /></li>
+</ul>
+<hr />
+<ul>
+<li>399 <img src="assets/cap-in-db.png" alt="" /></li>
+</ul>
+<hr />
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../tech-quotes/chapter3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../tech-quotes/chapter5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../tech-quotes/chapter3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../tech-quotes/chapter5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../mermaid.min.js"></script>
+        <script type="text/javascript" src="../mermaid-init.js"></script>
+        <script type="text/javascript" src="../smart-anchor.js"></script>
+        <script src="https://utteranc.es/client.js"
+        repo="RustMagazine/rust_magazine_2021"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>
+
+    </body>
+</html>

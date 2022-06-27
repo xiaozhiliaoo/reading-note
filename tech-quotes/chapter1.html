@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第一章 - 读书笔记</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><li class="part-title">目录</li><li class="chapter-item "><a href="../index.html"><strong aria-hidden="true">1.</strong> 简介</a></li><li class="chapter-item expanded "><a href="../tech-quotes/toc.html"><strong aria-hidden="true">2.</strong> 技术札记</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../tech-quotes/chapter1.html" class="active"><strong aria-hidden="true">2.1.</strong> 第一章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter2.html"><strong aria-hidden="true">2.2.</strong> 第二章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter3.html"><strong aria-hidden="true">2.3.</strong> 第三章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter4.html"><strong aria-hidden="true">2.4.</strong> 第四章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter5.html"><strong aria-hidden="true">2.5.</strong> 第五章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter6.html"><strong aria-hidden="true">2.6.</strong> 第六章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter7.html"><strong aria-hidden="true">2.7.</strong> 第七章</a></li><li class="chapter-item "><a href="../tech-quotes/chapter8.html"><strong aria-hidden="true">2.8.</strong> 第八章</a></li></ol></li><li class="chapter-item "><a href="../cs/toc.html"><strong aria-hidden="true">3.</strong> 计算机科学</a></li><li class="chapter-item "><a href="../language/toc.html"><strong aria-hidden="true">4.</strong> 语言</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../language/java-concurrency-in-practoce.html"><strong aria-hidden="true">4.1.</strong> Java并发编程实战</a></li><li class="chapter-item "><a href="../language/concurrent-programming-in-java.html"><strong aria-hidden="true">4.2.</strong> Java并发编程-设计原则与模式</a></li></ol></li><li class="chapter-item "><a href="../database/toc.html"><strong aria-hidden="true">5.</strong> 数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../database/nosql-distilled.html"><strong aria-hidden="true">5.1.</strong> NoSQL精粹</a></li><li class="chapter-item "><a href="../database/cassandra-the-definitive-guide-2nd.html"><strong aria-hidden="true">5.2.</strong> Cassandra权威指南-第二版</a></li><li class="chapter-item "><a href="../database/ddia-cn.html"><strong aria-hidden="true">5.3.</strong> 数据密集型应用系统设计-中文</a></li><li class="chapter-item "><a href="../database/ddia-en.html"><strong aria-hidden="true">5.4.</strong> 数据密集型应用系统设计-英文</a></li></ol></li><li class="chapter-item "><a href="../middleware/summary.html"><strong aria-hidden="true">6.</strong> 分布式与中间件</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../middleware/mongodb-the-definitive-guide-2nd.html"><strong aria-hidden="true">6.1.</strong> mongodb权威指南第二版</a></li><li class="chapter-item "><a href="../middleware/nosql-for-mere-mortals.html"><strong aria-hidden="true">6.2.</strong> NoSQL实践指南</a></li><li class="chapter-item "><a href="../middleware/streaming-processing-with-apache-flink.html"><strong aria-hidden="true">6.3.</strong> 基于Apache Flink的流处理</a></li><li class="chapter-item "><a href="../middleware/deep-understanding-of-distributed-systems.html"><strong aria-hidden="true">6.4.</strong> 深入理解分布式系统</a></li></ol></li><li class="chapter-item "><a href="../framework/toc.html"><strong aria-hidden="true">7.</strong> 框架</a></li><li class="chapter-item "><a href="../engineering/toc.html"><strong aria-hidden="true">8.</strong> 软件工程</a></li><li class="chapter-item "><a href="../design/toc.html"><strong aria-hidden="true">9.</strong> 设计</a></li><li class="chapter-item "><a href="../certificate/toc.html"><strong aria-hidden="true">10.</strong> 考试和考证</a></li><li class="chapter-item "><a href="../product/toc.html"><strong aria-hidden="true">11.</strong> 产品</a></li><li class="chapter-item "><a href="../system/toc.html"><strong aria-hidden="true">12.</strong> 系统</a></li><li class="chapter-item "><a href="../others/toc.html"><strong aria-hidden="true">13.</strong> 其他</a></li><li class="chapter-item "><a href="../geektime/toc.html"><strong aria-hidden="true">14.</strong> 极客时间</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../geektime/技术与商业案例解读.html"><strong aria-hidden="true">14.1.</strong> 16-技术与商业案例解读-徐飞</a></li></ol></li><li class="chapter-item "><a href="../paper/toc.html"><strong aria-hidden="true">15.</strong> 论文</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../paper/HAT.html"><strong aria-hidden="true">15.1.</strong> Highly Available Transactions: Virtues and Limitations</a></li><li class="chapter-item "><a href="../paper/cap-critique.html"><strong aria-hidden="true">15.2.</strong> A Critique of the CAP Theorem</a></li><li class="chapter-item "><a href="../paper/pacelc.html"><strong aria-hidden="true">15.3.</strong> Consistency Tradeoffs in Modern Distributed Database System Design</a></li><li class="chapter-item "><a href="../paper/consensus-in-the-cloud.html"><strong aria-hidden="true">15.4.</strong> Consensus in the Cloud: Paxos Systems Demystified</a></li><li class="chapter-item "><a href="../paper/replication-in-db-and-ds.html"><strong aria-hidden="true">15.5.</strong> Understanding Replication in Databases and Distributed Systems</a></li><li class="chapter-item "><a href="../paper/eventually-consistent.html"><strong aria-hidden="true">15.6.</strong> Eventually Consistent</a></li><li class="chapter-item "><a href="../paper/Stream-System-Evolution.html"><strong aria-hidden="true">15.7.</strong> A Survey on the Evolution of Stream Processing Systems</a></li></ol></li><li class="chapter-item "><a href="../ebook/toc.html"><strong aria-hidden="true">16.</strong> 电子书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../ebook/java-concurreny-beautify.html"><strong aria-hidden="true">16.1.</strong> Java并发编程之美</a></li></ol></li><li class="chapter-item "><a href="../english/toc.html"><strong aria-hidden="true">17.</strong> 英语书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../english/the-little-prince.html"><strong aria-hidden="true">17.1.</strong> 小王子</a></li></ol></li><li class="chapter-item "><a href="../philosophy/toc.html"><strong aria-hidden="true">18.</strong> 哲学</a></li><li class="chapter-item "><a href="../psychology/toc.html"><strong aria-hidden="true">19.</strong> 心理学</a></li><li class="chapter-item "><a href="../chinese-ancient/toc.html"><strong aria-hidden="true">20.</strong> 国学</a></li><li class="chapter-item "><a href="../finance/toc.html"><strong aria-hidden="true">21.</strong> 经济与金融</a></li><li class="chapter-item "><a href="../reference/reference.html"><strong aria-hidden="true">22.</strong> 参考资料</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../reference/booklist.html"><strong aria-hidden="true">22.1.</strong> 书单</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../reference/booklist/chinese-ancient-literature.html"><strong aria-hidden="true">22.1.1.</strong> 国学</a></li><li class="chapter-item "><a href="../reference/booklist/210.html"><strong aria-hidden="true">22.1.2.</strong> 经典各学科210本</a></li><li class="chapter-item "><a href="../reference/booklist/invest-100.html"><strong aria-hidden="true">22.1.3.</strong> 金融投资100本</a></li><li class="chapter-item "><a href="../reference/booklist/invest-400.html"><strong aria-hidden="true">22.1.4.</strong> 金融投资400本</a></li><li class="chapter-item "><a href="../reference/booklist/invest-classify.html"><strong aria-hidden="true">22.1.5.</strong> 投资学分类书籍</a></li><li class="chapter-item "><a href="../reference/booklist/hejun-consulting.html"><strong aria-hidden="true">22.1.6.</strong> 和君推荐企业家和投行家书籍</a></li><li class="chapter-item "><a href="../reference/booklist/middle-student.html"><strong aria-hidden="true">22.1.7.</strong> 中学生阅读指南</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-600.html"><strong aria-hidden="true">22.1.8.</strong> 商务汉译世界学术名著丛书·600本</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-500.html"><strong aria-hidden="true">22.1.9.</strong> 商务汉译世界学术名著丛书·分科本500本</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-400.html"><strong aria-hidden="true">22.1.10.</strong> 商务汉译世界学术名著丛书·珍藏本400本</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-world-120.html"><strong aria-hidden="true">22.1.11.</strong> 汉译世界学术名著丛书·120年纪念版</a></li><li class="chapter-item "><a href="../reference/booklist/shangwu-china-105.html"><strong aria-hidden="true">22.1.12.</strong> 中华现代学术名著丛书·105本</a></li></ol></li><li class="chapter-item "><a href="../reference/easy-talk.html"><strong aria-hidden="true">22.2.</strong> 1000条</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../reference/easy-talk/chapter1.html"><strong aria-hidden="true">22.2.1.</strong> 第一章</a></li><li class="chapter-item "><a href="../reference/easy-talk/chapter2.html"><strong aria-hidden="true">22.2.2.</strong> 第二章</a></li><li class="chapter-item "><a href="../reference/easy-talk/chapter3.html"><strong aria-hidden="true">22.2.3.</strong> 第三章</a></li><li class="chapter-item "><a href="../reference/easy-talk/chapter4.html"><strong aria-hidden="true">22.2.4.</strong> 第四章</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">读书笔记</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/xiaozhiliaoo/reading-lists" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第一章"><a class="header" href="#第一章">第一章</a></h1>
+<ul>
+<li>
+<p>1 面向过程：程序 = 数据结构+算法</p>
+<p>面向对象：程序 = 对象+消息</p>
+<p>面向模式：程序 = 模式+ 反模式</p>
+<p>面向业务：程序 = 重构 + 粘贴复制(业务数据+业务逻辑)</p>
+<p>业务=数据+逻辑</p>
+<p>系统设计=服务+数据存储</p>
+</li>
+<li>
+<p>面向all：程序 = 数据 + 逻辑</p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>2 架构 = 组件 + 组件间的关系</li>
+</ul>
+<hr />
+<ul>
+<li>3 martin flower：架构是项目组员对软件的共同的理解。什么是系统关键？什么是代码库重要的东西？什么是工作中经常记住的东西？</li>
+</ul>
+<hr />
+<ul>
+<li>4 martin flower： important stuff = shared understanding + hard to change</li>
+</ul>
+<hr />
+<ul>
+<li>5 martin flower：我们做好工作通常基于道德上的原因，但是手艺人和经济人之间的战争，经济总会获胜。质量和成本间的折0中。</li>
+</ul>
+<hr />
+<ul>
+<li>6 martin flower：软件质量 = 内部质量 + 外部质量。 内部质量通常理解为好的模块设计，外部设计是好的用户体验。</li>
+</ul>
+<p><img src="assets/clipboard.png" alt="" /></p>
+<hr />
+<ul>
+<li>7 martin flower： 如果我们不在软件内在质量付诸努力，最终我们就是欺骗客户，我们在放慢客户竞争的能力。</li>
+</ul>
+<hr />
+<ul>
+<li>8 martin flower：好的设计和坏的设计会有一个临界点。前期坏的设计累加功能快，而后期好的设计的市场价值才会显现出来。</li>
+</ul>
+<p><img src="assets/clipboard2.png" alt="" /></p>
+<hr />
+<ul>
+<li>9 martin flower： 持续集成，持续交付，快速响应变化。新时代软件信条。</li>
+</ul>
+<hr />
+<ul>
+<li>10 GOF23设计模式口诀： 两个慈母在阿里云上看电视，唱着abcdffp，结果ab型号的电视fps变快了。 </li>
+</ul>
+<p><code>行为：CCIIMMOSSTV   结构：ABCDFFP  创建：ABFPS</code></p>
+<hr />
+<ul>
+<li>11 抱怨CRUD和IF-ELSE没技术含量是因为掌握的模式太少，这和初级还是高级开发并没有必然联系。</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>12 招式：Java,SSH,Eclipse,JSP,ASP,.Net等框架技术。</p>
+<p>内功：数据结构,算法,重构,软件工程,设计模式等。</p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>13 重构：在不改变软件可观察行为前提下改善其内部结构。</li>
+</ul>
+<hr />
+<ul>
+<li>14 重构是在代码写好后改进它的设计。设计-》编码-》设计-》编码......</li>
+</ul>
+<hr />
+<ul>
+<li>15 什么是技术沉淀？沉淀知识？沉淀经验？沉淀工龄？看xx源码？看底层原理？都不是，沉淀的是方法论和软件观。但是前提是看xx源码，看xx原理。</li>
+</ul>
+<hr />
+<ul>
+<li>16 算法：空间和时间的平衡艺术。算法代价的数学表述：常数-一次-二次-指数-幂数。
+GC算法也是如此。</li>
+</ul>
+<hr />
+<ul>
+<li>17 Java，JS书籍对比。《Java编程思想》-《JS权威指南》   《Efftive Java》-《JS语言精粹》  《Java核心技术》-《Js高级程序设计》</li>
+</ul>
+<hr />
+<ul>
+<li>18 业务代码：时间和质量呈现不相关关系。写“坏味道”代码依旧“坏味道”，写“优雅代码”依旧“优雅”。时间短就写不出好代码是多么的愚蠢逻辑！</li>
+</ul>
+<hr />
+<ul>
+<li>19 技术再深，无非就是源码，但是源码的背后是什么？</li>
+</ul>
+<hr />
+<ul>
+<li>20 面向对象四大特征：封装，继承，多态，抽象。而继承和封装是矛盾的，所以才有了委派[delegate]。</li>
+</ul>
+<hr />
+<ul>
+<li>21 做不到共享的CodeReview不是好的CodeReview。</li>
+</ul>
+<hr />
+<ul>
+<li>22 孙玄：一切抛开业务的架构设计都是耍流氓 。</li>
+</ul>
+<hr />
+<ul>
+<li>23 架构选择：All in One 还是 One in One[SOA,MicroService, distributed]，对于创业初期，All in One更加普遍。</li>
+</ul>
+<hr />
+<ul>
+<li>24 阅读源码：一次精神洗礼之旅。</li>
+</ul>
+<hr />
+<ul>
+<li>25 技术和业务影响团队的组织结构。</li>
+</ul>
+<hr />
+<ul>
+<li>26 设计模式：总是将变化的事物和不变的事物分离开。</li>
+</ul>
+<hr />
+<ul>
+<li>27 设计模式： 可复用面向对象软件的基础。</li>
+</ul>
+<hr />
+<ul>
+<li>28 编程的一种方法论：Talk is cheap，Show me the code。</li>
+</ul>
+<hr />
+<ul>
+<li>29 《人件》更像本管理指南，而不是本管理书。</li>
+</ul>
+<hr />
+<ul>
+<li>30 康威定律：设计系统的组织，最终会将其沟通结构复制到产品的设计中。</li>
+</ul>
+<hr />
+<ul>
+<li>31 没有银弹也是银弹。</li>
+</ul>
+<hr />
+<ul>
+<li>32 写代码如同写诗，灵感来源于大量的积累。</li>
+</ul>
+<hr />
+<ul>
+<li>33 必须将技术提升和学习作为日常生活之战略。如同吃饭喝水一样平常。</li>
+</ul>
+<hr />
+<ul>
+<li><strong>34 十个字</strong>以内描述GOF模式：</li>
+<li>A抽象工厂：产品族的创建。</li>
+<li>B构建者：复杂对象创建与组装</li>
+<li>F工厂方法：多态工厂</li>
+<li>P原型：对象克隆</li>
+<li>S单例：确保对象唯一性</li>
+<li>简单工厂：集中工厂 [静态工厂]</li>
+<li>A适配器：不兼容结构协调</li>
+<li>B桥接：处理多维变化</li>
+<li>C组合：树形结构处理</li>
+<li>D装饰：扩展系统功能</li>
+<li>F外观：提供统一入口</li>
+<li>F享元：实现对象复用</li>
+<li>P代理：对象间接访问</li>
+<li>C职责链：请求链式处理</li>
+<li>C命令：请求发送者和接受者解耦</li>
+<li>I解释器：自定义语言</li>
+<li>I迭代器：遍历聚合对象元素</li>
+<li>M中介者：协调多对象交互</li>
+<li>M备忘录：撤销功能的实现</li>
+<li>O观察者：对象联动</li>
+<li>S状态：对象状态转换</li>
+<li>S策略：算法封装与切换</li>
+<li>T模板方法：定义算法框架</li>
+<li>V访问者：操作复杂对象结构</li>
+</ul>
+<hr />
+<ul>
+<li>35 软件变化是必然的，有变化就要维护，随着时间的推移，维护成本远远大于初期的开发成本，因此，在软件开发中，最重要的是降低维护成本，维护成本正比于系统复杂度，所以降低维护成本，系统设计就要追求简单清晰。</li>
+</ul>
+<hr />
+<ul>
+<li>36 软件质量取决于：机器质量+想法质量+代码质量+沟通质量</li>
+</ul>
+<hr />
+<ul>
+<li>37 程序是什么？对于程序员是机器指令，对于用户是用户指令。</li>
+</ul>
+<hr />
+<ul>
+<li>38 某种程度上技术的瓶颈可能取决于业务的瓶颈。</li>
+</ul>
+<hr />
+<ul>
+<li>39 软件的目的是帮助他人。</li>
+</ul>
+<hr />
+<ul>
+<li>40 软件设计方程式：D = Vn+Vf / Ei + Em</li>
+</ul>
+<p>D：变化可行性  Vn：当前价值 Vf：未来价值  Ei：开发成本 Em：维护成本 
+随着时间推移方程转化为：D = Vf / Em    结论：相比于降低开发成本，降低维护成本更重要。</p>
+<hr />
+<ul>
+<li>41 变化定律：程序存在时间越长,他的某个部分变化可能性越大。</li>
+</ul>
+<hr />
+<ul>
+<li>42 缺陷定律：程序中新增缺陷可能性与代码修改量成正比</li>
+</ul>
+<hr />
+<ul>
+<li>43 简洁定律：软件某部分的维护难度，反比于该部分的简洁程度。</li>
+</ul>
+<hr />
+<ul>
+<li>44 测试定律：你对软件行为了解程序，等于你真正测试他的程度。</li>
+</ul>
+<hr />
+<ul>
+<li>45 相比降低开发成本，降低维护成本更重要。而维护成本正比于系统复杂性。</li>
+</ul>
+<hr />
+<ul>
+<li>46 Rod Johnson ：市面J2EE作品过分强调各种J2EE规范，而忽视规范所解决现实问题。</li>
+</ul>
+<hr />
+<ul>
+<li>47 “多瘤程序员”：已经掌握一项技术的实际使用技巧但同时留下了许多疤痕。</li>
+</ul>
+<hr />
+<ul>
+<li>48 Rod Johnson：设计一次，在任何地方重新实现几个接口。而不是设计一次到处运行。</li>
+</ul>
+<hr />
+<ul>
+<li>49 Rod Johnson谈优质代码。</li>
+</ul>
+<hr />
+<ul>
+<li>50 OO设计比任何一项特定的实现技术（比如J2EE，Java）都重要。好的编程习惯和健全的OO设计使得J2EE应用具有坚实基础。劣质的Java代码就是劣质的J2EE代码。</li>
+</ul>
+<hr />
+<ul>
+<li>51 OO原理加强J2EE开发。</li>
+</ul>
+<hr />
+<ul>
+<li>52 许多开发花太多时间应付API，却花太少时间坚持好的编程习惯。</li>
+</ul>
+<hr />
+<ul>
+<li>53 J2EE必读书目：《poeaa》，《expert one-to-one J2EE Design and Development》，《core J2EE patterns》，《expert one-to-one J2EE development without ejb》</li>
+</ul>
+<hr />
+<ul>
+<li>54 技术提升两条路：1  广   2   深     在某个时间点他们会汇合起来。深会追求广，广会反哺深。</li>
+</ul>
+<hr />
+<ul>
+<li>55 对知识（包括编程）产生崇敬感：先让其知道学问之大，进而产生渺小感，遂而从渺小感生出崇敬感。培养人才要从此入手。
+今夫天，斯昭昭之多，及其无穷也，日月星辰系焉，万物覆焉。今夫地，一撮土之多。及其广厚，载华岳而不重，振河海而不泄，万物载焉。</li>
+</ul>
+<hr />
+<ul>
+<li>56 异常的定义：我对此感到意外。</li>
+</ul>
+<hr />
+<ul>
+<li>57 代码量的定义：1 不重复代码。 2 上线的代码。</li>
+</ul>
+<hr />
+<ul>
+<li>58 好的程序设计语言能够帮助程序员写出好的程序，但是无论哪种语言，都阻止不了程序员用它写出坏程序。</li>
+</ul>
+<hr />
+<ul>
+<li>59 无限接近自己所在领域的大师境界。</li>
+</ul>
+<hr />
+<ul>
+<li>60 毕业五年内看完Spring源码和Netty源码。</li>
+</ul>
+<hr />
+<ul>
+<li>61 重要的不是你学到什么，而是感受到什么。没有感受是白痴，感受比别人强是下道，感觉比自己强是中道，感觉和大师相通是大道。很多人止于超越自我。而兴趣或许可以加速这一切发生。</li>
+</ul>
+<hr />
+<ul>
+<li>62 一定要有专门时间段学习软件业大师的非技术书。 比如温伯格, Kent Beck,Frederic Brooks(人月神话)</li>
+</ul>
+<hr />
+<ul>
+<li>63 行业对比：投资框架和编程框架。</li>
+</ul>
+<hr />
+<ul>
+<li>64 Cache和Pool都是资源管理方式，区别在于有无资源标识符。因为有了标识符，缓存持久化才有了意义。</li>
+</ul>
+<hr />
+<ul>
+<li>65 类间关系：关联，依赖，泛化（继承），实现。</li>
+</ul>
+<hr />
+<ul>
+<li>66 源码UML类图口诀：一进二出三关联  四多五少六抽象。</li>
+</ul>
+<hr />
+<ul>
+<li>67  Java数组的协变的，无通配符的泛型是非协变的，有通配符的泛型是协变的。</li>
+</ul>
+<hr />
+<ul>
+<li>68 你的水平就是团队的水平，提升团队水平先提升自我。</li>
+</ul>
+<hr />
+<ul>
+<li>69 每天几条effective java，就是力量。</li>
+</ul>
+<hr />
+<ul>
+<li>70 POSA：</li>
+</ul>
+<hr />
+<ul>
+<li>71 POSA2:Patterns for Concurrent and Nerwork Objects</li>
+</ul>
+<p>**服务访问和配置模式：**包装器外观[Wrapper Facade]，组件配置器[Component Configurator]，拦截器[Interceptor]，扩展接口[Extension Interface]</p>
+<p>**事件处理模式：**反应器[Reactor]，主动器[Proactor]，异步完成标记[Asynchronous Completion Token]，接受器-连接器[Acceptor-Connector]</p>
+<p>**同步模式：**定界加锁[Scoped Locking]，策略加锁[Strategized Locking]，线程安全接口[Thread-Safe Interface]，双重加锁优化[Double-Checked Locking Optimization]</p>
+<p>**并发模式：**主动对象[Active Object]，监视器对象[Monitor Object]，半同步半异步[Half-Sync/Half-Async]，领导者追随者[Leader/Flowers]，线程特定存储[Thread-Specific Storage]</p>
+<hr />
+<ul>
+<li>72 POSA3: Patterns for Resource Management</li>
+</ul>
+<p>**资源获取：**查找模式[Lookup]，延迟获取[Lazy Acquisition]，预先获取[Eager Acquisition]，部分获取[Partial  Acquisition ]</p>
+<p>**资源生命周期：**缓存[Caching]，池[Pooling]，协调者[Coordinator]，资源生命周期管理器[Resource Lifecycle Manage]</p>
+<p>**资源释放：**租约[Leasing]，驱逐者[Evitor]</p>
+<hr />
+<ul>
+<li>73 POSA4:A Pattern Language for Distributed Computing  114个模式</li>
+</ul>
+<p>**从混沌到结构：**Domain Model[领域模式] ，Layer[分层]， Model-View-Controller[模式-视图-控制器]，Presentation-Abstraction-Controller[表现-抽象-控制]，Microkernel[微内核]，Reflection[反射]，Pipes And Filters[管道和过滤器]，Shared Respository[共享仓库]，Blackboard[黑板报]，Domain Object[领域对象]</p>
+<p>**分布式基础设施：**Messaging[消息传递] 【 Message Channel[信道],Message Endpoint[消息端点],Message Translator[消息转换器],Message Router[消息路由] 】 ,Pub-Sub[发布者-订阅者],Broker[经纪人],【Client Proxy[客户端代码],Requestor[请求者],Invoker[调用者],Client Request Handler[客户端请求处理],Server Request Handler[服务端请求处理]】</p>
+<p>**事件分离和分发：**Reactor[反应器],Proactor[前摄器],Acceptor-Connector[接受器-连接器],Asynchronous Completion Token[异步完成令牌]</p>
+<p>**接口划分：**Explicit Interface[显示接口],Extension Interface[扩展接口],Introspective Interface[内省接口],Dynamic Invocation  Interface[动态调用接口],Proxy[代理],Bussiness Delegate[业务委派],Facade [外观],Combined Method[组合方法], Iterator [迭代器],Enumeration Method[枚举方法],Batch Method[批处理方法]</p>
+<p>**组件划分：**Encapsulated Implementation[封装实现],Whole-Part[整体-部分],Composite[组合],Master-Slave[主-从],Half-Object plus Protocol[半对象加协议],Replicated Component Group[复制组件组]</p>
+<p>**应用控制：**Page Controller[页面控制器],Front  Controller [前端控制器],Application  Controller [应用控制器],Command Processor[命令处理程序],Template View[模板视图],Transform View[转换视图], Firewall Proxy[防火墙代理],Authrization[授权]</p>
+<p>**并发：**Half-Sync/Half-Async[半同步-半异步],Leader-Followers[领导者-追随者],Active Object[活动对象],Monitor Object[监控对象]</p>
+<p>**同步：**Grarded Suspension[守护挂起],Future[未来/期货],Thread-Safe Interface[线程安全接口],Double-Checked Locking[双重锁检测],Stategized Locking[策略锁],Scoped Locking[区域锁],Thread-Special Storage[线程专属存储],Copied Value[副本值],Immutable Value[不变模式]</p>
+<p>**对象间交互：**Observer[观察者],Double Dispatch[双分派],Mediator[中介者],Command[命令],Memonto[备忘录],Context Object[上下文对象],Data Transfer Object[数据传输对象],Message[消息]</p>
+<p>**适配和扩展：**Bridge[桥接],Object Adapter[对象适配],Chain of Responsibility[职责链],Interpreter[解释器],Interceptor[拦截器],Visitor[访问者],Decorator[装饰者],Execute-Around Object[环绕执行对象],Template Method[模板方法],Strategy[策略],Null Object[空对象],Wrapper Facade[包装外观],Declarative Component Configuration[声明组件配置]</p>
+<p>**模态行为：**Objects for States[状态对象],Method for States[状态方法],Collections for States[状态集合]</p>
+<p>**资源管理：**Container[容器],Component Configurator[组件配置],Object Manager[对象管理器],Lookup[查找],Virtual Proxy[虚代理],Lifecycle CallBack[生命周期回调],Task Coordinator[任务协调者],Resourse Pool[资源池],Resourse Cache[资源缓存], Lazy Acquisition [延迟获取/懒加载],Eager Acquisition[提前获取],Partial Acqusition[局部获取],Activator[激励器],Evictor[驱逐器],Leasing[租借],Automated Garbage[自动回收],Counting Handles[计数句柄],Abstract Factory[抽象工厂],Builder[构建者],Factory Method[工厂方法],Disposal Method[销毁方法]</p>
+<p>**数据库访问：**Database Access Layer[数据库访问层],Data Mapper[数据映射器],Row Data Gateway[行数据网关],Table Data Gateway[表数据网关],Active Record[活动记录]</p>
+<hr />
+<ul>
+<li>74 如果不为业务，不为功利，不为职业，什么都不为，你要学的东西是什么？学的技术是什么？别着急给答案，仔细思考。</li>
+</ul>
+<hr />
+<ul>
+<li>75 Poeaa:</li>
+</ul>
+<p><strong>领域逻辑模式：</strong> Transaction Script[事务脚本],Domain Model[领域模式],Table Moudle[表模块],Service Layer[服务层]</p>
+<p><strong>数据源架构模式：</strong> Table Data GateWay[表数据入口],Row Data GateWay[行数据入口],Active Record[活动记录],Data Mapper[数据映射器]</p>
+<p>**对象-关系行为模式：**Unit of Work[工作单元],Identity Map[标识映射],Lazy Load[延迟加载]</p>
+<p>**对象-关系结构模式：**Indentity Field[标识域],Foreign Key Mapping[外键映射],Association Table Mapping[关联表映射],Dependent Mapping[依赖映射],Embedded Value[嵌入值],Serialized LOB[序列化LOB],Single Table Inheritance[单表继承],Class Table Inheritance[类表继承],Concrete Table Inheritance[具体表继承],Inheritance Mappers[继承映射器]</p>
+<p>**对象-关系元数据映射模式：**Metadata Mapping[元数据映射],Query Object[查询对象],Repository[资源],</p>
+<p>**Web表现层模式：**Model-View-Controller[模型-视图-控制器],Page Controller[页面控制器],Front Controller[前端控制器],Template View[模板视图],Transform View[转换视图],Two-Step View[两步视图],Application Controller[应用控制器]</p>
+<p>**分布模式：**Remote Facade[远程外观],Data Transfer Object[数据传输对象]</p>
+<p>**离线并发模式：**Optimistic Offline Lock[乐观离线锁],Pessimistic Offline Lock[悲观离线锁],Coarse Grained Lock[粗粒度锁],Implicit Lock[隐含锁]</p>
+<p>**会话状态模式：**Client Session State[客户端会话状态],Server Session State[服务器会话状态],Database Session State[数据库会话状态]</p>
+<p>**基本模式：**GateWay[入口],Mapper[映射器],Layer Supertype[层超类型],Separated Interface[分离接口],Registry[注册表],Value Object[值对象],Money[货币],Special Case[特殊情况],Plugin[插件],Service Stub[服务桩],Record Set[记录集]</p>
+<hr />
+<ul>
+<li>76 Core J2EE Patterns:</li>
+</ul>
+<p>**表现层：**Intercepting Filter [拦截过滤器],Context Object [上下文对象],Front Controller[前端控制器],Application Controller[应用控制器],View Helper[视图助手],Composite View[复合视图],Dispatcher View[分配器视图],Service To Worker[服务到工作者]</p>
+<p>**业务层：**Business Delegate[业务代表],Service Locator[服务定位器],Session Facade[会话门面],Application Service[应用服务],Business Objec[业务对象],Composite Entity[复合实体],Transfer Object[传输对象],T O Assembler[传输对象包装器],Value List Handler[值列表处理器]</p>
+<p>**集成层：**Data Access Object[数据访问对象],Service Activator[服务激活器],Domain Store[业务领域存储],Web Service Broker[Web Service中转]</p>
+<hr />
+<ul>
+<li>77 百度能带来短期快感，但是解决不了长期满足感。</li>
+</ul>
+<hr />
+<ul>
+<li>78 学技术本质是学一个解决方案。解决方案是方法，方法背后是模式，学技术其实就是学模式。</li>
+</ul>
+<hr />
+<ul>
+<li>79 企业应用架构模式讲的是架构还是模式，还是认为架构是一种模式？</li>
+</ul>
+<hr />
+<ul>
+<li>80 对于生命来说，每一天都是一样的，并不存在周六周日，做技术也是如此。</li>
+</ul>
+<hr />
+<ul>
+<li>81 Hibernate是解决方案，数据源架构模式是本质，要分清技术方案和模式区别。</li>
+</ul>
+<hr />
+<ul>
+<li>82 现象学高手不代表就是数理高手。所以对于开发，技术原理不是必须的。单独寻求原理的百度党，还是现象学的产物。问题：你是怎么掌握技术原理的？区分掌握原理是否有用在于对方停留现象还是数理层面------伪原理开发。</li>
+</ul>
+<hr />
+<ul>
+<li>83 形容一下你掌握的技术知识？我会xxx，还是思维导图。还是什么？</li>
+</ul>
+<hr />
+<ul>
+<li>84 以技术理解技术就好比拿着一个榔头看所有东西都是钉子一样。 </li>
+</ul>
+<hr />
+<ul>
+<li>85 “格物致知”同样适用于技术。求的就是个豁然贯通，身性通明。</li>
+</ul>
+<hr />
+<ul>
+<li>86 思维导图关键看出发点，而非知识点的累积。</li>
+</ul>
+<hr />
+<ul>
+<li>87 做技术心不要太满，满了就只能看见自己了。</li>
+</ul>
+<hr />
+<ul>
+<li>88 十个类一天，二十个类三天，三十个类一周。这是正常源码速度。</li>
+</ul>
+<hr />
+<ul>
+<li>89 源码：代码复杂程度随着类的增加而成呈现指数增长关系。</li>
+</ul>
+<hr />
+<ul>
+<li>90 源码分析：抽象层/实现层/工具层/模式层/测试层/异常层/入口类。</li>
+</ul>
+<hr />
+<ul>
+<li>91 面向对象设计原则：SOLID，DRY，YAGNI，GRASP，KISS。</li>
+</ul>
+<hr />
+<ul>
+<li>92 软件开发方法论：<img src="assets/GotoHibor867316937.png" alt="" /></li>
+</ul>
+<blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Software_development_process">https://en.wikipedia.org/wiki/Software_development_process</a></p>
+</blockquote>
+<hr />
+<ul>
+<li>93 有其一套完整的哲学体系的技术大师，或者技术体系的书最具价值。当然他的作品也是他的代码。可否像投资大师分类方法去划分？分门别派。</li>
+</ul>
+<hr />
+<ul>
+<li>94 人和技术关系思考：成天和老婆在一起，就能领悟男女之道吗？</li>
+</ul>
+<hr />
+<ul>
+<li>95 业内对技术人员需要掌握的知识并没有达成共识。数据结构，操作系统向来叫好不叫座。同时是重要不紧急的知识。</li>
+</ul>
+<hr />
+<ul>
+<li>96 面试一定要问：1 你觉得软件开发需要掌握哪些知识？[他觉得的往往是他会的和他的视野]，  2 你未来要学习哪些知识？</li>
+</ul>
+<hr />
+<ul>
+<li>97 当你提出技术有什么意义，目的的时候，是你对自己和技术关系产生了疑问。人与技术最直接关系用技术来解决问题。</li>
+</ul>
+<hr />
+<ul>
+<li>98 <strong>对象池</strong>有Config，<strong>池对象</strong>有Info or State。<strong>对象池</strong>不需要Factory，本身就具备Factory的特性。但是<strong>池对象</strong>需要。因为Config不同Info才不同。线程池，连接池，缓存亦如此。</li>
+</ul>
+<p>参考设计:     <img src="assets/pool.png" alt="" /></p>
+<hr />
+<ul>
+<li>99  一般来说先有技术后有规范。比如DI。Java技术规范-JSR，Web技术规范-RFC。有的技术实现遵循了规范，有的不然。</li>
+</ul>
+<hr />
+<ul>
+<li>100 我的技术学习方法论: 规范 + 实现 + 应用。 JSR51[NIO Since J2SE 1.4] + Grizzly, Netty + 基于Netty的应用。</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../tech-quotes/toc.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../tech-quotes/chapter2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../tech-quotes/toc.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../tech-quotes/chapter2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../mermaid.min.js"></script>
+        <script type="text/javascript" src="../mermaid-init.js"></script>
+        <script type="text/javascript" src="../smart-anchor.js"></script>
+        <script src="https://utteranc.es/client.js"
+        repo="RustMagazine/rust_magazine_2021"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>
+
+    </body>
+</html>
