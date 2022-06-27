@@ -78,3 +78,8 @@
         - [商务汉译世界学术名著丛书·珍藏本400本](./reference/booklist/shangwu-world-400.md)
         - [汉译世界学术名著丛书·120年纪念版](./reference/booklist/shangwu-world-120.md)
         - [中华现代学术名著丛书·105本](./reference/booklist/shangwu-china-105.md)
+    - [1000条](./reference/easy-talk.md)
+        - [第一章](./reference/easy-talk/chapter1.md)
+        - [第二章](./reference/easy-talk/chapter2.md)
+        - [第三章](./reference/easy-talk/chapter3.md)
+        - [第四章](./reference/easy-talk/chapter4.md)
