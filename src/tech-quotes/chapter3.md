@@ -139,7 +139,7 @@
 
 场景：1 volatile最适用一个线程写，多个线程读的场合  2  检查某个状态标记以判断是否退出循环。
 
-```
+
 volatile boolean shutdownRequested;  //不加volatile可能会导致指令重排，-server模式产生死循环
 public void shutdown() { 
      shutdownRequested = true; 
@@ -149,7 +149,7 @@ public void doWork() {
         // do stuff
     }
 }
-```
+
 
 ---
 

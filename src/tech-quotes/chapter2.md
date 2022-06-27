@@ -76,9 +76,7 @@
 
 * 118 任何事物都是对象是近20年来最强大的技术。任何事物都是模型是MDE/MDA的中心原则。
 
-  ```
-         Object isInstanceOf Class,System isRepresentedBy Model.
-  ```
+Object isInstanceOf Class,System isRepresentedBy Model.
 
 ---
 
