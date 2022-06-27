@@ -14,6 +14,8 @@
     - [第七章](tech-quotes/chapter7.md)
     - [第八章](tech-quotes/chapter8.md)
 
+- [工程实践](./practice-hub/toc.md)
+
 - [计算机科学](./cs/toc.md)
 
 - [语言](./language/toc.md)
