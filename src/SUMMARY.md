@@ -5,6 +5,14 @@
 - [简介](./README.md)
 
 - [技术札记](./tech-quotes/toc.md)
+    - [第一章](tech-quotes/chapter1.md)
+    - [第二章](tech-quotes/chapter2.md)
+    - [第三章](tech-quotes/chapter3.md)
+    - [第四章](tech-quotes/chapter4.md)
+    - [第五章](tech-quotes/chapter5.md)
+    - [第六章](tech-quotes/chapter6.md)
+    - [第七章](tech-quotes/chapter7.md)
+    - [第八章](tech-quotes/chapter8.md)
 
 - [计算机科学](./cs/toc.md)
 

@@ -1,3 +1,5 @@
+# 第二章
+
 * 101道生机器语言，机器语言生汇编器，汇编器生编译器，编译器生上万种高级语言。
 
 ---
@@ -214,7 +216,7 @@
 
 ---
 
-* 146 MySql 事务![](assets/af5b9c1e-4517-3df2-ad62-af25d1672d12.jpg)
+* 146 MySql 事务![](assets/acid-isolation-level.jpg)
 
 ---
 

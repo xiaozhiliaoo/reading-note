@@ -1,6 +1,6 @@
-* ```
-  700 PThreads是标准，LinuxThreads和NPTL是linux下的实现。NPTL为了解决LinuxThreads下的问题。
-  ```
+# 第七章
+
+* 700 PThreads是标准，LinuxThreads和NPTL是linux下的实现。NPTL为了解决LinuxThreads下的问题。
 
 ---
 

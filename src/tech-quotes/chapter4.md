@@ -1,4 +1,6 @@
-是301 Synchronized原理分析\(Javac+Java虚拟机共同协作，比如JMM层面\)：
+# 第四章
+
+* 301 Synchronized原理分析\(Javac+Java虚拟机共同协作，比如JMM层面\)：
 
 方法：常量池flags=**ACC\_SYNCHRONIZED**
 
@@ -549,7 +551,7 @@ Arbitrary  failure 也叫 Byzantine failure。
 
 ---
 
-* 399 ![](assets/Figure-1-CAP-theorem-with-databases-that-choose-CA-CP-and-AP.png)
+* 399 ![](assets/cap-in-db.png)
 
 ---
 
