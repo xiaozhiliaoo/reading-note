@@ -2,4 +2,4 @@
 
 技术札记，类似于顾炎武的日知录，随感记录一些技术感悟，技术名言，软件开发，想法等零碎的东西汇总成册，内容非严格意义的科学知识点，甚至可能有错误。
 
-访问地址：https://xiaozhiliaoo.github.io/tech-quotes/
+访问地址：[https://xiaozhiliaoo.github.io/tech-quotes/](https://xiaozhiliaoo.github.io/tech-quotes/)
