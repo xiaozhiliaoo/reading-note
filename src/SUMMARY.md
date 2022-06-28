@@ -4,7 +4,7 @@
 
 - [简介](./README.md)
 
-- [技术札记](./tech-quotes/toc.md)
+- [技术札记](tech-quotes/intro.md)
     - [第一章](tech-quotes/chapter1.md)
     - [第二章](tech-quotes/chapter2.md)
     - [第三章](tech-quotes/chapter3.md)
@@ -14,46 +14,46 @@
     - [第七章](tech-quotes/chapter7.md)
     - [第八章](tech-quotes/chapter8.md)
 
-- [工程实践](./practice-hub/toc.md)
+- [工程实践](practice-hub/intro.md)
 
-- [计算机科学](./cs/toc.md)
+- [计算机科学](cs/intro.md)
 
-- [语言](./language/toc.md)
+- [语言](language/intro.md)
     - [Java并发编程实战](language/java-concurrency-in-practoce.md)
     - [Java并发编程-设计原则与模式](language/concurrent-programming-in-java.md)
 
 
-- [数据库](./database/toc.md)
+- [数据库](database/intro.md)
     - [NoSQL精粹](database/nosql-distilled.md)
     - [Cassandra权威指南-第二版](database/cassandra-the-definitive-guide-2nd.md)
     - [数据密集型应用系统设计-中文](database/ddia-cn.md)
     - [数据密集型应用系统设计-英文](database/ddia-en.md)
 
-- [分布式与中间件](./middleware/summary.md)
+- [分布式与中间件](middleware/intro.md)
     - [mongodb权威指南第二版](./middleware/mongodb-the-definitive-guide-2nd.md)
     - [NoSQL实践指南](./middleware/nosql-for-mere-mortals.md)
     - [基于Apache Flink的流处理](./middleware/streaming-processing-with-apache-flink.md)
     - [深入理解分布式系统](./middleware/deep-understanding-of-distributed-systems.md)
 
-- [框架](./framework/toc.md)
+- [框架](framework/intro.md)
 
-- [软件工程](./engineering/toc.md)
+- [软件工程](engineering/intro.md)
 
-- [设计](./design/toc.md)
+- [设计](design/intro.md)
 
-- [考试和考证](./certificate/toc.md)
+- [考试和考证](certificate/intro.md)
 
-- [产品](./product/toc.md)
+- [产品](product/intro.md)
 
-- [系统](./system/toc.md)
+- [系统](system/intro.md)
 
-- [其他](./others/toc.md)
+- [其他](others/intro.md)
 
-- [极客时间](./geektime/toc.md)
+- [极客时间](geektime/intro.md)
     - [16-技术与商业案例解读-徐飞](./geektime/技术与商业案例解读.md)
 
 
-- [论文](./paper/toc.md)
+- [论文](./paper/intro.md)
     - [Highly Available Transactions: Virtues and Limitations](./paper/HAT.md)
     - [A Critique of the CAP Theorem](./paper/cap-critique.md)
     - [Consistency Tradeoffs in Modern Distributed Database System Design](./paper/pacelc.md)
@@ -62,19 +62,19 @@
     - [Eventually Consistent](./paper/eventually-consistent.md)
     - [A Survey on the Evolution of Stream Processing Systems](./paper/Stream-System-Evolution.md)
 
-- [电子书](./ebook/toc.md)
+- [电子书](ebook/intro.md)
     - [Java并发编程之美](./ebook/java-concurreny-beautify.md)
 
-- [英语书](./english/toc.md)
+- [英语书](english/intro.md)
     - [小王子](./english/the-little-prince.md)
 
-- [哲学](./philosophy/toc.md)
+- [哲学](philosophy/intro.md)
 
-- [心理学](./psychology/toc.md)
+- [心理学](psychology/intro.md)
 
-- [国学](./chinese-ancient/toc.md)
+- [国学](chinese-ancient/intro.md)
 
-- [经济与金融](./finance/toc.md)
+- [经济与金融](finance/intro.md)
 
 - [参考资料](./reference/reference.md)
     - [书单](./reference/booklist.md)
