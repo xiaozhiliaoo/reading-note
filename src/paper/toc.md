@@ -4,30 +4,30 @@
 
 ## 预计阅读
 
-| 名字                                                         | 作者          | 阅读时间 | 进度 |
-| ------------------------------------------------------------ | ------------- | -------- | ---- |
-| Highly Available Transactions: Virtues and Limitations       |               |          | Done |
-| A Critique of the CAP Theorem                                |               |          | Done |
-| Consistency Tradeoffs in Modern Distributed Database System Design |               |          | Done |
-| Consensus in the Cloud: Paxos Systems Demystified            |               |          | Done |
-| Understanding Replication in Databases and Distributed Systems |               |          | Done |
-| Eventually Consistent：Building reliable distributed systems at a worldwide scale demands trade-offs between consistency and availability. | Werner Vogels |          | Done |
-| Life beyond Distributed Transactions: an Apostate’s Opinion  | Pat Helland   |          | ToDo |
-| ZooKeeper: Wait-free coordination for Internet-scale systems |               |          |      |
-| Zab: High-performance broadcast for primary-backup systems   |               |          |      |
-| Raft：In Search of an Understandable Consensus Algorithm (Extended Version) |               |          |      |
-| Distributed systems for fun and profit                       |               |          |      |
-| Kafka: a Distributed Messaging System for Log Processing     |               |          |      |
-| Designing Access Methods: The RUM Conjecture                 |               |          |      |
-| Consistency in Non-Transactional Distributed Storage Systems |               |          |      |
-| Consistency models in distributed systems: A survey on definitions, disciplines, challenges and applications |               |          |      |
-| Facebook：Cassandra - A Decentralized Structured Storage System |               |          |      |
-| **Google**:The Chubby lock service for loosely-coupled distributed systems |               |          |      |
-| **Google**：Bigtable: A Distributed Storage System for Structured Data |               |          |      |
-| Amazon：Dynamo: Amazon's Highly Available Key-value Store    |               |          |      |
-| Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases |               |          |      |
-| Probabilistically Bounded Staleness for Practical Partial Quorums |               |          |      |
-| A Survey on the Evolution of Stream Processing Systems       |               |          |      |
+| ID   | 名字                                                         | 作者          | 阅读时间 | 进度 |
+| ---- | ------------------------------------------------------------ | ------------- | -------- | ---- |
+| 1    | Highly Available Transactions: Virtues and Limitations       |               |          | Done |
+| 2    | A Critique of the CAP Theorem                                |               |          | Done |
+| 3    | Consistency Tradeoffs in Modern Distributed Database System Design |               |          | Done |
+| 4    | Consensus in the Cloud: Paxos Systems Demystified            |               |          | Done |
+| 5    | Understanding Replication in Databases and Distributed Systems |               |          | Done |
+| 6    | Eventually Consistent：Building reliable distributed systems at a worldwide scale demands trade-offs between consistency and availability. | Werner Vogels |          | Done |
+| 7    | Life beyond Distributed Transactions: an Apostate’s Opinion  | Pat Helland   |          | ToDo |
+| 8    | ZooKeeper: Wait-free coordination for Internet-scale systems |               |          |      |
+| 9    | Zab: High-performance broadcast for primary-backup systems   |               |          |      |
+| 10   | Raft：In Search of an Understandable Consensus Algorithm (Extended Version) |               |          |      |
+| 11   | Distributed systems for fun and profit                       |               |          |      |
+| 12   | Kafka: a Distributed Messaging System for Log Processing     |               |          |      |
+| 13   | Designing Access Methods: The RUM Conjecture                 |               |          |      |
+| 14   | Consistency in Non-Transactional Distributed Storage Systems |               |          |      |
+| 15   | Consistency models in distributed systems: A survey on definitions, disciplines, challenges and applications |               |          |      |
+| 16   | Facebook：Cassandra - A Decentralized Structured Storage System |               |          |      |
+| 17   | **Google**:The Chubby lock service for loosely-coupled distributed systems |               |          |      |
+| 18   | **Google**：Bigtable: A Distributed Storage System for Structured Data |               |          |      |
+| 19   | Amazon：Dynamo: Amazon's Highly Available Key-value Store    |               |          |      |
+| 20   | Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases |               |          |      |
+| 21   | Probabilistically Bounded Staleness for Practical Partial Quorums |               |          |      |
+| 22   | A Survey on the Evolution of Stream Processing Systems       |               |          |      |
 
 
 
@@ -35,29 +35,13 @@
 
 ## 论文收集
 
-论文来源有：http://duanple.com/?p=170
 
-https://dancres.github.io/Pages/
 
-https://github.com/theanalyst/awesome-distributed-systems
-
-http://christophermeiklejohn.com/distributed/systems/2013/07/12/readings-in-distributed-systems.html
-
-http://dsrg.pdos.csail.mit.edu/papers/
-
-http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html
-
-https://github.com/dgryski/awesome-consensus
-
-https://henryr.github.io/distributed-systems-readings/
-
-https://lamport.azurewebsites.net/pubs/pubs.html
-
-| 数量 | 名字                                                         | 作者 | 阅读时间 | 进度 |
+| ID   | 名字                                                         | 作者 | 阅读时间 | 进度 |
 | ---- | ------------------------------------------------------------ | ---- | -------- | ---- |
 | 1    | The Anatomy of a Large-Scale Hypertextual Web Sear           |      |          |      |
-| 2    | [Web Search for a Planet: The Google Cluster Architecture](https://research.google/pubs/pub49/) |      |          |      |
-| 3    | [The Google File System](https://research.google.com/archive/gfs-sosp2003.pdf) |      |          |      |
+| 2    | Web Search for a Planet: The Google Cluster Architecture     |      |          |      |
+| 3    | The Google File System                                       |      |          |      |
 | 4    | MapReduce: Simplified Data Processing on Large Clusters      |      |          |      |
 | 5    | Bigtable: A Distributed Storage System for Structured Data   |      |          |      |
 | 6    | The Chubby lock service for loosely-coupled distributed systems |      |          |      |
@@ -100,70 +84,89 @@ https://lamport.azurewebsites.net/pubs/pubs.html
 | 43   | The Part Time Parliament                                     |      |          |      |
 | 44   | How to Build a Highly Available System Using Consensus       |      |          |      |
 | 45   | Paxos Made Simple                                            |      |          |      |
-|      | Paxos Made Live                                              |      |          |      |
-|      | Consensus on Transaction Commit                              |      |          |      |
-|      | Why Do Computers Stop and What Can Be Done About It          |      |          |      |
-|      | On Designing and Deploying Internet-Scale Services           |      |          |      |
-|      | Single-Message Communication                                 |      |          |      |
-|      | How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs |      |          |      |
-|      | Distributed Snapshots: Determining Global States of a Distributed System |      |          |      |
-|      | Self-stabilizing systems in spite of distributed control     |      |          |      |
-|      | Wait-Free Synchronization                                    |      |          |      |
-|      | Solution of a Problem in Concurrent Programming Control      |      |          |      |
-|      | A New Solution of Dijkstra’s Concurrent Programming Problem  |      |          |      |
-|      | Life beyond Distributed Transactions:an Apostate’s Opinion   |      |          |      |
-|      | Hints for Computer System Design                             |      |          |      |
-|      | Virtual Time and Global States of Distributed Systems        |      |          |      |
-|      | Timestamps in Message-Passing Systems That Preserve the Partial Ordering |      |          |      |
-|      | Fundamentals of Distributed Computing:A Practical Tour of Vector Clock Systems |      |          |      |
-|      | Knowledge and Common Knowledge in a Distributed Environment  |      |          |      |
-|      | Understanding Failures in Petascale Computers                |      |          |      |
-|      | Why Do Internet services fail, and What Can Be Done About It? |      |          |      |
-|      | End-To-End Arguments in System Design                        |      |          |      |
-|      | Rethinking the Design of the Internet: The End-to-End Arguments vs. the Brave New World |      |          |      |
-|      | The Design Philosophy of the DARPA Internet Protocols        |      |          |      |
-|      | Uniform consensus is harder than consensus                   |      |          |      |
-|      | Paxos made code – Implementing a high throughput Atomic Broadcast |      |          |      |
-|      | RAFT:In Search of an Understandable Consensus Algorithm      |      |          |      |
-|      | Problems, Unsolved Problems and Problems in Concurrency      |      |          |      |
-|      | Implementing fault-tolerant services using the state machine approach |      |          |      |
-|      | White Paper Introduction to IEEE 1588 & Transparent Clocks   |      |          |      |
-|      | Unreliable Failure Detectors for Reliable Distributed Systems |      |          |      |
-|      | A Relational Model of Data for Large Shared Data Banks       |      |          |      |
-|      | SEQUEL：A Structured English Query Language                  |      |          |      |
-|      | Implentation of a Structured English Query Language          |      |          |      |
-|      | A System R: Relational Approach to Database Management       |      |          |      |
-|      | Granularity of Locks and Degrees of Consistency in a Shared DataBase |      |          |      |
-|      | Access Path Selection in a RDBMS                             |      |          |      |
-|      | Notes on Data Base Operating Systems                         |      |          |      |
-|      | The Transaction Concept:Virtues and Limitations              |      |          |      |
-|      | NONBLOCKING COMMIT PROTOCOLS                                 |      |          |      |
-|      | MVCC：Multiversion Concurrency Control-Theory and Algorithms |      |          |      |
-|      | ARIES: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging |      |          |      |
-|      | A Comparison of the Byzantine Agreement Problem and the Transaction Commit Problem |      |          |      |
-|      | A Formal Model of Crash Recovery in a Distributed System     |      |          |      |
-|      | What Goes Around Comes Around                                |      |          |      |
-|      | Anatomy of a Database System                                 |      |          |      |
-|      | Architecture of a Database System                            |      |          |      |
-|      | Towards Robust Distributed Systems                           |      |          |      |
-|      | Harvest, Yield, and Scalable Tolerant Systems                |      |          |      |
-|      | BASE an Acid Alternative                                     |      |          |      |
-|      | MapReduce: A major step backwards                            |      |          |      |
-|      | The Log: What every software engineer should know about real-time data’s unifying abstraction |      |          |      |
-|      | Dynamo: Amazon’s Highly Available Key-value Store            |      |          |      |
-|      | Cassandra – A Decentralized Structured Storage System        |      |          |      |
-|      | PNUTS: Yahoo!’s Hosted Data Serving Platform                 |      |          |      |
-|      | Designs, Lessons and Advice from Building Large Distributed Systems |      |          |      |
-|      | The Tail at Scale                                            |      |          |      |
-|      | How To Design A Good API and Why it Matters                  |      |          |      |
-|      | The ganglia distributed monitoring system:design, implementation, and experience |      |          |      |
-|      | Chukwa: A large-scale monitoring system                      |      |          |      |
+| 46   | Paxos Made Live                                              |      |          |      |
+| 47   | Consensus on Transaction Commit                              |      |          |      |
+| 48   | Why Do Computers Stop and What Can Be Done About It          |      |          |      |
+| 49   | On Designing and Deploying Internet-Scale Services           |      |          |      |
+| 50   | Single-Message Communication                                 |      |          |      |
+| 51   | How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs |      |          |      |
+| 52   | Distributed Snapshots: Determining Global States of a Distributed System |      |          |      |
+| 53   | Self-stabilizing systems in spite of distributed control     |      |          |      |
+| 54   | Wait-Free Synchronization                                    |      |          |      |
+| 55   | Solution of a Problem in Concurrent Programming Control      |      |          |      |
+| 56   | A New Solution of Dijkstra’s Concurrent Programming Problem  |      |          |      |
+| 57   | Life beyond Distributed Transactions:an Apostate’s Opinion   |      |          |      |
+| 58   | Hints for Computer System Design                             |      |          |      |
+| 59   | Virtual Time and Global States of Distributed Systems        |      |          |      |
+| 60   | Timestamps in Message-Passing Systems That Preserve the Partial Ordering |      |          |      |
+| 61   | Fundamentals of Distributed Computing:A Practical Tour of Vector Clock Systems |      |          |      |
+| 62   | Knowledge and Common Knowledge in a Distributed Environment  |      |          |      |
+| 63   | Understanding Failures in Petascale Computers                |      |          |      |
+| 64   | Why Do Internet services fail, and What Can Be Done About It? |      |          |      |
+| 65   | End-To-End Arguments in System Design                        |      |          |      |
+| 66   | Rethinking the Design of the Internet: The End-to-End Arguments vs. the Brave New World |      |          |      |
+| 67   | The Design Philosophy of the DARPA Internet Protocols        |      |          |      |
+| 68   | Uniform consensus is harder than consensus                   |      |          |      |
+| 69   | Paxos made code – Implementing a high throughput Atomic Broadcast |      |          |      |
+| 70   | RAFT:In Search of an Understandable Consensus Algorithm      |      |          |      |
+| 71   | Problems, Unsolved Problems and Problems in Concurrency      |      |          |      |
+| 72   | Implementing fault-tolerant services using the state machine approach |      |          |      |
+| 73   | White Paper Introduction to IEEE 1588 & Transparent Clocks   |      |          |      |
+| 74   | Unreliable Failure Detectors for Reliable Distributed Systems |      |          |      |
+| 75   | A Relational Model of Data for Large Shared Data Banks       |      |          |      |
+| 76   | SEQUEL：A Structured English Query Language                  |      |          |      |
+| 77   | Implentation of a Structured English Query Language          |      |          |      |
+| 78   | A System R: Relational Approach to Database Management       |      |          |      |
+| 79   | Granularity of Locks and Degrees of Consistency in a Shared DataBase |      |          |      |
+| 80   | Access Path Selection in a RDBMS                             |      |          |      |
+| 81   | Notes on Data Base Operating Systems                         |      |          |      |
+| 82   | The Transaction Concept:Virtues and Limitations              |      |          |      |
+| 83   | NONBLOCKING COMMIT PROTOCOLS                                 |      |          |      |
+| 84   | MVCC：Multiversion Concurrency Control-Theory and Algorithms |      |          |      |
+| 85   | ARIES: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging |      |          |      |
+| 86   | A Comparison of the Byzantine Agreement Problem and the Transaction Commit Problem |      |          |      |
+| 87   | A Formal Model of Crash Recovery in a Distributed System     |      |          |      |
+| 88   | What Goes Around Comes Around                                |      |          |      |
+| 89   | Anatomy of a Database System                                 |      |          |      |
+| 90   | Architecture of a Database System                            |      |          |      |
+| 91   | Towards Robust Distributed Systems                           |      |          |      |
+| 92   | Harvest, Yield, and Scalable Tolerant Systems                |      |          |      |
+| 93   | BASE an Acid Alternative                                     |      |          |      |
+| 94   | MapReduce: A major step backwards                            |      |          |      |
+| 95   | The Log: What every software engineer should know about real-time data’s unifying abstraction |      |          |      |
+| 96   | Dynamo: Amazon’s Highly Available Key-value Store            |      |          |      |
+| 97   | Cassandra – A Decentralized Structured Storage System        |      |          |      |
+| 98   | PNUTS: Yahoo!’s Hosted Data Serving Platform                 |      |          |      |
+| 99   | Designs, Lessons and Advice from Building Large Distributed Systems |      |          |      |
+| 100  | The Tail at Scale                                            |      |          |      |
+| 101  | How To Design A Good API and Why it Matters                  |      |          |      |
+| 102  | The ganglia distributed monitoring system:design, implementation, and experience |      |          |      |
+| 103  | Chukwa: A large-scale monitoring system                      |      |          |      |
 |      |                                                              |      |          |      |
 |      |                                                              |      |          |      |
 
 
 
+## 论文来源
 
+1. 分布式系统领域经典论文翻译集：http://duanple.com/?p=170
+2. DDIA：https://github.com/ept/ddia-references
+3. MIT：http://dsrg.pdos.csail.mit.edu/papers/
+4. MIT6.824：https://pdos.csail.mit.edu/6.824/schedule.html
+5. 分佈式数据库系统原理 ：https://cs.uwaterloo.ca/~ddbook/downloads/appendix/References.pdf
+6. Kafka论文：https://kafka.apache.org/books-and-papers
+7. CMU15721：https://15721.courses.cs.cmu.edu/spring2020/schedule.html
+8. Distributed Systems Reading List：https://dancres.github.io/Pages/
+9. Lamport：https://lamport.azurewebsites.net/pubs/pubs.html
+10. 共识：https://github.com/dgryski/awesome-consensus
+11. Awesome Distributed Systems：https://github.com/theanalyst/awesome-distributed-systems
+
+12. Readings in distributed systems：http://christophermeiklejohn.com/distributed/systems/2013/07/12/readings-in-distributed-systems.html
+13. Foundational distributed systems papershttp://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html
+14. Distributed Systems Readings：https://henryr.github.io/distributed-systems-readings/
+
+15. Developer And Architect：https://github.com/xiaozhiliaoo/my-collect
+16. 100 open source Big Data architecture papers for data professionals：https://github.com/xiaozhiliaoo/bigdata/blob/main/paper/100paper-paypal-anil-madan.md
 
 
 
