@@ -1,6 +1,6 @@
 # 论文
 
-论文学习。主要是分布式系统，数据库，存储的论文。
+论文学习。主要是分布式系统，数据库，存储的论文。会优先看工作相关系统(如kafka，es，raft等)，然后看其他部分。
 
 ## 预计阅读
 
@@ -22,8 +22,8 @@
 | 14   | Consistency in Non-Transactional Distributed Storage Systems |               |          |      |
 | 15   | Consistency models in distributed systems: A survey on definitions, disciplines, challenges and applications |               |          |      |
 | 16   | Facebook：Cassandra - A Decentralized Structured Storage System |               |          |      |
-| 17   | **Google**:The Chubby lock service for loosely-coupled distributed systems |               |          |      |
-| 18   | **Google**：Bigtable: A Distributed Storage System for Structured Data |               |          |      |
+| 17   | Google:The Chubby lock service for loosely-coupled distributed systems |               |          |      |
+| 18   | Google：Bigtable: A Distributed Storage System for Structured Data |               |          |      |
 | 19   | Amazon：Dynamo: Amazon's Highly Available Key-value Store    |               |          |      |
 | 20   | Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases |               |          |      |
 | 21   | Probabilistically Bounded Staleness for Practical Partial Quorums |               |          |      |
@@ -142,6 +142,41 @@
 | 101  | How To Design A Good API and Why it Matters                  |      |          |      |
 | 102  | The ganglia distributed monitoring system:design, implementation, and experience |      |          |      |
 | 103  | Chukwa: A large-scale monitoring system                      |      |          |      |
+| 104  | Brewer’s Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services |      |          |      |
+| 105  | Practical Byzantine Fault Tolerance                          |      |          |      |
+| 106  | PacificA: Replication in Log-Based Distributed Storage Systems 2008 |      |          |      |
+| 107  | Dominant Resource Fairness: Fair Allocation of Multiple Resource Types |      |          |      |
+| 108  | Apollo: Scalable and Coordinated Scheduling for Cloud-Scale Computing |      |          |      |
+| 109  | Consistent Hashing with Bounded Loads  Google 2017           |      |          |      |
+| 110  | The φ Accrual Failure Detector                               |      |          |      |
+| 111  | CAP Twelve Years Later: How the "Rules" Have Changed         |      |          |      |
+| 112  | A simple totally ordered broadcast protocol 2008             |      |          |      |
+| 113  | Virtual Time and Global States of Distributed Systems 2002   |      |          |      |
+| 114  | Paxos Made Practical                                         |      |          |      |
+| 115  | Using Paxos to Build a Scalable, Consistent, and Highly Available Datastore 2011 |      |          |      |
+| 116  | Consensus in the Presence of Partial Synchrony 1988          |      |          |      |
+| 117  | Chord: A Scalable Peer-to-peer Lookup Protocol for Internet Applications 2003 |      |          |      |
+| 118  | Pastry: Scalable, Decentralized Object Location, and Routing for Large-Scale Peer-to-Peer Systems 2001 |      |          |      |
+| 119  | Kademlia: A Peer-to-Peer Information System Based on the XOR Metric 2002 |      |          |      |
+| 120  | A Scalable Content-Addressable Network 2001                  |      |          |      |
+| 121  | Ceph: A Scalable, High-Performance Distributed File System  2006 OSDI   Sage Weil |      |          |      |
+| 122  | The Log-Structured Merge-Tree (LSM-Tree) 1996                |      |          |      |
+| 123  | HBase: A NoSQL Database 2017 Hiren Patel                     |      |          |      |
+| 124  | Tango: Distributed Data Structures over a Shared Log 2013    |      |          |      |
+| 125  | Finding a needle in Haystack: Facebook's photo storage 2010  |      |          |      |
+| 126  | Windows Azure Storage: A Highly Available Cloud Storage Service with Strong Consistency 2011 |      |          |      |
+| 127  | Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing 2012 |      |          |      |
+| 128  | Scaling Distributed Machine Learning with the Parameter Server 2014 |      |          |      |
+| 129  | S4: Distributed Stream Computing Platform 2010               |      |          |      |
+| 130  | Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases 2017 |      |          |      |
+| 131  | Amazon Aurora: On Avoiding Distributed Consensus for I/Os, Commits, and Membership Changes 2018 |      |          |      |
+| 132  | Chain Replication for Supporting High Throughput and Availability |      |          |      |
+| 133  | No compromises: distributed transactions with consistency, availability, and performance |      |          |      |
+| 134  | Don’t Settle for Eventual: Scalable Causal Consistency for Wide-Area Storage with COPS |      |          |      |
+| 135  | Secure Untrusted Data Repository (SUNDR)                     |      |          |      |
+| 136  |                                                              |      |          |      |
+|      |                                                              |      |          |      |
+|      |                                                              |      |          |      |
 |      |                                                              |      |          |      |
 |      |                                                              |      |          |      |
 
@@ -153,20 +188,20 @@
 2. DDIA：https://github.com/ept/ddia-references
 3. MIT：http://dsrg.pdos.csail.mit.edu/papers/
 4. MIT6.824：https://pdos.csail.mit.edu/6.824/schedule.html
-5. 分佈式数据库系统原理 ：https://cs.uwaterloo.ca/~ddbook/downloads/appendix/References.pdf
+5. 分布式数据库系统原理 ：https://cs.uwaterloo.ca/~ddbook/downloads/appendix/References.pdf
 6. Kafka论文：https://kafka.apache.org/books-and-papers
 7. CMU15721：https://15721.courses.cs.cmu.edu/spring2020/schedule.html
 8. Distributed Systems Reading List：https://dancres.github.io/Pages/
 9. Lamport：https://lamport.azurewebsites.net/pubs/pubs.html
 10. 共识：https://github.com/dgryski/awesome-consensus
 11. Awesome Distributed Systems：https://github.com/theanalyst/awesome-distributed-systems
-
 12. Readings in distributed systems：http://christophermeiklejohn.com/distributed/systems/2013/07/12/readings-in-distributed-systems.html
 13. Foundational distributed systems papershttp://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html
 14. Distributed Systems Readings：https://henryr.github.io/distributed-systems-readings/
-
 15. Developer And Architect：https://github.com/xiaozhiliaoo/my-collect
 16. 100 open source Big Data architecture papers for data professionals：https://github.com/xiaozhiliaoo/bigdata/blob/main/paper/100paper-paypal-anil-madan.md
+16. 世界名校的课程收集来的论文：https://xiaozhiliaoo.github.io/distributed-system-practice/course/
+16. 各种《分布式系统泛型与原理》《分布式系统概念与技术》书
 
 
 
