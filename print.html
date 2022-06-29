@@ -4111,7 +4111,7 @@ Faluttolerance, Security)。</li>
 <tr><td>Apache Pulsar，Apache BookKeeper</td><td>steamnative</td><td></td></tr>
 </tbody></table>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="论文"><a class="header" href="#论文">论文</a></h1>
-<p>论文学习。主要是分布式系统，数据库，存储的论文。</p>
+<p>论文学习。主要是分布式系统，数据库，存储的论文。会优先看工作相关系统(如kafka，es，raft等)，然后看其他部分。</p>
 <h2 id="预计阅读"><a class="header" href="#预计阅读">预计阅读</a></h2>
 <table><thead><tr><th>ID</th><th>名字</th><th>作者</th><th>阅读时间</th><th>进度</th></tr></thead><tbody>
 <tr><td>1</td><td>Highly Available Transactions: Virtues and Limitations</td><td></td><td></td><td>Done</td></tr>
@@ -4130,8 +4130,8 @@ Faluttolerance, Security)。</li>
 <tr><td>14</td><td>Consistency in Non-Transactional Distributed Storage Systems</td><td></td><td></td><td></td></tr>
 <tr><td>15</td><td>Consistency models in distributed systems: A survey on definitions, disciplines, challenges and applications</td><td></td><td></td><td></td></tr>
 <tr><td>16</td><td>Facebook：Cassandra - A Decentralized Structured Storage System</td><td></td><td></td><td></td></tr>
-<tr><td>17</td><td><strong>Google</strong>:The Chubby lock service for loosely-coupled distributed systems</td><td></td><td></td><td></td></tr>
-<tr><td>18</td><td><strong>Google</strong>：Bigtable: A Distributed Storage System for Structured Data</td><td></td><td></td><td></td></tr>
+<tr><td>17</td><td>Google:The Chubby lock service for loosely-coupled distributed systems</td><td></td><td></td><td></td></tr>
+<tr><td>18</td><td>Google：Bigtable: A Distributed Storage System for Structured Data</td><td></td><td></td><td></td></tr>
 <tr><td>19</td><td>Amazon：Dynamo: Amazon's Highly Available Key-value Store</td><td></td><td></td><td></td></tr>
 <tr><td>20</td><td>Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases</td><td></td><td></td><td></td></tr>
 <tr><td>21</td><td>Probabilistically Bounded Staleness for Practical Partial Quorums</td><td></td><td></td><td></td></tr>
@@ -4242,59 +4242,64 @@ Faluttolerance, Security)。</li>
 <tr><td>101</td><td>How To Design A Good API and Why it Matters</td><td></td><td></td><td></td></tr>
 <tr><td>102</td><td>The ganglia distributed monitoring system:design, implementation, and experience</td><td></td><td></td><td></td></tr>
 <tr><td>103</td><td>Chukwa: A large-scale monitoring system</td><td></td><td></td><td></td></tr>
+<tr><td>104</td><td>Brewer’s Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services</td><td></td><td></td><td></td></tr>
+<tr><td>105</td><td>Practical Byzantine Fault Tolerance</td><td></td><td></td><td></td></tr>
+<tr><td>106</td><td>PacificA: Replication in Log-Based Distributed Storage Systems 2008</td><td></td><td></td><td></td></tr>
+<tr><td>107</td><td>Dominant Resource Fairness: Fair Allocation of Multiple Resource Types</td><td></td><td></td><td></td></tr>
+<tr><td>108</td><td>Apollo: Scalable and Coordinated Scheduling for Cloud-Scale Computing</td><td></td><td></td><td></td></tr>
+<tr><td>109</td><td>Consistent Hashing with Bounded Loads  Google 2017</td><td></td><td></td><td></td></tr>
+<tr><td>110</td><td>The φ Accrual Failure Detector</td><td></td><td></td><td></td></tr>
+<tr><td>111</td><td>CAP Twelve Years Later: How the &quot;Rules&quot; Have Changed</td><td></td><td></td><td></td></tr>
+<tr><td>112</td><td>A simple totally ordered broadcast protocol 2008</td><td></td><td></td><td></td></tr>
+<tr><td>113</td><td>Virtual Time and Global States of Distributed Systems 2002</td><td></td><td></td><td></td></tr>
+<tr><td>114</td><td>Paxos Made Practical</td><td></td><td></td><td></td></tr>
+<tr><td>115</td><td>Using Paxos to Build a Scalable, Consistent, and Highly Available Datastore 2011</td><td></td><td></td><td></td></tr>
+<tr><td>116</td><td>Consensus in the Presence of Partial Synchrony 1988</td><td></td><td></td><td></td></tr>
+<tr><td>117</td><td>Chord: A Scalable Peer-to-peer Lookup Protocol for Internet Applications 2003</td><td></td><td></td><td></td></tr>
+<tr><td>118</td><td>Pastry: Scalable, Decentralized Object Location, and Routing for Large-Scale Peer-to-Peer Systems 2001</td><td></td><td></td><td></td></tr>
+<tr><td>119</td><td>Kademlia: A Peer-to-Peer Information System Based on the XOR Metric 2002</td><td></td><td></td><td></td></tr>
+<tr><td>120</td><td>A Scalable Content-Addressable Network 2001</td><td></td><td></td><td></td></tr>
+<tr><td>121</td><td>Ceph: A Scalable, High-Performance Distributed File System  2006 OSDI   Sage Weil</td><td></td><td></td><td></td></tr>
+<tr><td>122</td><td>The Log-Structured Merge-Tree (LSM-Tree) 1996</td><td></td><td></td><td></td></tr>
+<tr><td>123</td><td>HBase: A NoSQL Database 2017 Hiren Patel</td><td></td><td></td><td></td></tr>
+<tr><td>124</td><td>Tango: Distributed Data Structures over a Shared Log 2013</td><td></td><td></td><td></td></tr>
+<tr><td>125</td><td>Finding a needle in Haystack: Facebook's photo storage 2010</td><td></td><td></td><td></td></tr>
+<tr><td>126</td><td>Windows Azure Storage: A Highly Available Cloud Storage Service with Strong Consistency 2011</td><td></td><td></td><td></td></tr>
+<tr><td>127</td><td>Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing 2012</td><td></td><td></td><td></td></tr>
+<tr><td>128</td><td>Scaling Distributed Machine Learning with the Parameter Server 2014</td><td></td><td></td><td></td></tr>
+<tr><td>129</td><td>S4: Distributed Stream Computing Platform 2010</td><td></td><td></td><td></td></tr>
+<tr><td>130</td><td>Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases 2017</td><td></td><td></td><td></td></tr>
+<tr><td>131</td><td>Amazon Aurora: On Avoiding Distributed Consensus for I/Os, Commits, and Membership Changes 2018</td><td></td><td></td><td></td></tr>
+<tr><td>132</td><td>Chain Replication for Supporting High Throughput and Availability</td><td></td><td></td><td></td></tr>
+<tr><td>133</td><td>No compromises: distributed transactions with consistency, availability, and performance</td><td></td><td></td><td></td></tr>
+<tr><td>134</td><td>Don’t Settle for Eventual: Scalable Causal Consistency for Wide-Area Storage with COPS</td><td></td><td></td><td></td></tr>
+<tr><td>135</td><td>Secure Untrusted Data Repository (SUNDR)</td><td></td><td></td><td></td></tr>
+<tr><td>136</td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td><td></td><td></td></tr>
 </tbody></table>
 <h2 id="论文来源"><a class="header" href="#论文来源">论文来源</a></h2>
 <ol>
-<li>
-<p>分布式系统领域经典论文翻译集：http://duanple.com/?p=170</p>
-</li>
-<li>
-<p>DDIA：https://github.com/ept/ddia-references</p>
-</li>
-<li>
-<p>MIT：http://dsrg.pdos.csail.mit.edu/papers/</p>
-</li>
-<li>
-<p>MIT6.824：https://pdos.csail.mit.edu/6.824/schedule.html</p>
-</li>
-<li>
-<p>分佈式数据库系统原理 ：https://cs.uwaterloo.ca/~ddbook/downloads/appendix/References.pdf</p>
-</li>
-<li>
-<p>Kafka论文：https://kafka.apache.org/books-and-papers</p>
-</li>
-<li>
-<p>CMU15721：https://15721.courses.cs.cmu.edu/spring2020/schedule.html</p>
-</li>
-<li>
-<p>Distributed Systems Reading List：https://dancres.github.io/Pages/</p>
-</li>
-<li>
-<p>Lamport：https://lamport.azurewebsites.net/pubs/pubs.html</p>
-</li>
-<li>
-<p>共识：https://github.com/dgryski/awesome-consensus</p>
-</li>
-<li>
-<p>Awesome Distributed Systems：https://github.com/theanalyst/awesome-distributed-systems</p>
-</li>
-<li>
-<p>Readings in distributed systems：http://christophermeiklejohn.com/distributed/systems/2013/07/12/readings-in-distributed-systems.html</p>
-</li>
-<li>
-<p>Foundational distributed systems papershttp://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html</p>
-</li>
-<li>
-<p>Distributed Systems Readings：https://henryr.github.io/distributed-systems-readings/</p>
-</li>
-<li>
-<p>Developer And Architect：https://github.com/xiaozhiliaoo/my-collect</p>
-</li>
-<li>
-<p>100 open source Big Data architecture papers for data professionals：https://github.com/xiaozhiliaoo/bigdata/blob/main/paper/100paper-paypal-anil-madan.md</p>
-</li>
+<li>分布式系统领域经典论文翻译集：http://duanple.com/?p=170</li>
+<li>DDIA：https://github.com/ept/ddia-references</li>
+<li>MIT：http://dsrg.pdos.csail.mit.edu/papers/</li>
+<li>MIT6.824：https://pdos.csail.mit.edu/6.824/schedule.html</li>
+<li>分布式数据库系统原理 ：https://cs.uwaterloo.ca/~ddbook/downloads/appendix/References.pdf</li>
+<li>Kafka论文：https://kafka.apache.org/books-and-papers</li>
+<li>CMU15721：https://15721.courses.cs.cmu.edu/spring2020/schedule.html</li>
+<li>Distributed Systems Reading List：https://dancres.github.io/Pages/</li>
+<li>Lamport：https://lamport.azurewebsites.net/pubs/pubs.html</li>
+<li>共识：https://github.com/dgryski/awesome-consensus</li>
+<li>Awesome Distributed Systems：https://github.com/theanalyst/awesome-distributed-systems</li>
+<li>Readings in distributed systems：http://christophermeiklejohn.com/distributed/systems/2013/07/12/readings-in-distributed-systems.html</li>
+<li>Foundational distributed systems papershttp://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html</li>
+<li>Distributed Systems Readings：https://henryr.github.io/distributed-systems-readings/</li>
+<li>Developer And Architect：https://github.com/xiaozhiliaoo/my-collect</li>
+<li>100 open source Big Data architecture papers for data professionals：https://github.com/xiaozhiliaoo/bigdata/blob/main/paper/100paper-paypal-anil-madan.md</li>
+<li>世界名校的课程收集来的论文：https://xiaozhiliaoo.github.io/distributed-system-practice/course/</li>
+<li>各种《分布式系统泛型与原理》《分布式系统概念与技术》书</li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="highly-available-transactions-virtues-and-limitations"><a class="header" href="#highly-available-transactions-virtues-and-limitations">Highly Available Transactions: Virtues and Limitations</a></h1>
 <p><a href="paper/docs/hat-vldb2014.pdf">paper</a></p>
