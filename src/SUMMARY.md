@@ -39,6 +39,7 @@
     - [Apache ShardingSphere实战](framework/ShardingSphere.md)
 
 - [软件工程](engineering/intro.md)
+    - [软件困局：为什么聪明的程序员写出糟糕的代码](engineering/the-problem-with-software.md)
 
 - [设计](design/intro.md)
 
