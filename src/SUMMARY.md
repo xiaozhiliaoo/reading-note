@@ -50,6 +50,7 @@
 - [系统](system/intro.md)
 
 - [其他](others/intro.md)
+    - [图灵奖演讲](others/turing-award.md)
 
 - [极客时间](geektime/intro.md)
     - [16-技术与商业案例解读-徐飞](./geektime/技术与商业案例解读.md)
