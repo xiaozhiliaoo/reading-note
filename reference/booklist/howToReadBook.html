@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>如何阅读一本书的书单 - 读书笔记</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><li class="part-title">目录</li><li class="chapter-item "><a href="../../index.html"><strong aria-hidden="true">1.</strong> 简介</a></li><li class="chapter-item "><a href="../../tech-quotes/intro.html"><strong aria-hidden="true">2.</strong> 技术札记</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tech-quotes/chapter1.html"><strong aria-hidden="true">2.1.</strong> 第一章</a></li><li class="chapter-item "><a href="../../tech-quotes/chapter2.html"><strong aria-hidden="true">2.2.</strong> 第二章</a></li><li class="chapter-item "><a href="../../tech-quotes/chapter3.html"><strong aria-hidden="true">2.3.</strong> 第三章</a></li><li class="chapter-item "><a href="../../tech-quotes/chapter4.html"><strong aria-hidden="true">2.4.</strong> 第四章</a></li><li class="chapter-item "><a href="../../tech-quotes/chapter5.html"><strong aria-hidden="true">2.5.</strong> 第五章</a></li><li class="chapter-item "><a href="../../tech-quotes/chapter6.html"><strong aria-hidden="true">2.6.</strong> 第六章</a></li><li class="chapter-item "><a href="../../tech-quotes/chapter7.html"><strong aria-hidden="true">2.7.</strong> 第七章</a></li><li class="chapter-item "><a href="../../tech-quotes/chapter8.html"><strong aria-hidden="true">2.8.</strong> 第八章</a></li></ol></li><li class="chapter-item "><a href="../../practice-hub/intro.html"><strong aria-hidden="true">3.</strong> 工程实践</a></li><li class="chapter-item "><a href="../../cs/intro.html"><strong aria-hidden="true">4.</strong> 计算机科学</a></li><li class="chapter-item "><a href="../../language/intro.html"><strong aria-hidden="true">5.</strong> 语言</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../language/java-concurrency-in-practoce.html"><strong aria-hidden="true">5.1.</strong> Java并发编程实战</a></li><li class="chapter-item "><a href="../../language/concurrent-programming-in-java.html"><strong aria-hidden="true">5.2.</strong> Java并发编程-设计原则与模式</a></li></ol></li><li class="chapter-item "><a href="../../database/intro.html"><strong aria-hidden="true">6.</strong> 数据库</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../database/nosql-distilled.html"><strong aria-hidden="true">6.1.</strong> NoSQL精粹</a></li><li class="chapter-item "><a href="../../database/cassandra-the-definitive-guide-2nd.html"><strong aria-hidden="true">6.2.</strong> Cassandra权威指南-第二版</a></li><li class="chapter-item "><a href="../../database/ddia-cn.html"><strong aria-hidden="true">6.3.</strong> 数据密集型应用系统设计-中文</a></li><li class="chapter-item "><a href="../../database/ddia-en.html"><strong aria-hidden="true">6.4.</strong> 数据密集型应用系统设计-英文</a></li></ol></li><li class="chapter-item "><a href="../../middleware/intro.html"><strong aria-hidden="true">7.</strong> 分布式与中间件</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../middleware/mongodb-the-definitive-guide-2nd.html"><strong aria-hidden="true">7.1.</strong> mongodb权威指南第二版</a></li><li class="chapter-item "><a href="../../middleware/nosql-for-mere-mortals.html"><strong aria-hidden="true">7.2.</strong> NoSQL实践指南</a></li><li class="chapter-item "><a href="../../middleware/streaming-processing-with-apache-flink.html"><strong aria-hidden="true">7.3.</strong> 基于Apache Flink的流处理</a></li><li class="chapter-item "><a href="../../middleware/deep-understanding-of-distributed-systems.html"><strong aria-hidden="true">7.4.</strong> 深入理解分布式系统</a></li></ol></li><li class="chapter-item "><a href="../../framework/intro.html"><strong aria-hidden="true">8.</strong> 框架</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../framework/ShardingSphere.html"><strong aria-hidden="true">8.1.</strong> Apache ShardingSphere实战</a></li></ol></li><li class="chapter-item "><a href="../../engineering/intro.html"><strong aria-hidden="true">9.</strong> 软件工程</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../engineering/the-problem-with-software.html"><strong aria-hidden="true">9.1.</strong> 软件困局：为什么聪明的程序员写出糟糕的代码</a></li></ol></li><li class="chapter-item "><a href="../../design/intro.html"><strong aria-hidden="true">10.</strong> 设计</a></li><li class="chapter-item "><a href="../../certificate/intro.html"><strong aria-hidden="true">11.</strong> 考试和考证</a></li><li class="chapter-item "><a href="../../product/intro.html"><strong aria-hidden="true">12.</strong> 产品</a></li><li class="chapter-item "><a href="../../system/intro.html"><strong aria-hidden="true">13.</strong> 系统</a></li><li class="chapter-item "><a href="../../others/intro.html"><strong aria-hidden="true">14.</strong> 其他</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../others/turing-award.html"><strong aria-hidden="true">14.1.</strong> 图灵奖演讲</a></li></ol></li><li class="chapter-item "><a href="../../geektime/intro.html"><strong aria-hidden="true">15.</strong> 极客时间</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../geektime/技术与商业案例解读.html"><strong aria-hidden="true">15.1.</strong> 16-技术与商业案例解读-徐飞</a></li></ol></li><li class="chapter-item "><a href="../../paper/intro.html"><strong aria-hidden="true">16.</strong> 论文</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../paper/HAT.html"><strong aria-hidden="true">16.1.</strong> Highly Available Transactions: Virtues and Limitations</a></li><li class="chapter-item "><a href="../../paper/cap-critique.html"><strong aria-hidden="true">16.2.</strong> A Critique of the CAP Theorem</a></li><li class="chapter-item "><a href="../../paper/pacelc.html"><strong aria-hidden="true">16.3.</strong> Consistency Tradeoffs in Modern Distributed Database System Design</a></li><li class="chapter-item "><a href="../../paper/consensus-in-the-cloud.html"><strong aria-hidden="true">16.4.</strong> Consensus in the Cloud: Paxos Systems Demystified</a></li><li class="chapter-item "><a href="../../paper/replication-in-db-and-ds.html"><strong aria-hidden="true">16.5.</strong> Understanding Replication in Databases and Distributed Systems</a></li><li class="chapter-item "><a href="../../paper/eventually-consistent.html"><strong aria-hidden="true">16.6.</strong> Eventually Consistent</a></li><li class="chapter-item "><a href="../../paper/Stream-System-Evolution.html"><strong aria-hidden="true">16.7.</strong> A Survey on the Evolution of Stream Processing Systems</a></li></ol></li><li class="chapter-item "><a href="../../ebook/intro.html"><strong aria-hidden="true">17.</strong> 电子书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../ebook/java-concurreny-beautify.html"><strong aria-hidden="true">17.1.</strong> Java并发编程之美</a></li></ol></li><li class="chapter-item "><a href="../../english/intro.html"><strong aria-hidden="true">18.</strong> 英语书</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../english/the-little-prince.html"><strong aria-hidden="true">18.1.</strong> 小王子</a></li></ol></li><li class="chapter-item "><a href="../../philosophy/intro.html"><strong aria-hidden="true">19.</strong> 哲学</a></li><li class="chapter-item "><a href="../../psychology/intro.html"><strong aria-hidden="true">20.</strong> 心理学</a></li><li class="chapter-item "><a href="../../chinese-ancient/intro.html"><strong aria-hidden="true">21.</strong> 国学</a></li><li class="chapter-item "><a href="../../finance/intro.html"><strong aria-hidden="true">22.</strong> 经济,金融,管理</a></li><li class="chapter-item "><a href="../../culture/intro.html"><strong aria-hidden="true">23.</strong> 文化</a></li><li class="chapter-item "><a href="../../history/intro.html"><strong aria-hidden="true">24.</strong> 历史</a></li><li class="chapter-item "><a href="../../education/intro.html"><strong aria-hidden="true">25.</strong> 教育</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../education/how-to-read-book.html"><strong aria-hidden="true">25.1.</strong> 如何阅读一本书</a></li></ol></li><li class="chapter-item expanded "><a href="../../reference/reference.html"><strong aria-hidden="true">26.</strong> 参考资料</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../reference/booklist.html"><strong aria-hidden="true">26.1.</strong> 书单</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../reference/booklist/chinese-ancient-literature.html"><strong aria-hidden="true">26.1.1.</strong> 国学</a></li><li class="chapter-item "><a href="../../reference/booklist/210.html"><strong aria-hidden="true">26.1.2.</strong> 经典各学科210本</a></li><li class="chapter-item "><a href="../../reference/booklist/invest-100.html"><strong aria-hidden="true">26.1.3.</strong> 金融投资100本</a></li><li class="chapter-item "><a href="../../reference/booklist/invest-400.html"><strong aria-hidden="true">26.1.4.</strong> 金融投资400本</a></li><li class="chapter-item "><a href="../../reference/booklist/invest-classify.html"><strong aria-hidden="true">26.1.5.</strong> 投资学分类书籍</a></li><li class="chapter-item "><a href="../../reference/booklist/hejun-consulting.html"><strong aria-hidden="true">26.1.6.</strong> 和君推荐企业家和投行家书籍</a></li><li class="chapter-item "><a href="../../reference/booklist/middle-student.html"><strong aria-hidden="true">26.1.7.</strong> 中学生阅读指南</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-600.html"><strong aria-hidden="true">26.1.8.</strong> 商务汉译世界学术名著丛书·600本</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-500.html"><strong aria-hidden="true">26.1.9.</strong> 商务汉译世界学术名著丛书·分科本500本</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-400.html"><strong aria-hidden="true">26.1.10.</strong> 商务汉译世界学术名著丛书·珍藏本400本</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-world-120.html"><strong aria-hidden="true">26.1.11.</strong> 汉译世界学术名著丛书·120年纪念版</a></li><li class="chapter-item "><a href="../../reference/booklist/shangwu-china-105.html"><strong aria-hidden="true">26.1.12.</strong> 中华现代学术名著丛书·105本</a></li><li class="chapter-item "><a href="../../reference/booklist/StJohnCollege.html"><strong aria-hidden="true">26.1.13.</strong> 圣约翰学院的阅读书目</a></li><li class="chapter-item expanded "><a href="../../reference/booklist/howToReadBook.html" class="active"><strong aria-hidden="true">26.1.14.</strong> 如何阅读一本书的书单</a></li></ol></li><li class="chapter-item "><a href="../../reference/easy-talk.html"><strong aria-hidden="true">26.2.</strong> 1000条</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../reference/easy-talk/chapter1.html"><strong aria-hidden="true">26.2.1.</strong> 第一章</a></li><li class="chapter-item "><a href="../../reference/easy-talk/chapter2.html"><strong aria-hidden="true">26.2.2.</strong> 第二章</a></li><li class="chapter-item "><a href="../../reference/easy-talk/chapter3.html"><strong aria-hidden="true">26.2.3.</strong> 第三章</a></li><li class="chapter-item "><a href="../../reference/easy-talk/chapter4.html"><strong aria-hidden="true">26.2.4.</strong> 第四章</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">读书笔记</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/xiaozhiliaoo/reading-lists" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="如何阅读一本书的书单"><a class="header" href="#如何阅读一本书的书单">如何阅读一本书的书单</a></h1>
+<ul>
+<li>荷马：《伊利亚特》《奥德赛》</li>
+<li>《旧约》</li>
+<li>埃斯库罗斯：悲剧</li>
+<li>索福克勒斯：悲剧</li>
+<li>希罗多德：《历史》</li>
+<li>欧里庇得斯：悲剧（特别是《美狄亚》《希波利图斯》《酒神的女祭司们》）</li>
+<li>修昔底德：《伯罗奔尼撒战争史》</li>
+<li>希波克拉底：医学著作</li>
+<li>阿里斯托芬：喜剧（特别是《云》《鸟》《蛙》）</li>
+<li>柏拉图：对话录（特别是《理想国》《会饮篇》《斐多篇》《美诺篇》《申辩篇》《斐德若篇》《诡辩篇》《高尔吉亚篇》《智者篇》《泰阿泰德篇》）</li>
+<li>亚里士多德：著作（特别是《工具论》《物理学》《形而上学》《灵魂论》《尼各马可伦理学》《政治学》《修辞学》《诗学》）</li>
+<li>伊壁鸠鲁：《致希罗多德的信》《致美诺西斯的信》</li>
+<li>欧几里得：《几何原理》</li>
+<li>阿基米德：著作（特别是《论平面图形的平衡》《论浮体》《沙粒的计算》）</li>
+<li>阿波罗尼：《圆锥曲线论》</li>
+<li>西塞罗：著作（特别是《演说集》《论友谊》《论老年》）</li>
+<li>卢克莱修：《物性论》</li>
+<li>维吉尔：著作</li>
+<li>贺拉斯：著作（特别是《颂歌与长短句》《诗艺》）</li>
+<li>李维：《罗马史》</li>
+<li>奥维德：著作（特别是《变形记》）</li>
+<li>普鲁塔克：《希腊罗马名人传》</li>
+<li>塔西佗：《历史》《编年史》《农业志》《日耳曼尼亚志》</li>
+<li>尼科马库斯：《数学入门》</li>
+<li>爱比克泰德：《论说集》《手册》</li>
+<li>托勒密：《天文学大成》</li>
+<li>卢西安：著作（特别是《历史写作方法》《真实的故事》《待售的哲学》）</li>
+<li>奥勒留：《沉思录》</li>
+<li>盖伦：《论自然机能》</li>
+<li>新约</li>
+<li>普罗提诺：《九章集》</li>
+<li>圣奥古斯丁：著作（特别是《论教师》《忏悔录》《上帝之城》《基督教教义》）</li>
+<li>罗兰之歌</li>
+<li>尼布龙根之歌</li>
+<li>萨加（北欧神话）</li>
+<li>托马斯·阿奎那：《神学大全》</li>
+<li>但丁：著作（特别是《新生》《论世界帝国》《神曲》）</li>
+<li>乔叟：著作（特别是《特洛伊罗斯与克里希达》《坎特伯雷故事集》）</li>
+<li>达芬奇：《笔记》</li>
+<li>马基雅维利：《君主论》《论李维前十书》</li>
+<li>伊拉斯谟：《愚人颂》</li>
+<li>哥白尼：《天体运行论》</li>
+<li>托马斯·莫尔：《乌托邦》</li>
+<li>马丁·路德：《三檄文》《席间谈》</li>
+<li>拉伯雷：《巨人传》</li>
+<li>约翰·加尔文：《基督教教义》</li>
+<li>蒙田：《随笔》</li>
+<li>威廉·吉尔伯特：《磁石论》</li>
+<li>塞万提斯：《堂吉诃德》</li>
+<li>埃德蒙·斯宾塞：《婚前曲》《仙后》</li>
+<li>弗朗西斯·培根：《随笔》《学术的进步》《新工具》《新大西岛》</li>
+<li>莎士比亚：著作</li>
+<li>伽利略：《星际使者》《论两种新科学及其数学演化》</li>
+<li>开普勒：《哥白尼天文学概要》《论世界的和谐》</li>
+<li>威廉·哈维：《动物的心血运行论》《论血液循环》《论动物的生殖》</li>
+<li>托马斯·霍布斯：《利维坦》</li>
+<li>勒内·笛卡尔：《指导心智的规则》《论方法》《几何学》《第一哲学沉思录》</li>
+<li>约翰·弥尔顿：著作（特别是短诗、《论出版自由》《失乐园》《力士参孙》）</li>
+<li>莫里哀：喜剧（特别是《守财奴》《太太学堂》《恨世者》《讨厌自己的医生》《答丢夫》）</li>
+<li>帕斯卡：《致外省人信札》《思想录》《科学论文》</li>
+<li>克里斯蒂安·惠更斯：《光学论》</li>
+<li>斯宾诺莎：《伦理学》</li>
+<li>约翰·洛克：《论宽容》《政府论》《人类理解论》</li>
+<li>让-巴蒂斯特·拉辛：悲剧（特别是《昂朵马格》《费德尔》）</li>
+<li>牛顿：《自然哲学的数学原理》《光学》</li>
+<li>莱布尼茨：《形而上学序论》《人类理智新论》《单子论》</li>
+<li>丹尼尔·笛福：《鲁滨逊漂流记》</li>
+<li>乔纳森·斯威夫特：《木桶的故事》《致斯黛拉小札》《格列弗游记》《一个小小的建议》</li>
+<li>威廉·康格里夫：《如此世道》</li>
+<li>乔治·贝克莱：《人类知识原理》</li>
+<li>亚历山大·蒲伯：《论批评》《鬈发历劫记》《论人》</li>
+<li>孟德斯鸠：《波斯人信札》《论法的精神》</li>
+<li>伏尔泰：《英国书简》《赣第德》《哲学词典》</li>
+<li>亨利·菲尔丁：《约瑟夫·安德鲁斯》《汤姆·琼斯》</li>
+<li>塞缪尔·约翰逊：《人类希望的虚妄》《英语词典》《拉塞拉斯》《诗人传》</li>
+<li>大卫·休谟：《人性论》《道德和政治论文集》《人类理解研究》</li>
+<li>让-雅克·卢梭：《论人类不平等的起源和基础》《论政治经济学》《爱弥儿》《社会契约论》</li>
+<li>劳伦斯·斯特恩：《特利斯特拉姆·香第》《多情客游记》</li>
+<li>亚当·斯密：《道德情操论》《国富论》</li>
+<li>康德：《纯粹理性批判》《道德形而上学原理》《实践理性批判》《法的形而上学原理：权利的科学》《判断力批判》《永久和平论》</li>
+<li>爱德华·吉朋：《罗马帝国衰亡史》《自传》</li>
+<li>詹姆斯·鲍斯威尔：《日记》《约翰逊博士传》</li>
+<li>拉瓦锡：《化学原理》</li>
+<li>约翰·杰、詹姆斯·麦迪逊、亚历山大·汉密尔顿：《联邦党人文集》（连同《邦联和永久联合条例》《美国宪法》《独立宣言》）</li>
+<li>杰里米·边沁：《道德与立法原理导论》《虚构理论》</li>
+<li>歌德：《浮士德》《诗与真》</li>
+<li>让·巴普蒂斯·约瑟夫·傅里叶：《热的分析理论》</li>
+<li>黑格尔：《精神现象学》《法哲学原理》《历史哲学讲演录》</li>
+<li>威廉·华兹华斯：诗集（特别是《抒情歌谣集》《露茜组诗》《十四行诗》《序曲》）</li>
+<li>塞缪尔·柯勒律治：诗集（特别是《忽必烈汗》《古舟子咏》）、《文学传记》</li>
+<li>简·奥斯汀：《傲慢与偏见》《爱玛》</li>
+<li>卡尔·冯·克劳塞维茨：《战争论》</li>
+<li>司汤达：《红与黑》《帕玛修道院》《爱情论》</li>
+<li>拜伦：《唐璜》</li>
+<li>叔本华：《悲观论集》</li>
+<li>法拉第：《蜡烛的化学史》《电学实验研究》</li>
+<li>查尔斯·莱尔：《地质学原理》</li>
+<li>奥古斯特·孔德：《实证哲学》</li>
+<li>巴尔扎克：《高老头》《欧也妮·葛朗台》</li>
+<li>拉尔夫·瓦尔多·爱默生：《代表人物》《随笔》《日记》</li>
+<li>纳撒尼尔·霍桑：《红字》</li>
+<li>阿列克西·德·托克维尔：《论美国的民主》</li>
+<li>约翰·斯图尔特·密尔：《逻辑体系》《论自由》《代议制政府》《功利主义》《论妇女的屈从地位》《自传》</li>
+<li>查尔斯·达尔文：《物种起源》《人类的由来》《自传》</li>
+<li>查尔斯·狄更斯：著作（特别是《匹克威克外传》《大卫·科波菲尔》《艰难时世》）</li>
+<li>克劳德·贝尔纳：《实验医学研究导论》</li>
+<li>亨利·大卫·梭罗：《论公民的不顺从》《瓦尔登湖》</li>
+<li>卡尔·马克思：《资本论》（连同《共产党宣言》）</li>
+<li>乔治·爱略特：《亚当·贝德》《米德尔马契》</li>
+<li>赫尔曼·麦克维尔：《莫比·迪克》（白鲸记）《比利·巴德》</li>
+<li>陀思妥耶夫斯基：《罪与罚》《白痴》《卡拉马佐夫兄弟》</li>
+<li>古斯塔夫·福楼拜：《包法利夫人》《三故事》</li>
+<li>亨利克·易卜生：戏剧（特别是《海达·高布乐》《玩偶之家》《野鸭》）</li>
+<li>列夫·托尔斯泰：《战争与和平》《安娜·卡列尼娜》《何谓艺术？》《二十三个故事》</li>
+<li>马克·吐温：《哈克贝利历险记》《神秘陌生人》</li>
+<li>威廉·詹姆斯：《心理学原理》《宗教经验之种种》《实用主义》《彻底经验主义论文集》</li>
+<li>亨利·詹姆斯：《美国人》《奉使记》</li>
+<li>尼采：《查拉图斯特拉如是说》《超越善恶》《道德谱系学》《强力意志》</li>
+<li>朱尔·亨利·彭加勒：《科学与假设》《科学与方法》</li>
+<li>西格蒙德·弗洛依德：《释梦》《精神分析引论》《文明及其不满》《精神分析引论新编》</li>
+<li>萧伯纳：戏剧（以及前言，特别是《人与超人》《芭芭拉少校》《恺撒和克里奥佩特拉》《卖花女》《圣女贞德》）</li>
+<li>马克斯·普朗克：《量子理论的起源与发展》《科学往何处去？》《科学自传》</li>
+<li>亨利·柏格森：《时间与自由意志》《物质与记忆》《创造进化论》《道德和宗教的两个来源》</li>
+<li>约翰·杜威：《我们怎样思想？》《民主与教育》《经验与自然》《逻辑：探索的理论》</li>
+<li>阿尔佛雷德·诺思·怀特海：《数学导论》《科学与近代世界》《教育的目标及其他论文》《观念的探险》</li>
+<li>乔治·桑塔亚纳：《理性的生活》《怀疑主义与动物信仰》《人与地》</li>
+<li>尼古拉·列宁：《国家与革命》</li>
+<li>普鲁斯特：《追忆似水年华》</li>
+<li>伯特兰·罗素：《哲学问题》《心的分析》《意义和真理的探究》《人类知识：其范围和限度》</li>
+<li>托马斯·曼：《魔山》《约瑟和他的兄弟们》</li>
+<li>阿尔伯特·爱因斯坦：《相对论的意义》《论理论物理学的方法》《物理学的进化》（与L.英菲尔德合著）</li>
+<li>詹姆斯·乔伊斯：《都柏林人》中的一篇《死者》《一个青年艺术家的画像》</li>
+<li>雅克·马利坦：《艺术与经院哲学》《知识的等级》《人权和自然法》《真正的人道主义》</li>
+<li>弗朗兹·卡夫卡：《审判》《城堡》</li>
+<li>阿诺德·汤因比：《历史研究》《文明在考验中》</li>
+<li>让-保罗·萨特《恶心》《无处可逃》《存在与虚无》</li>
+<li>索尔仁尼琴：《第一圈》《癌病房》</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../reference/booklist/StJohnCollege.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../../reference/easy-talk.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../reference/booklist/StJohnCollege.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../../reference/easy-talk.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../../mermaid.min.js"></script>
+        <script type="text/javascript" src="../../mermaid-init.js"></script>
+        <script type="text/javascript" src="../../smart-anchor.js"></script>
+        <script src="https://utteranc.es/client.js"
+        repo="RustMagazine/rust_magazine_2021"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>
+
+    </body>
+</html>
