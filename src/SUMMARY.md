@@ -102,6 +102,7 @@
         - [汉译世界学术名著丛书·120年纪念版](./reference/booklist/shangwu-world-120.md)
         - [中华现代学术名著丛书·105本](./reference/booklist/shangwu-china-105.md)
         - [圣约翰学院的阅读书目](./reference/booklist/StJohnCollege.md)
+        - [如何阅读一本书的书单](./reference/booklist/howToReadBook.md)
     - [1000条](./reference/easy-talk.md)
         - [第一章](./reference/easy-talk/chapter1.md)
         - [第二章](./reference/easy-talk/chapter2.md)

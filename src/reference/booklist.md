@@ -27,3 +27,6 @@
 - [中华现代学术名著丛书·105本](booklist/shangwu-china-105.md) （中国现代学术名著）
 
 - [圣约翰学院的阅读书目](booklist/StJohnCollege.md) （圣约翰学院的阅读书目）
+
+
+- [如何阅读一本书的书单](booklist/howToReadBook.md)
