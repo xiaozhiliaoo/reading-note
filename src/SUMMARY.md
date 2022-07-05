@@ -77,7 +77,15 @@
 
 - [国学](chinese-ancient/intro.md)
 
-- [经济与金融](finance/intro.md)
+- [经济,金融,管理](finance/intro.md)
+
+- [文化](culture/intro.md)
+
+- [历史](history/intro.md)
+
+- [教育](education/intro.md)
+    - [如何阅读一本书](education/how-to-read-book.md)
+
 
 - [参考资料](./reference/reference.md)
     - [书单](./reference/booklist.md)
