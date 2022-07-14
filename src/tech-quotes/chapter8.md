@@ -101,10 +101,10 @@
     * **C-LSP**(Correctness：Liveness, Safety, Performance)。
     * **APCNSCRFS**(Architectures, Process, Communication, Naming, Synchronization, Consistency and Replication,
       Faluttolerance, Security)。
-    * **RCM**(Reliablity，Scalablity，Maintainable)。
+    * **DDIA:RCM**(Reliablity，Scalablity，Maintainable)。
     * **CAP**(Consistency, Availability, Partition tolerance)。
     * **RUM**(Read Update Memory)。
-    * **MSERPTCC**(Model, Storage, Encoding, Replication, Partitioning, Transaction, Consistency and Consensus)。
+    * **DDIA:MSERPTCC**(Model, Storage, Encoding, Replication, Partitioning, Transaction, Consistency and Consensus)。
     * **PACELC**（Partition tolerance，Availability，Consistency， Else， Latency， Consistency）。
 
 ---
@@ -122,3 +122,11 @@
 ---
 
 * 824 JCF：接口定义类型，抽象实现骨架，实现千变万化。
+
+---
+
+* 825 存储系统核心拆分：内部实现，外部交互，架构属性。具体分为：1.单机特性(数据模型，存储模型，读写性能)，2.分布式特性(用户视角：读写(增删改查)路径，系统视角：一致性模型，复制，分区，共识，容错)。复制，共识，分区等等细节都会在用户读写路径视角展现。
+
+--- 
+
+* 826 NoSQL分类：数据模型，存储模型，一致性模型，物理模型，读写性能，辅助索引，故障处理，压缩，负载均衡，原子读-改-写，加锁等待死锁。

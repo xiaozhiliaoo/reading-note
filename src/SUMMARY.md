@@ -40,6 +40,7 @@
 
 - [软件工程](engineering/intro.md)
     - [软件困局：为什么聪明的程序员写出糟糕的代码](engineering/the-problem-with-software.md)
+    - [尽在双11-阿里巴巴技术演进与超越](engineering/alibaba-11-11.md)
 
 - [设计](design/intro.md)
 
@@ -64,6 +65,7 @@
     - [Understanding Replication in Databases and Distributed Systems](./paper/replication-in-db-and-ds.md)
     - [Eventually Consistent](./paper/eventually-consistent.md)
     - [A Survey on the Evolution of Stream Processing Systems](./paper/Stream-System-Evolution.md)
+    - [Cassandra:A Decentralized Structured Storage System](./paper/Cassandra.md)
 
 - [电子书](ebook/intro.md)
     - [Java并发编程之美](./ebook/java-concurreny-beautify.md)
