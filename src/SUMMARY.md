@@ -54,7 +54,14 @@
     - [图灵奖演讲](others/turing-award.md)
 
 - [极客时间](geektime/intro.md)
+    - [02-左耳听风-陈皓](./geektime/02-left-ear-listen-wind.md)
+    - [12-从0开始学大数据](./geektime/12-zero-bigdata.md)
     - [16-技术与商业案例解读-徐飞](./geektime/技术与商业案例解读.md)
+    - [56-大规模数据处理实战](./geektime/56-mass-data-process.md)
+    - [90-分布式技术原理与算法解析](./geektime/90-dist-tech-and-algo.md)
+    - [107-分布式协议与算法实战](./geektime/107-dist-algo.md)
+    - [162-分布式数据库30讲](./geektime/162-dist-db-30.md)
+    - [238-大数据经典论文解读](./geektime/238-dist-db-30.md)
 
 
 - [论文](./paper/intro.md)
@@ -75,7 +82,10 @@
 
 - [哲学](philosophy/intro.md)
 
-- [心理学](psychology/intro.md)
+- [心理学&思维](psychology/intro.md)
+    - [认知框架](psychology/framers.md)
+    - [模型思维](psychology/model-thinking.md)
+
 
 - [国学](chinese-ancient/intro.md)
 
