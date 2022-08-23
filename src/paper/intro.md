@@ -179,7 +179,7 @@
 | 137  | the red book                                                 |                      |          |      |
 | 138  | SAGAS                                                        | Hector Garcaa-Molrna |          |      |
 | 139  | ARIES: a transaction recovery method supporting fine-granularity locking and partial rollbacks using write-ahead logging |                      |          |      |
-|      |                                                              |                      |          |      |
+| 140  | Big Data：A survey                                           |                      |          |      |
 
 
 
