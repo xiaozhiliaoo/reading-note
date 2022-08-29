@@ -85,6 +85,7 @@
 - [心理学&思维](psychology/intro.md)
     - [认知框架](psychology/framers.md)
     - [模型思维](psychology/model-thinking.md)
+    - [好好思考-成甲](psychology/the-art-of-thinking.md)
 
 
 - [国学](chinese-ancient/intro.md)
@@ -113,8 +114,10 @@
         - [商务汉译世界学术名著丛书·珍藏本400本](./reference/booklist/shangwu-world-400.md)
         - [汉译世界学术名著丛书·120年纪念版](./reference/booklist/shangwu-world-120.md)
         - [中华现代学术名著丛书·105本](./reference/booklist/shangwu-china-105.md)
-        - [圣约翰学院的阅读书目](./reference/booklist/StJohnCollege.md)
+        - [圣约翰学院的阅读书单](./reference/booklist/StJohnCollege.md)
         - [如何阅读一本书的书单](./reference/booklist/howToReadBook.md)
+        - [哈佛经典-五尺书架](reference/booklist/Harvard-Classics.md)
+        - [一生的读书计划书单](reference/booklist/The-New-Lifetime-Reading-Plan.md)
     - [1000条](./reference/easy-talk.md)
         - [第一章](./reference/easy-talk/chapter1.md)
         - [第二章](./reference/easy-talk/chapter2.md)

@@ -204,5 +204,5 @@
 16. 世界名校的课程收集来的论文：https://xiaozhiliaoo.github.io/distributed-system-practice/course/
 16. 各种《分布式系统泛型与原理》《分布式系统概念与技术》书
 16. https://github.com/rxin/db-readings
-16. CMU_15445，CMU_15721课程。
+16. CMU_15445，[CMU_15721](https://15721.courses.cs.cmu.edu/spring2020/papers) 课程。
 
