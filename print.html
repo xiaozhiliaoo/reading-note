@@ -493,6 +493,10 @@ expiration</p>
 大部分是无锁实现，也就是无锁实现了线性一致性。 单机并发一致性和分布式一致性是一样的。只是分布式多了网络这个不确定因素。</p>
 <p>原子变量：里面只有一个值。减少了状态的变化，基于原子变量可以设计非阻塞的数据结构。然后在理解hz的原子变量作用。 并发集合：有阻塞同步的，也有非阻塞同步的。 同步原语，阻塞同步，AQS框架。</p>
 <p>单机锁和分布式锁均需要保证活跃性，安全性，性能。</p>
+<p>Distributed lock :
+分布式锁本质是共识问题，需要多个节点共同认可某个节点是锁的占有者，否则就会认为自己也可以占有锁，redis做分布式锁并不是一个好的idea，因为本身并不提
+供共识功能，而是一个存储KV库。虽然选举算法可以选出来一个leader获取某个锁，但是并不是强一致性的，也不能满足安全性，活性，基于共识的分布式锁，
+如基于paxos的chubby（暴露文件系统API和分布式锁服务），或者zab的zk，raft的etcd是更好的选择。</p>
 <p>leader选举和一致性没关系，但是强一致性更好实现leader选举，如zk 顺序一致性。</p>
 <p>锁可以实现leader选举，leader选举也可以用锁或者别的方法来做。</p>
 <p>分布式锁本质是分布式同步，单机锁和分布式锁区别在于对于网络分区，异常的处理。容错的分布式锁。</p>
@@ -708,10 +712,12 @@ https://www.elastic.co/blog/found-elasticsearch-networking</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lucene"><a class="header" href="#lucene">Lucene</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="book-1"><a class="header" href="#book-1">Book</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="elasticsearch权威指南"><a class="header" href="#elasticsearch权威指南">Elasticsearch权威指南</a></h1>
+<p>Elasticsearch: The Definitive Guide: A Distributed Real-Time Search and Analytics Engine 1st Edition</p>
+<p>中文：https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html</p>
+<p>英文：https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html</p>
 <h2 id="progress-2"><a class="header" href="#progress-2">Progress</a></h2>
 <p>100%</p>
 <h2 id="notes-3"><a class="header" href="#notes-3">Notes</a></h2>
-<p>Elasticsearch: The Definitive Guide: A Distributed Real-Time Search and Analytics Engine 1st Edition</p>
 <p>TF-IDF:词频/逆向文档频率</p>
 <p>es两个阶段：索引和查询</p>
 <p>stemmer:词干提取器</p>
@@ -724,46 +730,31 @@ https://www.elastic.co/blog/found-elasticsearch-networking</p>
 <p>common_grams 过滤器是针对短语查询能更高效的使用停用词而设计的。</p>
 <p>Fuzzy matching 允许查询时匹配错误拼写的单词。原理是编辑距离</p>
 <p>fuzzy 查询的工作原理是给定原始词项及构造一个 编辑自动机— 像表示所有原始字符串指定编辑距离的字符串的一个大图表。</p>
-<p>聚合=bucket+metrics
-bucket=group by metrics=count,sum,max...</p>
+<p>聚合=bucket+metrics bucket=group by metrics=count,sum,max...</p>
 <p>&lt;国家, 性别, 年龄&gt; 组合的平均薪酬。所有的这些都在一个请求内完成并且只遍历一次数据.</p>
 <p>直方图聚合：histogram，date_histogram</p>
-<p>例子基础数据
-POST /cars/transactions/_bulk
-{ &quot;index&quot;: {}}
-{ &quot;price&quot; : 10000, &quot;color&quot; : &quot;red&quot;, &quot;make&quot; : &quot;honda&quot;, &quot;sold&quot; : &quot;2014-10-28&quot; }
-{ &quot;index&quot;: {}}
-{ &quot;price&quot; : 20000, &quot;color&quot; : &quot;red&quot;, &quot;make&quot; : &quot;honda&quot;, &quot;sold&quot; : &quot;2014-11-05&quot; }
-{ &quot;index&quot;: {}}
-{ &quot;price&quot; : 30000, &quot;color&quot; : &quot;green&quot;, &quot;make&quot; : &quot;ford&quot;, &quot;sold&quot; : &quot;2014-05-18&quot; }
-{ &quot;index&quot;: {}}
-{ &quot;price&quot; : 15000, &quot;color&quot; : &quot;blue&quot;, &quot;make&quot; : &quot;toyota&quot;, &quot;sold&quot; : &quot;2014-07-02&quot; }
-{ &quot;index&quot;: {}}
-{ &quot;price&quot; : 12000, &quot;color&quot; : &quot;green&quot;, &quot;make&quot; : &quot;toyota&quot;, &quot;sold&quot; : &quot;2014-08-19&quot; }
-{ &quot;index&quot;: {}}
-{ &quot;price&quot; : 20000, &quot;color&quot; : &quot;red&quot;, &quot;make&quot; : &quot;honda&quot;, &quot;sold&quot; : &quot;2014-11-05&quot; }
-{ &quot;index&quot;: {}}
-{ &quot;price&quot; : 80000, &quot;color&quot; : &quot;red&quot;, &quot;make&quot; : &quot;bmw&quot;, &quot;sold&quot; : &quot;2014-01-01&quot; }</p>
+<p>例子基础数据 POST /cars/transactions/_bulk { &quot;index&quot;: {}} { &quot;price&quot; : 10000, &quot;color&quot; : &quot;red&quot;, &quot;make&quot; : &quot;honda&quot;, &quot;sold&quot; : &quot;
+2014-10-28&quot; } { &quot;index&quot;: {}} { &quot;price&quot; : 20000, &quot;color&quot; : &quot;red&quot;, &quot;make&quot; : &quot;honda&quot;, &quot;sold&quot; : &quot;2014-11-05&quot; } { &quot;index&quot;:
+{}} { &quot;price&quot; : 30000, &quot;color&quot; : &quot;green&quot;, &quot;make&quot; : &quot;ford&quot;, &quot;sold&quot; : &quot;2014-05-18&quot; } { &quot;index&quot;: {}} { &quot;price&quot; : 15000, &quot;
+color&quot; : &quot;blue&quot;, &quot;make&quot; : &quot;toyota&quot;, &quot;sold&quot; : &quot;2014-07-02&quot; } { &quot;index&quot;: {}} { &quot;price&quot; : 12000, &quot;color&quot; : &quot;green&quot;, &quot;
+make&quot; : &quot;toyota&quot;, &quot;sold&quot; : &quot;2014-08-19&quot; } { &quot;index&quot;: {}} { &quot;price&quot; : 20000, &quot;color&quot; : &quot;red&quot;, &quot;make&quot; : &quot;honda&quot;, &quot;
+sold&quot; : &quot;2014-11-05&quot; } { &quot;index&quot;: {}} { &quot;price&quot; : 80000, &quot;color&quot; : &quot;red&quot;, &quot;make&quot; : &quot;bmw&quot;, &quot;sold&quot; : &quot;2014-01-01&quot; }</p>
 <p>聚合是在查询范围内的，但有时我们也想要搜索它的子集，而聚合的对象却是所有数据：全局桶</p>
 <p>聚合结果过滤：过滤桶</p>
 <p>只过滤搜索结果，不过滤聚合结果：post_filter</p>
-<p>Approximate Aggregations（近似聚合）：cardinality（HyperLogLog），percentiles（TDigest-https://github.com/tdunning/t-digest） </p>
+<p>Approximate Aggregations（近似聚合）：cardinality（HyperLogLog），percentiles（TDigest-https://github.com/tdunning/t-digest）</p>
 <p>max是精确聚合，count(DISTINCT)是近似聚合</p>
 <p>big data, exactness, and real-time latency.</p>
-<p>精确+实时：数据可以存入单台机器的内存之中，我们可以随心所欲，使用任何想用的算法。结果会 100% 精确，响应会相对快速。
-大数据+精确：传统的 Hadoop。可以处理 PB 级的数据并且为我们提供精确的答案，但它可能需要几周的时间才能为我们提供这个答案。
-大数据+实时：近似算法为我们提供准确但不精确的结果。</p>
+<p>精确+实时：数据可以存入单台机器的内存之中，我们可以随心所欲，使用任何想用的算法。结果会 100% 精确，响应会相对快速。 大数据+精确：传统的 Hadoop。可以处理 PB
+级的数据并且为我们提供精确的答案，但它可能需要几周的时间才能为我们提供这个答案。 大数据+实时：近似算法为我们提供准确但不精确的结果。</p>
 <p>聚合实现：DocValues</p>
-<p>Doc values 的存在是因为倒排索引只对某些操作是高效的。 倒排索引的优势在于查找包含某个项的文档，而对于从另外一个方向的相反操作并不高效，即：确定哪些项是否存在单个文档里
-搜索使用倒排索引查找文档，聚合操作收集和聚合 doc values 里的数据。
-Doc Values 本质上是一个序列化的列式存储。列式存储 适用于聚合、排序、脚本等操作
-Doc values 不支持 analyzed 字符串字段。聚合运行在 not_analyzed 字符串而不是 analyzed 字符串，这样可以有效的利用 doc values </p>
-<p>聚合一个分析字符串：fielddata </p>
-<p>terms 桶基于我们的数据动态构建桶；它并不知道到底生成了多少桶。 大多数时候对单个字段的聚合查询还是非常快的， 但是当需要同时聚合多个字段时，就可能会
-产生大量的分组，最终结果就是占用 es 大量内存，从而导致 OOM 的情况发生。</p>
+<p>Doc values 的存在是因为倒排索引只对某些操作是高效的。 倒排索引的优势在于查找包含某个项的文档，而对于从另外一个方向的相反操作并不高效，即：确定哪些项是否存在单个文档里 搜索使用倒排索引查找文档，聚合操作收集和聚合 doc
+values 里的数据。 Doc Values 本质上是一个序列化的列式存储。列式存储 适用于聚合、排序、脚本等操作 Doc values 不支持 analyzed 字符串字段。聚合运行在 not_analyzed 字符串而不是
+analyzed 字符串，这样可以有效的利用 doc values</p>
+<p>聚合一个分析字符串：fielddata</p>
+<p>terms 桶基于我们的数据动态构建桶；它并不知道到底生成了多少桶。 大多数时候对单个字段的聚合查询还是非常快的， 但是当需要同时聚合多个字段时，就可能会 产生大量的分组，最终结果就是占用 es 大量内存，从而导致 OOM 的情况发生。</p>
 <p>聚合模式：DFS(默认)，BFS</p>
-<p>广度优先仅仅适用于每个组的聚合数量远远小于当前总组数的情况下，因为广度优先会在内存中缓存裁剪后的仅仅需要缓存的每个组的所有数据，
-以便于它的子聚合分组查询可以复用上级聚合的数据。</p>
+<p>广度优先仅仅适用于每个组的聚合数量远远小于当前总组数的情况下，因为广度优先会在内存中缓存裁剪后的仅仅需要缓存的每个组的所有数据， 以便于它的子聚合分组查询可以复用上级聚合的数据。</p>
 <p>对单个文件的变更是ACID的，但包含多个文档的变更不支持。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="elasticsearch实战"><a class="header" href="#elasticsearch实战">Elasticsearch实战</a></h1>
 <h2 id="progress-3"><a class="header" href="#progress-3">Progress</a></h2>
@@ -1699,6 +1690,17 @@ Oracle</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="person"><a class="header" href="#person">Person</a></h1>
 <p><a href="https://en.wikipedia.org/wiki/Phil_Bernstein">Phil Bernstein</a></p>
 <p><a href="http://www.bailis.org/">Peter Bailis</a>: HAT,Consistency Model</p>
+<p><a href="tech-learning/research/">Leslie Lamport</a></p>
+<p><a href="tech-learning/research/">Michael Stonebraker</a></p>
+<p><a href="tech-learning/research/">Joseph M. Hellerstein</a></p>
+<p><a href="tech-learning/research/">Daniel Abadi</a></p>
+<p><a href="tech-learning/research/">Andy Pavlo</a></p>
+<p><a href="tech-learning/research/">Jeff Dean</a></p>
+<p><a href="tech-learning/research/">Sanjay Ghemawat</a></p>
+<p><a href="tech-learning/research/">Robert Morris</a></p>
+<p><a href="tech-learning/research/">John Ousterhout</a></p>
+<p><a href="tech-learning/research/">Jim Gray</a></p>
+<p><a href="tech-learning/research/">Andrew Tanenbaum</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="2021"><a class="header" href="#2021">2021</a></h1>
 <h1 id="2020"><a class="header" href="#2020">2020</a></h1>
 <h2 id="java-nio-select-与-go-selectpython-select"><a class="header" href="#java-nio-select-与-go-selectpython-select">java nio select 与 go select，python select</a></h2>
