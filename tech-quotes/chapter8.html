@@ -322,6 +322,14 @@ Faluttolerance, Security)。</li>
 <tr><td><strong>同步</strong></td><td>双写</td><td>暂无</td></tr>
 <tr><td><strong>异步</strong></td><td>通知</td><td>定时任务拉取，异步写。（如MySQL，把系统想象从节点）</td></tr>
 </tbody></table>
+<hr />
+<ul>
+<li>836 SQL优化核心是：少进行磁盘操作（读写数据）。（数据建模合理，索引，关联查询 -&gt;  查询优化器 -&gt; 执行计划 -&gt; BufferPool+磁盘），数据库都在努力做这件事，SQL只是这件事的外部视角。</li>
+</ul>
+<hr />
+<ul>
+<li>837 系统设计：数据量是最重要的考虑点。</li>
+</ul>
 
                     </main>
 

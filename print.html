@@ -1690,17 +1690,21 @@ Oracle</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="person"><a class="header" href="#person">Person</a></h1>
 <p><a href="https://en.wikipedia.org/wiki/Phil_Bernstein">Phil Bernstein</a></p>
 <p><a href="http://www.bailis.org/">Peter Bailis</a>: HAT,Consistency Model</p>
-<p><a href="tech-learning/research/">Leslie Lamport</a></p>
-<p><a href="tech-learning/research/">Michael Stonebraker</a></p>
-<p><a href="tech-learning/research/">Joseph M. Hellerstein</a></p>
-<p><a href="tech-learning/research/">Daniel Abadi</a></p>
-<p><a href="tech-learning/research/">Andy Pavlo</a></p>
-<p><a href="tech-learning/research/">Jeff Dean</a></p>
-<p><a href="tech-learning/research/">Sanjay Ghemawat</a></p>
-<p><a href="tech-learning/research/">Robert Morris</a></p>
-<p><a href="tech-learning/research/">John Ousterhout</a></p>
-<p><a href="tech-learning/research/">Jim Gray</a></p>
-<p><a href="tech-learning/research/">Andrew Tanenbaum</a></p>
+<p><a href="http://www.lamport.org/">Leslie Lamport</a></p>
+<p><a href="https://www.csail.mit.edu/person/michael-stonebraker">Michael Stonebraker</a></p>
+<p><a href="https://dsf.berkeley.edu/jmh/">Joseph M. Hellerstein</a></p>
+<p><a href="https://www.cs.umd.edu/%7Eabadi/">Daniel Abadi</a></p>
+<p><a href="http://www.cs.cmu.edu/%7Epavlo/">Andy Pavlo</a></p>
+<p><a href="https://research.google/people/jeff/">Jeff Dean</a></p>
+<p><a href="https://research.google/people/SanjayGhemawat/">Sanjay Ghemawat</a></p>
+<p><a href="https://www.csail.mit.edu/person/robert-morris">Robert Morris</a></p>
+<p><a href="https://web.stanford.edu/%7Eouster/cgi-bin/home.php">John Ousterhout</a></p>
+<p><a href="https://www.microsoft.com/en-us/research/people/gray/">Jim Gray</a></p>
+<p><a href="https://www.cs.vu.nl/%7East/">Andrew Tanenbaum</a></p>
+<p><a href="https://scholar.google.com/citations?user=pdDeRScAAAAJ&amp;hl=en">Goetz Graefe</a></p>
+<p><a href="https://pages.cs.wisc.edu/%7Edewitt/">David J. DeWitt</a></p>
+<p><a href="https://cs.brown.edu/%7Esbz/">Stan Zdonik</a> :SciDB,H-Store(VoltDB),C-store(Vertica),Aurora/Borealis(StreamBase)</p>
+<p><a href="http://db.csail.mit.edu/madden/">Samuel Madden</a> : TinyDB,SciDB</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="2021"><a class="header" href="#2021">2021</a></h1>
 <h1 id="2020"><a class="header" href="#2020">2020</a></h1>
 <h2 id="java-nio-select-与-go-selectpython-select"><a class="header" href="#java-nio-select-与-go-selectpython-select">java nio select 与 go select，python select</a></h2>
@@ -5910,6 +5914,14 @@ Faluttolerance, Security)。</li>
 <tr><td><strong>同步</strong></td><td>双写</td><td>暂无</td></tr>
 <tr><td><strong>异步</strong></td><td>通知</td><td>定时任务拉取，异步写。（如MySQL，把系统想象从节点）</td></tr>
 </tbody></table>
+<hr />
+<ul>
+<li>836 SQL优化核心是：少进行磁盘操作（读写数据）。（数据建模合理，索引，关联查询 -&gt;  查询优化器 -&gt; 执行计划 -&gt; BufferPool+磁盘），数据库都在努力做这件事，SQL只是这件事的外部视角。</li>
+</ul>
+<hr />
+<ul>
+<li>837 系统设计：数据量是最重要的考虑点。</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="工程实践"><a class="header" href="#工程实践">工程实践</a></h1>
 <p>工程实践，也即知识体系</p>
 <h2 id="github地址"><a class="header" href="#github地址">Github地址</a></h2>
