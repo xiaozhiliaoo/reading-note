@@ -343,18 +343,59 @@ Faluttolerance, Security)。</li>
 </ul>
 <hr />
 <ul>
-<li>840 为什么用MQ（Buffer）？1 系统通信方式，其他方式不能这么通信。 2 系统处理速度不一致。如异步，解耦，削峰，扩展性只是1,2带来的效果。</li>
+<li>840 为什么用MQ（Bounded Buffer）？1 系统通信方式，其他方式不能这么通信。 2 系统处理速度不一致。3 数据从静止变成流动的。data at rest到data in motion（table and stream）。如异步，解耦，削峰，扩展性只是1,2带来的效果。</li>
 </ul>
+<p>为什么用Kafka？1 ksqldb，stream，table 2 data integration 3 real stream process（生态是什么？）</p>
 <hr />
 <ul>
 <li>841 消息中间件选型是非功能性优于功能性的原则。优先性能，其次功能。性能上不去，很难优化。功能没有，可以添加。不同存储选型是功能性优于非功能性（如性能）。因为数据模型重要性高于性能，且数据模型本身影响性能。但是同类型存储选型依旧非功能性优于功能性。
-非功能性包括：数据量，性能，可用性，高可用，社区生态。
+非功能性包括：数据量，性能，可用性，高可用，社区生态，个人/团队熟悉。
 功能性包括：能不能满足需求？</li>
 </ul>
 <hr />
 <ul>
-<li></li>
+<li>842 三大系统软件：操作系统，数据库，编译器。操作系统和数据库可以对比。</li>
 </ul>
+<hr />
+<ul>
+<li>843 文本编辑器的恢复机制 
+<ul>
+<li>UNDO：撤销，reverse your last action， CTRL+Z</li>
+<li>REDO：重做，reverse your last Undo， CTRL+Y</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p>844 数据库的恢复机制</p>
+<ul>
+<li>
+<p>UNDO：Reverse the actions of txns that did not commit before  the crash。</p>
+</li>
+<li>
+<p>REDO：Repeat all actions starting from an appropriate point in  the log。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>845 存储系统单机视角：内存，磁盘。MySQL,ES,HBase,Cassandra,Redis,MongoDB</li>
+</ul>
+<hr />
+<ul>
+<li>846 技术选型本质是从N个因素中选出你真正认为重要的因素，这些因素可能需要互相权衡，可以是长期，短期。从而服务于你的目的.</li>
+</ul>
+<hr />
+<ul>
+<li>847 Buffer:速度不一致. Cache:提高速度.</li>
+</ul>
+<hr />
+<ul>
+<li>848 mq and db:一个数据一直在流动，一个数据一直在静止。</li>
+</ul>
+<hr />
 
                     </main>
 
