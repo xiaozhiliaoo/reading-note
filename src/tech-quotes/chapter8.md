@@ -199,9 +199,11 @@
 
 ------
 
-- 840 为什么用MQ（Bounded Buffer）？1 系统通信方式，其他方式不能这么通信。 2 系统处理速度不一致。3 数据从静止变成流动的。data at rest到data in motion（table and stream）。如异步，解耦，削峰，扩展性只是1,2带来的效果。
+- 840 为什么用MQ（Bounded Buffer）？1 系统通信方式，其他方式不能这么通信。 2 系统处理速度不一致。3 数据从静止变成流动的。data at rest到data in motion（table and stream）。如异步，解耦，削峰，扩展性只是1,2带来的效果。也是传统MQ功能，但是新的MQ是实时处理平台。
 
 为什么用Kafka？1 ksqldb，stream，table 2 data integration 3 real stream process（生态是什么？）
+
+个人选择偏好:Kakfa > RocketMQ > RabbitMQ 
 
 ---
 
