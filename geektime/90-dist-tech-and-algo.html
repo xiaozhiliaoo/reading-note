@@ -141,6 +141,174 @@
                     <main>
                         <h1 id="90-分布式技术原理与算法解析-聂鹏程"><a class="header" href="#90-分布式技术原理与算法解析-聂鹏程">90-分布式技术原理与算法解析 聂鹏程</a></h1>
 <p>https://time.geekbang.org/column/intro/100036401</p>
+<h1 id="keywords"><a class="header" href="#keywords">Keywords</a></h1>
+<p>分布式互斥(集中式算法，分布式算法P2P，令牌环算法，两层结构的分布式令牌环算法)</p>
+<p>分布式选举(Buddy,Raft(2014),ZAB(2011))  crash-recovery atomic broadcast algorithm</p>
+<p>分布式共识(PoW 工作量证明,PoS 权益证明,DPos 委托权益证明)</p>
+<p>分布式事务(2PC,3PC,MQ) 刚性事务 ACID  柔性事务 BASE</p>
+<p>ACID:2pc,2pc Base:MQ</p>
+<p>分布式锁(ZK,DB,Redis)  分布式锁羊群效应</p>
+<p>分布式体系结构：集中式（Borg(2015)，Mesos(2013)，K8S(2014)）  Mesos+Marathon(Docker,cgroups)</p>
+<p>分布式体系结构：非集中式(Akka Cluster(可容错，去中心化集群管理), Redis Cluster, Cassandra Cluster)  akka,redis是去中心化，但是需要选主，而cassandra是p2p，不用选主</p>
+<p>分布式调度
+单体调度：Bord Scheduler，Hadoop，Spark，K8S<br />
+两层调度：Mesos（MMF-最大最小公平算法，DRF-主导资源公平算法），Yarn
+共享状态调度：Google Omega，Microsoft Apollo，Hashicorp Nomad</p>
+<p>分布式计算
+MapReduce(Fork-Join)
+Stream：Storm，Flink，Spark，yahoo S4，Facebook Puma，Baidu Dstream，Taobao银河流数据处理平台，InfoSphere Stream
+Actor：Erlang/OTP, Akka，Quasar
+流水线：tersorflow</p>
+<p>分布式通信
+RPC，RMI，Dubbo
+消息（P2P，PubSub），Kafka
+消息队列 RocketMQ</p>
+<p>CAP
+CA：mysql，oracle
+CP：Redis，HBase，ZK
+AP：Eureka，CoachDB，Cassandra，DynamoDB</p>
+<p>分布式存储
+分布式数据库(结构化)：MySQL sharding,Microsoft SQL Azure, Spanner, OceanBase
+分布式键值对(半结构化)：Redis，Memcache
+分布式存储(非结构化)：Ceph，GFS，HDFS，Swift(OpenStack)</p>
+<p>数据分布(Sharding)
+Hash
+一致性Hash(Cassandra)
+带有限负载的一致性Hash(Google Cloud Pub/Sub, HAProxy) 
+带有虚拟节点的一致性Hash(Memcache)</p>
+<p>数据复制
+同步复制(MySQL)
+异步复制(MySQL默认，Redis Cluster)
+半同步复制(ZK CP,Microsoft SQL Azure Cloud SQL Server, ETCD)</p>
+<p>MySQL
+全同步复制
+半同步复制
+异步复制
+Oracle
+最大保护模式
+最大性能模式
+最大可用性模式</p>
+<p>故障检测
+固定心跳检测策略 (K，T)
+历史心跳信息预测故障策略：phi φ值检测：akka，hz</p>
+<p>网络分区处理策略(产生很多分区后，选择一个分区对外服务) 集中式拓扑与非集中式拓扑
+Static Quorum
+Keep Majority（保留子集群节点数w&gt;n/2的集群，如果分区过多，很难从很多分区找出一个&gt;n/2集群）
+设置仲裁机制
+基于共享资源方式处理网络分区</p>
+<p>Akka network partion
+发现
+stable-after
+处理策略
+Static Quorum
+Keep Majority
+Keep Oldest
+Keep Referee
+Down All
+Lease Majority</p>
+<p>Hazelcast network partion
+Bron–Kerbosch algorithm</p>
+<p>OOP vs Aoctor</p>
+<p>E-PVM算法</p>
+<p>Akka Cluster：面向应用程序平台的分布式集群管理</p>
+<p>Spark,Hadoop,Marathon</p>
+<p>Docker，Rocket</p>
+<p>Memcache Ketama算法</p>
+<p>Repcache实现Memchche的复制功能</p>
+<h1 id="notes"><a class="header" href="#notes">Notes</a></h1>
+<p>吞吐量 qps tps bps</p>
+<p>akka虽然有Leader和非Leader节点，但是不影响非集中式结构的节点的平等关系。节点有角色，但是没有控制关系。</p>
+<p>去中心化和选主没有必然关系。一般master/slave是集中结构，而leader/非leader是非集中结构。也不一定。</p>
+<p>Acotr=状态+行为+消息</p>
+<p>Omega是Borg的下一代。</p>
+<h1 id="question"><a class="header" href="#question">Question</a></h1>
+<p>为什么需要分布式系统？</p>
+<p>一致性和共识区别？</p>
+<h1 id="wiki"><a class="header" href="#wiki">Wiki</a></h1>
+<h1 id="person"><a class="header" href="#person">Person</a></h1>
+<p>Jeff Dean</p>
+<p>Sage Weil: https://en.wikipedia.org/wiki/Sage_Weil</p>
+<p>Sanjay Ghemawat</p>
+<h1 id="paper"><a class="header" href="#paper">Paper</a></h1>
+<p>PacificA: Replication in Log-Based Distributed Storage Systems 2008 </p>
+<p>Large-scale cluster management at Google with Borg</p>
+<p>Dominant Resource Fairness: Fair Allocation of Multiple Resource Types</p>
+<p>Apollo: Scalable and Coordinated Scheduling for Cloud-Scale Computing</p>
+<p>Omega: flexible, scalable schedulers for large compute clusters</p>
+<p>Consistent Hashing with Bounded Loads  Google 2017</p>
+<p>The φ Accrual Failure Detector</p>
+<h1 id="paper-recommend"><a class="header" href="#paper-recommend">Paper Recommend</a></h1>
+<h2 id="理论基础"><a class="header" href="#理论基础">理论基础</a></h2>
+<p>Time, Clocks, and the Ordering of Events in a Distributed System  1978   Lamport </p>
+<p>The byzantine generals problem 1982 LAMPORT</p>
+<p>Brewer’s Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web  2002  Seth Gilbert  Nancy Lynch</p>
+<p>CAP Twelve Years Later: How the &quot;Rules&quot; Have Changed 2012 Eric Brewer</p>
+<p>Base: An Acid Alternative 2008  Dan Pritchett, Ebay</p>
+<p>A simple totally ordered broadcast protocol 2008 </p>
+<p>Virtual Time and Global States of Distributed Systems 2002</p>
+<h2 id="分布式一致性算法"><a class="header" href="#分布式一致性算法">分布式一致性算法</a></h2>
+<p>A brief history of Consensus, 2PC and Transaction Commit. 2007</p>
+<p>Paxos Made Simple 2001 Lamport</p>
+<p>Paxos Made Practical 2007 David Mazieres</p>
+<p>Paxos Made Live - An Engineering Perspective 2006  Tushar Deepak Chandra Robert Griesemer Joshua Redstone</p>
+<p>In Search of an Understandable Consensus Algorithm(Extended Version)  2014 Diego Ongaro and John Ousterhout</p>
+<p>ZooKeeper: Wait-free coordination for Internet-scale systems 2010 </p>
+<p>Using Paxos to Build a Scalable, Consistent, and Highly Available Datastore 2011</p>
+<p>Impossibility of Distributed Consensus with One Faulty Process 1985</p>
+<p>Consensus in the Presence of Partial Synchrony 1988 </p>
+<h2 id="分布式数据结构"><a class="header" href="#分布式数据结构">分布式数据结构</a></h2>
+<p>Chord: A Scalable Peer-to-peer Lookup Protocol for Internet Applications 2003</p>
+<p>Pastry: Scalable, Decentralized Object Location, and Routing for Large-Scale Peer-to-Peer Systems 2001</p>
+<p>Kademlia: A Peer-to-Peer Information System Based on the XOR Metric 2002</p>
+<p>A Scalable Content-Addressable Network 2001</p>
+<p>Ceph: A Scalable, High-Performance Distributed File System  2006 OSDI   Sage Weil</p>
+<p>The Log-Structured Merge-Tree (LSM-Tree) 1996 </p>
+<p>HBase: A NoSQL Database 2017 Hiren Patel</p>
+<p>Tango: Distributed Data Structures over a Shared Log 2013</p>
+<h2 id="分布式系统实战"><a class="header" href="#分布式系统实战">分布式系统实战</a></h2>
+<p>The Google File System 2003 Sanjay Ghemawat</p>
+<p>Bigtable: A Distributed Storage System for Structured Data 2006</p>
+<p>The Chubby lock service for loosely-coupled distributed systems 2006</p>
+<p>Finding a needle in Haystack: Facebook's photo storage 2010</p>
+<p>Windows Azure Storage: A Highly Available Cloud Storage Service with Strong Consistency 2011</p>
+<p>Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing 2012</p>
+<p>Scaling Distributed Machine Learning with the Parameter Server 2014</p>
+<p>Dremel: Interactive Analysis of Web-Scale Datasets 2010</p>
+<p>Pregel: A System for Large-Scale Graph Processing 2013</p>
+<p>Spanner: Google's Globally-Distributed Database 2012</p>
+<p>Dynamo: Amazon’s Highly Available Key-value Store 2007</p>
+<p>S4: Distributed Stream Computing Platform 2010</p>
+<p>Storm @Twitter 2015 https://cs.brown.edu/courses/cs227/archives/2015/papers/ss-storm.pdf</p>
+<p>Large-scale cluster management at Google with Borg 2015</p>
+<p>F1: A Distributed SQL Database That Scales 2013</p>
+<p>Cassandra - A Decentralized Structured Storage System 2009</p>
+<p>Megastore: Providing Scalable, Highly Available Storage for Interactive Services 2011</p>
+<p>Dapper, a Large-Scale Distributed Systems Tracing Infrastructure 2010</p>
+<p>Kafka : a Distributed Messaging System for Log Processing 2011</p>
+<p>Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases 2017</p>
+<p>Amazon Aurora: On Avoiding Distributed Consensus for I/Os, Commits, and Membership Changes 2018</p>
+<h1 id="product"><a class="header" href="#product">Product</a></h1>
+<p>mongodb bully: https://docs.mongodb.com/manual/core/replica-set-elections/</p>
+<p>es bully: https://www.elastic.co/blog/found-leader-election-in-general</p>
+<p>es pacificA:https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-replication.html</p>
+<p>kafka pacificA: https://kafka.apache.org/documentation/#design_replicatedlog</p>
+<p>k8s:https://kubernetes.io/blog/2016/01/simple-leader-election-with-kubernetes/</p>
+<p>zk leader selection:https://zookeeper.apache.org/doc/r3.2.2/zookeeperInternals.html</p>
+<p>etcd: https://etcd.io/docs/v3.5/learning/why/</p>
+<p>Bookeeper https://zookeeper.apache.org/doc/r3.2.2/bookkeeperStarted.html</p>
+<p>https://mesos.apache.org/documentation/latest/high-availability/</p>
+<p>https://doc.akka.io/docs/akka/current/typed/cluster-concepts.html  (Gossip+ Phi Accrual Failure Detector)</p>
+<p>https://redis.io/topics/cluster-spec</p>
+<p>https://redis.io/topics/sentinel</p>
+<p>https://docs.datastax.com/en/cassandra-oss/3.x/cassandra/architecture/archTOC.html</p>
+<p>https://docs.hazelcast.com/imdg/4.2/network-partitioning/partial-network-partitions</p>
+<h1 id="book"><a class="header" href="#book">Book</a></h1>
+<h1 id="site"><a class="header" href="#site">Site</a></h1>
+<p>https://hazelcast.com/glossary/cap-theorem/</p>
+<p>https://docs.hazelcast.com/imdg/4.2/consistency-and-replication/consistency</p>
+<p>https://ai.googleblog.com/2017/04/consistent-hashing-with-bounded-loads.html</p>
+<p>https://www.metabrew.com/article/libketama-consistent-hashing-algo-memcached-clients</p>
+<p>https://doc.akka.io/docs/akka-enhancements/current/split-brain-resolver.html</p>
 
                     </main>
 

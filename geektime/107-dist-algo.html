@@ -141,6 +141,60 @@
                     <main>
                         <h1 id="107-分布式协议与算法实战-韩健"><a class="header" href="#107-分布式协议与算法实战-韩健">107-分布式协议与算法实战 韩健</a></h1>
 <p>https://time.geekbang.org/column/intro/100046101</p>
+<h1 id="keywords"><a class="header" href="#keywords">Keywords</a></h1>
+<p>BFT(Byzantine fault tolerance),CFT(Crash fault tolerance)</p>
+<p>TCC/XA-DTP/2PC</p>
+<p>All/Quorum/One/Any</p>
+<p>Basic Paxos/Multi Paoxs(Chubby,Spanner)</p>
+<p>Raft(Etcd,Consul,CockroachDB)</p>
+<p>Raft(Leader Select/Log Replication/Membership change(Joint Consensus/Single-Server Changes))</p>
+<p>logcabin(joint consensus)</p>
+<p>Hashicorp Raft：Consul，<a href="https://github.com/ipfs/ipfs-cluster/blob/master/consensus/raft/raft.go">IPFS</a>,InfluxDB</p>
+<p>https://www.consul.io/docs/architecture/consensus</p>
+<p>区块链共识机制：POW、POA、POS、DPOS、PBFT、DBFT</p>
+<p>ZAB:基于主备的原子广播协议-2007年</p>
+<p>一致性算法时间顺序 Basic Paxos -&gt; Multi Paoxs -&gt; ZAB -&gt; Raft</p>
+<p>Raft+：配置中心，名字路由，KV存储</p>
+<h1 id="notes"><a class="header" href="#notes">Notes</a></h1>
+<p>实现AP比CP复杂。</p>
+<p>MuitiPaxos没有考虑顺序问题，只是对共识，而ZAB解决了顺序问题，后面Raft也考虑顺序。</p>
+<h1 id="wiki"><a class="header" href="#wiki">Wiki</a></h1>
+<p>https://en.wikipedia.org/wiki/Eventual_consistency</p>
+<p>https://en.wikipedia.org/wiki/Gossip_protocol</p>
+<p>https://en.wikipedia.org/wiki/Byzantine_fault</p>
+<p>https://en.wikipedia.org/wiki/Replication_(computing)</p>
+<h1 id="person"><a class="header" href="#person">Person</a></h1>
+<p>Nancy Lynch  https://people.csail.mit.edu/lynch/</p>
+<p>Seth Gilbert https://www.comp.nus.edu.sg/~gilbert/</p>
+<p>Eric Brewer  https://people.eecs.berkeley.edu/~brewer/</p>
+<p>Leslie Lamport http://www.lamport.org/</p>
+<p>Werner Vogels https://www.allthingsdistributed.com/</p>
+<h1 id="paper"><a class="header" href="#paper">Paper</a></h1>
+<p>The Byzantine Generals Problem </p>
+<p>Brewer’s Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services</p>
+<p>Practical Byzantine Fault Tolerance:https://pmg.csail.mit.edu/papers/osdi99.pdf</p>
+<p>Zab: High-performance broadcast for primary-backup systems</p>
+<h1 id="product"><a class="header" href="#product">Product</a></h1>
+<p>https://www.influxdata.com/time-series-platform/telegraf/</p>
+<p>Cassandra: Read Repair, Hinted Handoff</p>
+<p>https://www.influxdata.com/blog/eventual-consistency-hhq/</p>
+<p>https://docs.amazonaws.cn/en_us/amazondynamodb/latest/developerguide/Introduction.html</p>
+<p>https://cassandra.apache.org/doc/latest/cassandra/architecture/dynamo.html#tunable-consistency</p>
+<p>https://docs.influxdata.com/enterprise_influxdb/v1.9/concepts/clustering/</p>
+<p>zilliqa: https://dev.zilliqa.com/docs/basics/basics-zil-consensus/</p>
+<p>sawtooth: https://sawtooth.hyperledger.org/docs/pbft/nightly/master/using-pbft-consensus.html</p>
+<p>https://zookeeper.apache.org/doc/current/zookeeperInternals.html#sc_consistency</p>
+<p>influxdb：meta node:CP,raft  data node:AP,hinted-handoff,quorum,anti-entropy,自定义副本</p>
+<h1 id="book"><a class="header" href="#book">Book</a></h1>
+<p>Concurrency Control and Recovery in Database Systems</p>
+<h1 id="site"><a class="header" href="#site">Site</a></h1>
+<p>https://www.allthingsdistributed.com/2008/12/eventually_consistent.html</p>
+<p>https://www.influxdata.com/blog/multiple-data-center-replication-influxdb/</p>
+<p>https://www.influxdata.com/blog/influxdb-clustering-design-neither-strictly-cp-or-ap/</p>
+<p>https://github.com/influxdata/influxdb-comparisons</p>
+<p>C: https://github.com/willemt/raft
+C++:https://github.com/logcabin/logcabin</p>
+<p>https://github.com/hashicorp/raft-boltdb</p>
 
                     </main>
 
