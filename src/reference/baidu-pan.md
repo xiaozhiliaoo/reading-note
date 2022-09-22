@@ -1,0 +1,87 @@
+# 百度网盘
+
+## 资源汇总
+
+- 清华大学-邓俊辉-数据结构与算法
+
+- Java架构师进阶之路
+  - 架构视频
+  - 面试真题
+  - 思维导图
+  - 学习笔记
+- 自动化运维
+  - python神经网络算法与深度学习
+  - Python+Django+Ansible Playbook自动化运维项目实战
+  - python自动化运维与web监控系统
+- Java校招面试
+  - 基于大数据技术推荐系统算法案例实战教程
+  - Java校招面试 Google面试官亲授
+  - Java企业架构师课程（原Sun资深Java架构师亲授）- 盈佳科技
+  - 数据科学面试攻略-小象学院
+  - 深入浅出spring-炼数成金
+- 前端学习
+  - node
+  - react
+  - vue
+  - ECMAScript6等。
+- 计算机经典纪录片
+  - 操作系统革命RevolutionOS
+  - 第四公民
+  - 硅谷海盗
+  - 互联网之子(TheInternet's Own Boy) 亚伦·斯沃茨
+  - 硅谷传奇-苹果和微软的历史
+  - 《Code Rush》（奔腾的代码）
+- Java架构师课程（传统分布式架构）
+  - 阶段性课程（Java并发，JVM，Netty，Redis，Dubbo，Tomcat，分布式mfs，FastDFS，Zookeeper，zabbix）
+  - Java NIO,Mina,Netty
+  - Java编程思想视频
+- 软考系统架构师资料
+  - 电子材料
+  - 考试大纲
+  - 网课课程
+  - 历年真题
+  - 论文整理
+  - 模拟考试
+- 九章算法
+  - 基础，强化，系统设计班，BAT面试，高频班，OOD
+- Bittiger CS103高频系统设计
+- 图灵VIP
+  - 互联网工程专题
+  - 应用框架
+  - 性能调优
+  - 分布式专题
+- 软件系列大全
+  - API，JAVA，UI&UE，前端框架，后端，软件工程等书籍
+- 前端大神
+  - 妙味课堂
+  - html5，bootstrap、
+- 老男孩Python视频
+- 吴杰臻守护婚姻中的财产
+- 极客时间2019
+- 极客时间2020
+- 基于案例学SQL优化
+- 房产投资视频
+- 左神算法新手班
+- 大数据
+  - 北风网
+  - 炼数成金
+- 阿里沈询 youku搜索 **WhisperXD78614957**
+  - 事务和分布式事务
+  - 消息中间件ons
+  - 阿里分布式数据库实践
+- UI/UE教程
+- 数据分析
+  - 基础知识（统计学，矩阵）
+  - 数据挖掘
+  - 数据分析软件
+- 电子书
+  - 人生必读书目
+  - 开发资料
+  - 运维，敏捷，DevOps等
+  - ScalaBooks
+- SpringCloud+Vertx+Disruptor 金融业撮合交易系统实战
+- 小马哥讲Spring核心编程思想
+- 大规模高性能分布式存储系统设计与实现-孙玄
+
+
+
