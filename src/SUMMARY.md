@@ -156,6 +156,20 @@
         - [AWS](tech-learning/exchange-tech/aws.md)
         - [RocketMQ](tech-learning/exchange-tech/rocketMQ.md)
         - [Sharding-JDBC](tech-learning/exchange-tech/Sharding-JDBC.md)
+
+    - [极客时间](tech-learning/geektime/intro.md)
+        - [02-左耳听风-陈皓](tech-learning/geektime/02-left-ear-listen-wind.md)
+        - [12-从0开始学大数据-李智慧](tech-learning/geektime/12-zero-bigdata.md)
+        - [16-技术与商业案例解读-徐飞](tech-learning/geektime/技术与商业案例解读.md)
+        - [56-大规模数据处理实战-蔡元楠](tech-learning/geektime/56-mass-data-process.md)
+        - [62-ElasticSearch核心技术与实战-阮一鸣](tech-learning/geektime/62-es.md)
+        - [74-消息队列高手课-李玥](tech-learning/geektime/74-mq-expert.md)
+        - [78-Zookeeper实战与源码剖析-么敬国](tech-learning/geektime/78-zookeeper.md)
+        - [90-分布式技术原理与算法解析-聂鹏程](tech-learning/geektime/90-dist-tech-and-algo.md)
+        - [103-后端存储实战课-李玥](tech-learning/geektime/103-backend-storage.md)
+        - [107-分布式协议与算法实战-韩健](tech-learning/geektime/107-dist-algo.md)
+        - [162-分布式数据库30讲-王磊](tech-learning/geektime/162-dist-db-30.md)
+        - [238-大数据经典论文解读-徐文浩](tech-learning/geektime/238-big-data-paper.md)
     - [参考资料](tech-learning/reference/reference.md)
         - [参考资料](tech-learning/reference/reference.md)
 
@@ -169,61 +183,49 @@
     - [第七章](tech-quotes/chapter7.md)
     - [第八章](tech-quotes/chapter8.md)
 
-- [工程实践](practice-hub/intro.md)
+- [技术工程实践](practice-hub/intro.md)
 
-- [计算机科学](cs/intro.md)
+- [技术书籍阅读](tech-book/intro.md)
 
-- [语言](language/intro.md)
-    - [Java并发编程实战](language/java-concurrency-in-practoce.md)
-    - [Java并发编程-设计原则与模式](language/concurrent-programming-in-java.md)
+    - [计算机科学](tech-book/cs/intro.md)
+    - [语言](tech-book/language/intro.md)
+        - [Java并发编程实战](tech-book/language/java-concurrency-in-practoce.md)
+        - [Java并发编程-设计原则与模式](tech-book/language/concurrent-programming-in-java.md)
+    - [数据库](tech-book/database/intro.md)
+        - [NoSQL精粹](tech-book/database/nosql-distilled.md)
+        - [Cassandra权威指南-第二版](tech-book/database/cassandra-the-definitive-guide-2nd.md)
+        - [数据密集型应用系统设计-中文](tech-book/database/ddia-cn.md)
+        - [数据密集型应用系统设计-英文](tech-book/database/ddia-en.md)
 
+    - [分布式与中间件](tech-book/middleware/intro.md)
+        - [mongodb权威指南第二版](tech-book/middleware/mongodb-the-definitive-guide-2nd.md)
+        - [NoSQL实践指南](tech-book/middleware/nosql-for-mere-mortals.md)
+        - [基于Apache Flink的流处理](tech-book/middleware/streaming-processing-with-apache-flink.md)
+        - [深入理解分布式系统](tech-book/middleware/deep-understanding-of-distributed-systems.md)
 
-- [数据库](database/intro.md)
-    - [NoSQL精粹](database/nosql-distilled.md)
-    - [Cassandra权威指南-第二版](database/cassandra-the-definitive-guide-2nd.md)
-    - [数据密集型应用系统设计-中文](database/ddia-cn.md)
-    - [数据密集型应用系统设计-英文](database/ddia-en.md)
+    - [框架](tech-book/framework/intro.md)
+        - [Apache ShardingSphere实战](tech-book/framework/ShardingSphere.md)
 
-- [分布式与中间件](middleware/intro.md)
-    - [mongodb权威指南第二版](middleware/mongodb-the-definitive-guide-2nd.md)
-    - [NoSQL实践指南](middleware/nosql-for-mere-mortals.md)
-    - [基于Apache Flink的流处理](middleware/streaming-processing-with-apache-flink.md)
-    - [深入理解分布式系统](middleware/deep-understanding-of-distributed-systems.md)
+    - [软件工程](tech-book/engineering/intro.md)
+        - [软件困局：为什么聪明的程序员写出糟糕的代码](tech-book/engineering/the-problem-with-software.md)
+        - [尽在双11-阿里巴巴技术演进与超越](tech-book/engineering/alibaba-11-11.md)
 
-- [框架](framework/intro.md)
-    - [Apache ShardingSphere实战](framework/ShardingSphere.md)
+    - [设计](tech-book/design/intro.md)
 
-- [软件工程](engineering/intro.md)
-    - [软件困局：为什么聪明的程序员写出糟糕的代码](engineering/the-problem-with-software.md)
-    - [尽在双11-阿里巴巴技术演进与超越](engineering/alibaba-11-11.md)
+    - [考试和考证](tech-book/certificate/intro.md)
 
-- [设计](design/intro.md)
+    - [产品](tech-book/product/intro.md)
 
-- [考试和考证](certificate/intro.md)
+    - [系统](tech-book/system/intro.md)
 
-- [产品](product/intro.md)
+    - [电子书](tech-book/ebook/intro.md)
+        - [Java并发编程之美](tech-book/ebook/java-concurreny-beautify.md)
 
-- [系统](system/intro.md)
-
-- [其他](others/intro.md)
-    - [图灵奖演讲](others/turing-award.md)
-
-- [极客时间](geektime/intro.md)
-    - [02-左耳听风-陈皓](geektime/02-left-ear-listen-wind.md)
-    - [12-从0开始学大数据-李智慧](geektime/12-zero-bigdata.md)
-    - [16-技术与商业案例解读-徐飞](geektime/技术与商业案例解读.md)
-    - [56-大规模数据处理实战-蔡元楠](geektime/56-mass-data-process.md)
-    - [62-ElasticSearch核心技术与实战-阮一鸣](geektime/62-es.md)
-    - [74-消息队列高手课-李玥](geektime/74-mq-expert.md)
-    - [78-Zookeeper实战与源码剖析-么敬国](geektime/78-zookeeper.md)
-    - [90-分布式技术原理与算法解析-聂鹏程](geektime/90-dist-tech-and-algo.md)
-    - [103-后端存储实战课-李玥](geektime/103-backend-storage.md)
-    - [107-分布式协议与算法实战-韩健](geektime/107-dist-algo.md)
-    - [162-分布式数据库30讲-王磊](geektime/162-dist-db-30.md)
-    - [238-大数据经典论文解读-徐文浩](geektime/238-big-data-paper.md)
+    - [其他](tech-book/others/intro.md)
+        - [图灵奖演讲](tech-book/others/turing-award.md)
 
 
-- [论文](paper/intro.md)
+- [技术论文](paper/intro.md)
     - [Highly Available Transactions: Virtues and Limitations](paper/HAT.md)
     - [A Critique of the CAP Theorem](paper/cap-critique.md)
     - [Consistency Tradeoffs in Modern Distributed Database System Design](paper/pacelc.md)
@@ -233,31 +235,30 @@
     - [A Survey on the Evolution of Stream Processing Systems](paper/Stream-System-Evolution.md)
     - [Cassandra:A Decentralized Structured Storage System](paper/Cassandra.md)
 
-- [电子书](ebook/intro.md)
-    - [Java并发编程之美](ebook/java-concurreny-beautify.md)
 
 - [英语书](english/intro.md)
-    - [小王子](./english/the-little-prince.md)
+    - [小王子](english/the-little-prince.md)
 
-- [哲学](philosophy/intro.md)
+- [社科读书汇总](social-book/intro.md)
+    - [哲学](social-book/philosophy/intro.md)
+        - [中国哲学](social-book/philosophy/intro.md)
 
-- [心理学&思维](psychology/intro.md)
-    - [认知框架](psychology/framers.md)
-    - [模型思维](psychology/model-thinking.md)
-    - [好好思考-成甲](psychology/the-art-of-thinking.md)
+    - [心理学&思维](social-book/psychology/intro.md)
+        - [认知框架](social-book/psychology/framers.md)
+        - [模型思维](social-book/psychology/model-thinking.md)
+        - [好好思考-成甲](social-book/psychology/the-art-of-thinking.md)
 
+    - [国学](social-book/chinese-ancient/intro.md)
 
-- [国学](chinese-ancient/intro.md)
+    - [经济,金融,管理](social-book/finance/intro.md)
+    
+    - [文化](social-book/culture/intro.md)
 
-- [经济,金融,管理](finance/intro.md)
+    - [历史](social-book/history/intro.md)
 
-- [文化](culture/intro.md)
-
-- [历史](history/intro.md)
-
-- [教育](education/intro.md)
-    - [如何阅读一本书](education/how-to-read-book.md)
-    - [卡片笔记写作法](education/card-way-write.md)
+    - [教育](social-book/education/intro.md)
+        - [如何阅读一本书](social-book/education/how-to-read-book.md)
+        - [卡片笔记写作法](social-book/education/card-way-write.md)
 
 
 - [参考资料](reference/reference.md)
