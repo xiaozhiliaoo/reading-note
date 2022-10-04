@@ -185,7 +185,7 @@
 
 - [技术工程实践](practice-hub/intro.md)
 
-- [技术书籍阅读](tech-book/intro.md)
+- [技术书阅读](tech-book/intro.md)
 
     - [计算机科学](tech-book/cs/intro.md)
     - [语言](tech-book/language/intro.md)
@@ -239,7 +239,7 @@
 - [英语书](english/intro.md)
     - [小王子](english/the-little-prince.md)
 
-- [社科读书汇总](social-book/intro.md)
+- [社科书阅读](social-book/intro.md)
     - [哲学](social-book/philosophy/intro.md)
         - [中国哲学](social-book/philosophy/intro.md)
 
