@@ -251,7 +251,7 @@
     - [国学](social-book/chinese-ancient/intro.md)
 
     - [经济,金融,管理](social-book/finance/intro.md)
-    
+
     - [文化](social-book/culture/intro.md)
 
     - [历史](social-book/history/intro.md)
@@ -259,7 +259,8 @@
     - [教育](social-book/education/intro.md)
         - [如何阅读一本书](social-book/education/how-to-read-book.md)
         - [卡片笔记写作法](social-book/education/card-way-write.md)
-
+      
+    - [影视](social-book/film/intro.md)
 
 - [参考资料](reference/reference.md)
     - [百度网盘资源](reference/baidu-pan.md)
