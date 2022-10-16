@@ -210,7 +210,7 @@ International Components for Unicode (ICU)
 
 
 
-## Internals
+## 原理
 
 https://www.elastic.co/blog/found-elasticsearch-internals
 https://www.elastic.co/blog/found-elasticsearch-networking
@@ -226,9 +226,80 @@ https://www.elastic.co/blog/found-elasticsearch-networking
 
 
 
-## Course
+## 课程
 
 https://github.com/xiaozhiliaoo/geektime-ELK
 
 https://github.com/xiaozhiliaoo/search-practice
+
+## Java API
+
+ElasticsearchClient执行Action
+
+核心抽象是Action
+
+TransportClient(TCP)
+RestHighLevelClient(HTTP)
+
+prepareSearch和
+
+TransportClient.prepareSearch
+ActionRequestBuilder.get
+
+
+SearchRequest （SearchRequestBuilder） -> TransportClient/RestHighLevelClient -> SearchResponse
+
+SearchRequest（Query，Source，Scroll）
+
+prepareXXX -> get
+
+Action<Request, Response, RequestBuilder>
+
+## 疑问
+
+- SearchScroll和SearchAfter区别？
+
+- 这**3**种写法的区别是什么？
+
+  ```java
+   SearchRequest request1 = new SearchRequest(INDEX)
+                  .source(new SearchSourceBuilder().query(query))
+                  .scroll(SCROLL_TIMEOUT);
+          
+  //prepareSearch里面调用SearchRequestBuilder
+  SearchRequest request2 = transportClient.prepareSearch(INDEX)
+      .setSource(new SearchSourceBuilder().query(query))
+      .setScroll(SCROLL_TIMEOUT).request();
+  
+  //searchRequest里面调用new SearchRequest(INDEX)
+  SearchRequest searchRequest3 = Requests.searchRequest(INDEX)
+                  .source(new SearchSourceBuilder().query(query))
+                  .scroll(SCROLL_TIMEOUT);
+  
+  ```
+
+  
+
+### 请求写法1 通过RestHighLevelClient的request search
+
+```java
+SearchRequest request = transportClient.prepareSearch(INDEX)
+    .setSource(new SearchSourceBuilder().query(query))
+    .setScroll(SCROLL_TIMEOUT).request();
+    
+SearchResponse searchResponse = RestHighLevelClient.search(request)
+```
+
+
+
+### 请求写法2 通过TransportClient的request builder get/execute
+
+```java
+ SearchRequestBuilder requestBuilder = transportClient.prepareSearch(INDEX)
+     .setSource(new SearchSourceBuilder().query(query))
+     .setScroll(SCROLL_TIMEOUT);
+
+SearchResponse searchResponse = requestBuilder.get(SCROLL_TIMEOUT)
+SearchResponse searchResponse2 = requestBuilder.execute().actionGet();    
+```
 
