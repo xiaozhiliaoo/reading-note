@@ -141,6 +141,8 @@
                 <div id="content" class="content">
                     <main>
                         <div style="break-before: page; page-break-before: always;"></div><h1 id="我的阅读集一个人的精神发育史就是他的阅读史"><a class="header" href="#我的阅读集一个人的精神发育史就是他的阅读史">我的阅读集：一个人的精神发育史就是他的阅读史</a></h1>
+<h2 id="最近阅读"><a class="header" href="#最近阅读">最近阅读</a></h2>
+<p>暂无</p>
 <h2 id="目标为读万卷书而奋斗为解放思想而探求"><a class="header" href="#目标为读万卷书而奋斗为解放思想而探求">目标：为<strong>读万卷书</strong>而奋斗，为<strong>解放思想</strong>而探求！</a></h2>
 <p>该项目创建于<strong>2022-04-05</strong>，但内容涉及到大学期间(2011-2015)~至今的读书笔记，内容在<a href="https://github.com/xiaozhiliaoo/reading-note">Github地址</a> 维护。</p>
 <p>主要用于汇总技术笔记，阅读笔记，好的资料，用于形成<strong>知识体系</strong>，也是探索<strong>知识管理</strong>的实践。该项目最大特色是通过英文搜索（mdbook暂时不支持中文，中文暂时直接仓库中搜索）来检索自己的知识库，从而形成打通<strong>知识脉络</strong>。</p>
@@ -152,11 +154,15 @@
 <h1 id="统一读书笔记格式"><a class="header" href="#统一读书笔记格式">统一读书笔记格式</a></h1>
 <h2 id="进度"><a class="header" href="#进度">进度</a></h2>
 <p>开始时间：YYYY-MM-dd ~ 结束时间：YYYY-MM-dd</p>
+<h2 id="方法论探索"><a class="header" href="#方法论探索">方法论探索</a></h2>
+<p>认知系统：如何读书，如何思考，思维模式（系统思维，模型思维，结构化思维，格栅思维等等），学习方法，记忆力，卡片笔记，思维导图，快速阅读，费曼学习法，演讲，写作等。</p>
+<p>学习系统：个人的。</p>
 <h2 id="结构"><a class="header" href="#结构">结构</a></h2>
 <p>书名，作者，分类，相关书籍</p>
 <p>本书的整体结构，摘要，纲要，重点</p>
 <p>笔记（知识）</p>
 <p>读后感</p>
+<p>思维导图</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="简介"><a class="header" href="#简介">简介</a></h1>
 <p>我的技术笔记 Github地址：<a href="https://github.com/xiaozhiliaoo/courseop-tech-learning">https://github.com/xiaozhiliaoo/courseop-tech-learning</a>，也即<strong>知识管理</strong>的实践。</p>
 <p>受 <a href="https://lvt4j.51vip.biz/confluence/#all-updates"><strong>lvt4j</strong></a> 启发与借鉴而创立该项目。</p>
@@ -689,15 +695,66 @@ Flush之后段被全量提交，并且事务日志被清空</p>
 not_analyzed name.raw 域用来排序。</p>
 <p>International Components for Unicode (ICU) </p>
 <p>单词还原成词根。比如foxes还原成fox.</p>
-<h2 id="internals"><a class="header" href="#internals">Internals</a></h2>
+<h2 id="原理"><a class="header" href="#原理">原理</a></h2>
 <p>https://www.elastic.co/blog/found-elasticsearch-internals
 https://www.elastic.co/blog/found-elasticsearch-networking</p>
 <h2 id="遇到问题"><a class="header" href="#遇到问题">遇到问题</a></h2>
 <p>1.forbidden-12-index-read-only-allow-delete-api?</p>
 <p>某个节点的磁盘满了，需要运维清理下磁盘</p>
-<h2 id="course"><a class="header" href="#course">Course</a></h2>
+<h2 id="课程"><a class="header" href="#课程">课程</a></h2>
 <p>https://github.com/xiaozhiliaoo/geektime-ELK</p>
 <p>https://github.com/xiaozhiliaoo/search-practice</p>
+<h2 id="java-api"><a class="header" href="#java-api">Java API</a></h2>
+<p>ElasticsearchClient执行Action</p>
+<p>核心抽象是Action</p>
+<p>TransportClient(TCP)
+RestHighLevelClient(HTTP)</p>
+<p>prepareSearch和</p>
+<p>TransportClient.prepareSearch
+ActionRequestBuilder.get</p>
+<p>SearchRequest （SearchRequestBuilder） -&gt; TransportClient/RestHighLevelClient -&gt; SearchResponse</p>
+<p>SearchRequest（Query，Source，Scroll）</p>
+<p>prepareXXX -&gt; get</p>
+<p>Action&lt;Request, Response, RequestBuilder&gt;</p>
+<h2 id="疑问"><a class="header" href="#疑问">疑问</a></h2>
+<ul>
+<li>
+<p>SearchScroll和SearchAfter区别？</p>
+</li>
+<li>
+<p>这<strong>3</strong>种写法的区别是什么？</p>
+<pre><code class="language-java"> SearchRequest request1 = new SearchRequest(INDEX)
+                .source(new SearchSourceBuilder().query(query))
+                .scroll(SCROLL_TIMEOUT);
+        
+//prepareSearch里面调用SearchRequestBuilder
+SearchRequest request2 = transportClient.prepareSearch(INDEX)
+    .setSource(new SearchSourceBuilder().query(query))
+    .setScroll(SCROLL_TIMEOUT).request();
+
+//searchRequest里面调用new SearchRequest(INDEX)
+SearchRequest searchRequest3 = Requests.searchRequest(INDEX)
+                .source(new SearchSourceBuilder().query(query))
+                .scroll(SCROLL_TIMEOUT);
+
+</code></pre>
+</li>
+</ul>
+<h3 id="请求写法1-通过resthighlevelclient的request-search"><a class="header" href="#请求写法1-通过resthighlevelclient的request-search">请求写法1 通过RestHighLevelClient的request search</a></h3>
+<pre><code class="language-java">SearchRequest request = transportClient.prepareSearch(INDEX)
+    .setSource(new SearchSourceBuilder().query(query))
+    .setScroll(SCROLL_TIMEOUT).request();
+    
+SearchResponse searchResponse = RestHighLevelClient.search(request)
+</code></pre>
+<h3 id="请求写法2-通过transportclient的request-builder-getexecute"><a class="header" href="#请求写法2-通过transportclient的request-builder-getexecute">请求写法2 通过TransportClient的request builder get/execute</a></h3>
+<pre><code class="language-java"> SearchRequestBuilder requestBuilder = transportClient.prepareSearch(INDEX)
+     .setSource(new SearchSourceBuilder().query(query))
+     .setScroll(SCROLL_TIMEOUT);
+
+SearchResponse searchResponse = requestBuilder.get(SCROLL_TIMEOUT)
+SearchResponse searchResponse2 = requestBuilder.execute().actionGet();    
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="logstash"><a class="header" href="#logstash">LogStash</a></h1>
 <h2 id="笔记-3"><a class="header" href="#笔记-3">笔记</a></h2>
 <p><a href="https://www.elastic.co/blog/author/jordan-sissel">Jordan Sissel</a></p>
@@ -910,7 +967,7 @@ and soon, end-to-end exactly-once — due to its tight integration with core abs
 hand, is a great fit for applications that are deployed in existing clusters and benefit from throughput, latency, event 
 time semantics, savepoints and operational features, exactly-once guarantees for application state, end-to-end
 exactly-once guarantees (except when used with Kafka as a sink today), and batch processing.</p>
-<h2 id="疑问"><a class="header" href="#疑问">疑问</a></h2>
+<h2 id="疑问-1"><a class="header" href="#疑问-1">疑问</a></h2>
 <p>kafka一个topic多个消费组情况下，broker是怎么管理log的offset的呢，是每一个消费组提交自己的呢，还是共同提交？</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="operations"><a class="header" href="#operations">Operations</a></h1>
 <h2 id="消费者操作"><a class="header" href="#消费者操作">消费者操作</a></h2>
@@ -1091,7 +1148,7 @@ Readiness StateL</p>
 <p>dropwizard，micrometer(Spring Boot 2: Migrating From Dropwizard Metrics to Micrometer)</p>
 <h2 id="auto-configuration"><a class="header" href="#auto-configuration">Auto Configuration</a></h2>
 <p>spring-boot-autoconfigure</p>
-<h2 id="疑问-1"><a class="header" href="#疑问-1">疑问：</a></h2>
+<h2 id="疑问-2"><a class="header" href="#疑问-2">疑问：</a></h2>
 <p>starter里面的autoconfigure是怎么配置第三方库的呢？</p>
 <p>mybatis-spring-boot-starter
 mybatis-spring-boot-autoconfigure
@@ -2095,11 +2152,43 @@ sh akka cluster start</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="56-大规模数据处理实战-蔡元楠"><a class="header" href="#56-大规模数据处理实战-蔡元楠">56-大规模数据处理实战 蔡元楠</a></h1>
 <p>https://time.geekbang.org/column/intro/100025301</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="62-elasticsearch核心技术与实战-阮一鸣"><a class="header" href="#62-elasticsearch核心技术与实战-阮一鸣">62-ElasticSearch核心技术与实战-阮一鸣</a></h1>
+<h2 id="关键字"><a class="header" href="#关键字">关键字</a></h2>
 <p>Query(结构化) VS Search(非结构化)</p>
 <p>Restful API VS Transport API</p>
 <p>近实时分析，近实时搜索</p>
 <p>Logstash Persistent queue</p>
 <p>ELKB</p>
+<p>Instant Aggregation</p>
+<p>Logstash ArcSight</p>
+<p>基于词项和基于全文搜索</p>
+<p>相关度算分公式</p>
+<p>多字段mapping。多字段属性。</p>
+<p>复合查询：Constant Score转为Filter</p>
+<p>结构化搜索。</p>
+<p>Boosting Relevance:Boosting Query</p>
+<p>Context:Query Filter</p>
+<p>解决结构化查询：包含而不是相等问题。</p>
+<p>如何实现should not逻辑？</p>
+<p>单字符串多字段查询：Disjunction Max Query：Tie Breaker</p>
+<p>单字符串多字段查询：Multi Match</p>
+<p>统计的机器学习算法：CRF算法，HMM算法，svm算法</p>
+<p>HighLight</p>
+<p>Search Template</p>
+<p>Index Alias</p>
+<p>Function Score Query</p>
+<p>Suggester:4种
+拼写检查，自动补全（Finite-state transducer），上下文提示。</p>
+<p>https://github.com/seperman/fast-autocomplete</p>
+<p>相似性算分：Levenshtein Edit Distance</p>
+<p>Precision 和 Recall</p>
+<p>Coordination Node：处理请求的节点。 Data Node：保存数据的节点。</p>
+<p>ES如何避免脑裂问题？</p>
+<p>https://github.com/lmenezes/cerebro</p>
+<p>Refresh和Flush</p>
+<p>ES搜索过程。</p>
+<h2 id="论文"><a class="header" href="#论文">论文</a></h2>
+<p>Karen Spärck Jones: A statistical interpretation of term specificity and its application in retrieval</p>
+<p>The Probabilistic Relevance Framework: BM25 and Beyond</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="74-消息队列高手课-李玥"><a class="header" href="#74-消息队列高手课-李玥">74-消息队列高手课-李玥</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="78-zookeeper实战与源码剖析-么敬国"><a class="header" href="#78-zookeeper实战与源码剖析-么敬国">78-Zookeeper实战与源码剖析-么敬国</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="90-分布式技术原理与算法解析-聂鹏程"><a class="header" href="#90-分布式技术原理与算法解析-聂鹏程">90-分布式技术原理与算法解析 聂鹏程</a></h1>
@@ -6166,7 +6255,30 @@ Faluttolerance, Security)。</li>
 </ul>
 <hr />
 <ul>
-<li>825 存储系统核心拆分：内部实现，外部交互，架构属性。具体分为：1.单机特性(数据模型，存储模型，读写性能)，2.分布式特性(用户视角：读写(增删改查)路径，系统视角：一致性模型，复制，分区，共识，容错)。复制，共识，分区等等细节都会在用户读写路径视角展现。</li>
+<li>
+<p>825 存储系统核心拆分：内部实现，外部交互，架构属性。具体分为：</p>
+<ul>
+<li>
+<p>单机特性</p>
+<ul>
+<li>数据模型</li>
+<li>存储模型</li>
+<li>读写性能</li>
+</ul>
+</li>
+<li>
+<p>分布式特性</p>
+<ul>
+<li>
+<p>用户视角：读/写(增删改查)路径，启动/关闭过程。</p>
+</li>
+<li>
+<p>系统视角：一致性模型，复制，分区，共识，容错)。复制，共识，分区等等细节都会在用户读写路径视角展现。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <hr />
 <ul>
@@ -6632,7 +6744,7 @@ Faluttolerance, Security)。</li>
 <p>https://amturing.acm.org/lectures.cfm</p>
 <h1 id="ieee获奖"><a class="header" href="#ieee获奖">IEEE获奖</a></h1>
 <p>https://corporate-awards.ieee.org/</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="论文"><a class="header" href="#论文">论文</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="论文-1"><a class="header" href="#论文-1">论文</a></h1>
 <p>论文学习。主要是分布式系统，数据库，存储的论文。会优先看工作相关系统(如kafka，es，raft，dymano等)，然后看其他部分。分布式系统庞大且复杂，经典的理论到具体的产品实现之间的鸿沟以及取舍虽然可以用模型来说通，但是细节是难以推敲的，甚至很难验证，只能靠感觉，因为理论不够扎实以及实践不够深入，所以这里论文是拼凑分布式系统的一个蓝图，从而形成自己的理解。</p>
 <h2 id="预计阅读"><a class="header" href="#预计阅读">预计阅读</a></h2>
 <table><thead><tr><th>ID</th><th>名字</th><th>作者</th><th>阅读时间</th><th>进度</th></tr></thead><tbody>
@@ -7094,6 +7206,7 @@ Faluttolerance, Security)。</li>
 <tr><td>非营利组织营销</td><td></td><td></td><td></td><td></td></tr>
 <tr><td>像行销家一样思考</td><td>索尼尔</td><td>2013/5/2</td><td></td><td></td></tr>
 </tbody></table>
+<h1 id="金融与经济"><a class="header" href="#金融与经济">金融与经济</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="哲学"><a class="header" href="#哲学">哲学</a></h1>
 <h2 id="中国哲学"><a class="header" href="#中国哲学">中国哲学</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="哲学-1"><a class="header" href="#哲学-1">哲学</a></h1>

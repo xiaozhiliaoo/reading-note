@@ -245,15 +245,66 @@ Flush之后段被全量提交，并且事务日志被清空</p>
 not_analyzed name.raw 域用来排序。</p>
 <p>International Components for Unicode (ICU) </p>
 <p>单词还原成词根。比如foxes还原成fox.</p>
-<h2 id="internals"><a class="header" href="#internals">Internals</a></h2>
+<h2 id="原理"><a class="header" href="#原理">原理</a></h2>
 <p>https://www.elastic.co/blog/found-elasticsearch-internals
 https://www.elastic.co/blog/found-elasticsearch-networking</p>
 <h2 id="遇到问题"><a class="header" href="#遇到问题">遇到问题</a></h2>
 <p>1.forbidden-12-index-read-only-allow-delete-api?</p>
 <p>某个节点的磁盘满了，需要运维清理下磁盘</p>
-<h2 id="course"><a class="header" href="#course">Course</a></h2>
+<h2 id="课程"><a class="header" href="#课程">课程</a></h2>
 <p>https://github.com/xiaozhiliaoo/geektime-ELK</p>
 <p>https://github.com/xiaozhiliaoo/search-practice</p>
+<h2 id="java-api"><a class="header" href="#java-api">Java API</a></h2>
+<p>ElasticsearchClient执行Action</p>
+<p>核心抽象是Action</p>
+<p>TransportClient(TCP)
+RestHighLevelClient(HTTP)</p>
+<p>prepareSearch和</p>
+<p>TransportClient.prepareSearch
+ActionRequestBuilder.get</p>
+<p>SearchRequest （SearchRequestBuilder） -&gt; TransportClient/RestHighLevelClient -&gt; SearchResponse</p>
+<p>SearchRequest（Query，Source，Scroll）</p>
+<p>prepareXXX -&gt; get</p>
+<p>Action&lt;Request, Response, RequestBuilder&gt;</p>
+<h2 id="疑问"><a class="header" href="#疑问">疑问</a></h2>
+<ul>
+<li>
+<p>SearchScroll和SearchAfter区别？</p>
+</li>
+<li>
+<p>这<strong>3</strong>种写法的区别是什么？</p>
+<pre><code class="language-java"> SearchRequest request1 = new SearchRequest(INDEX)
+                .source(new SearchSourceBuilder().query(query))
+                .scroll(SCROLL_TIMEOUT);
+        
+//prepareSearch里面调用SearchRequestBuilder
+SearchRequest request2 = transportClient.prepareSearch(INDEX)
+    .setSource(new SearchSourceBuilder().query(query))
+    .setScroll(SCROLL_TIMEOUT).request();
+
+//searchRequest里面调用new SearchRequest(INDEX)
+SearchRequest searchRequest3 = Requests.searchRequest(INDEX)
+                .source(new SearchSourceBuilder().query(query))
+                .scroll(SCROLL_TIMEOUT);
+
+</code></pre>
+</li>
+</ul>
+<h3 id="请求写法1-通过resthighlevelclient的request-search"><a class="header" href="#请求写法1-通过resthighlevelclient的request-search">请求写法1 通过RestHighLevelClient的request search</a></h3>
+<pre><code class="language-java">SearchRequest request = transportClient.prepareSearch(INDEX)
+    .setSource(new SearchSourceBuilder().query(query))
+    .setScroll(SCROLL_TIMEOUT).request();
+    
+SearchResponse searchResponse = RestHighLevelClient.search(request)
+</code></pre>
+<h3 id="请求写法2-通过transportclient的request-builder-getexecute"><a class="header" href="#请求写法2-通过transportclient的request-builder-getexecute">请求写法2 通过TransportClient的request builder get/execute</a></h3>
+<pre><code class="language-java"> SearchRequestBuilder requestBuilder = transportClient.prepareSearch(INDEX)
+     .setSource(new SearchSourceBuilder().query(query))
+     .setScroll(SCROLL_TIMEOUT);
+
+SearchResponse searchResponse = requestBuilder.get(SCROLL_TIMEOUT)
+SearchResponse searchResponse2 = requestBuilder.execute().actionGet();    
+</code></pre>
 
                     </main>
 
