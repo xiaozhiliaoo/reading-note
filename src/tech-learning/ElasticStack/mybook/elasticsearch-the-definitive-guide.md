@@ -10,7 +10,13 @@ Elasticsearch: The Definitive Guide: A Distributed Real-Time Search and Analytic
 
 100%
 
+https://www.elastic.co/guide/cn/elasticsearch/guide/current/_creating_an_index.html
+
 ## Notes
+
+CAP？
+
+CP系统一般用了共识协议，没用的一般AP。Cassandra 可调一致性调节到CP，用的是quroum策略。
 
 TF-IDF:词频/逆向文档频率
 
@@ -80,4 +86,10 @@ terms 桶基于我们的数据动态构建桶；它并不知道到底生成了�
 
 对单个文件的变更是ACID的，但包含多个文档的变更不支持。
 
+每个字段的所有数据 都是 默认被索引的。
 
+逻辑概念索引，物理概念分片。
+
+搜索比查询复杂， 包括了分词，意图猜测，近义词，纠错等等。查询是精确匹配的。
+
+分析：分词和标准化。分词产出token，标准化提高可搜索性。ES通过分析器实现了功能，包括字符过滤器，分词器，Token过滤器。

@@ -259,8 +259,12 @@
     - [教育](social-book/education/intro.md)
         - [如何阅读一本书](social-book/education/how-to-read-book.md)
         - [卡片笔记写作法](social-book/education/card-way-write.md)
-      
+
+    - [医学与健康](social-book/medicine/intro.md)
+        - [你是你吃出来的-第一册](social-book/medicine/you-ate-it1.md)
+
     - [影视](social-book/film/intro.md)
+
 
 - [参考资料](reference/reference.md)
     - [百度网盘资源](reference/baidu-pan.md)

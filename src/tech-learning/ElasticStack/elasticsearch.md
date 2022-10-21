@@ -203,7 +203,9 @@ International Components for Unicode (ICU)
 
 
 
+## 技术分享 
 
+https://en.wikipedia.org/wiki/Finite-state_transducer
 
 
 
@@ -213,7 +215,11 @@ International Components for Unicode (ICU)
 ## 原理
 
 https://www.elastic.co/blog/found-elasticsearch-internals
+
 https://www.elastic.co/blog/found-elasticsearch-networking
+
+for压缩和rbm压缩：https://www.elastic.co/cn/blog/frame-of-reference-and-roaring-bitmaps
+
 
 
 
