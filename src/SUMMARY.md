@@ -104,7 +104,7 @@
             - [有效的单元测试](tech-learning/library/mybook/effective-unit-testing.md)
     - [Database](tech-learning/database/toc.md)
         - [MySQL](tech-learning/database/mysql.md)
-        - [Canal](tech-learning/database/canal.md)
+        - [CDC-Canal](tech-learning/database/canal.md)
         - [Doris](tech-learning/database/Doris.md)
         - [MongoDB](tech-learning/database/mongodb/toc.md)
             - [MongoDB](tech-learning/database/mongodb/mongodb.md)
@@ -264,10 +264,19 @@
         - [你是你吃出来的-第一册](social-book/medicine/you-ate-it1.md)
 
     - [影视](social-book/film/intro.md)
+    
+    - [初高中](social-book/high-school/intro.md)
+        - [生物](social-book/high-school/biology.md)
+      
+    - [综合](social-book/comprehensive/intro.md)
+        - [吴杰臻手把手教你守护婚姻中的财产](social-book/comprehensive/marriage-property.md)
+    
+
 
 
 - [参考资料](reference/reference.md)
     - [百度网盘资源](reference/baidu-pan.md)
+    - [电子书合集](reference/ebook-collection.md)
     - [书单](reference/booklist.md)
         - [最近新加](reference/booklist/recently-add.md)
         - [国学](reference/booklist/chinese-ancient-literature.md)

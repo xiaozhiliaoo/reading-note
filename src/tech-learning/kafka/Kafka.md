@@ -7,23 +7,23 @@ Confluent: Set Your Data in Motion
 
 Confluent is creating the foundational platform for data-in-motion
 
-## 提供的新架构，解决方案
-
-事件流处理平台
-
-事件处理
-
-
-## 上次学到这里
+## 进度
 
 Event Streaming Patterns：https://developer.confluent.io/patterns/event/event/
 
 inside-ksqldb：https://developer.confluent.io/learn-kafka/inside-ksqldb/streaming-architecture/
 
-
 ## 笔记
 
+提供的新架构，解决方案：事件流处理平台，事件处理
+
 ### Kafka
+
+消费者：https://kafka.apache.org/30/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html
+
+生产者：https://kafka.apache.org/30/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html
+
+消费者逻辑比生产者复杂。
 
 Kafka是事件处理平台，提供了事件存储能力Kafka的Log，事件计算KSQLDB，Kafka Stream。
 
@@ -32,7 +32,7 @@ Kafka Ecosystem: Kafka,Kafka Stream,Kafka Connect,KSQLDB.
 事件处理中出现了问题，那么Materialize可以是发邮件，也可以是存到存储系统中。
 
 kafka发送消息是k，v类型的。没发送一个消息，offset+1
-m
+
 https://developer.confluent.io/learn-kafka/event-sourcing/event-driven-vs-state-based/
 
 软件设计方法：
@@ -90,8 +90,7 @@ SlidingWindows: https://kafka.apache.org/30/javadoc/org/apache/kafka/streams/kst
 
 ### ksqlDB
 
-ksqlDB:distributed compute layer
-kafka:distributed storage layer
+ksqlDB:distributed compute layer kafka:distributed storage layer
 
 Streams：unbounded series of event. Table: the current state of event
 
@@ -101,17 +100,11 @@ ksqlDB can build a materialized view of state
 
 Kafka is a database turned inside out
 
-
 ### Data Mesh
 
 software architecture vs data architecture
 
 service mesh vs data mesh
-
-
-
-
-## 配置
 
 ### broker配置
 
@@ -121,11 +114,45 @@ unclean.leader.election.enable
 
 min.insync.replicas
 
-## producer配置
+### producer配置
 
 acks(0,1,all)
 
 [retries](https://kafka.apache.org/documentation/#producerconfigs_retries)
+
+## Confluent Course
+
+### APACHE KAFKA® INTERNAL ARCHITECTURE
+
+Event Record RecordBatch
+
+ISR/High Watermark/Leader Epoch
+
+Leader Select: ISR and propagated through control plane
+
+FetchRequest/FetchResponse
+
+Reconciliation（协调） Logic
+
+Data plane handles data replication
+
+Consumer Group Protocol: Group Coordinator(Broker中), Group Leader(Consumer Group中)
+
+Rebalance Protocol： distribute resources， stop-the-world rebalancing
+
+Eager Rebalancing VS Incremental Cooperative
+Rebalancing（https://www.confluent.io/blog/incremental-cooperative-rebalancing-in-kafka/）
+
+Partition Assignment Strategy
+
+__consumer_offsets
+
+Consumer Group Rebalance Notification
+
+Stop-the-World Rebalance Avoid Needless State Rebuild with StickyAssignor Avoid Pause with CooperativeStickyAssignor
+Avoid Rebalance with Static Group Membership
+
+Incremental Cooperative Rebalancing
 
 ## 设计
 
@@ -133,11 +160,9 @@ https://docs.confluent.io/platform/current/kafka/design.html
 
 ## 实现
 
-
 ## FAQ
 
 https://developer.confluent.io/learn/apache-kafka-faqs/
-
 
 ## 其他
 
@@ -145,19 +170,27 @@ https://developer.confluent.io/learn/apache-kafka-faqs/
 
 [Kafka Stream vs Flink](https://www.confluent.io/blog/apache-flink-apache-kafka-streams-comparison-guideline-users/)
 
-The Streams API in Kafka and Flink are used in both capacities. The main distinction lies in where these applications 
+The Streams API in Kafka and Flink are used in both capacities. The main distinction lies in where these applications
 live — as jobs in a central cluster (Flink), or inside microservices (Streams API).
 
-
-The Streams API makes stream processing accessible as an application programming model, that applications built as 
+The Streams API makes stream processing accessible as an application programming model, that applications built as
 microservices can avail from, and benefits from Kafka’s core competency —performance, scalability, security, reliability
-and soon, end-to-end exactly-once — due to its tight integration with core abstractions in Kafka. Flink, on the other 
-hand, is a great fit for applications that are deployed in existing clusters and benefit from throughput, latency, event 
+and soon, end-to-end exactly-once — due to its tight integration with core abstractions in Kafka. Flink, on the other
+hand, is a great fit for applications that are deployed in existing clusters and benefit from throughput, latency, event
 time semantics, savepoints and operational features, exactly-once guarantees for application state, end-to-end
 exactly-once guarantees (except when used with Kafka as a sink today), and batch processing.
 
-
-## 疑问
+### 疑问
 
 kafka一个topic多个消费组情况下，broker是怎么管理log的offset的呢，是每一个消费组提交自己的呢，还是共同提交？
 
+## 类的API文档
+
+https://docs.confluent.io/platform/current/clients/javadocs/javadoc/index.html
+
+https://kafka.apache.org/30/javadoc/org/apache/kafka/clients/consumer/StickyAssignor.html
+
+https://kafka.apache.org/30/javadoc/org/apache/kafka/clients/consumer/ConsumerPartitionAssignor.RebalanceProtocol.html
+
+StickyAssignor
+CooperativeStickyAssignor
