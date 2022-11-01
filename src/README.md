@@ -28,7 +28,7 @@
 
 学习系统：个人的。
 
-技术学习模型：COSEA模型
+技术学习模型：[COSEA模型](https://xiaozhiliaoo.github.io/2022/10/30/system-research-template/)
 
 ## 结构
 
