@@ -47,9 +47,12 @@
             - [深入理解Elasticsearch](tech-learning/ElasticStack/mybook/mastering-elasticsearch.md)
             - [Elasticsearch源码解析与优化实战](tech-learning/ElasticStack/mybook/elasticsearch-code.md)
     - [Kafka](tech-learning/kafka/toc.md)
-        - [Kafka](tech-learning/kafka/Kafka.md)
-        - [Operations](tech-learning/kafka/Operations.md)
-        - [Streaming](tech-learning/kafka/Streaming.md)
+        - [Config](tech-learning/kafka/config.md)
+        - [Operations](tech-learning/kafka/operation.md)
+        - [System](tech-learning/kafka/system.md)
+            - [Streaming](tech-learning/kafka/system-streaming.md)
+        - [Ecosystem](tech-learning/kafka/ecosystem.md)
+        - [Admin](tech-learning/kafka/admin.md)
         - [Book](tech-learning/kafka/Book.md)
             - [Kafka权威指南](tech-learning/kafka/mybook/Kafka-The-Definitive-Guide.md)
             - [Apache Kafka实战](tech-learning/kafka/mybook/Apache-Kafka-In-Action.md)
@@ -264,14 +267,12 @@
         - [你是你吃出来的-第一册](social-book/medicine/you-ate-it1.md)
 
     - [影视](social-book/film/intro.md)
-    
+
     - [初高中](social-book/high-school/intro.md)
         - [生物](social-book/high-school/biology.md)
-      
+
     - [综合](social-book/comprehensive/intro.md)
         - [吴杰臻手把手教你守护婚姻中的财产](social-book/comprehensive/marriage-property.md)
-    
-
 
 
 - [参考资料](reference/reference.md)
