@@ -280,3 +280,19 @@
 蓝色下层：系统基本结构分解和扩展。
 
 ---
+
+- 854 技术选型模型：定性：静态的因素占比法（f(x)=a+b+c+d），动态的决策树模型。定量：数据对比。因素占比法最关键的是你认为最重要的因素是什么。决策树模型分支上面是因素。
+
+---
+
+- 855 NoSQL Toolbox:
+
+![](assets/ch8/NoSQL-Toolbox.png)
+
+---
+
+- 856 NoSQL Decision Tree:
+
+![](assets/ch8/NoSQL-DecisionTree.png)
+
+---
