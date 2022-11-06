@@ -281,7 +281,10 @@
 
 ---
 
-- 854 技术选型模型：定性：静态的因素占比法（f(x)=a+b+c+d），动态的决策树模型。定量：数据对比。因素占比法最关键的是你认为最重要的因素是什么。决策树模型分支上面是因素。
+- 854 技术选型模型：
+  - 定性：静态的因素占比法（f(x)=a+b+c+d），动态的决策树模型，案例分析法，成本收益分析法 。
+  - 定量：数据对比。因素占比法最关键的是你认为最重要的因素是什么。决策树模型分支上面是因素。
+
 
 ---
 
@@ -296,3 +299,26 @@
 ![](assets/ch8/NoSQL-DecisionTree.png)
 
 ---
+
+- 857 分布式系统问题模型：
+
+![](assets/ch8/Distributed-Problem-Model.png)
+
+---
+
+- 858 分布式系统知识体系：
+
+![](assets/ch8/Distributed-Knowledge.png)
+
+---
+
+- 859 DDIA思维导图：
+
+![](assets/ch8/DDIA-Summary.png)
+
+---
+
+- 860 数据库系统内幕思维导图：
+
+![](assets/ch8/Database-Internals-Summary.png)
+

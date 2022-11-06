@@ -72,7 +72,11 @@ column families 也叫 tables
 
 Cassandra uses a Last-Write-Wins Element-Set conflict-free replicated data type for each CQL row。
 
-SSTable Attached Secondary Index (SASI): LIKE,
+SSTable Attached Secondary Index (SASI): LIKE
+
+CODD 12条原则，5大范式。
+
+除了主键外的每一列都有时间戳，那么设置更新时间就没有意义了，关系型每一个是一个完整的时间。
 
 ## 运维
 
@@ -116,50 +120,65 @@ https://cwiki.apache.org/confluence/display/cassandra
    **order by 操作必须在分区key是 == 或者 in的时候下才可以使用。不能排序分区键，因为需要遍历所有分片。**
 
 
-2. [Invalid query] message="Order by currently only support the ordering of columns following their declared order in
-   the PRIMARY KEY"。
-
+2. [Invalid query] message="Order by currently only support the ordering of columns following their declared order inthe PRIMARY KEY"。
+   
    **orderby必须是主键指定的顺序。**
-
+   
 3. InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot rename non PRIMARY KEY part createtime"。
    **不能重命名非PRIMARY KEY**。
 
-4. InvalidRequest: Error from server: code=2200 [Invalid query] message="Invalid operation (studytimechange =
-   studytimechange + 1000) for non counter column studytimechange"
+4. InvalidRequest: Error from server: code=2200 [Invalid query] message="Invalid operation (studytimechange =studytimechange + 1000) for non counter column studytimechange"
    **累加操作必须在counter类型字段上面。**
-
-5. InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot mix counter and non counter columns in
-   the same table"。
+   
+5. InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot mix counter and non counter columns in the same table"。
    **计数器列可以多个，但是必须非主键之外所有键。**
-
-6. InvalidRequest: Error from server: code=2200 [Invalid query] message="Order by currently only support the ordering of
-   columns following their declared order in the PRIMARY KEY"
+   
+6. InvalidRequest: Error from server: code=2200 [Invalid query] message="Order by currently only support the ordering of columns following their declared order in the PRIMARY KEY"
    **排序字段只能是PRIMARY KEY定义的顺序。**
-
-7. InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot execute this query as it might involve
-   data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance
-   unpredictability, use ALLOW FILTERING"。
+   
+7. InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING"。
    **原来查询：select * from answers_by_user where courseid=1;**
    **现有查询：select * from answers_by_user where courseid=1 allow filtering;**
    **其他方法：change your data model add an index, use another table use ALLOW FILTERING**
+   
+8. InvalidRequest: Error from server: code=2200 [Invalid query] message="User-defined functions are disabled in cassandra.yaml - set enable_user_defined_functions=true to enable"
+   **UDF没有打开。UDF没有打开，那么UDA也用不了。因为UDA借助两个UDF**。
+   
+9. InvalidRequest: Error from server: code=2200 [Invalid query] message="Invalid non-frozen user-defined type for PRIMARY KEY component address"
 
-8. InvalidRequest: Error from server: code=2200 [Invalid query] message="User-defined functions are disabled in
-   cassandra.yaml - set enable_user_defined_functions=true to enable"
-   **UDF没有打开。**
+   **非冻结的UDT不能作为主键的一部分，而冻结的UDT可以作为主键的一部分。**
 
-9.
+# 开源项目的代码案例研究
 
-# 代码案例研究
+## cassandra-workshop-series
 
 1. https://github.com/DataStax-Academy/cassandra-workshop-series
 
+## killrvideo-java
+
 2. https://github.com/KillrVideo/killrvideo-java
+
+主要是core和mapping，GRPC，大量CF，
+
+## workshop-spring-data-cassandra
 
 3. https://github.com/datastaxdevs/workshop-spring-data-cassandra
 
+## workshop-ecommerce-app
+
 4. https://github.com/datastaxdevs/workshop-ecommerce-app
 
+基于SpringDataCassandra写的。
+
+## DataStax-Examples
+
 5. https://github.com/DataStax-Examples/
+
+## cassandra-guide
+
+https://github.com/jeffreyscarpenter/cassandra-guide
+
+基于core写的。没有mapper。
 
 # 参考
 
