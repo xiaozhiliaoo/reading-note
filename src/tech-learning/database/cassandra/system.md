@@ -144,9 +144,21 @@ https://cwiki.apache.org/confluence/display/cassandra
 8. InvalidRequest: Error from server: code=2200 [Invalid query] message="User-defined functions are disabled in cassandra.yaml - set enable_user_defined_functions=true to enable"
    **UDF没有打开。UDF没有打开，那么UDA也用不了。因为UDA借助两个UDF**。
    
-9. InvalidRequest: Error from server: code=2200 [Invalid query] message="Invalid non-frozen user-defined type for PRIMARY KEY component address"
-
+9. InvalidRequest: Error from server: code=2200 [Invalid query] message="Invalid non-frozen user-defined type for PRIMARY KEY component address"。
    **非冻结的UDT不能作为主键的一部分，而冻结的UDT可以作为主键的一部分。**
+   
+9. InvalidRequest: Error from server: code=2200 [Invalid query] message="Unsupported order by relation"。
+   **orderby必须是集群键指定的顺序，不可以相交。 建表默认是a asc，b asc，order by b asc,c desc;   order by b desc,c asc; 均会失败，order by a asc，b asc 或 a desc，b desc均会成功。**
+   
+10. InvalidRequest: Error from server: code=2200 [Invalid query] message="INSERT statements are not allowed on counter tables, use UPDATE instead"
+   **counter类型不能直接插入，需要直接UPDATE**。
+    
+11. InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot directly modify a materialized view"
+   **不能insert，delete物化视图，物化视图修改只能由基础表来派生**。
+    
+12. InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot TRUNCATE materialized view directly; must truncate base table instead"
+   **不能TRUNCATE物化视图**。
+   
 
 # 开源项目的代码案例研究
 
@@ -201,6 +213,8 @@ https://cwiki.apache.org/confluence/display/CASSANDRA/Home
 Merkle tree：http://people.eecs.berkeley.edu/~raluca/cs261-f15/Merkle.html
 
 https://en.wikipedia.org/wiki/Ralph_Merkle  https://ralphmerkle.com/
+
+静态列的值所有行都一样，最新的会覆盖其他列的。
 
 ## paper
 

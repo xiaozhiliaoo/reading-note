@@ -63,7 +63,15 @@ select keyspace_name,columnfamily,generation from system.sstable_activity;
 
 查找二级索引：select keyspace_name,table_name,index_name from system_schema.indexes ;
 
-system_schema包括：aggregates，dropped_columns，indexes，tables，types，columns，functions，keyspaces，triggers，views
+system_schema包括：aggregates，dropped_columns，indexes，tables，types，columns，functions，keyspaces，triggers，views;
+
+查找所有表：SELECT * FROM system_schema.tables where table_name='user_process' allow filtering;
+
+查找所有UDT：SELECT * FROM system_schema.types;
+
+查找所有的Materialized Views：SELECT * FROM system_schema.views;
+
+查找所有
 
 ## 其它
 
