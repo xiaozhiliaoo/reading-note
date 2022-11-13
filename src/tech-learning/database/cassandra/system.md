@@ -111,9 +111,9 @@ https://www.intel.com/content/www/us/en/silicon-innovations/intel-tick-tock-mode
 
 https://cwiki.apache.org/confluence/display/cassandra
 
-## 常见错误
+## Common-Error
 
-### 查询错误
+### Query
 
 1. [Invalid query] message="ORDER BY is only supported when the partition key is restricted by an EQ or an IN."。
 
