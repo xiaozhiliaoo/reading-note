@@ -1523,7 +1523,11 @@ CREATE INDEX lesson_index ON course_process.user_process (lessonid);
 <p>select keyspace_name,columnfamily,generation from system.sstable_activity;</p>
 <p>查找repair记录：select keyspace_name,columnfamily_name,exception_message from system_distributed.repair_history ;</p>
 <p>查找二级索引：select keyspace_name,table_name,index_name from system_schema.indexes ;</p>
-<p>system_schema包括：aggregates，dropped_columns，indexes，tables，types，columns，functions，keyspaces，triggers，views</p>
+<p>system_schema包括：aggregates，dropped_columns，indexes，tables，types，columns，functions，keyspaces，triggers，views;</p>
+<p>查找所有表：SELECT * FROM system_schema.tables where table_name='user_process' allow filtering;</p>
+<p>查找所有UDT：SELECT * FROM system_schema.types;</p>
+<p>查找所有的Materialized Views：SELECT * FROM system_schema.views;</p>
+<p>查找所有</p>
 <h2 id="其它"><a class="header" href="#其它">其它</a></h2>
 <p>打开trace , TRACING ON, 然后select数据，发现每一步耗时。查看trace命令，select * from system_traces.sessions ;查看trace的事件，select * from
 system_traces.events </p>
@@ -1625,8 +1629,24 @@ Note: https://gitbox.apache.org/repos/asf?p=cassandra.git;a=blob_plain;f=CHANGES
 <strong>UDF没有打开。UDF没有打开，那么UDA也用不了。因为UDA借助两个UDF</strong>。</p>
 </li>
 <li>
-<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;Invalid non-frozen user-defined type for PRIMARY KEY component address&quot;</p>
-<p><strong>非冻结的UDT不能作为主键的一部分，而冻结的UDT可以作为主键的一部分。</strong></p>
+<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;Invalid non-frozen user-defined type for PRIMARY KEY component address&quot;。
+<strong>非冻结的UDT不能作为主键的一部分，而冻结的UDT可以作为主键的一部分。</strong></p>
+</li>
+<li>
+<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;Unsupported order by relation&quot;。
+<strong>orderby必须是集群键指定的顺序，不可以相交。 建表默认是a asc，b asc，order by b asc,c desc;   order by b desc,c asc; 均会失败，order by a asc，b asc 或 a desc，b desc均会成功。</strong></p>
+</li>
+<li>
+<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;INSERT statements are not allowed on counter tables, use UPDATE instead&quot;
+<strong>counter类型不能直接插入，需要直接UPDATE</strong>。</p>
+</li>
+<li>
+<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;Cannot directly modify a materialized view&quot;
+<strong>不能insert，delete物化视图，物化视图修改只能由基础表来派生</strong>。</p>
+</li>
+<li>
+<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;Cannot TRUNCATE materialized view directly; must truncate base table instead&quot;
+<strong>不能TRUNCATE物化视图</strong>。</p>
 </li>
 </ol>
 <h1 id="开源项目的代码案例研究"><a class="header" href="#开源项目的代码案例研究">开源项目的代码案例研究</a></h1>
@@ -1666,6 +1686,7 @@ Note: https://gitbox.apache.org/repos/asf?p=cassandra.git;a=blob_plain;f=CHANGES
 <p>https://cwiki.apache.org/confluence/display/CASSANDRA/Home</p>
 <p>Merkle tree：http://people.eecs.berkeley.edu/~raluca/cs261-f15/Merkle.html</p>
 <p>https://en.wikipedia.org/wiki/Ralph_Merkle  https://ralphmerkle.com/</p>
+<p>静态列的值所有行都一样，最新的会覆盖其他列的。</p>
 <h2 id="paper-2"><a class="header" href="#paper-2">paper</a></h2>
 <p>Backup and Recovery Mechanisms of Cassandra Database: A Review</p>
 <p>Gossip : http://awinterman.github.io/simple-scuttle/</p>
@@ -6706,6 +6727,27 @@ Faluttolerance, Security)。</li>
 <li>860 数据库系统内幕思维导图：</li>
 </ul>
 <p><img src="tech-quotes/assets/ch8/Database-Internals-Summary.png" alt="" /></p>
+<hr />
+<ul>
+<li>861 Hash算法考察点：1 单调性 2 平衡性</li>
+</ul>
+<hr />
+<ul>
+<li>862 主从复制避免了写入冲突，但会导致单点写入故障，降低了可用性，提高了一致性。对等复制避免了单点写入故障，提高了可用性，降低了一致性。</li>
+</ul>
+<hr />
+<ul>
+<li>853 水平扩展两种方法：复制和分片。复制和分片是正交的。细分为：主从复制分片，对等复制分片。</li>
+</ul>
+<hr />
+<ul>
+<li>854 数据层演进总结：</li>
+</ul>
+<p><img src="tech-quotes/assets/ch8/data-layer-evolution.png" alt="" /></p>
+<hr />
+<ul>
+<li>855</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="技术工程实践"><a class="header" href="#技术工程实践">技术工程实践</a></h1>
 <p>工程实践，也即知识体系</p>
 <h2 id="github地址"><a class="header" href="#github地址">Github地址</a></h2>

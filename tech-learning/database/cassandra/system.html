@@ -237,8 +237,24 @@ Note: https://gitbox.apache.org/repos/asf?p=cassandra.git;a=blob_plain;f=CHANGES
 <strong>UDF没有打开。UDF没有打开，那么UDA也用不了。因为UDA借助两个UDF</strong>。</p>
 </li>
 <li>
-<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;Invalid non-frozen user-defined type for PRIMARY KEY component address&quot;</p>
-<p><strong>非冻结的UDT不能作为主键的一部分，而冻结的UDT可以作为主键的一部分。</strong></p>
+<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;Invalid non-frozen user-defined type for PRIMARY KEY component address&quot;。
+<strong>非冻结的UDT不能作为主键的一部分，而冻结的UDT可以作为主键的一部分。</strong></p>
+</li>
+<li>
+<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;Unsupported order by relation&quot;。
+<strong>orderby必须是集群键指定的顺序，不可以相交。 建表默认是a asc，b asc，order by b asc,c desc;   order by b desc,c asc; 均会失败，order by a asc，b asc 或 a desc，b desc均会成功。</strong></p>
+</li>
+<li>
+<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;INSERT statements are not allowed on counter tables, use UPDATE instead&quot;
+<strong>counter类型不能直接插入，需要直接UPDATE</strong>。</p>
+</li>
+<li>
+<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;Cannot directly modify a materialized view&quot;
+<strong>不能insert，delete物化视图，物化视图修改只能由基础表来派生</strong>。</p>
+</li>
+<li>
+<p>InvalidRequest: Error from server: code=2200 [Invalid query] message=&quot;Cannot TRUNCATE materialized view directly; must truncate base table instead&quot;
+<strong>不能TRUNCATE物化视图</strong>。</p>
 </li>
 </ol>
 <h1 id="开源项目的代码案例研究"><a class="header" href="#开源项目的代码案例研究">开源项目的代码案例研究</a></h1>
@@ -278,6 +294,7 @@ Note: https://gitbox.apache.org/repos/asf?p=cassandra.git;a=blob_plain;f=CHANGES
 <p>https://cwiki.apache.org/confluence/display/CASSANDRA/Home</p>
 <p>Merkle tree：http://people.eecs.berkeley.edu/~raluca/cs261-f15/Merkle.html</p>
 <p>https://en.wikipedia.org/wiki/Ralph_Merkle  https://ralphmerkle.com/</p>
+<p>静态列的值所有行都一样，最新的会覆盖其他列的。</p>
 <h2 id="paper"><a class="header" href="#paper">paper</a></h2>
 <p>Backup and Recovery Mechanisms of Cassandra Database: A Review</p>
 <p>Gossip : http://awinterman.github.io/simple-scuttle/</p>

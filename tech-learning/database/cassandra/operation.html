@@ -171,7 +171,11 @@
 <p>select keyspace_name,columnfamily,generation from system.sstable_activity;</p>
 <p>查找repair记录：select keyspace_name,columnfamily_name,exception_message from system_distributed.repair_history ;</p>
 <p>查找二级索引：select keyspace_name,table_name,index_name from system_schema.indexes ;</p>
-<p>system_schema包括：aggregates，dropped_columns，indexes，tables，types，columns，functions，keyspaces，triggers，views</p>
+<p>system_schema包括：aggregates，dropped_columns，indexes，tables，types，columns，functions，keyspaces，triggers，views;</p>
+<p>查找所有表：SELECT * FROM system_schema.tables where table_name='user_process' allow filtering;</p>
+<p>查找所有UDT：SELECT * FROM system_schema.types;</p>
+<p>查找所有的Materialized Views：SELECT * FROM system_schema.views;</p>
+<p>查找所有</p>
 <h2 id="其它"><a class="header" href="#其它">其它</a></h2>
 <p>打开trace , TRACING ON, 然后select数据，发现每一步耗时。查看trace命令，select * from system_traces.sessions ;查看trace的事件，select * from
 system_traces.events </p>
