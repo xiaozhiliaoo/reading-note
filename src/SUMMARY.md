@@ -300,6 +300,7 @@
         - [如何阅读一本书的书单](reference/booklist/howToReadBook.md)
         - [哈佛经典-五尺书架](reference/booklist/Harvard-Classics.md)
         - [一生的读书计划书单](reference/booklist/The-New-Lifetime-Reading-Plan.md)
+        - [思想者指南系列丛书21本](reference/booklist/thinker-guide-library.md)
         - [其他书籍系列](reference/booklist/others.md)
     - [1000条](reference/easy-talk.md)
         - [第一章](reference/easy-talk/chapter1.md)
