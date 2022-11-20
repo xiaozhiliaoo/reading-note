@@ -160,6 +160,7 @@
         - [supervisor](tech-learning/dialogue-tech/supervisor.md)
         - [jmh](tech-learning/dialogue-tech/jmh.md)
     - [区块链交易所技术](tech-learning/exchange-tech/toc.md)
+        - [Arthas](tech-learning/exchange-tech/arthas.md)
         - [AWS](tech-learning/exchange-tech/aws.md)
         - [RocketMQ](tech-learning/exchange-tech/rocketMQ.md)
         - [Sharding-JDBC](tech-learning/exchange-tech/Sharding-JDBC.md)
@@ -195,9 +196,13 @@
 - [技术书阅读](tech-book/intro.md)
 
     - [计算机科学](tech-book/cs/intro.md)
+        - [分布式系统原理与范型-第二版](tech-book/cs/dspp.md)
+        - [分布式系统概念与设计-第五版](tech-book/cs/dscd.md)
+        
     - [语言](tech-book/language/intro.md)
         - [Java并发编程实战](tech-book/language/java-concurrency-in-practoce.md)
         - [Java并发编程-设计原则与模式](tech-book/language/concurrent-programming-in-java.md)
+      
     - [数据库](tech-book/database/intro.md)
         - [NoSQL精粹](tech-book/database/nosql-distilled.md)
         - [Cassandra权威指南-第二版](tech-book/database/cassandra-the-definitive-guide-2nd.md)
@@ -224,6 +229,7 @@
     - [产品](tech-book/product/intro.md)
 
     - [系统](tech-book/system/intro.md)
+        - [对等网络:结构,应用与设计-陈贵海](tech-book/system/p2p-network.md)
 
     - [电子书](tech-book/ebook/intro.md)
         - [Java并发编程之美](tech-book/ebook/java-concurreny-beautify.md)
