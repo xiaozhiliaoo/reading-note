@@ -37,9 +37,14 @@
         - [Jackson简介](tech-learning/jackson/Jackson.md)
     - [ElasticStack](tech-learning/ElasticStack/toc.md)
         - [ElasticSearch](tech-learning/ElasticStack/elasticsearch.md)
+            - [Config](tech-learning/ElasticStack/elasticsearch-config.md)
+            - [Operation](tech-learning/ElasticStack/elasticsearch-operation.md)
+            - [System](tech-learning/ElasticStack/elasticsearch-system.md)
+            - [Ecosystem](tech-learning/ElasticStack/elasticsearch-ecosystem.md)
+            - [Admin](tech-learning/ElasticStack/elasticsearch-admin.md)
         - [LogStash](tech-learning/ElasticStack/LogStash.md)
-        - [kibana](tech-learning/ElasticStack/kibana.md)
-        - [beat](tech-learning/ElasticStack/beat.md)
+        - [Kibana](tech-learning/ElasticStack/kibana.md)
+        - [Beat](tech-learning/ElasticStack/beat.md)
         - [Lucene](tech-learning/ElasticStack/Lucene.md)
         - [Book](tech-learning/ElasticStack/Book.md)
             - [Elasticsearch权威指南](tech-learning/ElasticStack/mybook/elasticsearch-the-definitive-guide.md)
@@ -198,11 +203,11 @@
     - [计算机科学](tech-book/cs/intro.md)
         - [分布式系统原理与范型-第二版](tech-book/cs/dspp.md)
         - [分布式系统概念与设计-第五版](tech-book/cs/dscd.md)
-        
+
     - [语言](tech-book/language/intro.md)
         - [Java并发编程实战](tech-book/language/java-concurrency-in-practoce.md)
         - [Java并发编程-设计原则与模式](tech-book/language/concurrent-programming-in-java.md)
-      
+
     - [数据库](tech-book/database/intro.md)
         - [NoSQL精粹](tech-book/database/nosql-distilled.md)
         - [Cassandra权威指南-第二版](tech-book/database/cassandra-the-definitive-guide-2nd.md)

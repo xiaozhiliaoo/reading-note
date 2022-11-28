@@ -62,6 +62,8 @@ rewind,reprocess,replayable,reblance,
 
 consumer group protocol(join+leave)
 
+kafka日志清理两种策略，一种是删除，一种是压缩，删除的话就直接删除消息了，压缩才是保留最新的，
+
 ### Kafka Connector
 
 Consumer+Materialize = Kafka Connect ,Consumer+Stateful = Kafka Stream ,Consumer+Stateless = Kafka Consumer

@@ -151,14 +151,24 @@ https://cwiki.apache.org/confluence/display/cassandra
    **orderby必须是集群键指定的顺序，不可以相交。 建表默认是a asc，b asc，order by b asc,c desc;   order by b desc,c asc; 均会失败，order by a asc，b asc 或 a desc，b desc均会成功。**
    
 10. InvalidRequest: Error from server: code=2200 [Invalid query] message="INSERT statements are not allowed on counter tables, use UPDATE instead"
-   **counter类型不能直接插入，需要直接UPDATE**。
+      **counter类型不能直接插入，需要直接UPDATE**。
     
 11. InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot directly modify a materialized view"
-   **不能insert，delete物化视图，物化视图修改只能由基础表来派生**。
+      **不能insert，delete物化视图，物化视图修改只能由基础表来派生**。
     
 12. InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot TRUNCATE materialized view directly; must truncate base table instead"
-   **不能TRUNCATE物化视图**。
+      **不能TRUNCATE物化视图**。
+    
+13. InvalidRequest: Error from server: code=2200 [Invalid query] message="Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING"
+      **在执行((a,b),c)建表索引时候，查询条件只带了where a=xxx，会导致这个报错，因为分区key没有完整，应该是where a=xxx and b=xxx。**。
    
+14. 副本因子只能配置在keyspace级别，也即复制策略在一个keyspace级别，或者一个数据中心级别，不能配置在table级别。
+
+15. 如果索引是((a,b),c)，那么查询至少是where a=xxx and b=yyy，而不能直接a=xxx。 
+
+17. 如果索引是(a,b,c)，那么默认第一个是分区键，b，c是排序键。
+
+18. 
 
 # 开源项目的代码案例研究
 
