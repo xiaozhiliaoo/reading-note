@@ -1,5 +1,7 @@
 # Cassandra指南
 
+[slides-Database-Cassandra.pdf](https://xiaozhiliaoo.github.io/cassandra-practice/slides/Database-Cassandra.pdf)
+
 ## 简介
 
 ## 架构

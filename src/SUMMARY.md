@@ -154,7 +154,12 @@
     - [组内技术分享](tech-learning/tech-sharing/toc.md)
         - [Akka Classic Cluster](tech-learning/tech-sharing/Akka-Classic-Cluster.md)
         - [Java的并行函数式编程](tech-learning/tech-sharing/Parallel-Functional-Programming-with-Java.md)
-        - [TODO-Cassandra指南](tech-learning/tech-sharing/Cassandra-Guide.md)
+        - [实时消息推送](tech-learning/tech-sharing/real-message.md)
+        - [lucene入门](tech-learning/tech-sharing/lucene-intro.md)
+        - [aws安全合规](tech-learning/tech-sharing/aws-intro.md)
+        - [Doris](tech-learning/tech-sharing/doris-intro.md)
+        - [数据库、缓存一致性解决方案](tech-learning/tech-sharing/db-cache-consistency.md)
+        - [Cassandra指南](tech-learning/tech-sharing/Cassandra-Guide.md)
         - [TODO-Kafka设计与实现](tech-learning/tech-sharing/Kafka-design-and-impl.md)
         - [TODO-Consul](tech-learning/tech-sharing/Consul.md)
     - [对话平台技术](tech-learning/dialogue-tech/toc.md)
@@ -269,6 +274,7 @@
     - [国学](social-book/chinese-ancient/intro.md)
 
     - [经济,金融,管理](social-book/finance/intro.md)
+        - [漫步华尔街-第11版](social-book/finance/a-random-walk-down-wall-street.md)
 
     - [文化](social-book/culture/intro.md)
 

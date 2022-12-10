@@ -3,13 +3,29 @@
 在分布式系统中，复制可用来实现Reliable, Scalable. 数据的复制会导致一致性问题。 数据的复制也即同步过程，会带来节点是否可用问题，这也是CAP中的AP权衡。
 复制是一项基础技术，而一致性是这项技术带来的问题。可以认为没有复制便没有一致性问题。
 
-Replication in database,kv,document-db,column-db,file system, distributed coordination,Framework
+Replication in database,kv,document-db,column-db,file system, distributed coordination,framework
 
 Replication Model https://en.wikipedia.org/wiki/Replication_(computing)
 
 Consistency Model https://en.wikipedia.org/wiki/Consistency_model
 
 Consistency Model https://jepsen.io/consistency
+
+## 关键词
+
+data replication
+
+## Paper
+
+Understanding Replication in Databases and Distributed Systems
+
+A Suite of Database Replication Protocols based on group communication
+
+Chain Replication for Supporting High Throughput and Availability
+
+## 重点研究
+
+MySQL，Postgre，Kafka，Redis，
 
 ## Database
 
@@ -40,8 +56,6 @@ mongodb https://docs.mongodb.com/manual/replication/
 couchdb https://docs.couchdb.org/en/stable/replication/intro.html
 https://guide.couchdb.org/editions/1/en/replication.html
 
-
-
 ## Framework
 
 hazelcast  https://docs.hazelcast.com/imdg/4.2/consistency-and-replication/consistency
@@ -57,6 +71,7 @@ hbase https://hbase.apache.org/book.html#_cluster_replication
 ## Message
 
 kafka https://kafka.apache.org/documentation/#replication
+
 https://cwiki.apache.org/confluence/display/kafka/kafka+replication
 
 rabbitmq https://www.rabbitmq.com/ha.html
@@ -110,10 +125,8 @@ VoltDB https://docs.voltdb.com/UsingVoltDB/ChapReplication.php
 ScyllaDB https://docs.scylladb.com/architecture/
 
 foundationdb: https://apple.github.io/foundationdb/consistency.html
+
 https://apple.github.io/foundationdb/fault-tolerance.html
-
-
-
 
 | Application | Replication Model | Consistency Model |
 | ----------- | ----------------- | ----------------- |
