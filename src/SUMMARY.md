@@ -161,6 +161,7 @@
         - [数据库、缓存一致性解决方案](tech-learning/tech-sharing/db-cache-consistency.md)
         - [Cassandra指南](tech-learning/tech-sharing/Cassandra-Guide.md)
         - [TODO-Kafka设计与实现](tech-learning/tech-sharing/Kafka-design-and-impl.md)
+        - [TODO-如何选择ES查询？](tech-learning/tech-sharing/es-search-how-to.md)
         - [TODO-Consul](tech-learning/tech-sharing/Consul.md)
     - [对话平台技术](tech-learning/dialogue-tech/toc.md)
         - [etcd](tech-learning/dialogue-tech/etcd.md)
