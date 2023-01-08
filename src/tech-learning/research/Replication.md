@@ -3,6 +3,8 @@
 在分布式系统中，复制可用来实现Reliable, Scalable. 数据的复制会导致一致性问题。 数据的复制也即同步过程，会带来节点是否可用问题，这也是CAP中的AP权衡。
 复制是一项基础技术，而一致性是这项技术带来的问题。可以认为没有复制便没有一致性问题。
 
+PacificA: Replication in Log-Based Distributed Storage Systems
+
 Replication in database,kv,document-db,column-db,file system, distributed coordination,framework
 
 Replication Model https://en.wikipedia.org/wiki/Replication_(computing)
