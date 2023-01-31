@@ -1,5 +1,11 @@
 # 西安楼盘
 
+## 西安学区划分
+
+http://edu.xa.gov.cn/xwzx/tzgg/62b2df7bf8fd1c4c2103f6ac.html
+
+## 小区
+
 紫薇希望东区，西区
 
 紫薇风尚东区，西区
@@ -45,3 +51,8 @@
 
 房产知识：https://zhishi.fang.com/
 
+## 别人推荐
+
+天朗大兴郡蔚蓝春城
+
+恒大国际城
