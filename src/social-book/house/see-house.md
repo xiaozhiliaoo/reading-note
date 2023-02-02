@@ -6,6 +6,8 @@ http://edu.xa.gov.cn/xwzx/tzgg/62b2df7bf8fd1c4c2103f6ac.html
 
 ## 小区
 
+高新四小龙：万达天樾 保利天悦 星美御  万科翡翠国宾
+
 紫薇希望东区，西区
 
 紫薇风尚东区，西区
