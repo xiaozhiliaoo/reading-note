@@ -299,6 +299,8 @@
         - [田园-房产](social-book/house/tianyuan-house.md)
         - [暗夜-房产系列](social-book/house/anye-house.md)
         - [西安楼盘](social-book/house/see-house.md)
+        - [验房](social-book/house/check-house.md)
+    
 
     - [车](social-book/car/intro.md)
         - [车](social-book/car/car.md)
