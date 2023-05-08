@@ -7,7 +7,7 @@
 
 ## Run
 
-需要前置Rust开发环境
+需要前置Rust开发环境：[https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)
 
 cargo install mdbook
 
