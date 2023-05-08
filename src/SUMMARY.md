@@ -151,6 +151,7 @@
         - [物料金额拆分](tech-learning/question/amount-splitting.md)
         - [老师学生匹配](tech-learning/question/teacher-student-match.md)
         - [灵活标签问题](tech-learning/question/flexible-label-issues.md)
+        - [对话压测](tech-learning/question/jmter-websocket.md)
     - [组内技术分享](tech-learning/tech-sharing/toc.md)
         - [Akka Classic Cluster](tech-learning/tech-sharing/Akka-Classic-Cluster.md)
         - [Java的并行函数式编程](tech-learning/tech-sharing/Parallel-Functional-Programming-with-Java.md)
