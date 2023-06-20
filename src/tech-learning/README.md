@@ -1,5 +1,7 @@
 # 简介
 
+该技术学习框架创立于在网易工作期间，受益于组内完整的技术框架+优秀的封装技术。
+
 我的技术笔记 Github地址：[https://github.com/xiaozhiliaoo/courseop-tech-learning](https://github.com/xiaozhiliaoo/courseop-tech-learning)，也即**知识管理**的实践。
 
 受 [**lvt4j**](https://lvt4j.51vip.biz/confluence/#all-updates) 启发与借鉴而创立该项目。
