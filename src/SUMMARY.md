@@ -142,6 +142,7 @@
         - [kubernetes](tech-learning/operation/kubernetes.md)
         - [harbor](tech-learning/operation/harbor.md)
     - [Research](tech-learning/research/toc.md)
+        - [Reliability Engineering(可靠性工程)](tech-learning/research/reliability-engineering.md) 
         - [aws](tech-learning/research/aws.md)
         - [aliyun](tech-learning/research/aliyun.md)
         - [TencentCloud](tech-learning/research/tencentcloud.md)
