@@ -85,9 +85,10 @@
         - [Book](tech-learning/spring/Book.md)
             - [Spring实战第四版](tech-learning/spring/mybook/spring-in-action-4th.md)
             - [SpringBoot解密](tech-learning/spring/mybook/springboot-internals.md)
-    - [KVStore](tech-learning/kvstore/toc.md)
-        - [Redis](tech-learning/kvstore/Redis.md)
-        - [MapDB](tech-learning/kvstore/MapDB.md)
+    - [Storage](tech-learning/storage/toc.md)
+        - [Redis](tech-learning/storage/Redis.md)
+        - [MapDB](tech-learning/storage/MapDB.md)
+        - [MinIO](tech-learning/storage/MinIO.md)
     - [分布式事务](tech-learning/dtx/toc.md)
         - [atomikos](tech-learning/dtx/atomikos.md)
         - [seata](tech-learning/dtx/seata.md)
@@ -319,6 +320,7 @@
 
     - [医学与健康](social-book/medicine/intro.md)
         - [你是你吃出来的-第一册](social-book/medicine/you-ate-it1.md)
+        - [我的健康](social-book/medicine/my-health.md)
 
     - [影视](social-book/film/intro.md)
 

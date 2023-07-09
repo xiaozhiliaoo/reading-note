@@ -40,3 +40,5 @@
 | orm                                            | https://github.com/go-gorm/gorm                              |                     |
 | Faiss计算                                      | https://github.com/DataIntelligenceCrew/go-faiss             |                     |
 | UUID                                           | https://github.com/google/uuid                               |                     |
+| 日志                                           | Grafana Loki  https://grafana.com/docs/loki/latest/          |                     |
+
