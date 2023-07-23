@@ -5,6 +5,7 @@
 - [简介](README.md)
 
 - [技术](tech-learning/README.md)
+
   - [技术学习](tech-learning/README.md)
       - [Coding](tech-learning/coding/toc.md)
           - [admin](tech-learning/coding/admin.md)
@@ -291,13 +292,15 @@
           - [Cassandra:A Decentralized Structured Storage System](paper/Cassandra.md)
 
 - [投资](investment/intro.md)
-    - [经济,金融,管理](social-book/finance/intro.md)
-        - [漫步华尔街-第11版](social-book/finance/a-random-walk-down-wall-street.md)
+    - [投资犯的错误](investment/mistake-i-made.md)
+  
+    - [阅读](investment/read/intro.md)
+        - [漫步华尔街-第11版](investment/read/a-random-walk-down-wall-street.md)
       
 
 - [健康](health/intro.md)
-      - [医学与健康](social-book/medicine/intro.md)
-         - [你是你吃出来的-第一册](social-book/medicine/you-ate-it1.md)
+      - [医学与健康](health/read/intro.md)
+         - [你是你吃出来的-第一册](health/read/you-ate-it1.md)
          - [我的健康](social-book/medicine/my-health.md)
 
 - [阅读](social-book/intro.md)
@@ -322,8 +325,6 @@
         - [如何阅读一本书](social-book/education/how-to-read-book.md)
         - [卡片笔记写作法](social-book/education/card-way-write.md)
         - [身体由我](social-book/education/my-body.md)
-
-   
 
     - [影视](social-book/film/intro.md)
 
