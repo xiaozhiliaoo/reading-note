@@ -13,6 +13,15 @@ Consistency Model https://en.wikipedia.org/wiki/Consistency_model
 
 Consistency Model https://jepsen.io/consistency
 
+
+## 复制的基本问题
+
+1. 复制方式：主从，多主，无主
+2. 同步还是异步
+3. 处理失败副本
+4. 数据滞后问题
+
+
 ## 关键词
 
 data replication
@@ -27,7 +36,7 @@ Chain Replication for Supporting High Throughput and Availability
 
 ## 重点研究
 
-MySQL，Postgre，Kafka，Redis，
+MySQL，PostgreSQL，Kafka，Redis，
 
 ## Database
 
@@ -47,7 +56,7 @@ riak https://docs.riak.com/riak/kv/latest/learn/concepts/replication/index.html
 
 tikv: https://tikv.org/deep-dive/scalability/introduction/
 
-dynamo
+dynamo:https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf
 
 consul  https://www.consul.io/docs/architecture
 
@@ -92,9 +101,9 @@ solr https://solr.apache.org/guide/6_6/index-replication.html
 
 hdfs https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html#Data+Replication
 
-ceph
+ceph https://ceph.io/assets/pdfs/weil-crush-sc06.pdf
 
-GFS
+GFS https://static.googleusercontent.com/media/research.google.com/zh-CN//archive/gfs-sosp2003.pdf
 
 ## Coordination
 
@@ -105,6 +114,8 @@ zookeeper: https://zookeeper.apache.org/doc/r3.2.2/zookeeperInternals.html
 yugabyte https://docs.yugabyte.com/latest/architecture/docdb-replication/replication/
 
 CockroachDB  https://www.cockroachlabs.com/docs/stable/architecture/replication-layer.html
+
+TiDB https://docs.pingcap.com/tidb/stable/bidirectional-replication-between-tidb-clusters   
 
 ## other
 
@@ -118,9 +129,9 @@ Windows Azure Storage https://docs.microsoft.com/en-us/azure/storage/common/stor
 
 voldemort  https://www.project-voldemort.com/voldemort/design.html
 
-Bigtable
+Bigtable https://static.googleusercontent.com/media/research.google.com/zh-CN//archive/bigtable-osdi06.pdf
 
-Yahoo PNUTS
+Yahoo PNUTS https://sites.cs.ucsb.edu/~agrawal/fall2009/PNUTS.pdf
 
 VoltDB https://docs.voltdb.com/UsingVoltDB/ChapReplication.php
 
@@ -129,6 +140,15 @@ ScyllaDB https://docs.scylladb.com/architecture/
 foundationdb: https://apple.github.io/foundationdb/consistency.html
 
 https://apple.github.io/foundationdb/fault-tolerance.html
+
+## Compute
+
+Flink:
+
+Spark:
+
+Storm:
+
 
 | Application | Replication Model | Consistency Model |
 | ----------- | ----------------- | ----------------- |
