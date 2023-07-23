@@ -296,6 +296,7 @@
   
     - [阅读](investment/read/intro.md)
         - [漫步华尔街-第11版](investment/read/a-random-walk-down-wall-street.md)
+        - [彼得林奇的成功投资-典藏版](investment/read/one-up-on-wall-street.md)
       
 
 - [健康](health/intro.md)
