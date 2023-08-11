@@ -42,3 +42,14 @@
 | UUID                                           | https://github.com/google/uuid                               |                     |
 | 日志                                           | Grafana Loki  https://grafana.com/docs/loki/latest/          |                     |
 
+
+
+## 常用
+
+NLP and text segmentation：https://github.com/go-ego/gse
+
+readability：https://github.com/go-shiori/go-readability
+
+TimeNLP：https://github.com/bububa/TimeNLP
+
+Excel: https://github.com/xuri/excelize/v2
