@@ -318,6 +318,7 @@
         - [你的第一本保险指南](investment/read/first-insurance-guide.md)
     - [基金学习](investment/read/fund.md)
     - [保险](investment/read/insurance.md)
+      - [我的保险](investment/my-insurance.md)
     - [指数研究](investment/research/index.md)
 
 - [健康](health/intro.md)
