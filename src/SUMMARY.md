@@ -312,6 +312,7 @@
         - [彼得林奇的成功投资-典藏版](investment/read/one-up-on-wall-street.md)
         - [长赢投资](investment/read/the-little-book-of-common-sense-investing.md)
         - [股市长线法宝](investment/read/stocks-for-long-run.md)
+        - [赢得输家的游戏](investment/read/winning-the-loser-game.md)
         - [保险严选指南](investment/read/insurance-strict-selection-guidelines.md)
         - [保险怎么买-北大宝妈](investment/read/how-to-buy-insurance.md)
         - [如何用保险保障一生](investment/read/how-to-use-insurance.md)
