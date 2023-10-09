@@ -291,7 +291,7 @@
           - [A Survey on the Evolution of Stream Processing Systems](paper/Stream-System-Evolution.md)
           - [Cassandra:A Decentralized Structured Storage System](paper/Cassandra.md)
 
-- [金融](investment/intro.md)
+- [投资](investment/intro.md)
     - [投资错误](investment/mistake-i-made.md)
   
     - [投资体系](investment/system/intro.md)
