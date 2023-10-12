@@ -3,6 +3,8 @@
 # 目录
 
 - [简介](README.md)
+    - [阅读目标](read/goal.md)
+    - [阅读记录](read/record.md)
 
 - [技术](tech-learning/README.md)
 

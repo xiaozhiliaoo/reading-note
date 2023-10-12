@@ -1,6 +1,6 @@
 # 漫步华尔街-第11版
 
-## 作者
+## 作者 伯顿·马尔基尔
 
 https://en.wikipedia.org/wiki/Burton_Malkiel
 
