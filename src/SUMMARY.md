@@ -327,6 +327,8 @@
 - [健康](health/intro.md)
   - [医学与健康](health/read/intro.md)
     - [你是你吃出来的-第一册](health/read/you-ate-it1.md)
+    - [食物营养与配餐-第二版](health/read/food-nutrition-and-catering.md)
+    - [中国居民膳食指南](health/read/chinese-residents.md)
     - [我的健康](social-book/medicine/my-health.md)
 
 - [阅读](social-book/intro.md)
