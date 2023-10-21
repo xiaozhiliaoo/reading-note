@@ -333,7 +333,7 @@
     - [中国居民膳食指南](health/read/chinese-residents.md)
   - [我的健康](health/my-health/intro.md)
     - [病历报告](health/my-health/medical-report.md)
-    - [体检报告](social-book/medicine/my-health.md)
+    - [体检报告](health/my-health/health-report.md)
 
 - [阅读](social-book/intro.md)
     - [哲学](social-book/philosophy/intro.md)
