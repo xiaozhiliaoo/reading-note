@@ -321,6 +321,7 @@
         - [保险怎么买-北大宝妈](investment/read/how-to-buy-insurance.md)
         - [如何用保险保障一生](investment/read/how-to-use-insurance.md)
         - [你的第一本保险指南](investment/read/first-insurance-guide.md)
+        - [雪球基金第一课](investment/read/snowball-fund-lesson.md)
     - [基金学习](investment/read/fund.md)
     - [保险](investment/read/insurance.md)
       - [我的保险](investment/my-insurance.md)
