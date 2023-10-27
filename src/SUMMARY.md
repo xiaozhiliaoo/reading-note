@@ -322,10 +322,12 @@
         - [如何用保险保障一生](investment/read/how-to-use-insurance.md)
         - [你的第一本保险指南](investment/read/first-insurance-guide.md)
         - [雪球基金第一课](investment/read/snowball-fund-lesson.md)
+        - [共同基金常识-10周年纪念版](investment/read/common-sense-on-mutual-funds.md)
     - [基金学习](investment/read/fund.md)
     - [保险](investment/read/insurance.md)
       - [我的保险](investment/my-insurance.md)
     - [指数研究](investment/research/index.md)
+      - [指数基金产品](investment/research/index-product.md)
 
 - [健康](health/intro.md)
   - [医学与健康](health/read/intro.md)
