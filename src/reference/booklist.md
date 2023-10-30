@@ -12,7 +12,7 @@
 
 - [投资学分类书籍](booklist/invest-classify.md) （按照学派以及分类的投资书籍）
 
-- [5000本金融书](booklist/invest-5000.md)
+- [5000本金融书](booklist/invest-5000.md) （网上找的大汇总）
 
 - [和君推荐企业家和投行家书籍](booklist/hejun-consulting.md) （和君商学院给企业家的书单）
 
