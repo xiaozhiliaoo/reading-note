@@ -12,6 +12,8 @@
 
 - [投资学分类书籍](booklist/invest-classify.md) （按照学派以及分类的投资书籍）
 
+- [5000本金融书](booklist/invest-5000.md)
+
 - [和君推荐企业家和投行家书籍](booklist/hejun-consulting.md) （和君商学院给企业家的书单）
 
 - [中学生阅读指南](booklist/middle-student.md) （初中，高中推荐的书籍）
@@ -27,6 +29,5 @@
 - [中华现代学术名著丛书·105本](booklist/shangwu-china-105.md) （中国现代学术名著）
 
 - [圣约翰学院的阅读书目](booklist/StJohnCollege.md) （圣约翰学院的阅读书目）
-
 
 - [如何阅读一本书的书单](booklist/howToReadBook.md)
