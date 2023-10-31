@@ -312,7 +312,7 @@
       - [交易记录](investment/practice/trade-record.md)
       - [盈利记录](investment/practice/profit-record.md)
         
-    - [读书](investment/read/intro.md)
+    - [投资读书](investment/read/intro.md)
         - [漫步华尔街-第11版](investment/read/a-random-walk-down-wall-street.md)
         - [彼得林奇的成功投资-典藏版](investment/read/one-up-on-wall-street.md)
         - [长赢投资](investment/read/the-little-book-of-common-sense-investing.md)
@@ -327,7 +327,8 @@
         - [雪球基金第一课](investment/read/snowball-fund-lesson.md)
         - [共同基金常识-10周年纪念版](investment/read/common-sense-on-mutual-funds.md)
         - [价值平均策略](investment/read/value-averaging.md)
-    - [基金学习](investment/read/fund.md)
+    - [基金](investment/fund.md)
+    - [债券](investment/bond.md)
     - [保险](investment/read/insurance.md)
       - [我的保险](investment/my-insurance.md)
     - [指数研究](investment/research/index.md)
