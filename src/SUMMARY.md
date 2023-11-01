@@ -399,6 +399,7 @@
         - [金融投资400本](reference/booklist/invest-400.md)
         - [投资学分类书籍](reference/booklist/invest-classify.md)
         - [5000本金融书](reference/booklist/invest-5000.md)
+        - [华章金融书](reference/booklist/huangzhang.md)
         - [和君推荐企业家和投行家书籍](reference/booklist/hejun-consulting.md)
         - [中学生阅读指南](reference/booklist/middle-student.md)
         - [商务汉译世界学术名著丛书·600本](reference/booklist/shangwu-world-600.md)
