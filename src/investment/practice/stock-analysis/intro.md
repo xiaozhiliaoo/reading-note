@@ -14,11 +14,19 @@
 
 白云山：营业总收入和净利润均增长。
 
-## 生活常见股票
+## 重点关注领域
+
+必选消费行业
+
+食品
+
+计算机
+
+## 生活常见行业
 
 衣：[服装珠宝](https://www.csindex.com.cn/#/indices/family/detail?indexCode=932125)
 
-食： [食品饮料烟草](https://www.csindex.com.cn/#/indices/family/detail?indexCode=932128)
+食： [食品饮料烟草](https://www.csindex.com.cn/#/indices/family/detail?indexCode=932128)，[餐饮住宿](https://www.csindex.com.cn/#/indices/family/detail?indexCode=H30036)
 
 住： [房地产](https://www.csindex.com.cn/#/indices/family/detail?indexCode=000952) ， [家居家电](https://www.csindex.com.cn/#/indices/family/detail?indexCode=931241)
 
@@ -30,6 +38,10 @@
 
 计算机：[计算机与互联网](https://www.csindex.com.cn/#/indices/family/detail?indexCode=L11520)
 
+娱乐：[传媒](https://www.csindex.com.cn/#/indices/family/detail?indexCode=399971)
+
+
+## 生活常见股票
 
 索菲亚
 
@@ -44,4 +56,13 @@
 金龙鱼
 
 涪陵榨菜
+
+鱼跃医疗
+
+云南白药
+
+科沃斯
+
+美年健康
+
 

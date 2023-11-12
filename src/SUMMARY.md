@@ -308,6 +308,8 @@
         - [投资历史](investment/system/history.md)
         - [投资工具](investment/system/tool.md)
         - [投资行业](investment/system/industry.md)
+          - [调味品](investment/system/industry-condiment.md)
+          - [饰品](investment/system/industry-jewelry.md)
           - [计算机](investment/system/industry-cs.md)
       
     - [投资实战](investment/practice/intro.md)
@@ -338,6 +340,7 @@
         - [非必须消费品投资](investment/read/no-customer-investment.md)
         - [股市真规则](investment/read/the-five-rules-for-successful.md)
         - [逆向投资：邓普顿的长赢投资法](investment/read/investing-the-templeton-way.md)
+        - [周期-投资机会,风险,态度与市场周期](investment/read/howard-marks-cycle.md)
     - [基金](investment/fund.md)
     - [债券](investment/bond/intro.md)
       - [债券](investment/bond/bond.md)
