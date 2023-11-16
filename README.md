@@ -5,19 +5,21 @@
 访问地址：https://xiaozhiliaoo.github.io/reading-note/
 
 
-## Run
+## 运行
 
 需要前置Rust开发环境：[https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)
 
-cargo install mdbook
+`cargo install mdbook`
 
 如果已经安装好，每次运行执行以下命令：
 
-mdbook clean
+`mdbook clean`
 
-mdbook build
+`mdbook test` 【测试是否有编译错误】
 
-mdbook serve  
+`mdbook build`
+
+`mdbook serve`
 
 本地访问地址：http://localhost:3000/
 

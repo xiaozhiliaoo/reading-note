@@ -304,7 +304,7 @@
           - [策略(宏观)](investment/system/idea-strategy.md)
           - [量化(计算机)](investment/system/idea-quant.md)
         - [投资策略](investment/system/method.md)
-          - [选股方法]((investment/system/choose-stock-method.md))
+          - [选股方法](investment/system/choose-stock-method.md)
         - [投资历史](investment/system/history.md)
         - [投资工具](investment/system/tool.md)
           - [统计数据](investment/system/tool-data.md)
