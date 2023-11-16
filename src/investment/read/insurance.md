@@ -190,3 +190,11 @@
 发病24小时内死亡，如何证明开始时间呢？睡梦中呢？所以寿险对死亡保障更全。
 
 投保完成是服务的开始。
+
+## 惠民保（陕西省全民健康保）
+
+https://health.picc.com/infomation/cpxx/rbjkwxcpxx/ 233条
+
+https://health.picc.com/xxplPdfFile/renbaojiankangfuanxiangbanchengshidingzhixingtuantiyiliaobaoxiantiaokuan.pdf
+
+产品条款：https://www.iachina.cn/IC/tkk/02/d1e0932a-cc35-436c-916d-857da9a22466.html
