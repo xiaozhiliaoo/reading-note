@@ -306,6 +306,7 @@
         - [投资策略](investment/system/method.md)
           - [选股方法](investment/system/choose-stock-method.md)
         - [投资历史](investment/system/history.md)
+        - [投资大师](investment/system/person.md)
         - [投资工具](investment/system/tool.md)
           - [统计数据](investment/system/tool-data.md)
           - [财务报表](investment/system/tool-financial-statements.md)
@@ -356,13 +357,14 @@
       - [指数基金产品](investment/research/index-product.md)
 
 - [健康](health/intro.md)
-  - [医学与健康](health/read/intro.md)
+  - [饮食与健康](health/read/intro.md)
     - [你是你吃出来的-第一册](health/read/you-ate-it1.md)
     - [食物营养与配餐-第二版](health/read/food-nutrition-and-catering.md)
     - [中国居民膳食指南](health/read/chinese-residents.md)
   - [我的健康](health/my-health/intro.md)
     - [病历报告](health/my-health/medical-report.md)
     - [体检报告](health/my-health/health-report.md)
+  - [育儿](health/children/intro.md)
 
 - [阅读](social-book/intro.md)
     - [哲学](social-book/philosophy/intro.md)
