@@ -1,5 +1,7 @@
 mdbook clean
 
+mdbook test
+
 mdbook build
 
 mdbook serve

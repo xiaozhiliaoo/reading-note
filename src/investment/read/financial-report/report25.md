@@ -2,10 +2,7 @@
 
 ## 进度
 
-开始时间：2023-11-16 ~ 结束时间：
-
-页数：91页
-
+开始时间：2023-11-16 ~ 结束时间：2023-11-23
 
 ## 笔记
 
@@ -182,6 +179,48 @@ https://listing.szse.cn/projectdynamic/refinance/index.html
 
 东方航空：收入小幅下降，可能导致利润的巨幅波动。因为固定成本太高，无法随着收入下降而下降。遂而导致巨额亏损。
 
+负债对每股收益的放大。---权益乘数
+
+低效经营水平+高负债=赌博
+
+## 季度环比数据
+
+需要自己算，报表中不会体现。
+
+两个季度环比有效性较强。
+
+同比实效性差，环比噪音大。 TTM【最近12个月】弥补了这个问题。总是连着四个季度。
+
+## 政府网站
+
+http://www.stats.gov.cn/
+
+海关总署：出口  http://gdfs.customs.gov.cn/customs/syx/index.html
+
+交通部：港口吞吐量
+
+民航总局：旅客运输量，客座率，载运率 https://www.caac.gov.cn/index.html
+
+工业和信息部：行业统计
+
+财政部：税收：契税，车辆购置税
+
+央行：货币供给 m1。m2。m3。储蓄存款
+
+
+
+
+## 证券官方
+
+http://www.chinaclear.cn/
+
+http://www.chinaclear.cn/zdjs/tjyb1/center_scsj_tjyb.shtml
+
+https://www.sac.net.cn/hysj/jysj/
+
+## 上市公司网站
+
+有的子公司网站需要在控股股东里面找。
 
 
 
