@@ -8,6 +8,8 @@
 
 [保单excel](materials/家庭保单管理表.xlsx)
 
+[线上地址](https://www.kdocs.cn/l/cjZ0rgWHjg6H)
+
 ## 保障产品
 
 [公司团体险](materials/平安补充医疗.pdf)
@@ -28,5 +30,7 @@
 
 意外险：小蜜蜂365元。[保单合同](materials/小蜜蜂意外.pdf)
 
-公司团体险： [保单合同](materials/平安补充医疗.pdf)
+公司团体险：平安团体险。 [保单合同](materials/平安补充医疗.pdf)
+
+医疗险：陕西全民健康保
 
