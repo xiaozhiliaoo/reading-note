@@ -1,8 +1,16 @@
 # 阅读目标
 
-学习四大方向：技术，投资，健康，国学
+学习四大方向：技术，投资，健康，国学。
 
-## 2023年
+技术：主要是JAVA/互联网技术，主要是这些[书籍](https://xiaozhiliaoo.github.io/reading-list/)
+
+投资：金融投资，经济学，投资学
+
+健康：饮食，疾病，医学类
+
+国学：四书五经，孙子兵法，道德经，金刚经，纲鉴易知录，史记，资治通鉴，三国演义，水浒传
+
+## 2023年读书计划
 
 技术读完：主要是重读之前的一些书，加深理解。高性能MySQL/MySQL技术内幕（SQL和InnoDB）/数据库系统内幕，Redis设计与实现/Redis实战，Kafka权威指南，Elasticsearch权威指南/深入理解ElasticSearch，Java并发编程实战/Effective Java/深入理解JVM，DDIA/深入理解分布式系统/分布式系统与一致性。
 
