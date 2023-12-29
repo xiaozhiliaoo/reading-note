@@ -216,6 +216,7 @@
           - [107-分布式协议与算法实战-韩健](tech-learning/geektime/107-dist-algo.md)
           - [162-分布式数据库30讲-王磊](tech-learning/geektime/162-dist-db-30.md)
           - [238-大数据经典论文解读-徐文浩](tech-learning/geektime/238-big-data-paper.md)
+          - [AI大模型之美-徐文浩](tech-learning/geektime/ai-model.md)
 
       - [参考](tech-learning/reference/reference.md)
           - [参考资料](tech-learning/reference/reference.md)
@@ -356,6 +357,8 @@
           - [股票市场修炼手册](investment/read/financial-report/stock-market-practice-handbook.md)
         - [经济指标解读系列](investment/read/economic-indicators/intro.md)
           - [解读中国经济指标-在数字中锁定投资机会](investment/read/economic-indicators/china-indicators.md)
+        - [ETF系列](investment/read/etf/intro.md) 
+          - [3小时快学ETF](investment/read/etf/3h-etf.md) 
         - [价值平均策略](investment/read/value-averaging.md)
         - [漫步华尔街-第11版](investment/read/a-random-walk-down-wall-street.md)
         - [彼得林奇的成功投资-典藏版](investment/read/one-up-on-wall-street.md)
