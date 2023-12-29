@@ -4,6 +4,10 @@
 
 [PDF在线阅读](materials/invest-classify.pdf)
 
+[荒原资产凌鹏](https://www.huangyuan.online/newsinfo/462632.html)
+
+[凌鹏:从象牙塔到金融街](https://www.huangyuan.online/newsinfo/462634.html)
+
 # 费希尔投资系列11本
 
 http://fisher-investments-press.wiley.com/books.html
@@ -35,3 +39,6 @@ http://fisher-investments-press.wiley.com/books.html
 
 荀玉根讲策略
 
+# 历史
+
+燕翔三部曲：全球股市启示录，追寻价值之路，美股70年年美国股市

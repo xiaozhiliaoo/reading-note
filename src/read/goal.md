@@ -2,7 +2,7 @@
 
 学习四大方向：技术，投资，健康，国学。
 
-技术：主要是JAVA/互联网技术，主要是这些[书籍](https://xiaozhiliaoo.github.io/reading-list/)
+技术：主要是JAVA/Golang/互联网技术，主要是这些[书籍](https://xiaozhiliaoo.github.io/reading-list/)
 
 投资：金融投资，经济学，投资学
 
@@ -22,3 +22,4 @@
 
 国学读完：道德经，金刚经，孙子兵法
 
+## 2024读书计划
