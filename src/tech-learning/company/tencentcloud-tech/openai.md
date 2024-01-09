@@ -1,5 +1,16 @@
 # OpenAI
 
+## 官方文档
+
+https://platform.openai.com/docs/introduction
+
+
+
+
+
+
+
+
 ## 使用技巧
 
 ### 如何写prompt
@@ -29,3 +40,7 @@ https://platform.openai.com/playground?mode=assistant
 https://platform.openai.com/docs/api-reference/chat/object
 
 https://platform.openai.com/docs/guides/text-generation/chat-completions-api
+
+## embedding model
+
+https://openai.com/blog/new-and-improved-embedding-model

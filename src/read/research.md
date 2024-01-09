@@ -4,4 +4,11 @@
 
 ### 2024-01~2024-02
 
-openai,llm,golang,opentelemetry
+openai,llm：目标自己完成一个模型的构建和知识型问答机器人
+
+golang
+
+opentelemetry
+
+向量数据库，向量检索算法，相似性算法
+
