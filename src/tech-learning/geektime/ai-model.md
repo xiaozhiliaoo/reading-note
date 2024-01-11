@@ -205,3 +205,91 @@ ConversationSummaryBufferMemory
 
 命名实体识别的算法：nlu实现，NER算法
 
+langchain rag模式（检索增强生成（Retrieval Augmented Generation, RAG）） rerank模式 rewrite模式。
+
+rerank：rag：https://luxiangdong.com/2023/11/06/rerank/ 重排序
+
+rewrite：rag：https://docs.dify.ai/v/zh-hans/learn-more/extended-reading/retrieval-augment/rerank
+
+Prompt Engineering Guide：https://www.promptingguide.ai/
+
+Retrieval-Augmented Generation Pipeline：大模型训练Pipeline
+
+langchain agent：https://python.langchain.com/docs/modules/agents/ agent帮忙插订单号。
+
+把回答不同类型问题的 LLMChain 封装成不同的 Tool，也可以直接让 Tool 去调用内部查询订单状态的功能。
+
+电商客服功能的聊天机器人。
+
+langchain：Agent、Memory、VectorStore、LLMChain
+
+OpenAI 提供的模型微调（Fine-tune）
+
+这个模型“微调”完成之后，就可以直接向模型提问了。而不用再像之前使用 llama-index 或者 LangChain 那样，
+先通过 Embedding 来查询相关资料，然后把查找到的资料也一并提交给 OpenAI 来获得所需要的答案。
+
+模型微调的成本考量：Ada、Babbage、Curie 和 Davinci  https://openai.com/pricing#language-models
+
+流式生成：Completion接口stream=True
+
+语音识别模型 Whisper的方法transcribe，语音转文字：https://platform.openai.com/docs/guides/speech-to-text
+
+能够在音频内容的转录之前提供一段 Prompt，来引导模型更好地做语音识别，是Whisper模型的一大亮点。
+
+音频分割：PyDub
+
+Whisper：https://openai.com/research/whisper
+
+语音合成（Text-To-Speech）
+
+SSML 是 Speech Synthesis Markup Language，语音合成标记语言
+
+语音合成：百度开源的 PaddleSpeech  https://github.com/PaddlePaddle/PaddleSpeech/blob/develop/demos/text_to_speech/README_cn.md
+
+Azure AI 服务：https://azure.microsoft.com/zh-cn/products/ai-services
+
+“数字人”
+
+文本聊天机器人->语音输入->语音合成与播放
+
+用 D-ID 给语音对口型
+
+gradio
+
+ChatGPT用ChatGLM来代替，语音识别我们可以使用本地的Whisper模型，语音合成也可以通过PaddleSpeech里的fastspeech2的开源模型来完成。D-ID可以通过开源模型PaddleBobo来合成这样的口播视频。
+
+Diffuser 类型,GAN 生成影像
+
+Huggingface 的火爆离不开Transformers库
+
+小尺寸的 T5-base 和裁剪过的ChatGLM-6B-INT4，而不是FLAN-UL2或者ChatGLM-130B这样真正的大模型
+
+Transformers Pipeline：https://huggingface.co/docs/transformers/main_classes/pipelines
+
+Pipeline 是 Transformers 库里面的一个核心功能，它封装了所有托管在 HuggingFace 上的模型推理预测的入口。
+
+https://huggingface.co/models
+
+ChatGPT 的强大之处？上面这些自然语言处理任务，常常需要切换使用不同的专有模型。但是在 ChatGPT 里，只需要一个通用的模型，就能直接解决所有的问题。这也是很多人惊呼“通用人工智能”来了的原因。
+
+HuggingFace：Inference API
+
+如何部署自己的大模型? HuggingFace Inference Endpoint
+
+HuggingFace 将部署一个开源模型到线上的成本基本降低到了 0。不过，目前它只支持海外的 AWS、Azure 以及 Google Cloud，并不支持阿里云或者腾讯云
+
+So-Vits-SVC 算法实现的 AI 孙燕姿
+
+AutoGPT 和 BabyAGI 这样的自主智能体（Autonomous Agent）
+
+DoNotPay：AI 律师
+
+Meta 开源：LLaMA
+
+OpenAI：三维建模的生成式模型 Shap-E
+
+AI应用网站：https://www.futurepedia.io/
+
+深度学习：PyTorch/Tensorflow/Paddle/Mxnet
+
+

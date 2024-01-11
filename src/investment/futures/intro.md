@@ -1,5 +1,8 @@
 # 期货和期权
 
+## 投资者教育书籍50本
+
+http://edu.cfachina.org/zsyd/tjsj/
 
 ## 期货业协会
 

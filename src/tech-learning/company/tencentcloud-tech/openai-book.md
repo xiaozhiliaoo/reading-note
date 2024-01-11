@@ -12,4 +12,13 @@ ChatGPT原理与架构：大模型的预训练、迁移和中间件编程
 
 AIGC绘画ChatGPT+Midjourney+Nijijourney
 
+大规模语言模型 从理论到实践
+
+GPT图解
+
+多模态大模型 技术原理与实战
+
+自然语言处理导论：https://intro-nlp.github.io/
+
+
 
