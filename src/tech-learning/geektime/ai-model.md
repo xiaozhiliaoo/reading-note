@@ -292,4 +292,16 @@ AI应用网站：https://www.futurepedia.io/
 
 深度学习：PyTorch/Tensorflow/Paddle/Mxnet
 
+NLP课程：https://huggingface.co/learn/nlp-course/zh-CN/chapter1/1
+
+Retrieval-Augmented Generation for Large Language Models: A Survey：https://arxiv.org/pdf/2312.10997.pdf
+
+2017年Transformer架构：Attention Is All You Need https://arxiv.org/pdf/1706.03762.pdf
+
+BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding：https://arxiv.org/pdf/1810.04805.pdf
+
+深度学习百科及面试资源：https://paddlepedia.readthedocs.io/en/latest/index.html
+
+腾讯云混元大模型：https://cloud.tencent.com/document/product/1729
+
 
