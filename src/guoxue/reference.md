@@ -14,6 +14,8 @@
 
 中国哲学书电子化计划：https://ctext.org/zhs
 
+中华典藏网：https://www.zhonghuadiancang.com/
+
 ## 系列
 
 ### 中华国学经典精粹 全套126册
