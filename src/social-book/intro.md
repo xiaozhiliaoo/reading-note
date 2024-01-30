@@ -1,6 +1,6 @@
 # 社科书阅读
 
-汇总EXCEL：[Reading Records](resourse/reading-records.xlsx)
+读书汇总：[https://www.kdocs.cn/l/cmnmL7nrbfVF](https://www.kdocs.cn/l/cmnmL7nrbfVF)
 
 | 书名                                | 作者                   | 阅读情况   | 分类        | 豆瓣 |
 | ----------------------------------- | ---------------------- | ---------- | ----------- | ---- |
