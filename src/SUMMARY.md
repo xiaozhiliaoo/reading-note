@@ -438,6 +438,10 @@
     - [古文观止](guoxue/ji/gwgz.md)
   - [小说](guoxue/xiaoshuo/intro.md)
     - [三国演义](guoxue/xiaoshuo/sgyy.md)
+  - [南怀瑾系列](guoxue/person/nanhuaijing/intro.md)
+    - [易经系传别讲](guoxue/person/nanhuaijing/yjxlbj.md)
+    - [易经杂说](guoxue/person/nanhuaijing/yjzs.md)
+    - [老子他说](guoxue/person/nanhuaijing/lzts.md)
   - [参考资料](guoxue/reference.md)
 
 - [阅读](social-book/intro.md)
