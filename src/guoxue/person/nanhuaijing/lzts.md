@@ -54,7 +54,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 心物一元的形而上与形而下的理则
 
-《小止观》 隋智者大师的天台宗，六妙门的数息、随息 https://www.quanxue.cn/ct_fojia/xiaozhig/xiaozhig01.html
+《小止观》 隋智者大师的天台宗，六妙门的数息、随息 [参考](https://www.quanxue.cn/ct_fojia/xiaozhig/xiaozhig01.html)
 
 《黄帝内经》——《灵枢》、《素问》
 
@@ -120,7 +120,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 近代和现代人，任意假托自由和民主为号召，实际是为了达成私欲的借口，醉心于独裁者如此，西式民主的真实内容，又何尝不如此？
 
-不经之谈 《史记·孟子荀卿列传》 其语闳大不经，必先验小物，推而大之，至于无垠。https://ctext.org/shiji/meng-zi-xun-qing-lie-zhuan/zhs
+不经之谈 《史记·孟子荀卿列传》 其语闳大不经，必先验小物，推而大之，至于无垠。[参考](https://ctext.org/shiji/meng-zi-xun-qing-lie-zhuan/zhs)
 
 ## 提到文章
 
@@ -136,35 +136,35 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 《金刚经》的“凡所有相，皆是虚妄”
 
-《楞严经卷三》如观掌中。所持叶物。一切世间。诸所有物。皆即菩提。妙明元心。心精遍圆。含裹十方。https://ctext.org/wiki.pl?if=gb&chapter=287690&remap=gb#p108
+《楞严经卷三》如观掌中。所持叶物。一切世间。诸所有物。皆即菩提。妙明元心。心精遍圆。含裹十方。[参考](https://ctext.org/wiki.pl?if=gb&chapter=287690&remap=gb#p108)
 
 生从哪里来，死向何处去
 
 见素抱朴，少私寡欲
 
-《拜月亭》又叫《幽闺记》：宁为太平犬，莫作乱离人 https://ctext.org/wiki.pl?if=gb&chapter=295658&remap=gb
+《拜月亭》又叫《幽闺记》：宁为太平犬，莫作乱离人 [参考](https://ctext.org/wiki.pl?if=gb&chapter=295658&remap=gb)
 
-《史记 列传 苏秦列传》 太史公曰：苏秦兄弟三人，皆游说诸侯以显名，其术长于权变。而苏秦被反闲以死，天下共笑之，讳学其术。然世言苏秦多异，异时事有类之者皆附之苏秦。夫苏秦起闾阎，连六国从亲，此其智有过人者。吾故列其行事，次其时序，毋令独蒙恶声焉。 https://ctext.org/shiji/su-qin-lie-zhuan/zhs
+《史记 列传 苏秦列传》 太史公曰：苏秦兄弟三人，皆游说诸侯以显名，其术长于权变。而苏秦被反闲以死，天下共笑之，讳学其术。然世言苏秦多异，异时事有类之者皆附之苏秦。夫苏秦起闾阎，连六国从亲，此其智有过人者。吾故列其行事，次其时序，毋令独蒙恶声焉。 [参考](https://ctext.org/shiji/su-qin-lie-zhuan/zhs)
 
-《史记 列传 张仪列传》 太史公曰：三晋多权变之士，夫言从衡强秦者大抵皆三晋之人也。夫张仪之行事甚于苏秦，然世恶苏秦者，以其先死，而仪振暴其短以扶其说，成其衡道。要之，此两人真倾危之士哉！ https://ctext.org/shiji/zhang-yi-lie-zhuan/zhs
+《史记 列传 张仪列传》 太史公曰：三晋多权变之士，夫言从衡强秦者大抵皆三晋之人也。夫张仪之行事甚于苏秦，然世恶苏秦者，以其先死，而仪振暴其短以扶其说，成其衡道。要之，此两人真倾危之士哉！ [参考](https://ctext.org/shiji/zhang-yi-lie-zhuan/zhs)
 
-《孟子 滕文公下》“世衰道微，邪说暴行有作，臣弑其君者有之，子弑其父者有之。孔子惧，作《春秋》。《春秋》，天子之事也。是故孔子曰：‘知我者其惟春秋乎！罪我者其惟春秋乎！’ https://ctext.org/mengzi/teng-wen-gong-ii/zhs
+《孟子 滕文公下》“世衰道微，邪说暴行有作，臣弑其君者有之，子弑其父者有之。孔子惧，作《春秋》。《春秋》，天子之事也。是故孔子曰：‘知我者其惟春秋乎！罪我者其惟春秋乎！’ [参考](https://ctext.org/mengzi/teng-wen-gong-ii/zhs)
 
-《列子 黄帝》： 昼寝而梦，游于华胥氏之国，其国无师长，自然而已。其民无嗜欲，自然而已。不知乐生，不知恶死，故无夭殇；不知亲己，不知踈物，故无爱憎；不知背逆，不知向顺，故无利害；都无所爱惜，都无所畏忌。 https://ctext.org/liezi/huang-di/zhs 柏拉图的“理想国”、莫耳的“乌托邦”，佛家的“极乐世界”、基督教的“天堂”
+《列子 黄帝》： 昼寝而梦，游于华胥氏之国，其国无师长，自然而已。其民无嗜欲，自然而已。不知乐生，不知恶死，故无夭殇；不知亲己，不知踈物，故无爱憎；不知背逆，不知向顺，故无利害；都无所爱惜，都无所畏忌。 [参考](https://ctext.org/liezi/huang-di/zhs) 柏拉图的“理想国”、莫耳的“乌托邦”，佛家的“极乐世界”、基督教的“天堂”
 
 愿天常生好人，愿人常做好事。
 
 虚空粉碎，大地平沉
 
-《周易 地雷复》：https://ctext.org/book-of-changes/fu/zhs
+《周易 地雷复》：[参考](https://ctext.org/book-of-changes/fu/zhs)
 
-《周易 火水未济》：https://ctext.org/book-of-changes/wei-ji/zhs
+《周易 火水未济》：[参考](https://ctext.org/book-of-changes/wei-ji/zhs)
 
-《庄子 内篇 逍遥游》今子有五石之瓠，何不虑以为大樽而浮乎江湖，而忧其瓠落无所容？则夫子犹有蓬之心也夫！https://ctext.org/zhuangzi/enjoyment-in-untroubled-ease/zhs
+《庄子 内篇 逍遥游》今子有五石之瓠，何不虑以为大樽而浮乎江湖，而忧其瓠落无所容？则夫子犹有蓬之心也夫！[参考](https://ctext.org/zhuangzi/enjoyment-in-untroubled-ease/zhs)
 
-《庄子 内篇 养生主》庖丁解牛典故。 吾生也有涯，而知也无涯。以有涯随无涯，殆已；已而为知者，殆而已矣。为善无近名，为恶无近刑。缘督以为经，可以保身，可以全生，可以养亲，可以尽年。https://ctext.org/zhuangzi/nourishing-the-lord-of-life/zhs
+《庄子 内篇 养生主》庖丁解牛典故。 吾生也有涯，而知也无涯。以有涯随无涯，殆已；已而为知者，殆而已矣。为善无近名，为恶无近刑。缘督以为经，可以保身，可以全生，可以养亲，可以尽年。[参考](https://ctext.org/zhuangzi/nourishing-the-lord-of-life/zhs)
 
-《尚书 虞书 大禹谟》惟德动天，无远弗届。满招损，谦受益，时乃天道。https://ctext.org/shang-shu/counsels-of-the-great-yu/zhs
+《尚书 虞书 大禹谟》惟德动天，无远弗届。满招损，谦受益，时乃天道。[参考](https://ctext.org/shang-shu/counsels-of-the-great-yu/zhs)
 
 凡事都从忙里错，谁人知向静中修
 
@@ -172,7 +172,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 宇宙在手，万化由心。
 
-《礼记 儒行》https://ctext.org/liji/ru-xing/zhs
+《礼记 儒行》[参考](https://ctext.org/liji/ru-xing/zhs)
 
 《礼记 中庸》：“生乎今之世，反古之道。如此者，灾及其身者也。” 《礼记·中庸》：“凡事豫则立，不豫则废”
 
@@ -180,33 +180,33 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 子思说：“百心不可以得一人，一心可以得百人。”“君子以心导耳目，小人以耳目导心。”
 
-《列子 说符》：文子曰：周谚有言：察见渊鱼者不祥，智料隐匿者有殃。https://ctext.org/liezi/shuo-fu/zh
+《列子 说符》：文子曰：周谚有言：察见渊鱼者不祥，智料隐匿者有殃。[参考](https://ctext.org/liezi/shuo-fu/zh)
 
 风月无古今，情怀自浅深
 
-《庄子 杂篇 让王篇》1 两臂重于天下也。身亦重于两臂。 2 能尊生者，虽贵富不以养伤身，虽贫贱不以利累形。今世之人，居高官尊爵者，皆重失之，见利轻亡其身，岂不惑哉！  https://ctext.org/zhuangzi/kings-who-have-wished-to-resign/zhs
+《庄子 杂篇 让王篇》1 两臂重于天下也。身亦重于两臂。 2 能尊生者，虽贵富不以养伤身，虽贫贱不以利累形。今世之人，居高官尊爵者，皆重失之，见利轻亡其身，岂不惑哉！  [参考](https://ctext.org/zhuangzi/kings-who-have-wished-to-resign/zhs)
 
 诸葛亮 论交：势利之交，难以经远。士之相知，温不增华，寒不改叶，能四时而不衰，历夷险而益固。
 
-《史记·列传·廉颇蔺相如列传》廉颇之免长平归也，失势之时，故客尽去。https://ctext.org/shiji/lian-po-lin-xiang-ru-lie-zhuan/zhs
+《史记·列传·廉颇蔺相如列传》廉颇之免长平归也，失势之时，故客尽去。[参考](https://ctext.org/shiji/lian-po-lin-xiang-ru-lie-zhuan/zhs)
 
 谭峭 《化书》搏空为块，见块而不见空，土在天地开辟后也。粉块为空，见空而不见块，土在天地混沌时也。神矣哉！
 
-《昔时贤文》“有酒有肉皆兄弟，患难何曾见一人？”“贫居闹市无人问，富在深山有远亲。” https://ctext.org/wiki.pl?if=gb&chapter=223724
+《昔时贤文》“有酒有肉皆兄弟，患难何曾见一人？”“贫居闹市无人问，富在深山有远亲。” [参考](https://ctext.org/wiki.pl?if=gb&chapter=223724)
 
-傅子曰：智慧多，则引血气如灯火之脂膏，炷大而明，明则膏消。炷小而暗，暗则膏息。息则能长久也。https://ctext.org/text.pl?node=567863&if=gb&remap=gb
+傅子曰：智慧多，则引血气如灯火之脂膏，炷大而明，明则膏消。炷小而暗，暗则膏息。息则能长久也。[参考](https://ctext.org/text.pl?node=567863&if=gb&remap=gb)
 
-《慎子·逸文》不聪不明，不能为王；不瞽不聋，不能为公。https://ctext.org/shenzi/yi-wen/zh
+《慎子·逸文》不聪不明，不能为王；不瞽不聋，不能为公。[参考](https://ctext.org/shenzi/yi-wen/zh)
 
-《尹文子·佚文》专用聪明，则功不成；专用晦昧，则事必悖。一明一晦，众之所载。https://ctext.org/yin-wen-zi/zhs
+《尹文子·佚文》专用聪明，则功不成；专用晦昧，则事必悖。一明一晦，众之所载。[参考](https://ctext.org/yin-wen-zi/zhs)
 
-《孟子·尽心下篇》可欲之谓善，有诸己之谓信，充实之谓美，充实而有光辉之谓大，大而化之之谓圣，圣而不可知之谓神。https://ctext.org/mengzi/jin-xin-ii/zh
+《孟子·尽心下篇》可欲之谓善，有诸己之谓信，充实之谓美，充实而有光辉之谓大，大而化之之谓圣，圣而不可知之谓神。[参考](https://ctext.org/mengzi/jin-xin-ii/zh)
 
-《孟子·公孙丑上篇》 我知言，我善养吾浩然之气。 https://ctext.org/mengzi/gong-sun-chou-i/zh
+《孟子·公孙丑上篇》 我知言，我善养吾浩然之气。 [参考](https://ctext.org/mengzi/gong-sun-chou-i/zh)
 
-《管子·中匡》古之隳国家，殒社稷者，非故且为之也。必少有乐焉，不知其陷于恶也。 https://ctext.org/guanzi/zhong-kuang/zh
+《管子·中匡》古之隳国家，殒社稷者，非故且为之也。必少有乐焉，不知其陷于恶也。 [参考](https://ctext.org/guanzi/zhong-kuang/zh)
 
-《管子·小匡》https://ctext.org/guanzi/xiao-kuang/zh
+《管子·小匡》[参考](https://ctext.org/guanzi/xiao-kuang/zh)
 
 水唯能下方成海，山不矜高自及天。
 
@@ -216,7 +216,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 避世唯恐不早，入山唯恐不深
 
-无诤三昧：《金刚经》：“世尊！佛说我得无诤三昧，人中最为第一，是第一离欲阿罗汉。” https://ctext.org/wiki.pl?if=gb&chapter=666514
+无诤三昧：《金刚经》：“世尊！佛说我得无诤三昧，人中最为第一，是第一离欲阿罗汉。” [参考](https://ctext.org/wiki.pl?if=gb&chapter=666514)
 
 持盈保泰
 
@@ -226,10 +226,10 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 《论语•子路》：“为君难，为臣不易“ 
 
-《史记·越王句践世家》范蠡三聚三散 https://ctext.org/shiji/yue-wang-ju-jian-shi-jia/zh 千金之子不死于市
+《史记·越王句践世家》范蠡三聚三散 [参考](https://ctext.org/shiji/yue-wang-ju-jian-shi-jia/zh) 千金之子不死于市
 
 《东周列国志·第八十回夫差违谏释越句践竭力事吴》伐吴七术：臣所以破吴者有七术：一曰捐货币，以悦其君臣；二曰贵籴粟槀，以虚其积聚；三曰遗美女，
-以惑其心志；四曰遗之巧工良材，使作宫室，以罄其财；五曰遗之谀臣，以乱其谋；六曰强其谏臣使自杀，以弱其辅；七曰积财练兵，以承其弊。https://ctext.org/wiki.pl?if=gb&chapter=624234#p18 
+以惑其心志；四曰遗之巧工良材，使作宫室，以罄其财；五曰遗之谀臣，以乱其谋；六曰强其谏臣使自杀，以弱其辅；七曰积财练兵，以承其弊。[参考](https://ctext.org/wiki.pl?if=gb&chapter=624234#p18 )
 
 《阴符经》“天之至私，用之至公。”
 
@@ -237,9 +237,9 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 范仲淹《岳阳楼记》 “先天下之忧而忧，后天下之乐而乐”
 
-《周易·系辞上》寂然不动，感而遂通：易无思也，无为也，寂然不动，感而遂通天下之故。https://ctext.org/book-of-changes/xi-ci-shang/zhs
+《周易·系辞上》寂然不动，感而遂通：易无思也，无为也，寂然不动，感而遂通天下之故。[参考](https://ctext.org/book-of-changes/xi-ci-shang/zhs)
 
-虚灵不昧 朱熹《四书章句集注·大学章句》https://ctext.org/si-shu-zhang-ju-ji-zhu/da-xue-zhang-ju/zhs
+虚灵不昧 朱熹《四书章句集注·大学章句》[参考](https://ctext.org/si-shu-zhang-ju-ji-zhu/da-xue-zhang-ju/zhs)
 
 誉满天下，谤亦随之
 
@@ -257,13 +257,13 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 《礼记》《礼运》《大同篇》：大道之行也，天下为公....。大同和小康之伦。
 
-《礼记》《礼运》礼运: 饮食男女，人之大欲存焉；死亡贫苦，人之大恶存焉。https://ctext.org/liji/li-yun/zh
+《礼记》《礼运》礼运: 饮食男女，人之大欲存焉；死亡贫苦，人之大恶存焉。[参考](https://ctext.org/liji/li-yun/zh)
 
 《礼记》《礼运》礼运: 喜怒哀惧爱恶欲
 
-《孟子·告子上》：食色，性也。仁，内也，非外也。义，外也，非内也。https://ctext.org/mengzi/gaozi-i/zh
+《孟子·告子上》：食色，性也。仁，内也，非外也。义，外也，非内也。[参考](https://ctext.org/mengzi/gaozi-i/zh)
 
-《孟子·尽心上》：君子所性，仁义礼智根于心。其生色也，睟然见于面，盎于背，施于四体，四体不言而喻 https://ctext.org/mengzi/jin-xin-i/zh
+《孟子·尽心上》：君子所性，仁义礼智根于心。其生色也，睟然见于面，盎于背，施于四体，四体不言而喻 [参考](https://ctext.org/mengzi/jin-xin-i/zh)
 
 《论语·先进第十一》“发乎情，止乎礼”
 
@@ -273,23 +273,23 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 魏晋陶渊明的《五柳先生传》：葛天氏之民，无怀氏之民
 
-《儒家·素书·求人之志章》：绝嗜禁欲，所以除累。https://ctext.org/su-shu/3/zh
+《儒家·素书·求人之志章》：绝嗜禁欲，所以除累。[参考](https://ctext.org/su-shu/3/zh)
 
 一句合头语，千古系驴橛。
 
-《韩非子》《南面》：相爱者则比周而相誉，相憎者则比党而相非，诽誉交争，则主威惑矣。家有常业，虽饥不饿；国有常法，虽危不亡。若舍法从私意，则臣不饰其智能，则法禁不立矣。 https://ctext.org/hanfeizi/nan-mian/zhs
+《韩非子》《南面》：相爱者则比周而相誉，相憎者则比党而相非，诽誉交争，则主威惑矣。家有常业，虽饥不饿；国有常法，虽危不亡。若舍法从私意，则臣不饰其智能，则法禁不立矣。 [参考](https://ctext.org/hanfeizi/nan-mian/zhs)
 
-《鬻子》： https://ctext.org/text.pl?node=566541&if=en&remap=gb
+《鬻子》： [参考](https://ctext.org/text.pl?node=566541&if=en&remap=gb)
 
-《淮南子·齐俗》鸟穷则触，兽穷则𧣈，人穷则诈。 https://ctext.org/huainanzi/qi-su-xun/zh
+《淮南子·齐俗》鸟穷则触，兽穷则𧣈，人穷则诈。 [参考](https://ctext.org/huainanzi/qi-su-xun/zh)
 
-《荀子·哀公》鸟穷则啄，兽穷则触，人穷则诈。峻刑严法，不可以禁奸。https://ctext.org/xunzi/ai-gong/zh
+《荀子·哀公》鸟穷则啄，兽穷则触，人穷则诈。峻刑严法，不可以禁奸。[参考](https://ctext.org/xunzi/ai-gong/zh)
 
 人穷志短，马瘦毛长
 
 《抱朴子·内篇·袪惑》：白石似玉，奸佞似贤。
 
-清初名臣孙嘉涂“三习一弊”：https://zh.wikisource.org/zh-hans/%E4%B8%89%E7%BF%92%E4%B8%80%E5%BC%8A%E7%96%8F
+清初名臣孙嘉涂“三习一弊”：[参考](https://zh.wikisource.org/zh-hans/%E4%B8%89%E7%BF%92%E4%B8%80%E5%BC%8A%E7%96%8F)
 
 《阴符经》：“天地，万物之盗。万物，人之盗。人，万物之盗。”
 
@@ -297,13 +297,13 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 唐代马总《意林·太公六韬六卷》：取天下者若逐野鹿，而天下共分其肉
 
-《六韬》：https://ctext.org/liu-tao/zhs
+《六韬》：[参考](https://ctext.org/liu-tao/zhs)
 
-《六韬·武韬·发启》：取天下者，若逐野兽，而天下皆有分肉之心。 https://ctext.org/liu-tao/fa-qi/zhs
+《六韬·武韬·发启》：取天下者，若逐野兽，而天下皆有分肉之心。 [参考](https://ctext.org/liu-tao/fa-qi/zhs)
 
-《汉书·纪·文帝纪》：https://ctext.org/han-shu/wen-di-ji/zh
+《汉书·纪·文帝纪》：[参考](https://ctext.org/han-shu/wen-di-ji/zh)
 
-《墨子·鲁问篇》：https://ctext.org/mozi/lus-question/zhs
+《墨子·鲁问篇》：[参考](https://ctext.org/mozi/lus-question/zhs)
 
 《韩非子·外储篇》
 
@@ -311,39 +311,39 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 三十三天天重天，白云里面出神仙。神仙本是凡人做，只怕凡人心不坚。
 
-《周易·系辞传下》：变动不居，周流六虚 https://ctext.org/book-of-changes/xi-ci-xia/zhs
+《周易·系辞传下》：变动不居，周流六虚 [参考](https://ctext.org/book-of-changes/xi-ci-xia/zhs)
 
 《王阳明·传习录·钱德洪录》：先天而弗违，后天而奉天时。
 
-《周易·文言·乾》：先天而天弗违，后天而奉天时 https://ctext.org/book-of-changes/wen-yan/zhs
+《周易·文言·乾》：先天而天弗违，后天而奉天时 [参考](https://ctext.org/book-of-changes/wen-yan/zhs)
 
-魏伯阳《周易参同契-明两知窍章第七》：“被褐怀玉，外示狂夫” https://ctext.org/wiki.pl?if=gb&chapter=209399&remap=gb
+魏伯阳《周易参同契-明两知窍章第七》：“被褐怀玉，外示狂夫” [参考](https://ctext.org/wiki.pl?if=gb&chapter=209399&remap=gb)
 
-《庄子·内篇·齐物论》：“枢始得其环中，以应无穷“。https://ctext.org/zhuangzi/adjustment-of-controversies/zhs
+《庄子·内篇·齐物论》：“枢始得其环中，以应无穷“。[参考](https://ctext.org/zhuangzi/adjustment-of-controversies/zhs)
 
-《庄子·内篇·齐物论》：“物无非彼，物无非是。自彼则不见，自知则知之。故曰：彼出于是，是亦因彼。彼是，方生之说也。虽然，方生方死，方死方生；方可方不可，方不可方可；因是因非，因非因是。“。https://ctext.org/zhuangzi/adjustment-of-controversies/zhs
+《庄子·内篇·齐物论》：“物无非彼，物无非是。自彼则不见，自知则知之。故曰：彼出于是，是亦因彼。彼是，方生之说也。虽然，方生方死，方死方生；方可方不可，方不可方可；因是因非，因非因是。“。[参考](https://ctext.org/zhuangzi/adjustment-of-controversies/zhs)
 
 《庄子·内篇·齐物论》：南郭子綦和颜成子游讨论天籁，地籁，人籁。 “敢问天籁。”子綦曰：“夫吹万不同，而使其自已也，咸其自取，怒者其谁邪！”
 
-《庄子·外篇·天运》：仁义，先王之蘧庐也，止可以一宿而不可以久处，觏而多责。古之至人，假道于仁，托宿于义，以游逍遥之虚，食于苟简之田，立于不贷之圃。 https://ctext.org/zhuangzi/revolution-of-heaven/zhs
+《庄子·外篇·天运》：仁义，先王之蘧庐也，止可以一宿而不可以久处，觏而多责。古之至人，假道于仁，托宿于义，以游逍遥之虚，食于苟简之田，立于不贷之圃。 [参考](https://ctext.org/zhuangzi/revolution-of-heaven/zhs)
 
 《论语·述而》：用之则行，舍之则藏
 
-《资治通鉴·卷第二百二十七·唐纪四十三》郭子仪：天下以其身为安危者殆三十年，功盖天下而主不疑，位极人臣而众不嫉，穷奢极欲而人不非之。 http://www.guoxue.com/shibu/zztj/content/zztj_227.htm
+《资治通鉴·卷第二百二十七·唐纪四十三》郭子仪：天下以其身为安危者殆三十年，功盖天下而主不疑，位极人臣而众不嫉，穷奢极欲而人不非之。 [参考](http://www.guoxue.com/shibu/zztj/content/zztj_227.htm)
 
-《资治通鉴·卷第二百二三二·唐纪四十八》臣素奉道，不与人为仇。http://www.guoxue.com/shibu/zztj/content/zztj_232.htm
+《资治通鉴·卷第二百二三二·唐纪四十八》臣素奉道，不与人为仇。[参考](http://www.guoxue.com/shibu/zztj/content/zztj_232.htm)
 
-《太平广记·器量·郭子仪》：https://ctext.org/taiping-guangji/177/guoziyi/zhs
+《太平广记·器量·郭子仪》：[参考](https://ctext.org/taiping-guangji/177/guoziyi/zhs)
 
-《新唐书·列传第六十四·房张李》：公起布衣，以直道至宰相，而喜软美者乎？https://ctext.org/wiki.pl?if=gb&chapter=474925&remap=gb#p15
+《新唐书·列传第六十四·房张李》：公起布衣，以直道至宰相，而喜软美者乎？[参考](https://ctext.org/wiki.pl?if=gb&chapter=474925&remap=gb#p15)
 
 《新唐书·列传第六十四·房张李（李泌）》：初，帝在东宫，李林甫数构谮，势危甚，及即位，怨之，欲掘冢焚骨。泌以天子而念宿嫌，
 示天下不广，使胁从之徒得释言于贼。帝不悦，曰：「往事卿忘之乎？」对曰：「臣念不在此。上皇有天下五十年，一旦失意，南方气候恶，且春秋高，
 闻陛下录故怨，将内惭不怿，万有一感疾，是陛下以天下之广不能安亲也。」帝感悟，抱泌颈以泣曰：「朕不及此。」
 
-《左传·昭公十八年》：子产曰，天道远，人道迩，非所及也，何以知之 https://ctext.org/chun-qiu-zuo-zhuan/zhao-gong-shi-ba-nian/zhs
+《左传·昭公十八年》：子产曰，天道远，人道迩，非所及也，何以知之 [参考](https://ctext.org/chun-qiu-zuo-zhuan/zhao-gong-shi-ba-nian/zhs)
 
-《淮南子·本经训》： 鼓橐吹捶，以销钢铁 https://ctext.org/huainanzi/ben-jing-xun/zhs
+《淮南子·本经训》： 鼓橐吹捶，以销钢铁 [参考](https://ctext.org/huainanzi/ben-jing-xun/zhs)
 
 开口神气散，意动火工寒
 
@@ -353,7 +353,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 《论语泰伯篇》：　曾子曰：“可以托六尺之孤，可以寄百里之命，临大节而不可夺也。君子人与？君子人也。” 
 
-《庄子 杂篇 寓言》：寓言十九，重言十七，卮言日出，和以天倪。寓言十九，藉外论之。 https://ctext.org/zhuangzi/metaphorical-language/zhs
+《庄子 杂篇 寓言》：寓言十九，重言十七，卮言日出，和以天倪。寓言十九，藉外论之。 [参考](https://ctext.org/zhuangzi/metaphorical-language/zhs)
 
 即空即有，即有即空
 
@@ -361,41 +361,41 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 ## 提到书籍
 
-《中观论》https://www.quanxue.cn/ct_fojia/zhonglunindex.html
+《中观论》[参考](https://www.quanxue.cn/ct_fojia/zhonglunindex.html)
 
-屈原楚辞《离骚》https://ctext.org/chu-ci/li-sao-jing/zhs
+屈原楚辞《离骚》[参考](https://ctext.org/chu-ci/li-sao-jing/zhs)
 
 《伊索寓言》古希腊
 
-《浮生六记》https://ctext.org/wiki.pl?if=gb&res=213774&remap=gb
+《浮生六记》[参考](https://ctext.org/wiki.pl?if=gb&res=213774&remap=gb)
 
 诸葛亮 四论 《论交》《论光武》《论诸子》《论让夺》
 
-陶弘景：《真诰》https://ctext.org/wiki.pl?if=gb&res=80529
+陶弘景：《真诰》[参考](https://ctext.org/wiki.pl?if=gb&res=80529)
 
-清代袁枚 《随园诗话》https://ctext.org/wiki.pl?if=gb&res=289058&remap=gb
+清代袁枚 《随园诗话》[参考](https://ctext.org/wiki.pl?if=gb&res=289058&remap=gb)
 
-《黄庭内景经》https://ctext.org/wiki.pl?if=en&chapter=373807&remap=gb
+《黄庭内景经》[参考](https://ctext.org/wiki.pl?if=en&chapter=373807&remap=gb)
 
-《黄帝内经》https://ctext.org/huangdi-neijing/zhs
+《黄帝内经》[参考](https://ctext.org/huangdi-neijing/zhs)
 
-纪晓岚：《阅微草堂笔记》https://ctext.org/wiki.pl?if=gb&res=595662&remap=gb
+纪晓岚：《阅微草堂笔记》[参考](https://ctext.org/wiki.pl?if=gb&res=595662&remap=gb)
 
-曾国藩：《冰鉴》https://ctext.org/wiki.pl?if=gb&chapter=63992&remap=gb
+曾国藩：《冰鉴》[参考](https://ctext.org/wiki.pl?if=gb&chapter=63992&remap=gb)
 
-《神仙传》https://ctext.org/shen-xian-zhuan/zhs
+《神仙传》[参考](https://ctext.org/shen-xian-zhuan/zhs)
 
-《高士传》https://ctext.org/gaoshizhuan/zhs 老子，庄子，颜回
+《高士传》[参考](https://ctext.org/gaoshizhuan/zhs) 老子，庄子，颜回
 
-唐末五代谭峭《化书》https://ctext.org/wiki.pl?if=gb&res=587051&remap=gb
+唐末五代谭峭《化书》[参考](https://ctext.org/wiki.pl?if=gb&res=587051&remap=gb)
 
-冯梦龙《古今谭概》https://ctext.org/wiki.pl?if=gb&res=87567&remap=gb
+冯梦龙《古今谭概》[参考](https://ctext.org/wiki.pl?if=gb&res=87567&remap=gb)
 
-清末刘鹗《老残游记》https://ctext.org/wiki.pl?if=gb&res=944074&remap=gb
+清末刘鹗《老残游记》[参考](https://ctext.org/wiki.pl?if=gb&res=944074&remap=gb)
 
-康熙字典：https://ctext.org/kangxi-zidian/zhs
+康熙字典：[参考](https://ctext.org/kangxi-zidian/zhs)
 
-赵蕤《长短经》：https://ctext.org/wiki.pl?if=gb&res=875838&remap=gb
+赵蕤《长短经》：[参考](https://ctext.org/wiki.pl?if=gb&res=875838&remap=gb)
 
 吕纯阳《百字铭》：养气忘言守，降心为不为。动静知宗祖，无事更寻谁。真常须应物，应物要不迷。不迷性自住，性住气自回。气回丹白结，壶中配坎离。
 阴阳生反复，普化一声雷。白云朝顶上，甘露酒须弥。自饮长生酒，逍遥谁得知。坐听无弦曲，明通造化机。都来二十句，端的上天梯。
@@ -423,7 +423,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 一着羊裘不蔽身，虚名传诵到如今。当时若着蓑衣去，烟水茫茫何处寻。
 
-《陆游 杂感》 志士栖山恨不深，人知已自负初心。不须更说严光辈，直自巢由错到今。 https://baike.baidu.com/item/%E6%9D%82%E6%84%9F/19148992
+《陆游 杂感》 志士栖山恨不深，人知已自负初心。不须更说严光辈，直自巢由错到今。 [参考](https://baike.baidu.com/item/%E6%9D%82%E6%84%9F/19148992)
 
 辛弃疾:“须知忘世真容易,欲世相忘却大难。
 
@@ -479,7 +479,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 临济义玄禅师 沿流不止问如何，真照无边说似他。离相离名人不禀，吹毛用了急须磨。
 
-信心铭 僧璨大师〔隋代〕https://so.gushiwen.cn/shiwenv_f43de37e97de.aspx
+信心铭 僧璨大师〔隋代〕[参考](https://so.gushiwen.cn/shiwenv_f43de37e97de.aspx)
 
 白居易《长恨歌》
 
@@ -523,9 +523,9 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 一代威名迈光弼，千秋知己属青莲
 
-汪小蕴女史咏史： 勋参郭令才原大，迹似留侯术更淳 https://ctext.org/wiki.pl?if=gb&chapter=1112343&remap=gb
+汪小蕴女史咏史： 勋参郭令才原大，迹似留侯术更淳 [参考](https://ctext.org/wiki.pl?if=gb&chapter=1112343&remap=gb)
 
-贾凫西《木皮散客鼓儿词》https://ctext.org/wiki.pl?if=gb&chapter=219213&remap=gb
+贾凫西《木皮散客鼓儿词》[参考](https://ctext.org/wiki.pl?if=gb&chapter=219213&remap=gb)
 
 
 ## 提到人物
@@ -540,9 +540,9 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 屠羊说
 
-南宋名儒张南轩 《宋史·道学三》 陛下当求晓事之臣，不当求办事之臣。若但求办事之臣，则他日败陛下事者，未必非此人也。 https://ctext.org/wiki.pl?if=gb&chapter=814201&remap=gb
+南宋名儒张南轩 《宋史·道学三》 陛下当求晓事之臣，不当求办事之臣。若但求办事之臣，则他日败陛下事者，未必非此人也。 [参考](https://ctext.org/wiki.pl?if=gb&chapter=814201&remap=gb)
 
-济公传：https://ctext.org/wiki.pl?if=gb&res=940180&remap=gb
+济公传：[参考](https://ctext.org/wiki.pl?if=gb&res=940180&remap=gb)
 
 
 ## 提到历史
