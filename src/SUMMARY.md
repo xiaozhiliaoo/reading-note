@@ -442,6 +442,7 @@
     - [易经系传别讲](guoxue/person/nanhuaijing/yjxlbj.md)
     - [易经杂说](guoxue/person/nanhuaijing/yjzs.md)
     - [老子他说](guoxue/person/nanhuaijing/lzts.md)
+    - [论语别裁](guoxue/person/nanhuaijing/lybc.md)
   - [参考资料](guoxue/reference.md)
 
 - [阅读](social-book/intro.md)
