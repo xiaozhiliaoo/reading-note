@@ -72,7 +72,15 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 牡牝：雌雄
 
-四子真经：《庚桑子-洞灵真经》《庄子-南华真经》《列子-冲虚真经》《文子-通玄真经》
+四子真经：
+
+《庚桑子-洞灵真经》[参考](https://ctext.org/wiki.pl?if=gb&chapter=631044&remap=gb)
+
+《庄子-南华真经》[参考](https://ctext.org/zhuangzi/zhs)
+
+《列子-冲虚真经》[参考](https://ctext.org/liezi/zhs)
+
+《文子-通玄真经》[参考](https://ctext.org/wenzi/zhs)
 
 老子、倪子（计然子）、孙子
 
@@ -94,13 +102,13 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 汉书：艺文志
 
-庄子的《天下篇》和《让王篇》《应帝王篇》
+庄子的《天下篇》[参考](https://ctext.org/zhuangzi/tian-xia/zhs) 和《让王篇》[参考](https://ctext.org/zhuangzi/kings-who-have-wished-to-resign/zhs)《应帝王篇》[参考](https://ctext.org/zhuangzi/normal-course-for-rulers-and-kings/zhs)
 
 老子说的是天地间因果循环往复的大原则。
 
-冰鉴：禽无声，兽无音
+冰鉴：禽无声，兽无音 [参考](https://ctext.org/wiki.pl?if=gb&chapter=63992&remap=gb)
 
-墨子：尚贤，尚同。贤：才、德、学
+墨子：尚贤，尚同。贤：才、德、学。 [参考](https://ctext.org/mozi/book-2/zhs)
 
 《春秋》责备贤者
 
@@ -124,13 +132,15 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 ## 提到文章
 
-汉文帝赐南越王赵佗书，南越王赵佗上汉文帝书
+汉文帝赐南越王赵佗书 [参考](https://so.gushiwen.cn/shiwenv_ec44ebcbda42.aspx)
+
+南越王赵佗上汉文帝书 [史记 列传 南越列传](https://ctext.org/shiji/nan-yue-lie-zhuan/zhs)
 
 《史记·高祖本纪》高祖曰：列侯诸将无敢隐朕，皆言其情。吾所以有天下者何？项氏之所以失天下者何？高起、王陵对曰：
 陛下慢而侮人，项羽仁而爱人。然陛下使人攻城略地，所降下者因以予之，与天下同利也。项羽妒贤嫉能，有功者害之，贤者疑之，
 战胜而不予人功，得地而不予人利，此所以失天下也。高祖曰：公知其一，未知其二。夫运筹策帷帐之中，决胜于千里之外，
 吾不如子房。镇国家，抚百姓，给馈馕，不绝粮道，吾不如萧何。连百万之军，战必胜，攻必取，吾不如韩信。此三者，皆人杰也，
-吾能用之，此吾所以取天下也。项羽有一范增而不能用，此其所以为我擒也。https://ctext.org/shiji/gao-zu-ben-ji/zh
+吾能用之，此吾所以取天下也。项羽有一范增而不能用，此其所以为我擒也。[参考](https://ctext.org/shiji/gao-zu-ben-ji/zh)
 
 ## 提到名句
 
@@ -210,7 +220,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 水唯能下方成海，山不矜高自及天。
 
-董仲舒《春秋繁露 灭国上》：春秋二百四十年之中，弑君三十六，亡国五十二，细恶不绝之所致也
+董仲舒《春秋繁露 灭国上》：春秋二百四十年之中，弑君三十六，亡国五十二，细恶不绝之所致也 [参考](https://ctext.org/chun-qiu-fan-lu/mie-guo-shang/zhs)
 
 愿后身世世，勿复生帝王家
 
@@ -222,20 +232,20 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 朝乾夕惕
 
-《贞观政要 卷一·论君道》创业难，守成不易。 “今草创之难既已往矣，守成之难者“ 
+《贞观政要 卷一·论君道》创业难，守成不易。 “今草创之难既已往矣，守成之难者“  [参考](https://ctext.org/wiki.pl?if=gb&chapter=334107&remap=gb)
 
-《论语•子路》：“为君难，为臣不易“ 
+《论语•子路》：“为君难，为臣不易“ [参考](https://ctext.org/analects/zi-lu/zhs)
 
 《史记·越王句践世家》范蠡三聚三散 [参考](https://ctext.org/shiji/yue-wang-ju-jian-shi-jia/zh) 千金之子不死于市
 
 《东周列国志·第八十回夫差违谏释越句践竭力事吴》伐吴七术：臣所以破吴者有七术：一曰捐货币，以悦其君臣；二曰贵籴粟槀，以虚其积聚；三曰遗美女，
 以惑其心志；四曰遗之巧工良材，使作宫室，以罄其财；五曰遗之谀臣，以乱其谋；六曰强其谏臣使自杀，以弱其辅；七曰积财练兵，以承其弊。[参考](https://ctext.org/wiki.pl?if=gb&chapter=624234#p18 )
 
-《阴符经》“天之至私，用之至公。”
+《阴符经》“天之至私，用之至公。” [参考](https://ctext.org/yinfujing/zhs)
 
 “身先士卒”、“公而忘私”，似私而实无私，千古文章一大偷
 
-范仲淹《岳阳楼记》 “先天下之忧而忧，后天下之乐而乐”
+范仲淹《岳阳楼记》 “先天下之忧而忧，后天下之乐而乐” [参考](https://so.gushiwen.cn/shiwenv_f3d6556dbcad.aspx)
 
 《周易·系辞上》寂然不动，感而遂通：易无思也，无为也，寂然不动，感而遂通天下之故。[参考](https://ctext.org/book-of-changes/xi-ci-shang/zhs)
 
@@ -245,33 +255,33 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 为善无近名，为恶无近刑
 
-《庄子·杂篇·盗跖》：窃钩者诛，窃国者为诸侯，诸侯之门而仁义存焉。
+《庄子·杂篇·盗跖》：窃钩者诛，窃国者为诸侯，诸侯之门而仁义存焉。[参考](https://ctext.org/zhuangzi/robber-zhi/zhs)
 
-《庄子·外篇·胠箧篇》：世俗之所谓至知者，有不为大盗积者乎！
+《庄子·外篇·胠箧篇》：世俗之所谓至知者，有不为大盗积者乎！[参考](https://ctext.org/zhuangzi/cutting-open-satchels/zhs)
 
-《金刚经》：是法平等，无有高下
+《金刚经》：是法平等，无有高下 [参考](https://ctext.org/wiki.pl?if=gb&chapter=666514&remap=gb)
 
-《易经》泰卦：无平不破，无往不复
+《易经》泰卦：无平不破，无往不复 [参考](https://ctext.org/book-of-changes/tai/zhs)
 
-《礼记》《乐经》：“感于物而动，故形为声。声相应，故生变，变成方谓之音。”
+《礼记·乐记》：“感于物而动，故形为声。声相应，故生变，变成方谓之音。” [参考](https://ctext.org/liji/yue-ji/zhs)
 
-《礼记》《礼运》《大同篇》：大道之行也，天下为公....。大同和小康之伦。
+《礼记·礼运·大同篇》：大道之行也，天下为公....。大同和小康之伦。[参考](https://ctext.org/liji/li-yun/zh)
 
-《礼记》《礼运》礼运: 饮食男女，人之大欲存焉；死亡贫苦，人之大恶存焉。[参考](https://ctext.org/liji/li-yun/zh)
+《礼记·礼运》礼运: 饮食男女，人之大欲存焉；死亡贫苦，人之大恶存焉。[参考](https://ctext.org/liji/li-yun/zh)
 
-《礼记》《礼运》礼运: 喜怒哀惧爱恶欲
+《礼记·礼运》礼运: 喜怒哀惧爱恶欲 [参考](https://ctext.org/liji/li-yun/zh)
 
 《孟子·告子上》：食色，性也。仁，内也，非外也。义，外也，非内也。[参考](https://ctext.org/mengzi/gaozi-i/zh)
 
 《孟子·尽心上》：君子所性，仁义礼智根于心。其生色也，睟然见于面，盎于背，施于四体，四体不言而喻 [参考](https://ctext.org/mengzi/jin-xin-i/zh)
 
-《论语·先进第十一》“发乎情，止乎礼”
+《论语·先进第十一》“发乎情，止乎礼” [参考](https://ctext.org/analects/xian-jin/zhs)
 
 程颢：座中有妓，心中无妓
 
 朱熹 十年浮海一身轻，乍睹藜涡倍有情。世上无如人欲险，几人到此误平生
 
-魏晋陶渊明的《五柳先生传》：葛天氏之民，无怀氏之民
+魏晋陶渊明的《五柳先生传》：葛天氏之民，无怀氏之民 [参考](https://www.gushiwen.cn/gushiwen_c7474bcb66.aspx)
 
 《儒家·素书·求人之志章》：绝嗜禁欲，所以除累。[参考](https://ctext.org/su-shu/3/zh)
 
@@ -287,7 +297,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 人穷志短，马瘦毛长
 
-《抱朴子·内篇·袪惑》：白石似玉，奸佞似贤。
+《抱朴子·内篇·袪惑》：白石似玉，奸佞似贤。 [参考](https://ctext.org/baopuzi/qu-huo/zhs)
 
 清初名臣孙嘉涂“三习一弊”：[参考](https://zh.wikisource.org/zh-hans/%E4%B8%89%E7%BF%92%E4%B8%80%E5%BC%8A%E7%96%8F)
 
@@ -295,7 +305,9 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 单方一味，气死名医。
 
-唐代马总《意林·太公六韬六卷》：取天下者若逐野鹿，而天下共分其肉
+唐代马总《意林·太公六韬六卷》：取天下者若逐野鹿，而天下共分其肉。[参考](https://ctext.org/text.pl?node=566553&if=gb&remap=gb)
+
+《意林》[参考](https://ctext.org/yilin/zhs)
 
 《六韬》：[参考](https://ctext.org/liu-tao/zhs)
 
@@ -305,7 +317,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 《墨子·鲁问篇》：[参考](https://ctext.org/mozi/lus-question/zhs)
 
-《韩非子·外储篇》
+《韩非子·外储篇》：[参考](https://ctext.org/hanfeizi/wai-chu-shuo-zuo-shang/zhs)
 
 王子去求仙，丹成上九天。洞中方七日，世上已千年。
 
@@ -313,7 +325,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 《周易·系辞传下》：变动不居，周流六虚 [参考](https://ctext.org/book-of-changes/xi-ci-xia/zhs)
 
-《王阳明·传习录·钱德洪录》：先天而弗违，后天而奉天时。
+《王阳明·传习录·钱德洪录》：先天而弗违，后天而奉天时。[参考](https://ctext.org/wiki.pl?if=gb&chapter=262463&remap=gb)
 
 《周易·文言·乾》：先天而天弗违，后天而奉天时 [参考](https://ctext.org/book-of-changes/wen-yan/zhs)
 
@@ -323,11 +335,11 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 《庄子·内篇·齐物论》：“物无非彼，物无非是。自彼则不见，自知则知之。故曰：彼出于是，是亦因彼。彼是，方生之说也。虽然，方生方死，方死方生；方可方不可，方不可方可；因是因非，因非因是。“。[参考](https://ctext.org/zhuangzi/adjustment-of-controversies/zhs)
 
-《庄子·内篇·齐物论》：南郭子綦和颜成子游讨论天籁，地籁，人籁。 “敢问天籁。”子綦曰：“夫吹万不同，而使其自已也，咸其自取，怒者其谁邪！”
+《庄子·内篇·齐物论》：南郭子綦和颜成子游讨论天籁，地籁，人籁。 “敢问天籁。”子綦曰：“夫吹万不同，而使其自已也，咸其自取，怒者其谁邪！” [参考](https://ctext.org/zhuangzi/adjustment-of-controversies/zhs)
 
 《庄子·外篇·天运》：仁义，先王之蘧庐也，止可以一宿而不可以久处，觏而多责。古之至人，假道于仁，托宿于义，以游逍遥之虚，食于苟简之田，立于不贷之圃。 [参考](https://ctext.org/zhuangzi/revolution-of-heaven/zhs)
 
-《论语·述而》：用之则行，舍之则藏
+《论语·述而第七》：用之则行，舍之则藏 [参考](https://ctext.org/analects/shu-er/zhs)
 
 《资治通鉴·卷第二百二十七·唐纪四十三》郭子仪：天下以其身为安危者殆三十年，功盖天下而主不疑，位极人臣而众不嫉，穷奢极欲而人不非之。 [参考](http://www.guoxue.com/shibu/zztj/content/zztj_227.htm)
 
@@ -349,9 +361,9 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 其然乎，其不然乎?
 
-《周易·系辞传》：“吉凶悔吝，生乎动者也。”
+《周易·系辞上传》：“吉凶悔吝，生乎动者也。” [参考](https://ctext.org/book-of-changes/xi-ci-shang/zhs)
 
-《论语泰伯篇》：　曾子曰：“可以托六尺之孤，可以寄百里之命，临大节而不可夺也。君子人与？君子人也。” 
+《论语泰伯篇第八》：　曾子曰：“可以托六尺之孤，可以寄百里之命，临大节而不可夺也。君子人与？君子人也。” [参考](https://ctext.org/analects/tai-bo/zhs)
 
 《庄子 杂篇 寓言》：寓言十九，重言十七，卮言日出，和以天倪。寓言十九，藉外论之。 [参考](https://ctext.org/zhuangzi/metaphorical-language/zhs)
 
@@ -369,7 +381,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 《浮生六记》[参考](https://ctext.org/wiki.pl?if=gb&res=213774&remap=gb)
 
-诸葛亮 四论 《论交》《论光武》《论诸子》《论让夺》
+诸葛亮 四论 《论交》《论光武》《论诸子》《论让夺》[参考](https://weibo.com/6854610410/KbNcZz8ih)
 
 陶弘景：《真诰》[参考](https://ctext.org/wiki.pl?if=gb&res=80529)
 
@@ -400,11 +412,15 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 吕纯阳《百字铭》：养气忘言守，降心为不为。动静知宗祖，无事更寻谁。真常须应物，应物要不迷。不迷性自住，性住气自回。气回丹白结，壶中配坎离。
 阴阳生反复，普化一声雷。白云朝顶上，甘露酒须弥。自饮长生酒，逍遥谁得知。坐听无弦曲，明通造化机。都来二十句，端的上天梯。
 
-《高士传》、《高僧传》或《神仙传》
+《高士传》[参考](https://ctext.org/gaoshizhuan/zhs)
 
-《新唐书·奸臣下》宰相卢杞 郭子仪屏人见卢杞
+《高僧传》[参考](https://ctext.org/wiki.pl?if=gb&res=172629&remap=gb)
 
-陈元靓《事林广记》是非只为多开口，烦恼皆因强出头
+《神仙传》[参考](https://ctext.org/shen-xian-zhuan/zhs)
+
+《新唐书·奸臣下》宰相卢杞 郭子仪屏人见卢杞 [参考](https://ctext.org/wiki.pl?if=gb&chapter=516965&remap=gb)
+
+陈元靓《事林广记》是非只为多开口，烦恼皆因强出头 [参考](https://ctext.org/wiki.pl?if=gb&res=169274&remap=gb)
 
 
 
@@ -481,45 +497,45 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 信心铭 僧璨大师〔隋代〕[参考](https://so.gushiwen.cn/shiwenv_f43de37e97de.aspx)
 
-白居易《长恨歌》
+白居易《长恨歌》[参考](https://so.gushiwen.cn/shiwenv_09d31b73b44d.aspx)
 
-白居易 《读老子》《感兴二首》
+白居易 《读老子》 [参考](https://so.gushiwen.cn/shiwenv_79c585f0a765.aspx) 《感兴二首》[参考](https://so.gushiwen.cn/shiwenv_4028f77da445.aspx)
 
 赵翼 《梓泽园》 美人绝色原妖物，乱世多财是祸根。畜牲易度人难度，宁度畜牲不度人
 
-曾国藩《沅甫弟四十一初度》左列钟铭右谤书，人间随处有乘除；低头一拜屠羊说，万事浮云过太虚。
+曾国藩《沅甫弟四十一初度》左列钟铭右谤书，人间随处有乘除；低头一拜屠羊说，万事浮云过太虚。 [参考](https://so.gushiwen.cn/shiwenv_3ffc0f4680f4.aspx)
 
-马致远《秋思曲》
+马致远《秋思曲》[参考](https://so.gushiwen.cn/shiwenv_9dcf133d25cc.aspx)
 
 韩琮 梁苑隋堤事已空，万条犹舞旧春风。 何须思想千年事，谁见杨花入汉宫。
 
-宋朝程颢《秋日·闲来无事不从容》　道通天地有形外，思入风云变态中。
+宋朝程颢《秋日偶成》　道通天地有形外，思入风云变态中。[参考](https://so.gushiwen.cn/shiwenv_5eb9a89513e3.aspx)
 
-唐彦谦《过长陵》：耳闻明主提三尺，眼见愚民盗一杯。于古腐儒骑瘦马，灞陵残日重回头。
+唐彦谦《长陵》：耳闻明主提三尺，眼见愚民盗一杯。于古腐儒骑瘦马，灞陵残日重回头。[参考](https://so.gushiwen.cn/shiwenv_7d92ed8d2d23.aspx)
 
-章碣的《焚书坑》：“竹帛烟销帝业虚，关河空锁祖龙居。坑灰未冷山东乱，刘项原来不读书。”
+章碣的《焚书坑》：“竹帛烟销帝业虚，关河空锁祖龙居。坑灰未冷山东乱，刘项原来不读书。”[参考](https://so.gushiwen.cn/shiwenv_583ba27f2896.aspx)
 
-章碣的《毗陵登高》：“尘土十分归举子，乾坤大半属偷儿。长扬羽猎须留本，开济重为阙下期。”
+章碣的《癸卯岁毗陵登高会中贻同志》：“尘土十分归举子，乾坤大半属偷儿。长扬羽猎须留本，开济重为阙下期。” [参考](https://so.gushiwen.cn/shiwenv_a699ae3e6cd8.aspx)
 
 石达开“起自匹夫方见异，遇非天子不为虚”
 
-唐诗人罗隐《泪》：逼脸横颐咽复匀，也曾谗毁也伤神。自从鲁国潸然后，不是奸人即妇人。
+唐诗人罗隐《泪》：逼脸横颐咽复匀，也曾谗毁也伤神。自从鲁国潸然后，不是奸人即妇人。[参考](https://so.gushiwen.cn/shiwenv_2ad59b16ebbe.aspx)
 
-严遂成的《三垂冈》：风云帐下奇儿在，鼓角灯前老泪多。
+严遂成的《三垂冈》：风云帐下奇儿在，鼓角灯前老泪多。[参考](https://so.gushiwen.cn/shiwenv_af20a1ad8347.aspx)
 
 中原莫造生强盗，强盗生时不可除。一盗既除群盗起，功臣多是盗根株。
 
-易实甫（易顺鼎）的“江山只合生名士，莫遣英雄作帝王”
+易实甫（易顺鼎）的“江山只合生名士，莫遣英雄作帝王” [参考](https://so.gushiwen.cn/authorv_832efa30c218.aspx)
 
-辛弃疾《卜算子饮酒成病》：一个去学仙，一个去学佛。仙饮干杯醉似泥，皮骨如金石？不饮便康强，佛寿须千百，八十余年入涅槃，且进杯中物。
+辛弃疾《卜算子饮酒成病》：一个去学仙，一个去学佛。仙饮干杯醉似泥，皮骨如金石？不饮便康强，佛寿须千百，八十余年入涅槃，且进杯中物。[参考](https://so.gushiwen.cn/shiwenv_01bd1d8a149f.aspx)
 
-辛弃疾《卜算子饮酒败德》：盗跖倘名丘，孔子如名跖，跖圣丘愚直到今，美恶无真实。简册写虚名，蝼蚁侵枯骨，千古光阴一霎时，且进杯中物。
+辛弃疾《卜算子饮酒败德》：盗跖倘名丘，孔子如名跖，跖圣丘愚直到今，美恶无真实。简册写虚名，蝼蚁侵枯骨，千古光阴一霎时，且进杯中物。[参考](https://so.gushiwen.cn/shiwenv_56d0c8a64932.aspx)
 
 吕纯阳：十年橐笔走神京，一遇钟离盖便倾。不是无心唐社稷，金丹一粒误先生
 
 妾夫真薄命，不幸做神仙
 
-唐 黄松 《己亥岁》 泽国江山入战图，生民何计乐樵苏。劝君寞话封侯事，一将功成万骨枯
+唐 黄松 《己亥岁》 泽国江山入战图，生民何计乐樵苏。劝君寞话封侯事，一将功成万骨枯。[参考](https://so.gushiwen.cn/shiwenv_8dc5a4bc54cf.aspx)
 
 一代威名迈光弼，千秋知己属青莲
 
@@ -538,7 +554,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi80.html
 
 唐代的魏徵，明代的刘伯温，清朝的范文程
 
-屠羊说
+屠羊说 [参考](https://ctext.org/zhuangzi/kings-who-have-wished-to-resign/zh)
 
 南宋名儒张南轩 《宋史·道学三》 陛下当求晓事之臣，不当求办事之臣。若但求办事之臣，则他日败陛下事者，未必非此人也。 [参考](https://ctext.org/wiki.pl?if=gb&chapter=814201&remap=gb)
 
