@@ -410,6 +410,8 @@
   - [育儿](health/children/intro.md)
 
 - [国学](guoxue/intro.md)
+  - [大纲概览](guoxue/gailan/intro.md)
+    - [泛学](guoxue/gailan/fanxue.md)
   - [经](guoxue/jing/intro.md)
     - [易经](guoxue/jing/yijing.md)
     - [论语](guoxue/jing/lunyu.md)
@@ -443,6 +445,12 @@
     - [易经杂说](guoxue/person/nanhuaijing/yjzs.md)
     - [老子他说](guoxue/person/nanhuaijing/lzts.md)
     - [论语别裁](guoxue/person/nanhuaijing/lybc.md)
+    - [孟子旁通](guoxue/person/nanhuaijing/mzpt.md)
+    - [话说中庸](guoxue/person/nanhuaijing/hszy.md)
+    - [原本大学微言](guoxue/person/nanhuaijing/ybdxwy.md)
+    - [庄子喃哗](guoxue/person/nanhuaijing/zznh.md)
+    - [列子臆说](guoxue/person/nanhuaijing/lzys.md)
+    - [金刚经说什么](guoxue/person/nanhuaijing/jgjssm.md)
   - [参考资料](guoxue/reference.md)
 
 - [阅读](social-book/intro.md)
