@@ -411,7 +411,7 @@
 
 - [国学](guoxue/intro.md)
   - [大纲概览](guoxue/gailan/intro.md)
-    - [泛学](guoxue/gailan/fanxue.md)
+    - [中华国学经典精粹](guoxue/gailan/fanxue.md)
   - [经](guoxue/jing/intro.md)
     - [易经](guoxue/jing/yijing.md)
     - [论语](guoxue/jing/lunyu.md)
