@@ -418,6 +418,8 @@
     - [病历报告](health/my-health/medical-report.md)
     - [体检报告](health/my-health/health-report.md)
   - [育儿](health/children/intro.md)
+  - [中医](health/chinese-medicine/intro.md)
+    - [曲黎敏](health/chinese-medicine/intro.md)
 
 - [国学](guoxue/intro.md)
   - [大纲概览](guoxue/gailan/intro.md)
@@ -442,6 +444,7 @@
     - [鬼谷子](guoxue/zi/guiguzi.md)
     - [金刚经](guoxue/zi/jinggangjing.md)
     - [心经](guoxue/zi/xinjing.md)
+    - [黄帝内经](guoxue/zi/huangdineijing.md)
   - [集](guoxue/ji/intro.md)
     - [唐诗三百首](guoxue/ji/tangshi.md)
     - [宋词三百首](guoxue/ji/congci.md)
@@ -461,6 +464,9 @@
     - [庄子喃哗](guoxue/person/nanhuaijing/zznh.md)
     - [列子臆说](guoxue/person/nanhuaijing/lzys.md)
     - [金刚经说什么](guoxue/person/nanhuaijing/jgjssm.md)
+    - [小言黄帝内经与生命科学](guoxue/person/nanhuaijing/hdnj.md)
+    - [瑜伽师地论](guoxue/person/nanhuaijing/yjsdl.md)
+    - [佛说入胎经今释](guoxue/person/nanhuaijing/fsrtj.md)
   - [参考资料](guoxue/reference.md)
 
 - [其它](others/intro.md)
