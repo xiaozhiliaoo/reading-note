@@ -309,6 +309,12 @@
           - [Eventually Consistent](paper/eventually-consistent.md)
           - [A Survey on the Evolution of Stream Processing Systems](paper/Stream-System-Evolution.md)
           - [Cassandra:A Decentralized Structured Storage System](paper/Cassandra.md)
+        
+  - [数学](tech-learning/math/intro.md)
+    - [概率论基础教程-原书第9版](tech-learning/math/A-First-Course-in-Probability.md)
+  
+  - [英语](tech-learning/english/intro.md)
+    - [什么是科学思维](tech-learning/english/scientific-thinking.md)
 
 - [投资](investment/intro.md)
     - [投资体系](investment/system/intro.md)
