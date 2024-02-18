@@ -417,6 +417,7 @@
   - [我的健康](health/my-health/intro.md)
     - [病历报告](health/my-health/medical-report.md)
     - [体检报告](health/my-health/health-report.md)
+  - [烹饪](health/cooking/intro.md)
   - [育儿](health/children/intro.md)
   - [中医](health/chinese-medicine/intro.md)
     - [曲黎敏](health/chinese-medicine/intro.md)

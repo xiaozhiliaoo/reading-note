@@ -4,7 +4,7 @@ https://cookbook.openai.com/
 
 GPT-3、Stable Diffusion,Whisper,ChatGPT
 
-
+处理内容：文本、语音、视频、图像
 
 分类、聚类、文本摘要、聊天机器人
 
@@ -18,7 +18,6 @@ AI 应用
 
 Midjourney,Dall-E 2
 
-
 https://aituts.com/ai-generated-coloring-books/
 
 https://poe.com/
@@ -29,7 +28,7 @@ https://chrome.google.com/webstore/detail/glarity-chatgpt-summary-t/cmnlolelipjl
 
 scispace:
 
-ChatPDF 
+ChatPDF
 
 GitHub Copilot
 
@@ -65,7 +64,7 @@ GPT-3预训练模型（Pre-trained Model）。GPT 的英文“生成式预训练
 
 Facebook 的 Fasttext,Google 的 T5，Text-to-Text Transfer Trasnformer:文本到文本的迁移 Transformer.GPT-3 的 1750 亿参数。
 
- Fasttext、T5-small 和 T5-base 这三个预训练模型
+Fasttext、T5-small 和 T5-base 这三个预训练模型
 
 情感分析分类器。好评和差评。
 
@@ -80,6 +79,8 @@ HuggingFace
 ChatCompletion,gpt-3.5-turbo,role:assistant,user,system
 
 HuggingFace+Gradio 的部署方式，特别方便我们演示给其他人看。
+
+Gradio应用。
 
 每次要把全部对话发给ChatGPT。
 
@@ -125,9 +126,11 @@ Llama Index阅读一本书，自己数据和llm联系起来
 
 ChatGPT plugins：https://openai.com/blog/chatgpt-plugins
 
-## Vector database options include:
+## Vector database 
+
 Chroma, an open-source embeddings store：https://docs.trychroma.com/
-Elasticsearch, a popular search/analytics engine and vector database：https://www.elastic.co/guide/en/elasticsearch/reference/current/knn-search.html
+Elasticsearch, a popular search/analytics engine and vector
+database：https://www.elastic.co/guide/en/elasticsearch/reference/current/knn-search.html
 Milvus, a vector database built for scalable similarity search：https://milvus.io/docs/architecture_overview.md
 Pinecone, a fully managed vector database：https://docs.pinecone.io/docs/overview
 Qdrant, a vector search engine：https://qdrant.tech/documentation/
@@ -136,7 +139,8 @@ Typesense, fast open source vector search
 Weaviate, an open-source vector search engine
 Zilliz, data infrastructure, powered by Milvus
 
-A vector database is a type of database that indexes and stores vector embeddings for fast retrieval and similarity search
+A vector database is a type of database that indexes and stores vector embeddings for fast retrieval and similarity
+search
 
 Semantic search：https://www.elastic.co/guide/en/elasticsearch/reference/current/semantic-search.html
 
@@ -155,7 +159,8 @@ llama_index 对于文章进行小结：将文章进行拆分，llama-index最简
 
 DataConnector:https://llamahub.ai/
 
-llama-index是一种使用大语言模型的设计模式，为“第二大脑”模式。通过先将外部的资料库索引，然后每次提问的时候，先从资料库里通过搜索找到有相关性的材料，然后再通过 AI 的语义理解能力让 AI 基于搜索到的结果来回答问题。
+llama-index是一种使用大语言模型的设计模式，为“第二大脑”模式。通过先将外部的资料库索引，然后每次提问的时候，先从资料库里通过搜索找到有相关性的材料，然后再通过
+AI 的语义理解能力让 AI 基于搜索到的结果来回答问题。
 
 Bing 的解法——先搜索，后提示。搜索到结果作为提示语给AI。
 
@@ -163,7 +168,8 @@ sentence-transformers 是目前效果最好的语义搜索类的模型。
 
 ChatGLM：清华大学语言模型：https://github.com/THUDM/GLM-130B
 
-单机的开源小模型：paraphrase-multilingual-mpnet-base-v2（128 token） 模型来计算 Embeddding 并进行语义搜索，然后通过 chatglm-6b-int4 的模型来进行问答的解决方案了。而且这两个模型，可以跑在一块家用级别的显卡上。
+单机的开源小模型：paraphrase-multilingual-mpnet-base-v2（128 token） 模型来计算 Embeddding 并进行语义搜索，然后通过
+chatglm-6b-int4 的模型来进行问答的解决方案了。而且这两个模型，可以跑在一块家用级别的显卡上。
 
 模型的推理能力。
 
@@ -195,7 +201,8 @@ Wolfram
 LLMChain 是一个很强大的武器，它可以把解决一个问题需要的多个步骤串联到一起。
 
 LLMChain增强了 AI 的实用性，解决了几个之前大语言模型处理得不好的问题，包括数学计算能力、实时数据能力、和现有程序结合的能力，以及搜索属于自己的资料库
-的能力。你完全可以定义自己需要的 LLMChain，通过程序来完成各种任务，然后合理地组合不同类型的 LLMChain 对象，来实现连 ChatGPT 都做不到的事情。
+的能力。你完全可以定义自己需要的 LLMChain，通过程序来完成各种任务，然后合理地组合不同类型的 LLMChain 对象，来实现连 ChatGPT
+都做不到的事情。
 
 Langchain：BufferWindowMemory，SummaryMemory，BufferSummaryMemory，EntityMemory，KnowledgeGraphMemory
 
@@ -244,7 +251,8 @@ Whisper：https://openai.com/research/whisper
 
 SSML 是 Speech Synthesis Markup Language，语音合成标记语言
 
-语音合成：百度开源的 PaddleSpeech  https://github.com/PaddlePaddle/PaddleSpeech/blob/develop/demos/text_to_speech/README_cn.md
+语音合成：百度开源的
+PaddleSpeech  https://github.com/PaddlePaddle/PaddleSpeech/blob/develop/demos/text_to_speech/README_cn.md
 
 Azure AI 服务：https://azure.microsoft.com/zh-cn/products/ai-services
 
@@ -270,13 +278,15 @@ Pipeline 是 Transformers 库里面的一个核心功能，它封装了所有托
 
 https://huggingface.co/models
 
-ChatGPT 的强大之处？上面这些自然语言处理任务，常常需要切换使用不同的专有模型。但是在 ChatGPT 里，只需要一个通用的模型，就能直接解决所有的问题。这也是很多人惊呼“通用人工智能”来了的原因。
+ChatGPT 的强大之处？上面这些自然语言处理任务，常常需要切换使用不同的专有模型。但是在 ChatGPT
+里，只需要一个通用的模型，就能直接解决所有的问题。这也是很多人惊呼“通用人工智能”来了的原因。
 
 HuggingFace：Inference API
 
 如何部署自己的大模型? HuggingFace Inference Endpoint
 
-HuggingFace 将部署一个开源模型到线上的成本基本降低到了 0。不过，目前它只支持海外的 AWS、Azure 以及 Google Cloud，并不支持阿里云或者腾讯云
+HuggingFace 将部署一个开源模型到线上的成本基本降低到了 0。不过，目前它只支持海外的 AWS、Azure 以及 Google
+Cloud，并不支持阿里云或者腾讯云
 
 So-Vits-SVC 算法实现的 AI 孙燕姿
 
@@ -304,4 +314,60 @@ BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
 
 腾讯云混元大模型：https://cloud.tencent.com/document/product/1729
 
+OpenClip：多模态的 CLIP 模型，零样本分类
 
+OpenAI开源的CLIP模型：Contrastive Language-Image Pre-Training 对比性语言-图像预训练
+
+CLIP 这样的模型出现之前，图像识别是一个准确率非常高的领域了。通过 RESNET 架构的卷积神经网络，在 ImageNet 这样的大数据集上，已经能够做到
+90% 以上的准确率了。
+但是这些模型都有一个缺陷是基于监督学习的方式来进行分类的。这意味着两点，一个是所有的分类需要预先定义好，比如 ImageNet
+就是预先定义好了 1000 个分类。
+另一个是数据必须标注，训练模型前要给训练的图片标注好属于什么类。
+
+softmax 算法
+
+Google基于CLIP开发了OWL-ViT
+
+通过关键词搜索商品图片的功能。也可以实现以图搜图。
+
+Text-To-Image：OpenAI的DALL-E 和 DALL-E 2，Google发表了 Imagen，最好的用户端产品是 Midjourney。最流行的产品则是 Stable
+Diffusion。
+
+Huggingface 的 Diffusers 库，通过 DiffusionPipeline 加载了 RunwayML 的 stable-diffusion-v1-5。
+
+Stable Diffusion 背后不是单独的一个模型，而是由多个模型：1 Text-Encoder（CLIP 模型） 2 Generation（UNet+Scheduler） 3
+Decoder（VAE模型）
+
+Stable Diffusion 实现图生图。
+
+VAE：https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler/blob/main/vae/config.json
+
+UNet：https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler/blob/main/unet/config.json
+
+Stable Diffusion：文生图、图生图、提升图片分辨率
+
+Stable Diffusion 模型的平台：https://civitai.com/
+
+ControlNet：对图片进行调整。通过图片的框架结构可以精确地控制图片的输出。这里就是通过边缘检测，控制了整个人物头像的姿势和大致轮廓。【换脸-不同名人展示的“蒙娜丽莎的微笑”】
+
+AI拍动画片也成为了可能。只需要通过Open Pose将原本真人动作里每一帧的人体姿势都提取出来，然后通过 Stable Diffusion
+为每一帧重新绘制图片，
+最后把绘制出来的图片再重新一帧帧地组合起来变成动画就好了。
+
+ControlNet 支持的8个模型：https://github.com/lllyasviel/ControlNet
+
+Canny边缘检测算法
+
+controlnet-canny：边缘检测 Open Pose：捕捉动作复刻图片 Scribble：简笔画生成图片 HED Boundary：边缘检测 Depth：深度估计 Normal
+Map：法线贴图 Semantic Segmentation：语义分割图 M-LSD：获取图片中的直线段
+
+微软开源的 Visual ChatGPT：边聊边画 https://github.com/moymix/TaskMatrix 聊天窗口完成图片的编辑和修改。原理：LangChain 的
+ReAct Agent 模式。Task Matrix 机制机制。
+
+Midjourney都是一个值得研究的AI产品。
+
+ShareGPT、FlowGPT
+
+用户在内容生成的过程中就获取到反馈，是现在很多 AI 应用一个比较常见的产品设计策略。
+
+数据飞轮：好的产品 -> 更多的用户数据 -> 更好的模型质量 -> 更好的产品就进入了一个正向循环
