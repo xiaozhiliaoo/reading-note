@@ -8,6 +8,15 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing20.html
 
 ## 提到概念
 
+### 分宫图
+
+![](../../materials/fengong.jpg)
+
+### 圆方图
+
+![](../../materials/yuanfang.jpg)
+
+
 六爻：事物发展的六个阶段
 
 不三不四：三爻四爻最重要，乱七八糟：游魂卦、归魂卦
@@ -131,6 +140,14 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing20.html
 
 执象数而弃义理，失去了古人作《易》的本旨。
 
+六十四卦方圆两图，圆图是管宇宙的时间,方国管空间代表方位方向。
+
+先天卦的方圆图，后天卦方圆图
+
+重卦：乾、履、同人、无妄、姤、讼、遁、否
+
+刚柔亦是互相变易的，不可看作是固定非如此不可，唯有知道怎样变，才算是知道了《易经》
+
 
 ## 提到书文
 
@@ -157,9 +174,6 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing20.html
 ### 六十四卦卦序歌
 
 分宫卦象次序
-
-
-
 
 分宫卦象次序歌
 
@@ -198,4 +212,4 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing20.html
 鼎由巽变渐涣旅，涣自渐来终于是。
 ```
 
-## 提到书籍
+
