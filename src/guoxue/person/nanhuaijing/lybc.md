@@ -43,7 +43,7 @@ https://www.quanxue.cn/ct_nanhuaijin/lunyu/lunyu01.html
 
 “礼”不光是礼貌、礼节，而且包括了形而上的哲学，和形而下人生上的一切运用。
 
-汉文、唐诗、宋词、元曲、明小说，清对联
+楚辞、汉文、唐诗、宋词、元曲、明小说，清对联
 
 教是教育，化是感化。教化。
 
@@ -101,3 +101,5 @@ https://www.quanxue.cn/ct_nanhuaijin/lunyu/lunyu01.html
 ## 提到历史
 
 ## 个人扩展
+
+取名：女诗经，男楚辞，文论语，武周易
