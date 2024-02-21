@@ -6,6 +6,7 @@
   - [国学宝典6000多本](http://www.gxbd.com/)
   - [国学备要280本](http://www.guoxue.com/zt/gxby/)
   - [国学备览81本](http://www.guoxue.com/zt/gxbl2019/)
+    - [书籍简介](http://www.guoxue.com/zt/gxbl/gxbl.html)
 - [中国哲学书电子化计划](https://ctext.org/zh)
 - [中华典藏网](https://www.zhonghuadiancang.com/)
 
