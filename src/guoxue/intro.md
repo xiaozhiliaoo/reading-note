@@ -1,5 +1,15 @@
 # 国学
 
+## 参考网站
+
+- [国学网](http://www.guoxue.com/)
+  - [国学宝典6000多本](http://www.gxbd.com/)
+  - [国学备要280本](http://www.guoxue.com/zt/gxby/)
+  - [国学备览81本](http://www.guoxue.com/zt/gxbl2019/)
+- [中国哲学书电子化计划](https://ctext.org/zh)
+- [中华典藏网](https://www.zhonghuadiancang.com/)
+
+
 ## 重点研究方向
 
 儒家：四书五经，荀子，十三经
@@ -17,7 +27,6 @@
 ## 通识概览
 
 中华国学经典精粹
-
 
 ## 古文通识
 
