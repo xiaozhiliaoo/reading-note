@@ -4,6 +4,10 @@
 
 手擀面，水饺，馒头，包子，葱油饼
 
+1两=50克，1斤=10两。
+
+辣椒面和辣椒粉
+
 ## 常识
 
 面、水、盐、碱
@@ -33,7 +37,7 @@
 
 擀面杖，案板长度。
 
-### 酵母 
+### 酵母
 
 [安琪酵母参考](https://dimsum.angelyeast.com/channels/4253.html)
 
@@ -98,9 +102,9 @@ https://www.youtube.com/watch?v=JLMVliKYshs
 淀粉适量
 ```
 
-#### 手感臊子面
+#### 手擀臊子面
 
-https://www.youtube.com/watch?v=N0oqXwMjhDs 
+https://www.youtube.com/watch?v=N0oqXwMjhDs
 
 ```text
 面条：
@@ -125,10 +129,7 @@ https://www.youtube.com/watch?v=N0oqXwMjhDs
 生抽，香醋，香油，葱花
 ```
 
-
-
-
-#### 小苏打和实用碱面区别 
+#### 小苏打和实用碱面区别
 
 https://www.youtube.com/watch?v=B8-4GHFjhDY
 
@@ -143,13 +144,21 @@ https://www.youtube.com/watch?v=B8-4GHFjhDY
 让它热解后转化为碱面溶液之后再来和面。
 ```
 
+#### 发面
+
+https://www.youtube.com/watch?v=r3ak-JxHdh0
+
+低温冰箱发酵：10度以下，酵母停止繁殖。酵母繁殖产生C02停止的，但是淀粉酶把淀粉转糖没停止。例如法棍。
+
+最好温度：24-26度左右
+
 #### 蒸馒头
 
 https://www.youtube.com/watch?v=uHdFea95PLU
 
 面肥（老面、老肥、老酵母、引子） https://baike.sogou.com/v591171.htm
 
-酵母隔夜发酵。
+酵母隔夜发酵。长时间低温发酵。
 
 下剂子：大面团揉成长条后再分成的均匀小块
 
@@ -159,13 +168,13 @@ https://www.youtube.com/watch?v=uHdFea95PLU
 
 蒸汽均匀散发，和蒸屉一样。
 
-#### 小苏打和泡打粉的区别 
+#### 小苏打和泡打粉的区别
 
 https://www.youtube.com/watch?v=amdln95X4hs
 
 小苏打是碱性，需要酸性物质和它发生反应产生气泡；而泡打粉和碱性和酸性物质的混合，直接可以用来发泡，不需要另外添加酸性物质。
 
-#### 铝锅 铜锅 不锈钢锅 
+#### 铝锅 铜锅 不锈钢锅
 
 https://www.youtube.com/watch?v=BaYhUKLXa4A
 
@@ -212,3 +221,23 @@ https://www.youtube.com/watch?v=9xb0z5c_v6c
 ```
 
 家里的炒锅是不粘锅和碳钢，平底锅是铸铁锅，蒸锅是不锈钢锅。
+
+#### 西安麻酱凉皮
+
+https://www.youtube.com/watch?v=Ev8jCSlZi30
+
+#### 凉皮
+
+https://www.youtube.com/watch?v=Ru8F4vesAUo
+
+#### 凉粉
+
+https://www.youtube.com/watch?v=BStgIeNQrRk
+
+#### 拍黄瓜
+
+https://www.youtube.com/watch?v=3ivuzop0ohg
+
+#### 浆水面
+
+https://www.youtube.com/watch?v=k2Gs05rNveA
