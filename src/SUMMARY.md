@@ -501,6 +501,7 @@
 - [其它](others/intro.md)
   - [k12](others/k12/intro.md)
     - [生物](others/k12/biology.md)
+    - [化学](others/k12/chemistry.md)
 
 - [阅读](social-book/intro.md)
     - [哲学](social-book/philosophy/intro.md)
