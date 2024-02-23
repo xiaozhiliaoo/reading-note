@@ -65,9 +65,17 @@
 
 #### 手擀面：https://www.youtube.com/watch?v=JLMVliKYshs
 
+```text
+中筋面粉一杯半
+水半杯
+盐1/4小勺
+碱面1小勺 （一般面条可用1/4小勺碱面或者不放）
+淀粉适量
+```
+
 #### 手感臊子面：https://www.youtube.com/watch?v=N0oqXwMjhDs 
 
-```txt
+```text
 面条：
 水：110克  1/3杯 + 2大勺
 盐：1/8小勺
