@@ -44,3 +44,5 @@
 南怀瑾书单：https://www.quanxue.cn/ct_nanhuaijin/guoxue/guoxue15.html
 
 李克强：追忆李诚先生 https://new.qq.com/rain/a/20230721A05O3400
+
+传统美学三书《浮生六记》《随园食单》《闲情偶寄》
