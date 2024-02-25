@@ -406,7 +406,7 @@
     - [投资错误](investment/mistake-i-made.md)
 
 - [健康](health/intro.md)
-  - [饮食](health/read/intro.md)
+  - [饮食](health/read/intro.md) 
     - [你是你吃出来的-第一册](health/read/you-ate-it1.md)
     - [食物营养与配餐-第二版](health/read/food-nutrition-and-catering.md)
     - [中国居民膳食指南](health/read/chinese-residents.md)
@@ -415,6 +415,7 @@
     - [这样选购食品最安全-范志红](health/read/safest-way-to-choose-food.md)
     - [疯狂的尿酸-不只是痛风](health/read/drop-acid.md)
     - [孟老师的中式面食](health/read/meng-teacher.md)
+    - [吃的选择-范志红](health/read/food-choose.md)
   - [烹饪](health/cooking/intro.md)
     - [原料](health/cooking/yuanliao.md)
       - [蔬菜](health/cooking/vegetables.md)
