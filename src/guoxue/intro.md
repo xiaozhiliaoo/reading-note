@@ -1,5 +1,9 @@
 # 国学
 
+## 学习方法
+
+先概览三遍，有感性印象，找出里面出现人物和典故，后中华书局三全版本精读，学习义理，最后通过南怀瑾/其他人解读学习。最后找经典篇章背诵。
+
 ## 参考网站
 
 - [国学网](http://www.guoxue.com/)
@@ -9,7 +13,6 @@
     - [书籍简介](http://www.guoxue.com/zt/gxbl/gxbl.html)
 - [中国哲学书电子化计划](https://ctext.org/zh)
 - [中华典藏网](https://www.zhonghuadiancang.com/)
-
 
 ## 重点研究方向
 
