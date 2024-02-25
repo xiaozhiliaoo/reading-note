@@ -452,6 +452,7 @@
   - [史](guoxue/shi/intro.md)
     - [纲鉴易知录](guoxue/shi/gjyzl.md)
     - [史记](guoxue/shi/shiji.md)
+    - [汉书](guoxue/shi/hanshu.md)
     - [资治通鉴](guoxue/shi/zztj.md)
   - [子](guoxue/zi/intro.md)
     - [老子-道德经](guoxue/zi/daodejing.md)
