@@ -488,6 +488,8 @@
     - [古文辞类纂](guoxue/ji/gwclz.md)
     - [经史百家杂钞](guoxue/ji/jsbjzc.md)
     - [古文观止](guoxue/ji/gwgz.md)
+    - [三百千千](guoxue/ji/sbqq.md)
+    - [医学三字经](guoxue/ji/yxszj.md)
   - [小说](guoxue/xiaoshuo/intro.md)
     - [三国演义](guoxue/xiaoshuo/sgyy.md)
   - [南怀瑾系列](guoxue/person/nanhuaijing/intro.md)
