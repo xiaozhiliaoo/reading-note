@@ -437,7 +437,7 @@
     - [中华国学经典精粹](guoxue/gailan/fanxue.md)
     - [中国哲学书电子化计划](guoxue/gailan/zgzxdzsjh.md)
     - [名人自述](guoxue/gailan/mrzs.md)
-    - [小孩国学之思](guoxue/gailan/xhgxzs.md)
+    - [蒙学](guoxue/gailan/mengxue.md)
   - [经](guoxue/jing/intro.md)
     - [易经](guoxue/jing/yijing.md)
     - [论语](guoxue/jing/lunyu.md)
