@@ -439,7 +439,7 @@
     - [名人自述](guoxue/gailan/mrzs.md)
     - [蒙学](guoxue/gailan/mengxue.md)
   - [经](guoxue/jing/intro.md)
-    - [易经](guoxue/jing/yijing.md)
+    - [周易](guoxue/jing/yijing.md)
     - [论语](guoxue/jing/lunyu.md)
     - [孟子](guoxue/jing/mengzi.md)
     - [大学](guoxue/jing/daxue.md)

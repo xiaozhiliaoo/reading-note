@@ -1,5 +1,9 @@
 # 易经
 
+## 原文
+
+[参考](https://ctext.org/book-of-changes/zhs)
+
 ## 笔记
 
 中正比应

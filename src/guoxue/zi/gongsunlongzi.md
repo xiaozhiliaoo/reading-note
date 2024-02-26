@@ -1,5 +1,9 @@
 # 公孙龙子
 
+## 原文
+
+[参考](https://ctext.org/gongsunlongzi/zhs)
+
 ## 原序
 
 ## 迹府第一

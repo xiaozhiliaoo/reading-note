@@ -1,5 +1,9 @@
 # 庄子
 
+## 原文
+
+[参考](https://ctext.org/zhuangzi/zhs)
+
 ## 阅读进度
 
 https://ctext.org/zhuangzi/ze-yang/zhs

@@ -1,5 +1,9 @@
 # 孟子
 
+## 原文
+
+[参考](https://ctext.org/mengzi/zhs)
+
 ## 阅读进度
 
 滕文公 上

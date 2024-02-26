@@ -1,5 +1,9 @@
 # 尸子
 
+## 原文
+
+[参考](https://ctext.org/wiki.pl?if=gb&res=760909&remap=gb)
+
 ## 阅读进度
 
 https://ctext.org/wiki.pl?if=gb&res=760909&remap=gb
