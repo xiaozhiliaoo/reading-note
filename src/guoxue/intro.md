@@ -13,6 +13,7 @@
     - [书籍简介](http://www.guoxue.com/zt/gxbl/gxbl.html)
 - [中国哲学书电子化计划](https://ctext.org/zh)
 - [中华典藏网](https://www.zhonghuadiancang.com/)
+- [劝学网](https://www.quanxue.cn/)
 
 ## 重点研究方向
 
