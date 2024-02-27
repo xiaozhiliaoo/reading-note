@@ -14,6 +14,7 @@
 - [中国哲学书电子化计划](https://ctext.org/zh)
 - [中华典藏网](https://www.zhonghuadiancang.com/)
 - [劝学网](https://www.quanxue.cn/)
+- [汉典古籍](https://gj.zdic.net/)
 
 ## 重点研究方向
 

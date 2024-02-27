@@ -433,11 +433,12 @@
     - [曲黎敏](health/chinese-medicine/intro.md)
 
 - [国学](guoxue/intro.md)
-  - [大纲概览](guoxue/gailan/intro.md)
+  - [概览](guoxue/gailan/intro.md)
     - [中华国学经典精粹](guoxue/gailan/fanxue.md)
     - [中国哲学书电子化计划](guoxue/gailan/zgzxdzsjh.md)
     - [名人自述](guoxue/gailan/mrzs.md)
     - [蒙学](guoxue/gailan/mengxue.md)
+    - [杂](guoxue/gailan/za.md)
   - [经](guoxue/jing/intro.md)
     - [周易](guoxue/jing/yijing.md)
     - [论语](guoxue/jing/lunyu.md)
@@ -577,7 +578,9 @@
     - [综合](social-book/comprehensive/intro.md)
         - [行测](social-book/comprehensive/administrative-aptitude-test.md)
         - [申论](social-book/comprehensive/essay.md)
+      
 - [参考](reference/reference.md)
+    - [简语](reference/jianyu.md)
     - [百度网盘资源](reference/baidu-pan.md)
     - [电子书合集](reference/ebook-collection.md)
     - [书单](reference/booklist.md)
