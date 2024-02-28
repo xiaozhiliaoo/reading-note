@@ -17,75 +17,75 @@
 
 ### 难字
 
-[筮](https://www.zdic.net/hans/%E7%AD%AE)
+[筮·shì](https://www.zdic.net/hans/%E7%AD%AE)
 
-[邑](https://www.zdic.net/hans/%E9%82%91)
+[邑·yì](https://www.zdic.net/hans/%E9%82%91)
 
-[懿](https://www.zdic.net/hans/%E6%87%BF)
+[懿·yì](https://www.zdic.net/hans/%E6%87%BF)
 
-[咥](https://www.zdic.net/hans/%E5%92%A5)
+[咥·dié](https://www.zdic.net/hans/%E5%92%A5)
 
-[眇](https://www.zdic.net/hans/%E7%9C%87)
+[眇·miǎo](https://www.zdic.net/hans/%E7%9C%87)
 
-[夬](https://www.zdic.net/hans/%E5%A4%AC)
+[夬·guài](https://www.zdic.net/hans/%E5%A4%AC)
 
-[陂](https://www.zdic.net/hans/%E9%99%82)
+[陂·bēi](https://www.zdic.net/hans/%E9%99%82)
 
-[祉](https://www.zdic.net/hans/%E7%A5%89)
+[祉·zhǐ](https://www.zdic.net/hans/%E7%A5%89)
 
-[裒](https://www.zdic.net/hans/%E8%A3%92)
+[裒·póu](https://www.zdic.net/hans/%E8%A3%92)
 
-[撝](https://www.zdic.net/hans/%E6%92%9D)
+[撝·huī](https://www.zdic.net/hans/%E6%92%9D)
 
-[盱](https://www.zdic.net/hans/%E7%9B%B1)
+[盱·xū](https://www.zdic.net/hans/%E7%9B%B1)
 
-[盍簪](https://www.zdic.net/hans/%E7%9B%8D%E7%B0%AA)
+[盍簪·hé zān](https://www.zdic.net/hans/%E7%9B%8D%E7%B0%AA)
 
-[盥](https://www.zdic.net/hans/%E7%9B%A5)
+[盥·guàn](https://www.zdic.net/hans/%E7%9B%A5)
 
-[顒](https://www.zdic.net/hans/%E9%A1%92)
+[顒·yóng](https://www.zdic.net/hans/%E9%A1%92)
 
-[闚](https://www.zdic.net/hans/%E9%97%9A)
+[闚·kuī](https://www.zdic.net/hans/%E9%97%9A)
 
-[噬嗑](https://www.zdic.net/hans/%E5%99%AC%E5%97%91)
+[噬嗑·shì hé](https://www.zdic.net/hans/%E5%99%AC%E5%97%91)
 
-[胏](https://www.zdic.net/hans/%E8%83%8F)
+[胏·zǐ](https://www.zdic.net/hans/%E8%83%8F)
 
-[贲](https://www.zdic.net/hans/%E8%B4%B2)
+[贲·bì](https://www.zdic.net/hans/%E8%B4%B2)
 
-[媾](https://www.zdic.net/hans/%E5%AA%BE)
+[媾·gòu](https://www.zdic.net/hans/%E5%AA%BE)
 
-[戋](https://www.zdic.net/hans/%E6%88%8B)
+[戋·jiān](https://www.zdic.net/hans/%E6%88%8B)
 
-[眚](https://www.zdic.net/hans/%E7%9C%9A)
+[眚·shěng](https://www.zdic.net/hans/%E7%9C%9A)
 
-[畲](https://www.zdic.net/hans/%E7%95%B2)
+[畲·shē](https://www.zdic.net/hans/%E7%95%B2)
 
-[輹](https://www.zdic.net/hans/%E8%BC%B9)
+[輹·fù](https://www.zdic.net/hans/%E8%BC%B9)
 
-[牿](https://www.zdic.net/hans/%E7%89%BF)
+[牿·gù](https://www.zdic.net/hans/%E7%89%BF)
 
-[豶豕](https://www.zdic.net/hans/%E8%B1%B6%E8%B1%95)
+[豶豕·fén shǐ](https://www.zdic.net/hans/%E8%B1%B6%E8%B1%95)
 
-[衢](https://www.zdic.net/hans/%E8%A1%A2)
+[衢·qú](https://www.zdic.net/hans/%E8%A1%A2)
 
-[桡](https://www.zdic.net/hans/%E6%A1%A1)
+[桡·ráo](https://www.zdic.net/hans/%E6%A1%A1)
 
-[遯](https://www.zdic.net/hans/%E9%81%AF)
+[遯·dùn](https://www.zdic.net/hans/%E9%81%AF)
 
-[稊](https://www.zdic.net/hans/%E7%A8%8A)
+[稊·tí](https://www.zdic.net/hans/%E7%A8%8A)
 
-[洊](https://www.zdic.net/hans/%E6%B4%8A)
+[洊·jiàn](https://www.zdic.net/hans/%E6%B4%8A)
 
-[窞](https://www.zdic.net/hans/%E7%AA%9E)
+[窞·dàn](https://www.zdic.net/hans/%E7%AA%9E)
 
-[纆](https://www.zdic.net/hans/%E7%BA%86)
+[纆·mò](https://www.zdic.net/hans/%E7%BA%86)
 
-[]()
+[昃·zè](https://www.zdic.net/hans/%E6%98%83)
 
-[]()
+[耋·dié](https://www.zdic.net/hans/%E8%80%8B)
 
-[]()
+[缶·fǒu](https://www.zdic.net/hans/%E7%BC%B6)
 
 []()
 

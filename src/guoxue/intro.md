@@ -14,7 +14,10 @@
 - [中国哲学书电子化计划](https://ctext.org/zh)
 - [中华典藏网](https://www.zhonghuadiancang.com/)
 - [劝学网](https://www.quanxue.cn/)
-- [汉典古籍](https://gj.zdic.net/)
+- [古文字典](https://www.zdic.net/)
+  - [古籍](https://gj.zdic.net/)
+  - [诗词](http://sc.zdic.net/)
+- [古诗词网](https://www.gushiwen.cn/)
 
 ## 重点研究方向
 
