@@ -4,6 +4,10 @@
 
 [参考](https://ctext.org/book-of-changes/zhs)
 
+## 阅读进度
+
+https://ctext.org/book-of-changes/ge/zhs
+
 ## 笔记
 
 中正比应
@@ -15,7 +19,7 @@
 
 雷火小过
 
-### 难字
+## 难字
 
 [筮·shì](https://www.zdic.net/hans/%E7%AD%AE)
 
@@ -87,7 +91,131 @@
 
 [缶·fǒu](https://www.zdic.net/hans/%E7%BC%B6)
 
+[腓·féi](https://www.zdic.net/hans/%E8%85%93)
+
+[脢·méi](https://www.zdic.net/hans/%E8%84%A2)
+
+[滕·téng](https://www.zdic.net/hans/%E6%BB%95)
+
+[箕·jī](https://www.zdic.net/hans/%E7%AE%95)
+
+[嗃·hè](https://www.zdic.net/hans/%E5%97%83)
+
+[曳·yè](https://www.zdic.net/hans/%E6%9B%B3)
+
+[劓·yì](https://www.zdic.net/hans/%E5%8A%93)
+
+[豕·shǐ](https://www.zdic.net/hans/%E8%B1%95)
+
+[蹇·jiǎn](https://www.zdic.net/hans/%E8%B9%87)
+
+[隼·sǔn](https://www.zdic.net/hans/%E9%9A%BC)
+
+[墉·yōng](https://www.zdic.net/hans/%E5%A2%89)
+
+[簋·guǐ](https://www.zdic.net/hans/%E7%B0%8B)
+
+[巳·sì](https://www.zdic.net/hans/%E5%B7%B3)
+
+[遄·chuán](https://www.zdic.net/hans/%E9%81%84)
+
+[忿·fèn](https://www.zdic.net/hans/%E5%BF%BF)
+
+[頄·qiú](https://www.zdic.net/hans/%E9%A0%84)
+
+[苋·xiàn](https://www.zdic.net/hans/%E8%8B%8B)
+
+[濡·rú](https://www.zdic.net/hans/%E6%BF%A1)
+
+[姤·gòu](https://www.zdic.net/hans/%E5%A7%A4)
+
+[柅·nǐ](https://www.zdic.net/hans/%E6%9F%85)
+
+[蹢躅·zhí zhú](https://www.zdic.net/hans/%E8%B9%A2%E8%BA%85)
+
+[禴·yuè](https://www.zdic.net/hans/%E7%A6%B4)
+
+[赍·jī](https://www.zdic.net/hans/%E8%B5%8D)
+
+[觌·dí](https://www.zdic.net/hans/%E8%A7%8C)
+
+[绂·fú](https://www.zdic.net/hans/%E7%BB%82)
+
+[蒺·jí](https://www.zdic.net/hans/%E8%92%BA)
+
+[藜·lí](https://www.zdic.net/hans/%E8%97%9C)
+
+[刖·yuè](https://www.zdic.net/hans/%E5%88%96)
+
+[藟·lěi](https://www.zdic.net/hans/%E8%97%9F)
+
+[臲卼·niè wù](https://www.zdic.net/hans/%E8%87%B2%E5%8D%BC)
+
+[汔·qì](https://www.zdic.net/hans/%E6%B1%94)
+
+[繘·jú](https://www.zdic.net/hans/%E7%B9%98)
+
+[鲋·fù](https://www.zdic.net/hans/%E9%B2%8B)
+
+[渫·xiè](https://www.zdic.net/hans/%E6%B8%AB)
+
+[甃·zhòu](https://www.zdic.net/hans/%E7%94%83)
+
 []()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
+
 
 
 

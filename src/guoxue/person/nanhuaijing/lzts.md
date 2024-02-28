@@ -135,7 +135,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi133.html
 
 无量无边
 
-尚书：典，漠，训，诰，誓，命
+尚书：典（制度），谟（大臣献言），训（大臣劝诫），诰（君对臣民公告），誓（出征誓言），命（君的命令）
 
 最难还是在能否做到“不欲盈”
 
@@ -323,8 +323,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi133.html
 《庄子 内篇 养生主》庖丁解牛典故。
 吾生也有涯，而知也无涯。以有涯随无涯，殆已；已而为知者，殆而已矣。为善无近名，为恶无近刑。缘督以为经，可以保身，可以全生，可以养亲，可以尽年。[参考](https://ctext.org/zhuangzi/nourishing-the-lord-of-life/zhs)
 
-《尚书 虞书
-大禹谟》惟德动天，无远弗届。满招损，谦受益，时乃天道。[参考](https://ctext.org/shang-shu/counsels-of-the-great-yu/zhs)
+《尚书 虞书 大禹谟》惟德动天，无远弗届。满招损，谦受益，时乃天道。[参考](https://ctext.org/shang-shu/counsels-of-the-great-yu/zhs)
 
 凡事都从忙里错，谁人知向静中修
 
