@@ -672,6 +672,7 @@ Cloud Discovery</p>
 <p>打分机制：从TF-IDF改成BM25，也叫<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules-similarity.html">similarity</a> ，scoring，ranking</p>
 <p>oversharding问题,如何创建分片数？</p>
 <p>如何知道数据在集群中的哪个节点？</p>
+<p>集群状态：红绿黄</p>
 <p>es和mysql数据模型区别？</p>
 <p>结构化搜索和全文搜索</p>
 <p>全文搜索：传统数据库确实很难搞定的任务，传统数据库要么匹配，要么不匹配，es有相关性打分。</p>
@@ -699,7 +700,7 @@ Invert Index:检索</p>
 <p>in-sync shard（可以被选中为primary的shard）</p>
 <p>index配置最重要的是：number_of_shards(创建后更改不了)，number_of_replicas(创建后可以修改)</p>
 <p>_id 和 _index 字段则既没有被索引也没有被存储，这意味着它们并不是真实存在的。</p>
-<p>不能添加新的分析器或者对现有的字段做改动。 如果你那么做的话，结果就是那些已经被索引的数据就不正确， 搜索也不能正常工作。reindex</p>
+<p>不能添加新的分析器或者对现有的字段做改动。 如果你那么做的话，结果就是那些已经被索引的数据就不正确， 搜索也不能正常工作。此时需要reindex。</p>
 <p>修改索引类型：https://www.elastic.co/guide/cn/elasticsearch/guide/current/index-aliases.html</p>
 <p>应用中使用索引别名，而不是索引真实名字。这样在修改索引时候，应用层不需要变化。</p>
 <p>全文检索=全字段索引</p>
@@ -799,10 +800,10 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/doc-values.html
 实际很少对分词fileddata进行聚合，尽量对不分词的docvalue进行聚合。	</p>
 <p>12.Terms聚合如何选择收集模式？DFS or BFS？ES默认是哪一个？
 <a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/_preventing_combinatorial_explosions.html">参考</a></p>
-<p>13.Es如何处理并发冲突？
-处理冲突 | Elasticsearch: 权威指南 | Elastic</p>
-<p>14.如何解决ES深度分页问题？
-Scorll，Search After，From/Size</p>
+<p>13.Es如何处理并发冲突？</p>
+<p><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/version-control.html">参考</a></p>
+<p>14.如何解决ES深度分页问题？</p>
+<p>Scorll，Search After，From/Size</p>
 <p>15.ES的相似度/分数是怎么计算的？（ES排序问题）
 <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules-similarity.html">参考</a></p>
 <p>16.准确率和召回率是什么意思？如何优化这两个数值？</p>
@@ -818,8 +819,8 @@ Scorll，Search After，From/Size</p>
 <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html">参考</a></p>
 <p>23.如何自己实现一个ES插件？</p>
 <p>24.Text(文本)-&gt;Token(词汇单元)-&gt;Term(项)过程中，发生了什么？TokenFilter和Tokenizer区别是什么？Token有哪些属性？</p>
-<p>25.ES词干提取算法有哪些？
-<a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/algorithmic-stemmers.html">参考</a></p>
+<p>25.ES词干提取算法有哪些？</p>
+<p><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/algorithmic-stemmers.html">参考</a></p>
 <p>26.分别举例：一个字段查多个词和一个词查多个字段可以用哪些Query？</p>
 <pre><code class="language-text">一个字段查一个词：term-query，match-query，match-phrase-query
 一个字段查多个词：match-query，terms-query
@@ -833,16 +834,16 @@ Doc	Content
 2	the quick red fox jumps over the sleepy cat
 28.Match phraseQuery和SpanQuery/SpanNearQuery区别?以及使用场景？
 </code></pre>
-<p>29.Url-search和query-string search区别？
-<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-uri-request.html">参考1</a>,
+<p>29.Url-search和query-string search区别？</p>
+<p><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-uri-request.html">参考1</a>,
 <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html">参考2</a>,
 <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search-uri-request.html#_parameters_3">参考3</a></p>
 <p>30.Es mapping如下，查找指定订单ID的文档，用尽可能多的方式写出。
 query string query，match query，term query，uri search</p>
 <p>31.如何为任务选择合适的查询？</p>
 <p>32.query string和simple query string区别？</p>
-<p>33.Es query rewrite是什么意思？
-<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-term-rewrite.html">参考</a></p>
+<p>33.Es query rewrite是什么意思？</p>
+<p><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-term-rewrite.html">参考</a></p>
 <h2 id="原理"><a class="header" href="#原理">原理</a></h2>
 <p>https://www.elastic.co/blog/found-elasticsearch-internals</p>
 <p>https://www.elastic.co/blog/found-elasticsearch-networking</p>
@@ -905,6 +906,15 @@ SearchResponse searchResponse = RestHighLevelClient.search(request)
 SearchResponse searchResponse = requestBuilder.get(SCROLL_TIMEOUT)
 SearchResponse searchResponse2 = requestBuilder.execute().actionGet();    
 </code></pre>
+<h2 id="使用"><a class="header" href="#使用">使用</a></h2>
+<p>mysql与es进行同步</p>
+<p>订单多字段检索，插件搜索：订单查询</p>
+<p>统计聚合：结算</p>
+<p>新加字段：结算</p>
+<p>修改字段类型：结算</p>
+<p>嵌套聚合，嵌套分组：结算</p>
+<p>嵌套搜索 结算：结算</p>
+<p>es terms聚合和composite聚合区别，以及改进terms聚合。节点经常oom，聚合数据太多了，所以改成了composite聚合</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="config"><a class="header" href="#config">Config</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="operation"><a class="header" href="#operation">Operation</a></h1>
 <h2 id="常见错误"><a class="header" href="#常见错误">常见错误</a></h2>
@@ -1212,6 +1222,8 @@ exactly-once guarantees (except when used with Kafka as a sink today), and batch
 <p>https://kafka.apache.org/30/javadoc/org/apache/kafka/clients/consumer/ConsumerPartitionAssignor.RebalanceProtocol.html</p>
 <p>StickyAssignor
 CooperativeStickyAssignor</p>
+<h2 id="遇到问题-1"><a class="header" href="#遇到问题-1">遇到问题</a></h2>
+<p><a href="https://blog.51cto.com/thinklili/5075367">记一次kafka线上问题-消费者不消费消息了</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="streaming"><a class="header" href="#streaming">Streaming</a></h1>
 <h2 id="bookmaking-sense-of-stream-processing"><a class="header" href="#bookmaking-sense-of-stream-processing">book:making sense of stream processing</a></h2>
 <p>Data Integration Problem: Log VS Dual Write</p>
