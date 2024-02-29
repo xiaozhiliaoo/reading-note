@@ -20,6 +20,8 @@ oversharding问题,如何创建分片数？
 
 如何知道数据在集群中的哪个节点？
 
+集群状态：红绿黄
+
 es和mysql数据模型区别？
 
 结构化搜索和全文搜索
@@ -71,7 +73,7 @@ index配置最重要的是：number_of_shards(创建后更改不了)，number_of
 
 _id 和 _index 字段则既没有被索引也没有被存储，这意味着它们并不是真实存在的。
 
-不能添加新的分析器或者对现有的字段做改动。 如果你那么做的话，结果就是那些已经被索引的数据就不正确， 搜索也不能正常工作。reindex
+不能添加新的分析器或者对现有的字段做改动。 如果你那么做的话，结果就是那些已经被索引的数据就不正确， 搜索也不能正常工作。此时需要reindex。
 
 修改索引类型：https://www.elastic.co/guide/cn/elasticsearch/guide/current/index-aliases.html
 
@@ -248,9 +250,11 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/doc-values.html
 [参考](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_preventing_combinatorial_explosions.html)
 
 13.Es如何处理并发冲突？
-处理冲突 | Elasticsearch: 权威指南 | Elastic
+
+[参考](https://www.elastic.co/guide/cn/elasticsearch/guide/current/version-control.html)
 
 14.如何解决ES深度分页问题？
+
 Scorll，Search After，From/Size
 
 15.ES的相似度/分数是怎么计算的？（ES排序问题）
@@ -279,9 +283,11 @@ Scorll，Search After，From/Size
 24.Text(文本)->Token(词汇单元)->Term(项)过程中，发生了什么？TokenFilter和Tokenizer区别是什么？Token有哪些属性？
 
 25.ES词干提取算法有哪些？
+
 [参考](https://www.elastic.co/guide/cn/elasticsearch/guide/current/algorithmic-stemmers.html)
 
 26.分别举例：一个字段查多个词和一个词查多个字段可以用哪些Query？
+
 ```text
 一个字段查一个词：term-query，match-query，match-phrase-query
 一个字段查多个词：match-query，terms-query
@@ -299,6 +305,7 @@ Doc	Content
 ```
 
 29.Url-search和query-string search区别？
+
 [参考1](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-uri-request.html),
 [参考2](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html),
 [参考3](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search-uri-request.html#_parameters_3)
@@ -311,6 +318,7 @@ query string query，match query，term query，uri search
 32.query string和simple query string区别？
 
 33.Es query rewrite是什么意思？
+
 [参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-term-rewrite.html)
 
 ## 原理
@@ -408,3 +416,21 @@ SearchResponse searchResponse = RestHighLevelClient.search(request)
 SearchResponse searchResponse = requestBuilder.get(SCROLL_TIMEOUT)
 SearchResponse searchResponse2 = requestBuilder.execute().actionGet();    
 ```
+
+## 使用
+
+mysql与es进行同步
+
+订单多字段检索，插件搜索：订单查询
+
+统计聚合：结算
+
+新加字段：结算
+
+修改字段类型：结算
+
+嵌套聚合，嵌套分组：结算
+
+嵌套搜索 结算：结算
+
+es terms聚合和composite聚合区别，以及改进terms聚合。节点经常oom，聚合数据太多了，所以改成了composite聚合

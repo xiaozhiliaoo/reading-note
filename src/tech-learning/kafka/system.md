@@ -196,3 +196,7 @@ https://kafka.apache.org/30/javadoc/org/apache/kafka/clients/consumer/ConsumerPa
 
 StickyAssignor
 CooperativeStickyAssignor
+
+## 遇到问题
+
+[记一次kafka线上问题-消费者不消费消息了](https://blog.51cto.com/thinklili/5075367)
