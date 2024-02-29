@@ -1,16 +1,12 @@
 # ElasticSearch
 
-
-
 ## 学习进度
 
 看到这里了：https://www.elastic.co/guide/cn/elasticsearch/guide/current/_preventing_combinatorial_explosions.html
 
-
-## 笔记
+## 概念
 
 [es历史](https://www.elastic.co/about/history-of-elasticsearch)
-
 
 [shay banon](https://www.elastic.co/blog/author/shay-banon)
 
@@ -55,9 +51,11 @@ Invert Index:检索
 
 文档的唯一性：index，type，routing value
 
+```text
 检索过程：query then fetch 先查后取
 分片节点：from+size
 协调节点：numberOfShard * (from+size)
+```
 
 scroll 查询禁用排序
 
@@ -81,8 +79,10 @@ _id 和 _index 字段则既没有被索引也没有被存储，这意味着它�
 
 全文检索=全字段索引
 
+```text
 倒排索引被写入磁盘后是 不可改变 的
 在保留不变性的前提下实现倒排索引的更新？答案是: 用更多的索引。
+```
 
 一个 Lucene 索引包含一个提交点和三个段
 
@@ -140,9 +140,12 @@ dfs_query_then_fetch： dfs是指分布式频率搜索（Distributed Frequency S
 
 dis_max：分离最大化查询（Disjunction Max Query)
 
+
+```text
 全文搜索被称作是 召回率（Recall） 与 精确率（Precision） 的战场
 召回率 ——返回所有的相关文档； 
 精确率 ——不返回无关文档
+```
 
 TF/IDF
 
@@ -201,37 +204,40 @@ International Components for Unicode (ICU)
 
 单词还原成词根。比如foxes还原成fox.
 
+## 常见问题
+
 1.数字什么时候建模成numeric类型，什么时候建模成keyword类型？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html)
 
 2.映射非结构化数据，选择text还是keyword？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html#wildcard-field-type
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html#wildcard-field-type)
 
 3.Object查询和Nested查询区别是什么？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html)
 
 4.FieldData是什么？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html#fielddata-mapping-param
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html#fielddata-mapping-param)
 
 5.Mapping的参数有哪些？（Filed的配置有哪些？）
-https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-params.html
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-params.html)
 
 6.什么是global-ordinals？
 
 7.mapping-field-meta是否可以写字段备注？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-field-meta.html
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-field-meta.html)
 
 8.为什么删除了mapping type字段？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html#_why_are_mapping_types_being_removed
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html#_why_are_mapping_types_being_removed)
 
 9.Analyzer的三个过程是什么？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/analyzer-anatomy.html
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/analyzer-anatomy.html)
 
 10.ES聚合分析的内部原理？
 聚合基于doc value正排索引实现的。用纯倒排索引实现性能很差。doc value也叫正排索引。
 搜索基于倒排索引实现。
 
 11.doc value和filed data区别？
+
 doc value是非分词字段的默认值，在index时候创建，所以可以支持聚合，
 filed data是分词字段的聚合控制，是没有doc value的，默认不支持聚合操作，必须设置为true才可以，filed data在内存中，查询聚合时候才生成的加载到内存中。
 https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html#fielddata-mapping-param
@@ -239,7 +245,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/doc-values.html
 实际很少对分词fileddata进行聚合，尽量对不分词的docvalue进行聚合。	
 
 12.Terms聚合如何选择收集模式？DFS or BFS？ES默认是哪一个？
-https://www.elastic.co/guide/cn/elasticsearch/guide/current/_preventing_combinatorial_explosions.html
+[参考](https://www.elastic.co/guide/cn/elasticsearch/guide/current/_preventing_combinatorial_explosions.html)
 
 13.Es如何处理并发冲突？
 处理冲突 | Elasticsearch: 权威指南 | Elastic
@@ -248,7 +254,7 @@ https://www.elastic.co/guide/cn/elasticsearch/guide/current/_preventing_combinat
 Scorll，Search After，From/Size
 
 15.ES的相似度/分数是怎么计算的？（ES排序问题）
-https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules-similarity.html
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules-similarity.html)
 
 16.准确率和召回率是什么意思？如何优化这两个数值？
 
@@ -257,41 +263,45 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules-si
 18.ES分割倒排索引是纵向分割文档还是水平分割单词？
 
 19.MySQL全文检索和ES搜索区别？
-https://dev.mysql.com/doc/refman/8.0/en/fulltext-search.html
+[参考](https://dev.mysql.com/doc/refman/8.0/en/fulltext-search.html)
 
 20.Vector Space Model(term vector model)是什么？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/term-vector.html
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/term-vector.html)
 
 21.如何设计一个搜索引擎？
-https://book.douban.com/subject/26681675/
+[参考](https://book.douban.com/subject/26681675/)
 
 22.ES match phrase query的slop和 fuzzy query的max_expansions距离对比。
-https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html)
 
 23.如何自己实现一个ES插件？
 
 24.Text(文本)->Token(词汇单元)->Term(项)过程中，发生了什么？TokenFilter和Tokenizer区别是什么？Token有哪些属性？
 
 25.ES词干提取算法有哪些？
-https://www.elastic.co/guide/cn/elasticsearch/guide/current/algorithmic-stemmers.html
+[参考](https://www.elastic.co/guide/cn/elasticsearch/guide/current/algorithmic-stemmers.html)
 
 26.分别举例：一个字段查多个词和一个词查多个字段可以用哪些Query？
+```text
 一个字段查一个词：term-query，match-query，match-phrase-query
 一个字段查多个词：match-query，terms-query
 一个词查多个字段：multi-match，bool-query
 多个词查多个字段：bool-query，disjunction-max-query
+```
 
 27.Es Query编写：查找所有文档中”quick fox”接近”lazy dog”的或者”quick fox”接近”sleepy cat”的文档。
+```text
 参考：https://gist.github.com/xiaozhiliaoo/abc5c3d18c3ab52ea78a600641588dab
 Doc	Content
 1	the quick brown fox jumped over the lazy dog
 2	the quick red fox jumps over the sleepy cat
 28.Match phraseQuery和SpanQuery/SpanNearQuery区别?以及使用场景？
+```
 
 29.Url-search和query-string search区别？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/search-uri-request.html
-https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html
-https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search-uri-request.html#_parameters_3
+[参考1](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-uri-request.html),
+[参考2](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html),
+[参考3](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search-uri-request.html#_parameters_3)
 
 30.Es mapping如下，查找指定订单ID的文档，用尽可能多的方式写出。
 query string query，match query，term query，uri search
@@ -301,33 +311,7 @@ query string query，match query，term query，uri search
 32.query string和simple query string区别？
 
 33.Es query rewrite是什么意思？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-term-rewrite.html
-
-
-
-
-
-
-
-开始地方学习到这里：
-https://www.elastic.co/guide/en/elasticsearch/reference/current/secure-settings.html
-https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html
-
-权威指南
-分页 | Elasticsearch: 权威指南 | Elastic
-
-
-
-
-
-## 技术分享 
-
-https://en.wikipedia.org/wiki/Finite-state_transducer
-
-
-
-
-
+[参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-term-rewrite.html)
 
 ## 原理
 
@@ -335,9 +319,9 @@ https://www.elastic.co/blog/found-elasticsearch-internals
 
 https://www.elastic.co/blog/found-elasticsearch-networking
 
+https://en.wikipedia.org/wiki/Finite-state_transducer
+
 for压缩和rbm压缩：https://www.elastic.co/cn/blog/frame-of-reference-and-roaring-bitmaps
-
-
 
 
 ## 遇到问题
@@ -424,4 +408,3 @@ SearchResponse searchResponse = RestHighLevelClient.search(request)
 SearchResponse searchResponse = requestBuilder.get(SCROLL_TIMEOUT)
 SearchResponse searchResponse2 = requestBuilder.execute().actionGet();    
 ```
-
