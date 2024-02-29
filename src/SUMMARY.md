@@ -175,6 +175,7 @@
           - [对话压测](tech-learning/question/jmter-websocket.md)
           - [可取消的http请求](tech-learning/question/canceled-http.md)
       - [技术分享](tech-learning/tech-sharing/toc.md)
+          - [boltdb](tech-learning/tech-sharing/boltdb.md)
           - [Akka Classic Cluster](tech-learning/tech-sharing/Akka-Classic-Cluster.md)
           - [Java的并行函数式编程](tech-learning/tech-sharing/Parallel-Functional-Programming-with-Java.md)
           - [实时消息推送](tech-learning/tech-sharing/real-message.md)

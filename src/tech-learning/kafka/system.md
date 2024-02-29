@@ -19,6 +19,8 @@ inside-ksqldb：https://developer.confluent.io/learn-kafka/inside-ksqldb/streami
 
 ### Kafka
 
+Events+Topics+RealTime+TalkToEachOther，4件事，不是kakfa是什么，而是这种观点，分布式日志，
+
 消费者：https://kafka.apache.org/30/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html
 
 生产者：https://kafka.apache.org/30/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html
@@ -156,6 +158,34 @@ Avoid Rebalance with Static Group Membership
 
 Incremental Cooperative Rebalancing
 
+```text
+一个topic，可以被多个消费组消费，但是每个消费组内的消费组，只能消费一次。
+
+消费组
+一个pod对应一个消费者，一个消费者对应一个分区，查看消费速度，如果部署了三个pod，那么只会并行有三个分区的消息被消费，
+疑问：一秒消费多少条消息？
+三个消费者五个分区，这时候消息模型是什么呢？来回切换？
+
+
+./kafka-console-consumer.sh --bootstrap-server ns014:9092 --from-beginning --topic manhattan_message_refund
+
+本地机器(本质是起了一个消费者)
+./kafka-console-consumer.bat --bootstrap-server ns014:9092 --from-beginning --topic manhattan_message_refund
+
+./kafka-console-producer.bat --topic manhattan_message_refund --broker-list 127.0.0.1:9092
+【在2.5.0版本之前只支--broker-list  在2.5.0版本之后支持--bootstrap-server】
+1 offset清除时间是什么？
+2 长时间消费者没收到消息，会rebalance，
+```
+
+```text
+验证MQ有没有问题：
+$ bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+$ bin/kafka-topics.sh --describe --topic quickstart-events --bootstrap-server localhost:9092
+$ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
+$ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+```
+
 ## 设计
 
 https://docs.confluent.io/platform/current/kafka/design.html
@@ -200,3 +230,7 @@ CooperativeStickyAssignor
 ## 遇到问题
 
 [记一次kafka线上问题-消费者不消费消息了](https://blog.51cto.com/thinklili/5075367)
+
+balance问题
+
+自动创建topic问题

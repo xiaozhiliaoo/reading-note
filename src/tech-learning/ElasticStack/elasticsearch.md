@@ -321,6 +321,20 @@ query string query，match query，term query，uri search
 
 [参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-term-rewrite.html)
 
+34.多桶聚合的terms和composite聚合的区别？
+精确度问题：
+https://www.elastic.co/guide/en/elasticsearch/reference/5.3/search-aggregations-bucket-terms-aggregation.html#search-aggregations-bucket-terms-aggregation-approximate-counts
+
+https://www.elastic.co/guide/en/elasticsearch/guide/master/_approximate_aggregations.html
+
+https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search-aggregations-bucket-terms-aggregation.html
+
+35.深度分页问题？
+https://www.elastic.co/guide/en/elasticsearch/guide/current/pagination.html
+
+
+36.倒排索引的数据结构是什么？
+
 ## 原理
 
 https://www.elastic.co/blog/found-elasticsearch-internals
@@ -422,6 +436,8 @@ SearchResponse searchResponse2 = requestBuilder.execute().actionGet();
 mysql与es进行同步
 
 订单多字段检索，插件搜索：订单查询
+
+订单模块加解密插件，单字分词插件
 
 统计聚合：结算
 
