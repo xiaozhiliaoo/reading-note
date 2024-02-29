@@ -664,7 +664,7 @@ Cloud Discovery</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="elasticsearch"><a class="header" href="#elasticsearch">ElasticSearch</a></h1>
 <h2 id="学习进度-4"><a class="header" href="#学习进度-4">学习进度</a></h2>
 <p>看到这里了：https://www.elastic.co/guide/cn/elasticsearch/guide/current/_preventing_combinatorial_explosions.html</p>
-<h2 id="笔记-2"><a class="header" href="#笔记-2">笔记</a></h2>
+<h2 id="概念"><a class="header" href="#概念">概念</a></h2>
 <p><a href="https://www.elastic.co/about/history-of-elasticsearch">es历史</a></p>
 <p><a href="https://www.elastic.co/blog/author/shay-banon">shay banon</a></p>
 <p>Near Real Time</p>
@@ -688,9 +688,10 @@ Cloud Discovery</p>
 <p>Doc Values:排序，聚合，脚本计算
 Invert Index:检索</p>
 <p>文档的唯一性：index，type，routing value</p>
-<p>检索过程：query then fetch 先查后取
+<pre><code class="language-text">检索过程：query then fetch 先查后取
 分片节点：from+size
-协调节点：numberOfShard * (from+size)</p>
+协调节点：numberOfShard * (from+size)
+</code></pre>
 <p>scroll 查询禁用排序</p>
 <p>搜索类型：query then fetch，dfs_query_then_fetch</p>
 <p>深度分页的代价根源是结果集全局排序，如果去掉全局排序的特性的话查询结果的成本就会很低。</p>
@@ -702,8 +703,9 @@ Invert Index:检索</p>
 <p>修改索引类型：https://www.elastic.co/guide/cn/elasticsearch/guide/current/index-aliases.html</p>
 <p>应用中使用索引别名，而不是索引真实名字。这样在修改索引时候，应用层不需要变化。</p>
 <p>全文检索=全字段索引</p>
-<p>倒排索引被写入磁盘后是 不可改变 的
-在保留不变性的前提下实现倒排索引的更新？答案是: 用更多的索引。</p>
+<pre><code class="language-text">倒排索引被写入磁盘后是 不可改变 的
+在保留不变性的前提下实现倒排索引的更新？答案是: 用更多的索引。
+</code></pre>
 <p>一个 Lucene 索引包含一个提交点和三个段</p>
 <p>一个 Lucene 索引 我们在 Elasticsearch 称作 分片 。 一个 Elasticsearch 索引 是分片的集合</p>
 <p>段是不可改变的</p>
@@ -733,9 +735,10 @@ Flush之后段被全量提交，并且事务日志被清空</p>
 先分别获得每个分片本地的 IDF ，然后根据结果再计算整个索引的全局 IDF 。</p>
 <p>多字段搜索：bool match查询</p>
 <p>dis_max：分离最大化查询（Disjunction Max Query)</p>
-<p>全文搜索被称作是 召回率（Recall） 与 精确率（Precision） 的战场
+<pre><code class="language-text">全文搜索被称作是 召回率（Recall） 与 精确率（Precision） 的战场
 召回率 ——返回所有的相关文档； 
-精确率 ——不返回无关文档</p>
+精确率 ——不返回无关文档
+</code></pre>
 <p>TF/IDF</p>
 <p>字段中心式（term-centric）查询：best_fields 和 most_fields
 词中心式（term-centric）的查询：cross_fields</p>
@@ -767,86 +770,83 @@ Flush之后段被全量提交，并且事务日志被清空</p>
 not_analyzed name.raw 域用来排序。</p>
 <p>International Components for Unicode (ICU) </p>
 <p>单词还原成词根。比如foxes还原成fox.</p>
+<h2 id="常见问题"><a class="header" href="#常见问题">常见问题</a></h2>
 <p>1.数字什么时候建模成numeric类型，什么时候建模成keyword类型？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html">参考</a></p>
 <p>2.映射非结构化数据，选择text还是keyword？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html#wildcard-field-type</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html#wildcard-field-type">参考</a></p>
 <p>3.Object查询和Nested查询区别是什么？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html">参考</a></p>
 <p>4.FieldData是什么？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html#fielddata-mapping-param</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html#fielddata-mapping-param">参考</a></p>
 <p>5.Mapping的参数有哪些？（Filed的配置有哪些？）
-https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-params.html</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-params.html">参考</a></p>
 <p>6.什么是global-ordinals？</p>
 <p>7.mapping-field-meta是否可以写字段备注？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-field-meta.html</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-field-meta.html">参考</a></p>
 <p>8.为什么删除了mapping type字段？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html#_why_are_mapping_types_being_removed</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/removal-of-types.html#_why_are_mapping_types_being_removed">参考</a></p>
 <p>9.Analyzer的三个过程是什么？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/analyzer-anatomy.html</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/analyzer-anatomy.html">参考</a></p>
 <p>10.ES聚合分析的内部原理？
 聚合基于doc value正排索引实现的。用纯倒排索引实现性能很差。doc value也叫正排索引。
 搜索基于倒排索引实现。</p>
-<p>11.doc value和filed data区别？
-doc value是非分词字段的默认值，在index时候创建，所以可以支持聚合，
+<p>11.doc value和filed data区别？</p>
+<p>doc value是非分词字段的默认值，在index时候创建，所以可以支持聚合，
 filed data是分词字段的聚合控制，是没有doc value的，默认不支持聚合操作，必须设置为true才可以，filed data在内存中，查询聚合时候才生成的加载到内存中。
 https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html#fielddata-mapping-param
 https://www.elastic.co/guide/en/elasticsearch/reference/current/doc-values.html
 实际很少对分词fileddata进行聚合，尽量对不分词的docvalue进行聚合。	</p>
 <p>12.Terms聚合如何选择收集模式？DFS or BFS？ES默认是哪一个？
-https://www.elastic.co/guide/cn/elasticsearch/guide/current/_preventing_combinatorial_explosions.html</p>
+<a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/_preventing_combinatorial_explosions.html">参考</a></p>
 <p>13.Es如何处理并发冲突？
 处理冲突 | Elasticsearch: 权威指南 | Elastic</p>
 <p>14.如何解决ES深度分页问题？
 Scorll，Search After，From/Size</p>
 <p>15.ES的相似度/分数是怎么计算的？（ES排序问题）
-https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules-similarity.html</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules-similarity.html">参考</a></p>
 <p>16.准确率和召回率是什么意思？如何优化这两个数值？</p>
 <p>17.ES会发生一边搜索一边构建索引过程吗？</p>
 <p>18.ES分割倒排索引是纵向分割文档还是水平分割单词？</p>
 <p>19.MySQL全文检索和ES搜索区别？
-https://dev.mysql.com/doc/refman/8.0/en/fulltext-search.html</p>
+<a href="https://dev.mysql.com/doc/refman/8.0/en/fulltext-search.html">参考</a></p>
 <p>20.Vector Space Model(term vector model)是什么？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/term-vector.html</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/term-vector.html">参考</a></p>
 <p>21.如何设计一个搜索引擎？
-https://book.douban.com/subject/26681675/</p>
+<a href="https://book.douban.com/subject/26681675/">参考</a></p>
 <p>22.ES match phrase query的slop和 fuzzy query的max_expansions距离对比。
-https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html">参考</a></p>
 <p>23.如何自己实现一个ES插件？</p>
 <p>24.Text(文本)-&gt;Token(词汇单元)-&gt;Term(项)过程中，发生了什么？TokenFilter和Tokenizer区别是什么？Token有哪些属性？</p>
 <p>25.ES词干提取算法有哪些？
-https://www.elastic.co/guide/cn/elasticsearch/guide/current/algorithmic-stemmers.html</p>
-<p>26.分别举例：一个字段查多个词和一个词查多个字段可以用哪些Query？
-一个字段查一个词：term-query，match-query，match-phrase-query
+<a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/algorithmic-stemmers.html">参考</a></p>
+<p>26.分别举例：一个字段查多个词和一个词查多个字段可以用哪些Query？</p>
+<pre><code class="language-text">一个字段查一个词：term-query，match-query，match-phrase-query
 一个字段查多个词：match-query，terms-query
 一个词查多个字段：multi-match，bool-query
-多个词查多个字段：bool-query，disjunction-max-query</p>
-<p>27.Es Query编写：查找所有文档中”quick fox”接近”lazy dog”的或者”quick fox”接近”sleepy cat”的文档。
-参考：https://gist.github.com/xiaozhiliaoo/abc5c3d18c3ab52ea78a600641588dab
+多个词查多个字段：bool-query，disjunction-max-query
+</code></pre>
+<p>27.Es Query编写：查找所有文档中”quick fox”接近”lazy dog”的或者”quick fox”接近”sleepy cat”的文档。</p>
+<pre><code class="language-text">参考：https://gist.github.com/xiaozhiliaoo/abc5c3d18c3ab52ea78a600641588dab
 Doc	Content
 1	the quick brown fox jumped over the lazy dog
 2	the quick red fox jumps over the sleepy cat
-28.Match phraseQuery和SpanQuery/SpanNearQuery区别?以及使用场景？</p>
+28.Match phraseQuery和SpanQuery/SpanNearQuery区别?以及使用场景？
+</code></pre>
 <p>29.Url-search和query-string search区别？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/search-uri-request.html
-https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html
-https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search-uri-request.html#_parameters_3</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-uri-request.html">参考1</a>,
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html">参考2</a>,
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search-uri-request.html#_parameters_3">参考3</a></p>
 <p>30.Es mapping如下，查找指定订单ID的文档，用尽可能多的方式写出。
 query string query，match query，term query，uri search</p>
 <p>31.如何为任务选择合适的查询？</p>
 <p>32.query string和simple query string区别？</p>
 <p>33.Es query rewrite是什么意思？
-https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-term-rewrite.html</p>
-<p>开始地方学习到这里：
-https://www.elastic.co/guide/en/elasticsearch/reference/current/secure-settings.html
-https://www.elastic.co/guide/en/elasticsearch/reference/current/stemming.html</p>
-<p>权威指南
-分页 | Elasticsearch: 权威指南 | Elastic</p>
-<h2 id="技术分享"><a class="header" href="#技术分享">技术分享</a></h2>
-<p>https://en.wikipedia.org/wiki/Finite-state_transducer</p>
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-multi-term-rewrite.html">参考</a></p>
 <h2 id="原理"><a class="header" href="#原理">原理</a></h2>
 <p>https://www.elastic.co/blog/found-elasticsearch-internals</p>
 <p>https://www.elastic.co/blog/found-elasticsearch-networking</p>
+<p>https://en.wikipedia.org/wiki/Finite-state_transducer</p>
 <p>for压缩和rbm压缩：https://www.elastic.co/cn/blog/frame-of-reference-and-roaring-bitmaps</p>
 <h2 id="遇到问题"><a class="header" href="#遇到问题">遇到问题</a></h2>
 <p>1.forbidden-12-index-read-only-allow-delete-api?</p>
@@ -938,12 +938,12 @@ ES Term的Fuzzy查询基于： Levenshtein edit distance（es string distance）
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ecosystem"><a class="header" href="#ecosystem">Ecosystem</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="admin-1"><a class="header" href="#admin-1">Admin</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="logstash"><a class="header" href="#logstash">LogStash</a></h1>
-<h2 id="笔记-3"><a class="header" href="#笔记-3">笔记</a></h2>
+<h2 id="笔记-2"><a class="header" href="#笔记-2">笔记</a></h2>
 <p><a href="https://www.elastic.co/blog/author/jordan-sissel">Jordan Sissel</a></p>
 <p><a href="https://www.elastic.co/guide/en/logstash/current/persistent-queues.html">persistent queues</a></p>
 <p><a href="https://www.elastic.co/guide/en/logstash/current/dead-letter-queues.html">Dead Letter Queue</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="kibana"><a class="header" href="#kibana">kibana</a></h1>
-<h2 id="笔记-4"><a class="header" href="#笔记-4">笔记</a></h2>
+<h2 id="笔记-3"><a class="header" href="#笔记-3">笔记</a></h2>
 <p><a href="https://www.elastic.co/blog/author/rashid-khan">Rashid Khan</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="beat"><a class="header" href="#beat">beat</a></h1>
 <h2 id="reference-1"><a class="header" href="#reference-1">reference</a></h2>
@@ -1115,7 +1115,7 @@ data pipelines, streaming analytics, data integration, and mission-critical appl
 <h2 id="进度-2"><a class="header" href="#进度-2">进度</a></h2>
 <p>Event Streaming Patterns：https://developer.confluent.io/patterns/event/event/</p>
 <p>inside-ksqldb：https://developer.confluent.io/learn-kafka/inside-ksqldb/streaming-architecture/</p>
-<h2 id="笔记-5"><a class="header" href="#笔记-5">笔记</a></h2>
+<h2 id="笔记-4"><a class="header" href="#笔记-4">笔记</a></h2>
 <p>提供的新架构，解决方案：事件流处理平台，事件处理</p>
 <h3 id="kafka-1"><a class="header" href="#kafka-1">Kafka</a></h3>
 <p>消费者：https://kafka.apache.org/30/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html</p>
@@ -1641,7 +1641,7 @@ CREATE INDEX lesson_index ON course_process.user_process (lessonid);
 system_traces.events </p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="system-1"><a class="header" href="#system-1">System</a></h1>
 <h1 id="进度-3"><a class="header" href="#进度-3">进度</a></h1>
-<h1 id="笔记-6"><a class="header" href="#笔记-6">笔记</a></h1>
+<h1 id="笔记-5"><a class="header" href="#笔记-5">笔记</a></h1>
 <h2 id="基础知识"><a class="header" href="#基础知识">基础知识</a></h2>
 <h3 id="cql"><a class="header" href="#cql">CQL</a></h3>
 <p>不支持join,like,非主键查询，支持需要allowing filter，二级索引，或者SASI，物化视图。</p>
@@ -2292,7 +2292,7 @@ https://go.dev/talks/2012/concurrency.slide#1</p>
 <h1 id="标准库"><a class="header" href="#标准库">标准库</a></h1>
 <h1 id="测试"><a class="header" href="#测试">测试</a></h1>
 <h1 id="优化"><a class="header" href="#优化">优化</a></h1>
-<h1 id="技术分享-1"><a class="header" href="#技术分享-1">技术分享</a></h1>
+<h1 id="技术分享"><a class="header" href="#技术分享">技术分享</a></h1>
 <h2 id="2023-03-23"><a class="header" href="#2023-03-23">2023-03-23</a></h2>
 <p>maven和go mod区别？
 go mod graph
@@ -2307,7 +2307,7 @@ go注释和java注释。</p>
 <h1 id="进度-4"><a class="header" href="#进度-4">进度</a></h1>
 <p>完成</p>
 <p>代码仓库：https://github.com/xiaozhiliaoo/go-practice/tree/master/get-programming-with-go</p>
-<h1 id="笔记-7"><a class="header" href="#笔记-7">笔记</a></h1>
+<h1 id="笔记-6"><a class="header" href="#笔记-6">笔记</a></h1>
 <ol>
 <li>
 <p>大数：big。无类型常量：存储非常大的值，被用作函数参数的时候，必须转换为有类型变量</p>
@@ -3150,7 +3150,7 @@ Google)</p>
 <p><img src="tech-learning/question/images/jmeter.png" alt="jmeter.png" /></p>
 <p><strong>问题：</strong> 如何通过修改jmeter进行ws压测或者 有没有更好的方案实现这种场景的压测？</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="可取消的http请求"><a class="header" href="#可取消的http请求">可取消的http请求</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="技术分享-2"><a class="header" href="#技术分享-2">技术分享</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="技术分享-1"><a class="header" href="#技术分享-1">技术分享</a></h1>
 <p>我的技术分享：https://github.com/xiaozhiliaoo/my-slides</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="akka-classic-cluster"><a class="header" href="#akka-classic-cluster">Akka Classic Cluster</a></h1>
 <h2 id="介绍"><a class="header" href="#介绍">介绍</a></h2>
@@ -3346,7 +3346,7 @@ https://github.com/gcnyin/hive-metastore-image/blob/master/build-hive-metastore.
 <p>https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html</p>
 <p>https://www.elastic.co/guide/en/elasticsearch/reference/7.1/search.html</p>
 <p>https://www.elastic.co/guide/en/elasticsearch/reference/7.1/query-dsl.html</p>
-<h2 id="笔记-8"><a class="header" href="#笔记-8">笔记</a></h2>
+<h2 id="笔记-7"><a class="header" href="#笔记-7">笔记</a></h2>
 <p>ES查询和聚合的选择逻辑？</p>
 <p>结构化搜索，全文搜索</p>
 <p>结构化：布尔，时间，数字</p>
@@ -3705,142 +3705,161 @@ Trace：追踪链路、并发、根因、性能</p>
 </ol>
 </blockquote>
 <h3 id="uri-searchquery-string"><a class="header" href="#uri-searchquery-string">URI Search(Query String)</a></h3>
-<p>GET /la-adap-plan-tpl/_search?q=9&amp;df=id
+<pre><code class="language-text">GET /la-adap-plan-tpl/_search?q=9&amp;df=id
 {
-&quot;profile&quot;: &quot;true&quot;
-}</p>
-<p>泛查询
-GET /la-adap-plan-tpl/_search?q=9
+	&quot;profile&quot;: &quot;true&quot;
+}
+</code></pre>
+<p>泛查询</p>
+<pre><code class="language-text">GET /la-adap-plan-tpl/_search?q=9
 {
-&quot;profile&quot;: &quot;true&quot;
-}</p>
-<p>GET /la-adap-plan-tpl/_search?q=id:9
+	&quot;profile&quot;: &quot;true&quot;
+}
+</code></pre>
+<pre><code class="language-text">GET /la-adap-plan-tpl/_search?q=id:9
 {
-&quot;profile&quot;: &quot;true&quot;
-}</p>
+	&quot;profile&quot;: &quot;true&quot;
+}
+</code></pre>
 <h3 id="analyzer"><a class="header" href="#analyzer">Analyzer</a></h3>
-<p>GET /_analyze
+<pre><code class="language-text">GET /_analyze
 {
-&quot;analyzer&quot;: &quot;standard&quot;,
-&quot;text&quot;:&quot;lili 111 222 你好北京&quot;
-}</p>
-<p>POST /users/_analyze
+    &quot;analyzer&quot;: &quot;standard&quot;,
+    &quot;text&quot;:&quot;lili 111 222 你好北京&quot;
+}
+</code></pre>
+<pre><code class="language-text">POST /users/_analyze
 {
-&quot;field&quot;: &quot;name&quot;, 
-&quot;text&quot;: [111]
-}</p>
-<p>POST /_analyze
+    &quot;field&quot;: &quot;name&quot;, 
+    &quot;text&quot;: [111]
+}
+</code></pre>
+<pre><code class="language-text">POST /_analyze
 {
-&quot;tokenizer&quot;: &quot;standard&quot;,
-&quot;filter&quot;: [&quot;lowercase&quot;],
-&quot;text&quot;: [&quot;Mastering Elasticsearch&quot;]
-}</p>
+    &quot;tokenizer&quot;: &quot;standard&quot;,
+    &quot;filter&quot;: [&quot;lowercase&quot;],
+    &quot;text&quot;: [&quot;Mastering Elasticsearch&quot;]
+}
+</code></pre>
 <h4 id="自定义分词器"><a class="header" href="#自定义分词器">自定义分词器</a></h4>
 <p>CharacterFilter 加工文本  Tokenizer：文本到词 Token Filters：词再次加工</p>
-<p>爬虫过滤了html标签
-POST _analyze
+<p>爬虫过滤了html标签</p>
+<pre><code class="language-text">POST _analyze
 {
-&quot;char_filter&quot;: [&quot;html_strip&quot;],
-&quot;tokenizer&quot;: &quot;keyword&quot;,
-&quot;text&quot;: [&quot;<html>lili</html>&quot;]
-}</p>
-<p>输入字符串替换</p>
-<p>POST _analyze
-{
-&quot;char_filter&quot;: [
-{
-&quot;type&quot;: &quot;mapping&quot;,
-&quot;mappings&quot;: [
-&quot;- =&gt; _&quot;
-]
+    &quot;char_filter&quot;: [&quot;html_strip&quot;],
+    &quot;tokenizer&quot;: &quot;keyword&quot;,
+    &quot;text&quot;: [&quot;&lt;html&gt;lili&lt;/html&gt;&quot;]
 }
-],
-&quot;tokenizer&quot;: &quot;standard&quot;, 
-&quot;text&quot;: &quot;123-456, I-test!&quot;
-}</p>
-<p>搜索到任意一级目录
-POST _analyze
+</code></pre>
+<p>输入字符串替换</p>
+<pre><code class="language-text">POST _analyze
 {
-&quot;tokenizer&quot;: &quot;path_hierarchy&quot;,
-&quot;text&quot;:&quot;/user/a/b/c/d&quot;
-}</p>
-<p>POST _analyze
+  &quot;char_filter&quot;: [
+    {
+      &quot;type&quot;: &quot;mapping&quot;,
+      &quot;mappings&quot;: [
+        &quot;- =&gt; _&quot;
+      ]
+    }
+  ],
+  &quot;tokenizer&quot;: &quot;standard&quot;, 
+  &quot;text&quot;: &quot;123-456, I-test!&quot;
+}
+</code></pre>
+<p>搜索到任意一级目录</p>
+<pre><code class="language-text">POST _analyze
 {
-&quot;tokenizer&quot;: &quot;whitespace&quot;,
-&quot;filter&quot;: [&quot;stop&quot;],
-&quot;text&quot;: [&quot;The rain&quot;]
-}</p>
-<p>POST _analyze
+    &quot;tokenizer&quot;: &quot;path_hierarchy&quot;,
+    &quot;text&quot;:&quot;/user/a/b/c/d&quot;
+}
+</code></pre>
+<pre><code class="language-text">POST _analyze
 {
-&quot;tokenizer&quot;: &quot;whitespace&quot;,
-&quot;filter&quot;: [&quot;lowercase&quot;,&quot;stop&quot;],
-&quot;text&quot;: [&quot;The rain&quot;]
-}</p>
+    &quot;tokenizer&quot;: &quot;whitespace&quot;,
+    &quot;filter&quot;: [&quot;stop&quot;],
+    &quot;text&quot;: [&quot;The rain&quot;]
+}
+</code></pre>
+<pre><code class="language-text">POST _analyze
+{
+    &quot;tokenizer&quot;: &quot;whitespace&quot;,
+    &quot;filter&quot;: [&quot;lowercase&quot;,&quot;stop&quot;],
+    &quot;text&quot;: [&quot;The rain&quot;]
+}
+</code></pre>
 <h3 id="request-body查询"><a class="header" href="#request-body查询">Request Body查询</a></h3>
 <p>高阶方法只能在RequestBody里面做。</p>
-<p>GET /la-adap-plan-tpl/_search
+<pre><code class="language-text">GET /la-adap-plan-tpl/_search
 {
-&quot;_source&quot;: [&quot;id&quot;,&quot;learningPlans&quot;], 
-&quot;query&quot;: {
-&quot;match_all&quot;: {}
+    &quot;_source&quot;: [&quot;id&quot;,&quot;learningPlans&quot;], 
+    &quot;query&quot;: {
+    	&quot;match_all&quot;: {}
+    }
 }
-}</p>
+</code></pre>
 <h3 id="matchmatch_phrase"><a class="header" href="#matchmatch_phrase">match,match_phrase</a></h3>
-<p>GET /users/_search
+<pre><code class="language-text">GET /users/_search
 {
-&quot;query&quot;: {
-&quot;match&quot;: {
-&quot;title&quot;: {
-&quot;query&quot;: &quot;111&quot;,
-&quot;operator&quot;: &quot;and&quot;
+    &quot;query&quot;: {
+        &quot;match&quot;: {
+            &quot;title&quot;: {
+                &quot;query&quot;: &quot;111&quot;,
+                &quot;operator&quot;: &quot;and&quot;
+            }
+        }
+    }
 }
-}
-}
-}</p>
-<p>GET /users/_search
+</code></pre>
+<pre><code class="language-text">GET /users/_search
 {
-&quot;query&quot;: {
-&quot;match_phrase&quot;: {
-&quot;title&quot;: {
-&quot;query&quot;: &quot;111&quot;,
-&quot;slop&quot;: 1
+  &quot;query&quot;: {
+    &quot;match_phrase&quot;: {
+      &quot;title&quot;: {
+        &quot;query&quot;: &quot;111&quot;,
+        &quot;slop&quot;: 1
+      }
+    }
+  }
 }
-}
-}
-}</p>
+</code></pre>
 <h3 id="query-string-query"><a class="header" href="#query-string-query">Query String Query</a></h3>
 <p>Simple Query String Query</p>
-<p>POST /users/_search
+<pre><code class="language-text">POST /users/_search
 {
-&quot;query&quot;: {
-&quot;query_string&quot;: {
-&quot;default_field&quot;: &quot;user&quot;,
-&quot;query&quot;: &quot;mike OR lili2&quot;
+    &quot;query&quot;: {
+        &quot;query_string&quot;: {
+            &quot;default_field&quot;: &quot;user&quot;,
+            &quot;query&quot;: &quot;mike OR lili2&quot;
+        }
+    }
 }
-}
-}</p>
-<p>POST /users/_search
+</code></pre>
+<pre><code class="language-text">POST /users/_search
 {
-&quot;query&quot;: {
-&quot;simple_query_string&quot;: {
-&quot;query&quot;: &quot;lili OR mike&quot;,
-&quot;default_operator&quot;: &quot;OR&quot;
+    &quot;query&quot;: {
+        &quot;simple_query_string&quot;: {
+            &quot;query&quot;: &quot;lili OR mike&quot;,
+            &quot;default_operator&quot;: &quot;OR&quot;
+        }
+    }
 }
-}
-}</p>
+</code></pre>
 <h3 id="dynamic-mapping"><a class="header" href="#dynamic-mapping">Dynamic Mapping</a></h3>
-<p>PUT mapping_test/_mapping
+<pre><code class="language-text">PUT mapping_test/_mapping
 {
-&quot;dynamic&quot;:true
-}</p>
-<p>PUT mapping_test/_mapping
+  	&quot;dynamic&quot;:true
+}
+</code></pre>
+<pre><code class="language-text">PUT mapping_test/_mapping
 {
-&quot;dynamic&quot;:false
-}</p>
-<p>PUT mapping_test/_mapping
+  	&quot;dynamic&quot;:false
+}
+</code></pre>
+<pre><code class="language-text">PUT mapping_test/_mapping
 {
-&quot;dynamic&quot;:&quot;strict&quot;
-}</p>
+	&quot;dynamic&quot;:&quot;strict&quot;
+}
+</code></pre>
 <h4 id="自定义mapping"><a class="header" href="#自定义mapping">自定义Mapping</a></h4>
 <p>NULL_VALUE</p>
 <h2 id="论文"><a class="header" href="#论文">论文</a></h2>
@@ -4079,7 +4098,7 @@ C++:https://github.com/logcabin/logcabin</p>
 <p>https://time.geekbang.org/column/intro/100057401</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="238-大数据经典论文解读-徐文浩"><a class="header" href="#238-大数据经典论文解读-徐文浩">238-大数据经典论文解读 徐文浩</a></h1>
 <p>https://time.geekbang.org/column/intro/100091101</p>
-<h2 id="笔记-9"><a class="header" href="#笔记-9">笔记</a></h2>
+<h2 id="笔记-8"><a class="header" href="#笔记-8">笔记</a></h2>
 <p>Apache ORC (Optimized Row Columnar) </p>
 <h2 id="paper-7"><a class="header" href="#paper-7">Paper</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ai大模型之美-徐文浩"><a class="header" href="#ai大模型之美-徐文浩">AI大模型之美-徐文浩</a></h1>
@@ -8495,7 +8514,7 @@ Faluttolerance, Security)。</li>
 <p>出版时间：2006年5月19日</p>
 <h2 id="进度-5"><a class="header" href="#进度-5">进度</a></h2>
 <p>开始时间：2022-06-18</p>
-<h2 id="笔记-10"><a class="header" href="#笔记-10">笔记</a></h2>
+<h2 id="笔记-9"><a class="header" href="#笔记-9">笔记</a></h2>
 <p>线程安全性：当多个线程访问某个类时候，这个类始终表现正确的行为。</p>
 <p>线程安全性：当多个线程之间操作无论采用什么执行时序或者交替方式，都能保证不变形条件不被破坏。</p>
 <p>由于ConcurrentHashMap不能被加锁来执行独占访问，因此无法通过客户端加锁来构建新的原子操作。ConcurrentMap方法都是原子，复合操作，put+get本身不是线程安全的。</p>
@@ -8517,12 +8536,12 @@ Faluttolerance, Security)。</li>
 翻译时间：2004-02-01</p>
 <h2 id="进度-6"><a class="header" href="#进度-6">进度</a></h2>
 <p>开始时间：2022-06-19</p>
-<h2 id="笔记-11"><a class="header" href="#笔记-11">笔记</a></h2>
+<h2 id="笔记-10"><a class="header" href="#笔记-10">笔记</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="数据库"><a class="header" href="#数据库">数据库</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="nosql精粹"><a class="header" href="#nosql精粹">NoSQL精粹</a></h1>
 <h1 id="进度-7"><a class="header" href="#进度-7">进度</a></h1>
 <p>P40</p>
-<h1 id="笔记-12"><a class="header" href="#笔记-12">笔记</a></h1>
+<h1 id="笔记-11"><a class="header" href="#笔记-11">笔记</a></h1>
 <p>影响NoSQL论文：Bigtable-2005,Dynamo-2007</p>
 <p>关系型数据库并不是设计给集群用的。</p>
 <p>CQL和SQL类似，但是差别很大。</p>
@@ -8561,7 +8580,7 @@ Faluttolerance, Security)。</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cassandra权威指南-第二版"><a class="header" href="#cassandra权威指南-第二版">Cassandra权威指南-第二版</a></h1>
 <h1 id="进度-8"><a class="header" href="#进度-8">进度</a></h1>
 <p>P277</p>
-<h1 id="笔记-13"><a class="header" href="#笔记-13">笔记</a></h1>
+<h1 id="笔记-12"><a class="header" href="#笔记-12">笔记</a></h1>
 <p>PCRS:partition column,cluster column,regular column,static column</p>
 <p>Primary Key=PC</p>
 <p>peer-to-peer architecture(什么含义？)</p>
@@ -8573,7 +8592,7 @@ Faluttolerance, Security)。</li>
 <p>Randy Shoup：如果不能拆分，就无法扩展。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="数据密集型应用系统设计"><a class="header" href="#数据密集型应用系统设计">数据密集型应用系统设计</a></h1>
 <h2 id="进度-9"><a class="header" href="#进度-9">进度</a></h2>
-<h2 id="笔记-14"><a class="header" href="#笔记-14">笔记</a></h2>
+<h2 id="笔记-13"><a class="header" href="#笔记-13">笔记</a></h2>
 <p>线性化会显著降低性能和可用性。</p>
 <p>2PC是一种共识算法，虽然不是多优秀。</p>
 <p>共识意味着某一项提议，所有节点做出一致的决定，而且决定不可撤销。</p>
@@ -8582,7 +8601,7 @@ Faluttolerance, Security)。</li>
 <h2 id="人物-1"><a class="header" href="#人物-1">人物</a></h2>
 <p><a href="https://dblp.org/pid/h/PatHelland.html">Pat Helland</a></p>
 <p><a href="https://scholar.google.com/citations?user=4ZYEiVEAAAAJ&amp;hl=zh-CN">Douglas Terry</a></p>
-<h2 id="笔记-15"><a class="header" href="#笔记-15">笔记</a></h2>
+<h2 id="笔记-14"><a class="header" href="#笔记-14">笔记</a></h2>
 <p>分布式文件系统：GlusterFS，Quantcast File System, HDFS</p>
 <p>对象存储:S3, Azure Blob, OpenStack Swift</p>
 <p>Hadoop工作流调度：Oozie，Azkaban，Luigi，AirFlow，Pinball</p>
@@ -8618,7 +8637,7 @@ Faluttolerance, Security)。</li>
 <p>翻译时间：</p>
 <h2 id="进度-10"><a class="header" href="#进度-10">进度</a></h2>
 <p>开始时间：2022-06-19</p>
-<h2 id="笔记-16"><a class="header" href="#笔记-16">笔记</a></h2>
+<h2 id="笔记-15"><a class="header" href="#笔记-15">笔记</a></h2>
 <p>ordering，linearizability，consensus</p>
 <p>ordering:transaction,concurrent, distributed system(timestamps and clocks)</p>
 <p>linearizability：system behave as if there is only a single copy of data</p>
@@ -8628,7 +8647,7 @@ Faluttolerance, Security)。</li>
 <p>MongoDB:the definitive guide, second edition</p>
 <h1 id="进度-11"><a class="header" href="#进度-11">进度</a></h1>
 <p>P201</p>
-<h1 id="笔记-17"><a class="header" href="#笔记-17">笔记</a></h1>
+<h1 id="笔记-16"><a class="header" href="#笔记-16">笔记</a></h1>
 <p>ObjectId</p>
 <p>mongorc.js</p>
 <p>mongo shell 是js程序</p>
@@ -8661,7 +8680,7 @@ Faluttolerance, Security)。</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="nosql实践指南"><a class="header" href="#nosql实践指南">NoSQL实践指南</a></h1>
 <h1 id="进度-12"><a class="header" href="#进度-12">进度</a></h1>
 <p>P230，快速看本书可以从P276开始</p>
-<h1 id="笔记-18"><a class="header" href="#笔记-18">笔记</a></h1>
+<h1 id="笔记-17"><a class="header" href="#笔记-17">笔记</a></h1>
 <p>使用NoSQL的动机：可伸缩性，成本开销，灵活性，可用性。</p>
 <p>例子：购物车，用户自己看，别人不会看， kv类型。</p>
 <p>2PC:降低可用性提高一致性。</p>
@@ -8746,7 +8765,7 @@ Faluttolerance, Security)。</li>
 <p>Ch10</p>
 <p>Ch11 √</p>
 <h2 id="未读"><a class="header" href="#未读">未读</a></h2>
-<h1 id="笔记-19"><a class="header" href="#笔记-19">笔记</a></h1>
+<h1 id="笔记-18"><a class="header" href="#笔记-18">笔记</a></h1>
 <p>有状态：处理时间需要依赖已经处理过事件。</p>
 <p>事件时间：水位线，触发器，窗口等机制保证了结果准确性。产生可重现且一致性的结果。 处理时间：机器时间，低延迟，但是结果具有不确定性。</p>
 <p>水位线：允许应用控制结果完整性和延迟。</p>
@@ -8795,7 +8814,7 @@ Faluttolerance, Security)。</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="apache-shardingsphere实战"><a class="header" href="#apache-shardingsphere实战">Apache ShardingSphere实战</a></h1>
 <h2 id="进度-14"><a class="header" href="#进度-14">进度</a></h2>
 <p>开始时间：2022-07-03</p>
-<h2 id="笔记-20"><a class="header" href="#笔记-20">笔记</a></h2>
+<h2 id="笔记-19"><a class="header" href="#笔记-19">笔记</a></h2>
 <h3 id="产品概念"><a class="header" href="#产品概念">产品概念</a></h3>
 <p>定位：关系型数据库中间件，数据库中间件</p>
 <p>解决方案：1 数据分片 2 读写分离 3 分布式事务 4 数据脱敏 5 编排管理</p>
@@ -8824,7 +8843,7 @@ Faluttolerance, Security)。</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="软件困局为什么聪明的程序员写出糟糕的代码"><a class="header" href="#软件困局为什么聪明的程序员写出糟糕的代码">软件困局：为什么聪明的程序员写出糟糕的代码</a></h1>
 <h2 id="进度-15"><a class="header" href="#进度-15">进度</a></h2>
 <p>开始时间：2022-07-03</p>
-<h2 id="笔记-21"><a class="header" href="#笔记-21">笔记</a></h2>
+<h2 id="笔记-20"><a class="header" href="#笔记-20">笔记</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="尽在双11-阿里巴巴技术演进与超越"><a class="header" href="#尽在双11-阿里巴巴技术演进与超越">尽在双11-阿里巴巴技术演进与超越</a></h1>
 <h2 id="进度-16"><a class="header" href="#进度-16">进度</a></h2>
 <p>开始时间：YYYY-MM-dd ~ 结束时间：YYYY-MM-dd</p>
@@ -9306,6 +9325,27 @@ Faluttolerance, Security)。</li>
 <p>中国：59.98%，美国：31.89%，黄金：8.11%</p>
 <p>降低中国资产比例到50%，增加美国资产到40%，黄金资产到10%。</p>
 <p>可以考虑加入债券基金，债券ETF等。</p>
+<h2 id="2024-02-29"><a class="header" href="#2024-02-29">2024-02-29</a></h2>
+<p>资产在平衡问题：</p>
+<p>已经投资总金额是10w块，分别是abc三只股票占比50% 5万，40% 4万， 10% 1万，想重平衡把资产比例弄成50%，30%，20%，该继续如何调整才能达到调整后的比例？</p>
+<ol>
+<li>
+<p>已知将要投资总额。</p>
+</li>
+<li>
+<p>不知将要投资总额。</p>
+</li>
+<li>
+<p>在总资产上面只买入。</p>
+</li>
+<li>
+<p>在总资产上面有买有卖。</p>
+</li>
+<li>
+<p>在总资产上面只有卖出。</p>
+</li>
+</ol>
+<p>如果有50只股票，10个基金，5个债券。这么多标的该如何进行投资管理呢？</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="交易记录"><a class="header" href="#交易记录">交易记录</a></h1>
 <h2 id="2023-10-25"><a class="header" href="#2023-10-25">2023-10-25</a></h2>
 <p><strong>投资行为</strong>：买入1手万科，买入1手格力电器</p>
@@ -9761,7 +9801,7 @@ Faluttolerance, Security)。</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="上市公司公告解读25讲"><a class="header" href="#上市公司公告解读25讲">上市公司公告解读25讲</a></h1>
 <h2 id="进度-18"><a class="header" href="#进度-18">进度</a></h2>
 <p>开始时间：2023-11-16 ~ 结束时间：2023-11-23</p>
-<h2 id="笔记-22"><a class="header" href="#笔记-22">笔记</a></h2>
+<h2 id="笔记-21"><a class="header" href="#笔记-21">笔记</a></h2>
 <p>上交所公告：http://www.sse.com.cn/disclosure/listedinfo/announcement/</p>
 <p>深交所公告：https://www.szse.cn/disclosure/listed/notice/index.html</p>
 <p>巨潮公告：http://www.cninfo.com.cn/new/index</p>
@@ -9910,7 +9950,7 @@ Faluttolerance, Security)。</li>
 <p>作者要解答这个问题：如何构建有效投资组合？</p>
 <h2 id="威廉伯恩斯坦推荐书籍"><a class="header" href="#威廉伯恩斯坦推荐书籍">威廉—伯恩斯坦推荐书籍</a></h2>
 <p>http://www.efficientfrontier.com/reading.htm</p>
-<h2 id="笔记-23"><a class="header" href="#笔记-23">笔记</a></h2>
+<h2 id="笔记-22"><a class="header" href="#笔记-22">笔记</a></h2>
 <p>三个投资策略：等量份额策略【CS】，币值成本策略【DCA】，价值平均策略【VA】。避免选择市场时机。自动市场择时机制。</p>
 <p>https://en.wikipedia.org/wiki/Value_averaging</p>
 <p>价值平均策略=币值成本平均策略+投资组合在平衡</p>
@@ -9966,7 +10006,7 @@ Faluttolerance, Security)。</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="股市长线法宝"><a class="header" href="#股市长线法宝">股市长线法宝</a></h1>
 <h2 id="作者-杰里米西格尔"><a class="header" href="#作者-杰里米西格尔">作者 杰里米·西格尔</a></h2>
 <p>https://en.wikipedia.org/wiki/Jeremy_Siegel</p>
-<h2 id="笔记-24"><a class="header" href="#笔记-24">笔记</a></h2>
+<h2 id="笔记-23"><a class="header" href="#笔记-23">笔记</a></h2>
 <p>股票积累财富的长期风险比债券大，但是就保持购买力角度，恰恰相反，股票的多样化投资组合才算最安全的长期投资。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="投资者的未来"><a class="header" href="#投资者的未来">投资者的未来</a></h1>
 <p>增长率陷阱。</p>
@@ -9984,7 +10024,7 @@ Faluttolerance, Security)。</li>
 <h2 id="进度-21"><a class="header" href="#进度-21">进度</a></h2>
 <p>开始时间：2023-11-23 ~ 结束时间：</p>
 <p>页数：</p>
-<h2 id="笔记-25"><a class="header" href="#笔记-25">笔记</a></h2>
+<h2 id="笔记-24"><a class="header" href="#笔记-24">笔记</a></h2>
 <p>安全、稳定和简单</p>
 <p>25%股市，25%长期国债，25%现金，25%贵金属（黄金） 每年调整比例。</p>
 <p>任何经济情况下，保护一生的投资策略。</p>
@@ -10094,7 +10134,7 @@ Faluttolerance, Security)。</li>
 <p>https://www.chinabond.com.cn/chinaBond_dong/zqzlfhcx/</p>
 <h2 id="上交所债券列表"><a class="header" href="#上交所债券列表">上交所债券列表</a></h2>
 <p>http://www.sse.com.cn/assortment/bonds/home/</p>
-<h2 id="笔记-26"><a class="header" href="#笔记-26">笔记</a></h2>
+<h2 id="笔记-25"><a class="header" href="#笔记-25">笔记</a></h2>
 <p>储蓄国债凭证式和电子式区别：https://www.psbc.com/cn/grfw/tzlc/gz/gzkt/202107/t20210722_113448.html</p>
 <p>凭证式和记账式区别：凭证式不可交易，记账式可交易。</p>
 <p>可转债投资</p>
@@ -10442,7 +10482,7 @@ Faluttolerance, Security)。</li>
 以养五气，气和而生津液相成，神乃自生。<a href="https://ctext.org/huangdi-neijing/liu-jie-cang-xiang-lun/zhs">参考</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="这样选购食品最安全-范志红"><a class="header" href="#这样选购食品最安全-范志红">这样选购食品最安全-范志红</a></h1>
 <h2 id="阅读进度"><a class="header" href="#阅读进度">阅读进度</a></h2>
-<h2 id="笔记-27"><a class="header" href="#笔记-27">笔记</a></h2>
+<h2 id="笔记-26"><a class="header" href="#笔记-26">笔记</a></h2>
 <p>糊精，麦芽糖浆，植物起酥油</p>
 <p>盐（咸菜）和糖（果脯）是防腐剂。蜜饯（盐和糖）</p>
 <p>高度加工食品</p>
@@ -11602,7 +11642,7 @@ C6H10O5(葡萄糖)+酵母菌-&gt;2C2H50H(酒精)+2CO2(二氧化碳)+能量
 <p><a href="https://ctext.org/book-of-changes/zhs">参考</a></p>
 <h2 id="阅读进度-1"><a class="header" href="#阅读进度-1">阅读进度</a></h2>
 <p>https://ctext.org/book-of-changes/ge/zhs</p>
-<h2 id="笔记-28"><a class="header" href="#笔记-28">笔记</a></h2>
+<h2 id="笔记-27"><a class="header" href="#笔记-27">笔记</a></h2>
 <p>中正比应</p>
 <h2 id="易经-1"><a class="header" href="#易经-1">易经</a></h2>
 <p>雷山恒</p>
@@ -12010,6 +12050,21 @@ C6H10O5(葡萄糖)+酵母菌-&gt;2C2H50H(酒精)+2CO2(二氧化碳)+能量
 <p>允迪厥德，谟明弼谐</p>
 <p>知人则哲，能官人安民则惠</p>
 <p>宽而栗，柔而立，愿而恭，乱而敬，扰而毅，直而温，简而廉，刚而塞，强而义，彰厥有常</p>
+<h2 id="益稷"><a class="header" href="#益稷">益稷</a></h2>
+<p>帝光天之下，至于海隅苍生，万邦黎献，共惟帝臣，惟帝时举。敷纳以言，明庶以功，车服以庸。谁敢不让，敢不敬应？</p>
+<h2 id="禹贡"><a class="header" href="#禹贡">禹贡</a></h2>
+<p>好像讲地理，资源的篇章</p>
+<h2 id="甘誓"><a class="header" href="#甘誓">甘誓</a></h2>
+<p>有扈氏威侮五行，怠弃三正，天用剿绝其命，今予惟恭行天之罚</p>
+<h2 id="五子之歌"><a class="header" href="#五子之歌">五子之歌</a></h2>
+<p>民可近，不可下，民惟邦本，本固邦宁。</p>
+<h2 id="胤征"><a class="header" href="#胤征">胤征</a></h2>
+<p>先时者杀无赦，不及时者杀无赦</p>
+<h2 id="汤誓"><a class="header" href="#汤誓">汤誓</a></h2>
+<p>时日曷丧？予及汝皆亡</p>
+<h2 id="仲虺之诰"><a class="header" href="#仲虺之诰">仲虺之诰</a></h2>
+<p>德日新，万邦惟怀；志自满，九族乃离</p>
+<p>王懋昭大德，建中于民，以义制事，以礼制心，垂裕后昆</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="诗经"><a class="header" href="#诗经">诗经</a></h1>
 <h2 id="原文-8"><a class="header" href="#原文-8">原文</a></h2>
 <p><a href="https://ctext.org/book-of-poetry/zhs">参考</a></p>
@@ -12417,7 +12472,7 @@ C6H10O5(葡萄糖)+酵母菌-&gt;2C2H50H(酒精)+2CO2(二氧化碳)+能量
 <p><a href="https://ctext.org/wiki.pl?if=gb&amp;res=760909&amp;remap=gb">参考</a></p>
 <h2 id="阅读进度-6"><a class="header" href="#阅读进度-6">阅读进度</a></h2>
 <p>https://ctext.org/wiki.pl?if=gb&amp;res=760909&amp;remap=gb</p>
-<h2 id="笔记-29"><a class="header" href="#笔记-29">笔记</a></h2>
+<h2 id="笔记-28"><a class="header" href="#笔记-28">笔记</a></h2>
 <p>学不倦，所以治己也；教不厌，所以治人也。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="鶡冠子"><a class="header" href="#鶡冠子">鶡冠子</a></h1>
 <h2 id="原文-20"><a class="header" href="#原文-20">原文</a></h2>
@@ -12620,6 +12675,7 @@ C6H10O5(葡萄糖)+酵母菌-&gt;2C2H50H(酒精)+2CO2(二氧化碳)+能量
 <h2 id="原文-58"><a class="header" href="#原文-58">原文</a></h2>
 <p><a href="https://ctext.org/wiki.pl?if=gb&amp;res=957611&amp;remap=gb">参考</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="三百千千"><a class="header" href="#三百千千">三百千千</a></h1>
+<h2 id="三字经"><a class="header" href="#三字经">三字经</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="蒙-增广贤文"><a class="header" href="#蒙-增广贤文">蒙-增广贤文</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="蒙-幼学琼林"><a class="header" href="#蒙-幼学琼林">蒙-幼学琼林</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="蒙-龙文鞭影"><a class="header" href="#蒙-龙文鞭影">蒙-龙文鞭影</a></h1>
@@ -13659,7 +13715,7 @@ https://ctext.org/zhuangzi/letting-be-and-exercising-forbearance/zh</p>
 <h2 id="中国哲学-1"><a class="header" href="#中国哲学-1">中国哲学</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="心理学"><a class="header" href="#心理学">心理学</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="认知框架"><a class="header" href="#认知框架">认知框架</a></h1>
-<h2 id="笔记-30"><a class="header" href="#笔记-30">笔记</a></h2>
+<h2 id="笔记-29"><a class="header" href="#笔记-29">笔记</a></h2>
 <p>框架是巨大而高效的认知捷径，勾画出思维空间帮助我们做出决定。简化世界认知，指导行动</p>
 <p>应用框架核心：因果律，反事实思维，约束想象力</p>
 <p>读书框架：默读，朗读。</p>
@@ -13687,9 +13743,9 @@ https://ctext.org/zhuangzi/letting-be-and-exercising-forbearance/zh</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="模型思维"><a class="header" href="#模型思维">模型思维</a></h1>
 <h2 id="coursera"><a class="header" href="#coursera">Coursera</a></h2>
 <p>https://www.coursera.org/learn/model-thinking</p>
-<h2 id="笔记-31"><a class="header" href="#笔记-31">笔记</a></h2>
+<h2 id="笔记-30"><a class="header" href="#笔记-30">笔记</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="好好思考-成甲"><a class="header" href="#好好思考-成甲">好好思考-成甲</a></h1>
-<h2 id="笔记-32"><a class="header" href="#笔记-32">笔记</a></h2>
+<h2 id="笔记-31"><a class="header" href="#笔记-31">笔记</a></h2>
 <p>凡有问题，必有结构。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="国学-1"><a class="header" href="#国学-1">国学</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="英语书-1"><a class="header" href="#英语书-1">英语书</a></h1>
@@ -14241,6 +14297,10 @@ https://ctext.org/zhuangzi/letting-be-and-exercising-forbearance/zh</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="车"><a class="header" href="#车">车</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="车-1"><a class="header" href="#车-1">车</a></h1>
 <p>炜神：2023款 凌云400T两驱星尊版 落地价18W.</p>
+<p>迈腾380</p>
+<p>飞度</p>
+<p>秦</p>
+<p>极氪001</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="综合"><a class="header" href="#综合">综合</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="行测"><a class="header" href="#行测">行测</a></h1>
 <h2 id="题库"><a class="header" href="#题库">题库</a></h2>

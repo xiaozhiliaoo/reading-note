@@ -301,142 +301,161 @@
 </ol>
 </blockquote>
 <h3 id="uri-searchquery-string"><a class="header" href="#uri-searchquery-string">URI Search(Query String)</a></h3>
-<p>GET /la-adap-plan-tpl/_search?q=9&amp;df=id
+<pre><code class="language-text">GET /la-adap-plan-tpl/_search?q=9&amp;df=id
 {
-&quot;profile&quot;: &quot;true&quot;
-}</p>
-<p>泛查询
-GET /la-adap-plan-tpl/_search?q=9
+	&quot;profile&quot;: &quot;true&quot;
+}
+</code></pre>
+<p>泛查询</p>
+<pre><code class="language-text">GET /la-adap-plan-tpl/_search?q=9
 {
-&quot;profile&quot;: &quot;true&quot;
-}</p>
-<p>GET /la-adap-plan-tpl/_search?q=id:9
+	&quot;profile&quot;: &quot;true&quot;
+}
+</code></pre>
+<pre><code class="language-text">GET /la-adap-plan-tpl/_search?q=id:9
 {
-&quot;profile&quot;: &quot;true&quot;
-}</p>
+	&quot;profile&quot;: &quot;true&quot;
+}
+</code></pre>
 <h3 id="analyzer"><a class="header" href="#analyzer">Analyzer</a></h3>
-<p>GET /_analyze
+<pre><code class="language-text">GET /_analyze
 {
-&quot;analyzer&quot;: &quot;standard&quot;,
-&quot;text&quot;:&quot;lili 111 222 你好北京&quot;
-}</p>
-<p>POST /users/_analyze
+    &quot;analyzer&quot;: &quot;standard&quot;,
+    &quot;text&quot;:&quot;lili 111 222 你好北京&quot;
+}
+</code></pre>
+<pre><code class="language-text">POST /users/_analyze
 {
-&quot;field&quot;: &quot;name&quot;, 
-&quot;text&quot;: [111]
-}</p>
-<p>POST /_analyze
+    &quot;field&quot;: &quot;name&quot;, 
+    &quot;text&quot;: [111]
+}
+</code></pre>
+<pre><code class="language-text">POST /_analyze
 {
-&quot;tokenizer&quot;: &quot;standard&quot;,
-&quot;filter&quot;: [&quot;lowercase&quot;],
-&quot;text&quot;: [&quot;Mastering Elasticsearch&quot;]
-}</p>
+    &quot;tokenizer&quot;: &quot;standard&quot;,
+    &quot;filter&quot;: [&quot;lowercase&quot;],
+    &quot;text&quot;: [&quot;Mastering Elasticsearch&quot;]
+}
+</code></pre>
 <h4 id="自定义分词器"><a class="header" href="#自定义分词器">自定义分词器</a></h4>
 <p>CharacterFilter 加工文本  Tokenizer：文本到词 Token Filters：词再次加工</p>
-<p>爬虫过滤了html标签
-POST _analyze
+<p>爬虫过滤了html标签</p>
+<pre><code class="language-text">POST _analyze
 {
-&quot;char_filter&quot;: [&quot;html_strip&quot;],
-&quot;tokenizer&quot;: &quot;keyword&quot;,
-&quot;text&quot;: [&quot;<html>lili</html>&quot;]
-}</p>
-<p>输入字符串替换</p>
-<p>POST _analyze
-{
-&quot;char_filter&quot;: [
-{
-&quot;type&quot;: &quot;mapping&quot;,
-&quot;mappings&quot;: [
-&quot;- =&gt; _&quot;
-]
+    &quot;char_filter&quot;: [&quot;html_strip&quot;],
+    &quot;tokenizer&quot;: &quot;keyword&quot;,
+    &quot;text&quot;: [&quot;&lt;html&gt;lili&lt;/html&gt;&quot;]
 }
-],
-&quot;tokenizer&quot;: &quot;standard&quot;, 
-&quot;text&quot;: &quot;123-456, I-test!&quot;
-}</p>
-<p>搜索到任意一级目录
-POST _analyze
+</code></pre>
+<p>输入字符串替换</p>
+<pre><code class="language-text">POST _analyze
 {
-&quot;tokenizer&quot;: &quot;path_hierarchy&quot;,
-&quot;text&quot;:&quot;/user/a/b/c/d&quot;
-}</p>
-<p>POST _analyze
+  &quot;char_filter&quot;: [
+    {
+      &quot;type&quot;: &quot;mapping&quot;,
+      &quot;mappings&quot;: [
+        &quot;- =&gt; _&quot;
+      ]
+    }
+  ],
+  &quot;tokenizer&quot;: &quot;standard&quot;, 
+  &quot;text&quot;: &quot;123-456, I-test!&quot;
+}
+</code></pre>
+<p>搜索到任意一级目录</p>
+<pre><code class="language-text">POST _analyze
 {
-&quot;tokenizer&quot;: &quot;whitespace&quot;,
-&quot;filter&quot;: [&quot;stop&quot;],
-&quot;text&quot;: [&quot;The rain&quot;]
-}</p>
-<p>POST _analyze
+    &quot;tokenizer&quot;: &quot;path_hierarchy&quot;,
+    &quot;text&quot;:&quot;/user/a/b/c/d&quot;
+}
+</code></pre>
+<pre><code class="language-text">POST _analyze
 {
-&quot;tokenizer&quot;: &quot;whitespace&quot;,
-&quot;filter&quot;: [&quot;lowercase&quot;,&quot;stop&quot;],
-&quot;text&quot;: [&quot;The rain&quot;]
-}</p>
+    &quot;tokenizer&quot;: &quot;whitespace&quot;,
+    &quot;filter&quot;: [&quot;stop&quot;],
+    &quot;text&quot;: [&quot;The rain&quot;]
+}
+</code></pre>
+<pre><code class="language-text">POST _analyze
+{
+    &quot;tokenizer&quot;: &quot;whitespace&quot;,
+    &quot;filter&quot;: [&quot;lowercase&quot;,&quot;stop&quot;],
+    &quot;text&quot;: [&quot;The rain&quot;]
+}
+</code></pre>
 <h3 id="request-body查询"><a class="header" href="#request-body查询">Request Body查询</a></h3>
 <p>高阶方法只能在RequestBody里面做。</p>
-<p>GET /la-adap-plan-tpl/_search
+<pre><code class="language-text">GET /la-adap-plan-tpl/_search
 {
-&quot;_source&quot;: [&quot;id&quot;,&quot;learningPlans&quot;], 
-&quot;query&quot;: {
-&quot;match_all&quot;: {}
+    &quot;_source&quot;: [&quot;id&quot;,&quot;learningPlans&quot;], 
+    &quot;query&quot;: {
+    	&quot;match_all&quot;: {}
+    }
 }
-}</p>
+</code></pre>
 <h3 id="matchmatch_phrase"><a class="header" href="#matchmatch_phrase">match,match_phrase</a></h3>
-<p>GET /users/_search
+<pre><code class="language-text">GET /users/_search
 {
-&quot;query&quot;: {
-&quot;match&quot;: {
-&quot;title&quot;: {
-&quot;query&quot;: &quot;111&quot;,
-&quot;operator&quot;: &quot;and&quot;
+    &quot;query&quot;: {
+        &quot;match&quot;: {
+            &quot;title&quot;: {
+                &quot;query&quot;: &quot;111&quot;,
+                &quot;operator&quot;: &quot;and&quot;
+            }
+        }
+    }
 }
-}
-}
-}</p>
-<p>GET /users/_search
+</code></pre>
+<pre><code class="language-text">GET /users/_search
 {
-&quot;query&quot;: {
-&quot;match_phrase&quot;: {
-&quot;title&quot;: {
-&quot;query&quot;: &quot;111&quot;,
-&quot;slop&quot;: 1
+  &quot;query&quot;: {
+    &quot;match_phrase&quot;: {
+      &quot;title&quot;: {
+        &quot;query&quot;: &quot;111&quot;,
+        &quot;slop&quot;: 1
+      }
+    }
+  }
 }
-}
-}
-}</p>
+</code></pre>
 <h3 id="query-string-query"><a class="header" href="#query-string-query">Query String Query</a></h3>
 <p>Simple Query String Query</p>
-<p>POST /users/_search
+<pre><code class="language-text">POST /users/_search
 {
-&quot;query&quot;: {
-&quot;query_string&quot;: {
-&quot;default_field&quot;: &quot;user&quot;,
-&quot;query&quot;: &quot;mike OR lili2&quot;
+    &quot;query&quot;: {
+        &quot;query_string&quot;: {
+            &quot;default_field&quot;: &quot;user&quot;,
+            &quot;query&quot;: &quot;mike OR lili2&quot;
+        }
+    }
 }
-}
-}</p>
-<p>POST /users/_search
+</code></pre>
+<pre><code class="language-text">POST /users/_search
 {
-&quot;query&quot;: {
-&quot;simple_query_string&quot;: {
-&quot;query&quot;: &quot;lili OR mike&quot;,
-&quot;default_operator&quot;: &quot;OR&quot;
+    &quot;query&quot;: {
+        &quot;simple_query_string&quot;: {
+            &quot;query&quot;: &quot;lili OR mike&quot;,
+            &quot;default_operator&quot;: &quot;OR&quot;
+        }
+    }
 }
-}
-}</p>
+</code></pre>
 <h3 id="dynamic-mapping"><a class="header" href="#dynamic-mapping">Dynamic Mapping</a></h3>
-<p>PUT mapping_test/_mapping
+<pre><code class="language-text">PUT mapping_test/_mapping
 {
-&quot;dynamic&quot;:true
-}</p>
-<p>PUT mapping_test/_mapping
+  	&quot;dynamic&quot;:true
+}
+</code></pre>
+<pre><code class="language-text">PUT mapping_test/_mapping
 {
-&quot;dynamic&quot;:false
-}</p>
-<p>PUT mapping_test/_mapping
+  	&quot;dynamic&quot;:false
+}
+</code></pre>
+<pre><code class="language-text">PUT mapping_test/_mapping
 {
-&quot;dynamic&quot;:&quot;strict&quot;
-}</p>
+	&quot;dynamic&quot;:&quot;strict&quot;
+}
+</code></pre>
 <h4 id="自定义mapping"><a class="header" href="#自定义mapping">自定义Mapping</a></h4>
 <p>NULL_VALUE</p>
 <h2 id="论文"><a class="header" href="#论文">论文</a></h2>
