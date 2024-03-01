@@ -148,14 +148,13 @@
 <p>https://www.elastic.co/guide/cn/elasticsearch/guide/current/_creating_an_index.html</p>
 <h2 id="notes"><a class="header" href="#notes">Notes</a></h2>
 <p>CAP？</p>
-<p>CP系统一般用了共识协议，没用的一般AP。Cassandra 可调一致性调节到CP，用的是quroum策略。</p>
-<p>TF-IDF:词频/逆向文档频率</p>
+<p>CP系统一般用了共识协议，没用的一般AP。Cassandra 可调一致性调节到CP，用的是quorum策略。</p>
+<p>TF-IDF:词频/逆向文档频率(term frequency inverse document frequency)</p>
 <p>es两个阶段：索引和查询</p>
-<p>stemmer:词干提取器</p>
+<p>stemmer:词干提取器,Hunspell 词干提取器（拼写检查）</p>
 <p>synonyms：同义词</p>
 <p>字典词干提取器，算法化词干提取器</p>
 <p>实践中一个好的算法化词干提取器一般优于一个字典词干提取器。</p>
-<p>Hunspell 词干提取器（拼写检查）</p>
 <p>保留停用词最大的缺点就影响搜索性能。</p>
 <p>索引结构：Terms dictionary，Postings list，Term frequency，Positions，Offsets，Norms</p>
 <p>common_grams 过滤器是针对短语查询能更高效的使用停用词而设计的。</p>

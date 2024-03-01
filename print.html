@@ -153,16 +153,38 @@
 <li>技术的书籍来源于此<a href="https://xiaozhiliaoo.github.io/reading-list/">阅读列表</a> ，<a href="https://xiaozhiliaoo.github.io/reading-note/paper/intro.html">论文列表</a> 。</li>
 <li>社科的书籍主要包括哲学，心理学，人文，历史，人物传记，影视，投资金融与经济，国学，各种讲座等等，已读列表在<a href="">已读列表</a>，书单汇总地址在<a href="https://xiaozhiliaoo.github.io/reading-note/reference/booklist.html">阅读列表</a> 。</li>
 </ul>
-<h1 id="统一读书笔记格式"><a class="header" href="#统一读书笔记格式">统一读书笔记格式</a></h1>
-<h2 id="进度"><a class="header" href="#进度">进度</a></h2>
-<p>开始时间：YYYY-MM-dd ~ 结束时间：YYYY-MM-dd</p>
-<p>阅读页数：</p>
-<h2 id="结构"><a class="header" href="#结构">结构</a></h2>
-<p>书名，作者，分类，相关书籍</p>
-<p>本书的整体结构，摘要，纲要，重点</p>
-<p>笔记（知识）</p>
-<p>读后感</p>
-<p>思维导图</p>
+<h1 id="读书笔记模版"><a class="header" href="#读书笔记模版">读书笔记模版</a></h1>
+<pre><code class="language-text">
+# 书名
+
+作者：
+
+分类：
+
+相关书籍：
+
+## 进度
+
+阅读记录：开始时间：YYYY-MM-dd ~ 结束时间：YYYY-MM-dd
+
+阅读页数：
+
+# 内容
+
+## 整体结构
+
+## 摘要
+
+## 纲要
+
+## 笔记
+
+## 读后感
+
+## 书评
+
+# 参考
+</code></pre>
 <h1 id="方法论探索"><a class="header" href="#方法论探索">方法论探索</a></h1>
 <p>认知系统：如何读书，如何思考，思维模式（系统思维，模型思维，结构化思维，格栅思维等等），学习方法，记忆力，卡片笔记，思维导图，快速阅读，费曼学习法，演讲，写作等。</p>
 <p>学习系统：个人的。</p>
@@ -978,14 +1000,13 @@ ES Term的Fuzzy查询基于： Levenshtein edit distance（es string distance）
 <p>https://www.elastic.co/guide/cn/elasticsearch/guide/current/_creating_an_index.html</p>
 <h2 id="notes-3"><a class="header" href="#notes-3">Notes</a></h2>
 <p>CAP？</p>
-<p>CP系统一般用了共识协议，没用的一般AP。Cassandra 可调一致性调节到CP，用的是quroum策略。</p>
-<p>TF-IDF:词频/逆向文档频率</p>
+<p>CP系统一般用了共识协议，没用的一般AP。Cassandra 可调一致性调节到CP，用的是quorum策略。</p>
+<p>TF-IDF:词频/逆向文档频率(term frequency inverse document frequency)</p>
 <p>es两个阶段：索引和查询</p>
-<p>stemmer:词干提取器</p>
+<p>stemmer:词干提取器,Hunspell 词干提取器（拼写检查）</p>
 <p>synonyms：同义词</p>
 <p>字典词干提取器，算法化词干提取器</p>
 <p>实践中一个好的算法化词干提取器一般优于一个字典词干提取器。</p>
-<p>Hunspell 词干提取器（拼写检查）</p>
 <p>保留停用词最大的缺点就影响搜索性能。</p>
 <p>索引结构：Terms dictionary，Postings list，Term frequency，Positions，Offsets，Norms</p>
 <p>common_grams 过滤器是针对短语查询能更高效的使用停用词而设计的。</p>
@@ -1025,7 +1046,7 @@ analyzed 字符串，这样可以有效的利用 doc values</p>
 <h2 id="progress-3"><a class="header" href="#progress-3">Progress</a></h2>
 <p>P47</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="深入理解elasticsearch原书第三版"><a class="header" href="#深入理解elasticsearch原书第三版">深入理解Elasticsearch(原书第三版)</a></h1>
-<h2 id="进度-1"><a class="header" href="#进度-1">进度</a></h2>
+<h2 id="进度"><a class="header" href="#进度">进度</a></h2>
 <p>阅读完成</p>
 <h2 id="notes-4"><a class="header" href="#notes-4">Notes</a></h2>
 <p>prefix-query不会被分析，match query会被分析</p>
@@ -1131,7 +1152,7 @@ value.deserializer Provide a class name that is used to deserialize the message 
 data pipelines, streaming analytics, data integration, and mission-critical applications.</p>
 <p>Confluent: Set Your Data in Motion</p>
 <p>Confluent is creating the foundational platform for data-in-motion</p>
-<h2 id="进度-2"><a class="header" href="#进度-2">进度</a></h2>
+<h2 id="进度-1"><a class="header" href="#进度-1">进度</a></h2>
 <p>Event Streaming Patterns：https://developer.confluent.io/patterns/event/event/</p>
 <p>inside-ksqldb：https://developer.confluent.io/learn-kafka/inside-ksqldb/streaming-architecture/</p>
 <h2 id="笔记-4"><a class="header" href="#笔记-4">笔记</a></h2>
@@ -1688,7 +1709,7 @@ CREATE INDEX lesson_index ON course_process.user_process (lessonid);
 <p>打开trace , TRACING ON, 然后select数据，发现每一步耗时。查看trace命令，select * from system_traces.sessions ;查看trace的事件，select * from
 system_traces.events </p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="system-1"><a class="header" href="#system-1">System</a></h1>
-<h1 id="进度-3"><a class="header" href="#进度-3">进度</a></h1>
+<h1 id="进度-2"><a class="header" href="#进度-2">进度</a></h1>
 <h1 id="笔记-5"><a class="header" href="#笔记-5">笔记</a></h1>
 <h2 id="基础知识"><a class="header" href="#基础知识">基础知识</a></h2>
 <h3 id="cql"><a class="header" href="#cql">CQL</a></h3>
@@ -2352,7 +2373,7 @@ https://github.com/deckarep/golang-set
 包的引入 . 和 _ 区别？
 go注释和java注释。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="go语言趣学指南"><a class="header" href="#go语言趣学指南">Go语言趣学指南</a></h1>
-<h1 id="进度-4"><a class="header" href="#进度-4">进度</a></h1>
+<h1 id="进度-3"><a class="header" href="#进度-3">进度</a></h1>
 <p>完成</p>
 <p>代码仓库：https://github.com/xiaozhiliaoo/go-practice/tree/master/get-programming-with-go</p>
 <h1 id="笔记-6"><a class="header" href="#笔记-6">笔记</a></h1>
@@ -8599,7 +8620,7 @@ Faluttolerance, Security)。</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="java并发编程实战"><a class="header" href="#java并发编程实战">Java并发编程实战</a></h1>
 <p>作者：Brian Goetz Tim Peierls Joshua Bloch Joseph Bowbeer David Holmes Doug Lea</p>
 <p>出版时间：2006年5月19日</p>
-<h2 id="进度-5"><a class="header" href="#进度-5">进度</a></h2>
+<h2 id="进度-4"><a class="header" href="#进度-4">进度</a></h2>
 <p>开始时间：2022-06-18</p>
 <h2 id="笔记-9"><a class="header" href="#笔记-9">笔记</a></h2>
 <p>线程安全性：当多个线程访问某个类时候，这个类始终表现正确的行为。</p>
@@ -8621,12 +8642,12 @@ Faluttolerance, Security)。</li>
 <p>作者：Doug Lea</p>
 <p>出版时间：1999-11-01
 翻译时间：2004-02-01</p>
-<h2 id="进度-6"><a class="header" href="#进度-6">进度</a></h2>
+<h2 id="进度-5"><a class="header" href="#进度-5">进度</a></h2>
 <p>开始时间：2022-06-19</p>
 <h2 id="笔记-10"><a class="header" href="#笔记-10">笔记</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="数据库"><a class="header" href="#数据库">数据库</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="nosql精粹"><a class="header" href="#nosql精粹">NoSQL精粹</a></h1>
-<h1 id="进度-7"><a class="header" href="#进度-7">进度</a></h1>
+<h1 id="进度-6"><a class="header" href="#进度-6">进度</a></h1>
 <p>P40</p>
 <h1 id="笔记-11"><a class="header" href="#笔记-11">笔记</a></h1>
 <p>影响NoSQL论文：Bigtable-2005,Dynamo-2007</p>
@@ -8665,7 +8686,7 @@ Faluttolerance, Security)。</li>
 </tbody></table>
 <h1 id="参考-4"><a class="header" href="#参考-4">参考</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cassandra权威指南-第二版"><a class="header" href="#cassandra权威指南-第二版">Cassandra权威指南-第二版</a></h1>
-<h1 id="进度-8"><a class="header" href="#进度-8">进度</a></h1>
+<h1 id="进度-7"><a class="header" href="#进度-7">进度</a></h1>
 <p>P277</p>
 <h1 id="笔记-12"><a class="header" href="#笔记-12">笔记</a></h1>
 <p>PCRS:partition column,cluster column,regular column,static column</p>
@@ -8678,7 +8699,7 @@ Faluttolerance, Security)。</li>
 <h1 id="名言"><a class="header" href="#名言">名言</a></h1>
 <p>Randy Shoup：如果不能拆分，就无法扩展。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="数据密集型应用系统设计"><a class="header" href="#数据密集型应用系统设计">数据密集型应用系统设计</a></h1>
-<h2 id="进度-9"><a class="header" href="#进度-9">进度</a></h2>
+<h2 id="进度-8"><a class="header" href="#进度-8">进度</a></h2>
 <h2 id="笔记-13"><a class="header" href="#笔记-13">笔记</a></h2>
 <p>线性化会显著降低性能和可用性。</p>
 <p>2PC是一种共识算法，虽然不是多优秀。</p>
@@ -8722,7 +8743,7 @@ Faluttolerance, Security)。</li>
 <p>作者：Martin Kleppmann</p>
 <p>出版时间： 2017-03-01</p>
 <p>翻译时间：</p>
-<h2 id="进度-10"><a class="header" href="#进度-10">进度</a></h2>
+<h2 id="进度-9"><a class="header" href="#进度-9">进度</a></h2>
 <p>开始时间：2022-06-19</p>
 <h2 id="笔记-15"><a class="header" href="#笔记-15">笔记</a></h2>
 <p>ordering，linearizability，consensus</p>
@@ -8732,7 +8753,7 @@ Faluttolerance, Security)。</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="分布式与中间件"><a class="header" href="#分布式与中间件">分布式与中间件</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="mongodb权威指南第二版"><a class="header" href="#mongodb权威指南第二版">mongodb权威指南第二版</a></h1>
 <p>MongoDB:the definitive guide, second edition</p>
-<h1 id="进度-11"><a class="header" href="#进度-11">进度</a></h1>
+<h1 id="进度-10"><a class="header" href="#进度-10">进度</a></h1>
 <p>P201</p>
 <h1 id="笔记-16"><a class="header" href="#笔记-16">笔记</a></h1>
 <p>ObjectId</p>
@@ -8765,7 +8786,7 @@ Faluttolerance, Security)。</li>
 <p>mongodb复制功能基于oplog实现的，oplog按顺序保存所有执行过的写操作，每个成员维护着一份自己的oplog，每个成员的oplog应该和主节点的oplog完全一致。</p>
 <h1 id="参考-5"><a class="header" href="#参考-5">参考</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="nosql实践指南"><a class="header" href="#nosql实践指南">NoSQL实践指南</a></h1>
-<h1 id="进度-12"><a class="header" href="#进度-12">进度</a></h1>
+<h1 id="进度-11"><a class="header" href="#进度-11">进度</a></h1>
 <p>P230，快速看本书可以从P276开始</p>
 <h1 id="笔记-17"><a class="header" href="#笔记-17">笔记</a></h1>
 <p>使用NoSQL的动机：可伸缩性，成本开销，灵活性，可用性。</p>
@@ -8836,7 +8857,7 @@ Faluttolerance, Security)。</li>
 <p>Key-Value stores: a practical overview</p>
 <p>Towards Robust Distributed Systems</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="基于apache-flink的流处理流式应用基础实现及操作"><a class="header" href="#基于apache-flink的流处理流式应用基础实现及操作">基于Apache Flink的流处理:流式应用基础、实现及操作</a></h1>
-<h1 id="进度-13"><a class="header" href="#进度-13">进度</a></h1>
+<h1 id="进度-12"><a class="header" href="#进度-12">进度</a></h1>
 <h2 id="次数"><a class="header" href="#次数">次数</a></h2>
 <p>1</p>
 <h2 id="已读"><a class="header" href="#已读">已读</a></h2>
@@ -8899,7 +8920,7 @@ Faluttolerance, Security)。</li>
 <p>Omega: flexible, scalable schedulers for large compute clusters</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="框架"><a class="header" href="#框架">框架</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="apache-shardingsphere实战"><a class="header" href="#apache-shardingsphere实战">Apache ShardingSphere实战</a></h1>
-<h2 id="进度-14"><a class="header" href="#进度-14">进度</a></h2>
+<h2 id="进度-13"><a class="header" href="#进度-13">进度</a></h2>
 <p>开始时间：2022-07-03</p>
 <h2 id="笔记-19"><a class="header" href="#笔记-19">笔记</a></h2>
 <h3 id="产品概念"><a class="header" href="#产品概念">产品概念</a></h3>
@@ -8928,11 +8949,11 @@ Faluttolerance, Security)。</li>
 <p>强一致性事务XA，最终一致性事务BASE</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="软件工程"><a class="header" href="#软件工程">软件工程</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="软件困局为什么聪明的程序员写出糟糕的代码"><a class="header" href="#软件困局为什么聪明的程序员写出糟糕的代码">软件困局：为什么聪明的程序员写出糟糕的代码</a></h1>
-<h2 id="进度-15"><a class="header" href="#进度-15">进度</a></h2>
+<h2 id="进度-14"><a class="header" href="#进度-14">进度</a></h2>
 <p>开始时间：2022-07-03</p>
 <h2 id="笔记-20"><a class="header" href="#笔记-20">笔记</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="尽在双11-阿里巴巴技术演进与超越"><a class="header" href="#尽在双11-阿里巴巴技术演进与超越">尽在双11-阿里巴巴技术演进与超越</a></h1>
-<h2 id="进度-16"><a class="header" href="#进度-16">进度</a></h2>
+<h2 id="进度-15"><a class="header" href="#进度-15">进度</a></h2>
 <p>开始时间：YYYY-MM-dd ~ 结束时间：YYYY-MM-dd</p>
 <h2 id="书名作者分类相关书籍"><a class="header" href="#书名作者分类相关书籍">书名，作者，分类，相关书籍</a></h2>
 <h2 id="本书的整体结构摘要纲要重点"><a class="header" href="#本书的整体结构摘要纲要重点">本书的整体结构，摘要，纲要，重点</a></h2>
@@ -9677,7 +9698,7 @@ Faluttolerance, Security)。</li>
 <p>https://en.wikipedia.org/wiki/Howard_Marks_(investor)</p>
 <p>https://zh.wikipedia.org/zh-hans/%E9%9C%8D%E5%8D%8E%E5%BE%B7%C2%B7%E9%A9%AC%E5%85%8B%E6%96%AF</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="投资的四大支柱"><a class="header" href="#投资的四大支柱">投资的四大支柱</a></h1>
-<h2 id="进度-17"><a class="header" href="#进度-17">进度</a></h2>
+<h2 id="进度-16"><a class="header" href="#进度-16">进度</a></h2>
 <p>2023-12-11～2023-12-</p>
 <p>P115</p>
 <h2 id="没有血性哪来风险"><a class="header" href="#没有血性哪来风险">没有血性，哪来风险</a></h2>
@@ -9886,7 +9907,7 @@ Faluttolerance, Security)。</li>
 <p>经营，管理，财务，业绩</p>
 <p>管理是否卓越：投产比。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="上市公司公告解读25讲"><a class="header" href="#上市公司公告解读25讲">上市公司公告解读25讲</a></h1>
-<h2 id="进度-18"><a class="header" href="#进度-18">进度</a></h2>
+<h2 id="进度-17"><a class="header" href="#进度-17">进度</a></h2>
 <p>开始时间：2023-11-16 ~ 结束时间：2023-11-23</p>
 <h2 id="笔记-21"><a class="header" href="#笔记-21">笔记</a></h2>
 <p>上交所公告：http://www.sse.com.cn/disclosure/listedinfo/announcement/</p>
@@ -10028,7 +10049,7 @@ Faluttolerance, Security)。</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="基本面指数投资策略"><a class="header" href="#基本面指数投资策略">基本面指数投资策略</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="主动型指数投资"><a class="header" href="#主动型指数投资">主动型指数投资</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="价值平均策略va策略"><a class="header" href="#价值平均策略va策略">价值平均策略（VA策略）</a></h1>
-<h2 id="进度-19"><a class="header" href="#进度-19">进度</a></h2>
+<h2 id="进度-18"><a class="header" href="#进度-18">进度</a></h2>
 <h3 id="首读"><a class="header" href="#首读">首读</a></h3>
 <p>开始时间：2023-10-31 ~ 结束时间：2023-11-20</p>
 <h3 id="在读"><a class="header" href="#在读">在读</a></h3>
@@ -10080,7 +10101,7 @@ Faluttolerance, Security)。</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="彼得林奇的成功投资-典藏版"><a class="header" href="#彼得林奇的成功投资-典藏版">彼得林奇的成功投资-典藏版</a></h1>
 <h2 id="作者-1"><a class="header" href="#作者-1">作者</a></h2>
 <p>https://en.wikipedia.org/wiki/Peter_Lynch</p>
-<h2 id="进度-20"><a class="header" href="#进度-20">进度</a></h2>
+<h2 id="进度-19"><a class="header" href="#进度-19">进度</a></h2>
 <p>开始时间：2023-07-22</p>
 <p>如何在炒股软件上，展现历史股价和收益，pe的曲线图？</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="战胜华尔街"><a class="header" href="#战胜华尔街">战胜华尔街</a></h1>
@@ -10108,7 +10129,7 @@ Faluttolerance, Security)。</li>
 <p>案例：日本，韩国，中国（中国移动，中国人寿）</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="哈利布朗的永久投资组合"><a class="header" href="#哈利布朗的永久投资组合">哈利布朗的永久投资组合</a></h1>
 <p>Harry Browne</p>
-<h2 id="进度-21"><a class="header" href="#进度-21">进度</a></h2>
+<h2 id="进度-20"><a class="header" href="#进度-20">进度</a></h2>
 <p>开始时间：2023-11-23 ~ 结束时间：</p>
 <p>页数：</p>
 <h2 id="笔记-24"><a class="header" href="#笔记-24">笔记</a></h2>
@@ -10184,7 +10205,7 @@ Faluttolerance, Security)。</li>
 <p>市销率基于个股，而不是系统性的。【择机入市，择时入市】</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="逆向投资策略"><a class="header" href="#逆向投资策略">逆向投资策略</a></h1>
 <p>作者：大卫 德雷曼</p>
-<h2 id="进度-22"><a class="header" href="#进度-22">进度</a></h2>
+<h2 id="进度-21"><a class="header" href="#进度-21">进度</a></h2>
 <h2 id="第十章-通向盈利的逆向投资路径"><a class="header" href="#第十章-通向盈利的逆向投资路径">第十章 通向盈利的逆向投资路径</a></h2>
 <p>5个策略：低市盈率，低市净率，低市现率，高股息率，低于行业定价</p>
 <h2 id="第十一章-从投资者过度反应中获利"><a class="header" href="#第十一章-从投资者过度反应中获利">第十一章 从投资者过度反应中获利</a></h2>
@@ -12786,7 +12807,7 @@ C6H10O5(葡萄糖)+酵母菌-&gt;2C2H50H(酒精)+2CO2(二氧化碳)+能量
 <h2 id="提到历史"><a class="header" href="#提到历史">提到历史</a></h2>
 <h2 id="个人扩展"><a class="header" href="#个人扩展">个人扩展</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="易经系传别讲"><a class="header" href="#易经系传别讲">易经系传别讲</a></h1>
-<h2 id="进度-23"><a class="header" href="#进度-23">进度</a></h2>
+<h2 id="进度-22"><a class="header" href="#进度-22">进度</a></h2>
 <p>https://www.quanxue.cn/ct_nanhuaijin/xichi/xichi116.html</p>
 <h2 id="提到书籍-1"><a class="header" href="#提到书籍-1">提到书籍</a></h2>
 <p>《白猿占经》，《五岳真形图》，《道藏》，《葬经》，</p>
