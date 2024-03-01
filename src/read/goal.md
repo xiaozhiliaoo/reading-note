@@ -23,3 +23,11 @@
 国学读完：道德经，金刚经，孙子兵法
 
 ## 2024读书计划
+
+技术读完：主要是重读之前的一些书，加深理解。高性能MySQL/MySQL技术内幕（SQL和InnoDB）/数据库系统内幕，Redis设计与实现/Redis实战，Kafka权威指南，Elasticsearch权威指南/深入理解ElasticSearch，Java并发编程实战/Effective Java/深入理解JVM，DDIA/深入理解分布式系统/分布式系统与一致性。
+
+金融学读完：
+
+健康读完：
+
+国学读完：儒释道的十三经
