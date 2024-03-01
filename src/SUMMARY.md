@@ -250,6 +250,7 @@
       - [容器化-Docker](tech/tech-interviews/docker.md)
       - [架构-架构设计](tech/tech-interviews/arch.md)
       - [系统-Linux](tech/tech-interviews/linux.md)
+      - [系统-模式](tech/tech-interviews/pattern.md)
       - [计算机-操作系统](tech/tech-interviews/os.md)
       - [计算机-网络](tech/tech-interviews/net.md)
       - [计算机-分布式系统](tech/tech-interviews/dist.md)
