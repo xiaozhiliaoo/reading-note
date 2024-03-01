@@ -4,7 +4,7 @@
 
 阅读完成
 
-## Notes
+## 笔记
 
 prefix-query不会被分析，match query会被分析
 
@@ -44,9 +44,9 @@ span_near,span_not,span_or,span_term,top_children
 
 查询改写：prefix，rewrite参数
 
-es使用mustache实现查询模板
-
 multi_match匹配类型：best_fields,most_fields,cross_fields,phrase,phrase_prefix
+
+es使用mustache实现查询模板
 
 es管理关系型提供了：嵌套，父子文档结构
 
@@ -56,7 +56,7 @@ es管理关系型提供了：嵌套，父子文档结构
 
 集群主节点任务：节点间分配分片。
 
-分片是一个lucence索引。
+分片是一个Lucence索引。
 
 相似度模型（similarity）：TF-IDF，BM25，DFR，DFI，IB，LM Dirichlet,LM JelinekMercer
 
@@ -74,8 +74,7 @@ flush：将事务日志同步到lucene index，同时清空事务日志。默认
 
 NRT:近实时
 
-发现模块：选主，发现新节点，形成和发现新节点过程叫发现。
-Zen发现模块单播(unicast)发现集群中其他节点。
+发现模块：选主，发现新节点，形成和发现新节点过程叫发现。Zen发现模块单播(unicast)发现集群中其他节点。
 
 微服务发现是发现别人，但是自己发现不了。
 
@@ -102,8 +101,7 @@ dfs query then fetch
 
 当数据量够大，查询够复杂时候，就会碰到内存问题，此时增加更多内存也无济于事。
 
-增加主分片：内存溢出，分片查询时间过长，内存交换，高IO等待等问题
-增加副本分片：流量过高节点无法处理的时候，增加查询能力。
+增加主分片：内存溢出，分片查询时间过长，内存交换，高IO等待等问题。增加副本分片：流量过高节点无法处理的时候，增加查询能力。
 
 集群缺少部分节点数据，比完全不响应查询要好。
 
@@ -119,7 +117,7 @@ dfs query then fetch
 
 索引只在一个分片上面，查询性能较差，增加副本分片对性能提高无用，需要将索引分为多个分片。把数据平均负载。
 
-聚合查询：size:最后聚合结果返回多少组数据，shard_size：每个分片返回多少组数据。 降低size和shard_size会让聚合结果不那么准确，但是网络开销小，内存使用低。
+聚合查询：size是最后聚合结果返回多少组数据，shard_size是每个分片返回多少组数据。 降低size和shard_size会让聚合结果不那么准确，但是网络开销小，内存使用低。
 
 过多的副本会导致索引速度下降。
 
@@ -127,5 +125,4 @@ es 预写日志WAL，tranlog，get请求获取最新的数据，确保数据持�
 
 SSD优于HDD
 
-基于时间的索引管理：shrink和rollover
-shrink api 减少主分片，生成新的索引。只有只读才能收缩。
+基于时间的索引管理：shrink和rollover。shrink api 减少主分片，生成新的索引。只有只读才能收缩。
