@@ -209,6 +209,10 @@
 <p>健康读完：食物营养与配餐第二版（范志红），你是你吃出来的两本，中国居民膳食指南（科普版+详细版），顾中一两本，营养圣经，吃出自愈力，精准营养，公共营养师，居民膳食营养素参考摄入量。</p>
 <p>国学读完：道德经，金刚经，孙子兵法</p>
 <h2 id="2024读书计划"><a class="header" href="#2024读书计划">2024读书计划</a></h2>
+<p>技术读完：主要是重读之前的一些书，加深理解。高性能MySQL/MySQL技术内幕（SQL和InnoDB）/数据库系统内幕，Redis设计与实现/Redis实战，Kafka权威指南，Elasticsearch权威指南/深入理解ElasticSearch，Java并发编程实战/Effective Java/深入理解JVM，DDIA/深入理解分布式系统/分布式系统与一致性。</p>
+<p>金融学读完：</p>
+<p>健康读完：</p>
+<p>国学读完：儒释道的十三经</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="阅读记录"><a class="header" href="#阅读记录">阅读记录</a></h1>
 <h2 id="正在阅读"><a class="header" href="#正在阅读">正在阅读</a></h2>
 <p>股市长线法宝</p>
@@ -3706,20 +3710,9 @@ Trace：追踪链路、并发、根因、性能</p>
 <p>倒排索引结构：term dictionary和posting list（倒排列表），记录位置，因为需要语句搜索。</p>
 <p>phrase：语句</p>
 <p>mapping中某些字段不做索引，缺点无法被搜索，优点节省空间。</p>
-<p>Analysis：文本分析把全文转换成一系列term/token。通过Analyer实现。分词器由三部分组成。</p>
-<p>输入不用分词，用keyword analyer。</p>
-<p>中文分词器：</p>
-<ul>
-<li>
-<p>ICU Analyser原理是什么？Character Filter -&gt; Tokenizer -&gt; Token Filter</p>
-</li>
-<li>
-<p>IK</p>
-</li>
-<li>
-<p>THULAC 清华</p>
-</li>
-</ul>
+<p>Analysis：文本分析把全文转换成一系列term/token。通过Analyzer实现。分词器由三部分组成。Analyser原理是什么？Character Filter -&gt; Tokenizer -&gt; Token Filter</p>
+<p>输入不用分词，用keyword analyzer。</p>
+<p>中文分词器：ICU，IK，THULAC 清华</p>
 <p>计算机学科：Information Retrieval</p>
 <p>Precision=True Positive / （True Positive  + False Positive），</p>
 <p>Recall= True Positive / （True Positive + False Negative）</p>
@@ -3737,13 +3730,13 @@ Trace：追踪链路、并发、根因、性能</p>
 </tbody></table>
 <p>Dynamic Mapping 自动推断（自动识别）类型，索引不存在，自动创建。</p>
 <p>Dynamic Mapping的Text字段会<strong>自动</strong>加keyword子字段。但是strict不会自动加keyword子字段。</p>
-<p>多字段类型：特定字段特定分析器，指定不同的analyer。</p>
+<p>多字段类型：特定字段特定分析器，指定不同的analyzer。</p>
 <p>精确值keyword VS 全文text，精确值不需要被分词。text是文本类型，keyword关键字类型。</p>
-<p>ES默认创建文档，“name”:&quot;Alibaba&quot;，name会text并且keyword子字段，term查询”Alibaba“会查不到。term查询不会分词。term查询也会算分，跳过算分，使用constant_score不算分了。</p>
+<p>ES默认创建文档，“name”:&quot;Alibaba&quot;，name会text并且keyword子字段，term查询”Alibaba“会查不到。term查询不会分词。要想查询到，需要用keyword查询。term查询也会算分，跳过算分，使用constant_score不算分了。</p>
 <p>TF/IDF，BM25</p>
 <p>条件组合，bool查询。对字段查询，bool查询两个算分，两个不算分。</p>
 <ul>
-<li>单字符串多字段查询（Google，百度）
+<li>单字符串多字段查询（Google，百度的查询模式）
 <ul>
 <li>bool query（字段算分加和）</li>
 <li>disjunction（分离） max query。</li>
@@ -3754,19 +3747,15 @@ Trace：追踪链路、并发、根因、性能</p>
 <p>分词，nlp，搜索引擎关系，nlp是自然语言处理技术，其中可以用来中文分词。</p>
 <p>百度analysis-baidu-nlp：百度NLP中文分词插件。</p>
 <p>HanLP作者的书《自然语言处理入门》 <a href="https://www.ituring.com.cn/book/2706">https://www.ituring.com.cn/book/2706</a></p>
-<p><a href="https://github.com/KennFalcon/elasticsearch-analysis-hanlp">https://github.com/KennFalcon/elasticsearch-analysis-hanlp</a></p>
+<p><a href="https://github.com/KennFalcon/elasticsearch-analysis-hanlp">elasticsearch-analysis-hanlp</a></p>
 <p>Search Template 查询模板化。 <a href="https://mustache.github.io/">https://mustache.github.io/</a></p>
-<ul>
-<li>索引别名
-<ul>
-<li>别名是只读的。</li>
-<li>多个索引对应一个别名。</li>
-<li>一个索引对应多个别名。可以加过滤器。</li>
-</ul>
-</li>
-</ul>
+<pre><code class="language-text">索引别名
+  - 别名是只读的。
+  - 多个索引对应一个别名。
+  - 一个索引对应多个别名。可以加过滤器。
+</code></pre>
 <p>function score query中，bm25分数一样，但是可以修改分数。可以优化默认算分。算分重排。</p>
-<p>分片  number_of_shards 副本 number_of_replicas</p>
+<p>分片number_of_shards 副本number_of_replicas</p>
 <p>只有一个master节点，多个master eligible节点。</p>
 <p>脑裂：限定选举条件。</p>
 <p>主分片设置为1，单个分片数据量太大，单机。</p>
@@ -3843,7 +3832,7 @@ Trace：追踪链路、并发、根因、性能</p>
     &quot;text&quot;: [&quot;Mastering Elasticsearch&quot;]
 }
 </code></pre>
-<h4 id="自定义分词器"><a class="header" href="#自定义分词器">自定义分词器</a></h4>
+<h3 id="自定义分词器"><a class="header" href="#自定义分词器">自定义分词器</a></h3>
 <p>CharacterFilter 加工文本  Tokenizer：文本到词 Token Filters：词再次加工</p>
 <p>爬虫过滤了html标签</p>
 <pre><code class="language-text">POST _analyze
@@ -3925,7 +3914,6 @@ Trace：追踪链路、并发、根因、性能</p>
 }
 </code></pre>
 <h3 id="query-string-query"><a class="header" href="#query-string-query">Query String Query</a></h3>
-<p>Simple Query String Query</p>
 <pre><code class="language-text">POST /users/_search
 {
     &quot;query&quot;: {
@@ -3965,8 +3953,8 @@ Trace：追踪链路、并发、根因、性能</p>
 <h4 id="自定义mapping"><a class="header" href="#自定义mapping">自定义Mapping</a></h4>
 <p>NULL_VALUE</p>
 <h2 id="论文"><a class="header" href="#论文">论文</a></h2>
-<p>Karen Spärck Jones: A statistical interpretation of term specificity and its application in retrieval</p>
-<p>The Probabilistic Relevance Framework: BM25 and Beyond</p>
+<p>Karen Sparck Jones: <a href="https://www.staff.city.ac.uk/%7Esbrp622/idfpapers/ksj_orig.pdf">A statistical interpretation of term specificity and its application in retrieval</a></p>
+<p>Stephen Robertson: <a href="https://www.staff.city.ac.uk/%7Esbrp622/papers/foundations_bm25_review.pdf">The Probabilistic Relevance Framework: BM25 and Beyond</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="74-消息队列高手课-李玥"><a class="header" href="#74-消息队列高手课-李玥">74-消息队列高手课-李玥</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="78-zookeeper实战与源码剖析-么敬国"><a class="header" href="#78-zookeeper实战与源码剖析-么敬国">78-Zookeeper实战与源码剖析-么敬国</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="90-分布式技术原理与算法解析-聂鹏程"><a class="header" href="#90-分布式技术原理与算法解析-聂鹏程">90-分布式技术原理与算法解析 聂鹏程</a></h1>
