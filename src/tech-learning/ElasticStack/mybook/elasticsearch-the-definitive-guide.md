@@ -16,21 +16,19 @@ https://www.elastic.co/guide/cn/elasticsearch/guide/current/_creating_an_index.h
 
 CAP？
 
-CP系统一般用了共识协议，没用的一般AP。Cassandra 可调一致性调节到CP，用的是quroum策略。
+CP系统一般用了共识协议，没用的一般AP。Cassandra 可调一致性调节到CP，用的是quorum策略。
 
-TF-IDF:词频/逆向文档频率
+TF-IDF:词频/逆向文档频率(term frequency inverse document frequency)
 
 es两个阶段：索引和查询
 
-stemmer:词干提取器
+stemmer:词干提取器,Hunspell 词干提取器（拼写检查）
 
 synonyms：同义词
 
 字典词干提取器，算法化词干提取器
 
 实践中一个好的算法化词干提取器一般优于一个字典词干提取器。
-
-Hunspell 词干提取器（拼写检查）
 
 保留停用词最大的缺点就影响搜索性能。
 

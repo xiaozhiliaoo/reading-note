@@ -19,25 +19,41 @@
 * 技术的书籍来源于此[阅读列表](https://xiaozhiliaoo.github.io/reading-list/) ，[论文列表](https://xiaozhiliaoo.github.io/reading-note/paper/intro.html) 。
 * 社科的书籍主要包括哲学，心理学，人文，历史，人物传记，影视，投资金融与经济，国学，各种讲座等等，已读列表在[已读列表]()，书单汇总地址在[阅读列表](https://xiaozhiliaoo.github.io/reading-note/reference/booklist.html) 。
 
-# 统一读书笔记格式
+# 读书笔记模版
+
+
+```text
+
+# 书名
+
+作者：
+
+分类：
+
+相关书籍：
 
 ## 进度
 
-开始时间：YYYY-MM-dd ~ 结束时间：YYYY-MM-dd
+阅读记录：开始时间：YYYY-MM-dd ~ 结束时间：YYYY-MM-dd
 
 阅读页数：
 
-## 结构
+# 内容
 
-书名，作者，分类，相关书籍
+## 整体结构
 
-本书的整体结构，摘要，纲要，重点
+## 摘要
 
-笔记（知识）
+## 纲要
 
-读后感
+## 笔记
 
-思维导图
+## 读后感
+
+## 书评
+
+# 参考
+```
 
 # 方法论探索
 
