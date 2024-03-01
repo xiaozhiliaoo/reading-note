@@ -19,7 +19,7 @@ inside-ksqldb：https://developer.confluent.io/learn-kafka/inside-ksqldb/streami
 
 ### Kafka
 
-Events+Topics+RealTime+TalkToEachOther，4件事，不是kakfa是什么，而是这种观点，分布式日志，
+Events+Topics+RealTime+TalkToEachOther，4件事，不是kafka是什么，而是这种观点，分布式日志，
 
 消费者：https://kafka.apache.org/30/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html
 
@@ -37,23 +37,20 @@ kafka发送消息是k，v类型的。没发送一个消息，offset+1
 
 https://developer.confluent.io/learn-kafka/event-sourcing/event-driven-vs-state-based/
 
+```text
 软件设计方法：
-
 state-based（databases+ synchronous network call）
-
 event-based（data at rest + data in motion + event sourcing + CQRS + event streaming）
-
 CRUD：Databases
-
 CR：Event Sourcing
+```
 
-Topic：Event：Key:Partition,Schema
-
-Table：Row：Primary Key,Shard,Schema
-
-Index：Document：_id,Shard,Mapping
-
-Collection：Document:DocumentId,Shard,Schema
+```text
+Topic：Event,Key,Partition,Schema
+Table：Row,Primary Key,Shard,Schema
+Index：Document,_id,Shard,Mapping
+Collection：Document,DocumentId,Shard,Schema
+```
 
 Kafka Queue is Log:Append Only and Durable,Reading Message never delete. Other Message is Queue. Message is Bounded
 Buffer can be deleted. Topic is Log. Not Queue. Topic(DLT) is Queue(DLQ).

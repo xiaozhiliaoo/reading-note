@@ -11,7 +11,9 @@ https://juejin.cn/post/7086775047091666952
 https://lucene.apache.org/core/8_0_0/core/org/apache/lucene/search/similarities/Similarity.html
 
 https://github.com/adrg/strutil
+
 召回率
+
 ES Term的Fuzzy查询基于： Levenshtein edit distance（es string distance）
 
 ES Match的查询基于：TF/IDF或者BM2.5

@@ -61,7 +61,7 @@
               - [Streaming](tech/tech-learning/kafka/system-streaming.md)
           - [Ecosystem](tech/tech-learning/kafka/ecosystem.md)
           - [Admin](tech/tech-learning/kafka/admin.md)
-          - [Book](tech/tech-learning/kafka/Book.md)
+          - [Book](tech/tech-learning/kafka/mybook/Book.md)
               - [Kafka权威指南](tech/tech-learning/kafka/mybook/Kafka-The-Definitive-Guide.md)
               - [Apache Kafka实战](tech/tech-learning/kafka/mybook/Apache-Kafka-In-Action.md)
               - [深入理解Kafka](tech/tech-learning/kafka/mybook/Deep-Kafka.md)
@@ -232,7 +232,7 @@
       - [参考](tech/tech-learning/reference/reference.md)
           - [参考资料](tech/tech-learning/reference/reference.md)
 
-  - [技术面试](tech/tech-interviews/interviews.md)
+  - [技术面试](tech/tech-interviews/intro.md)
       - [Algorithm](tech/tech-interviews/algorithm.md)
       - [Java](tech/tech-interviews/java.md)
       - [Spring](tech/tech-interviews/spring.md)
@@ -256,7 +256,7 @@
       - [第七章](tech/tech-quotes/chapter7.md)
       - [第八章](tech/tech-quotes/chapter8.md)
 
-  - [技术工程实践](tech/practice-hub/intro.md)
+  - [技术工程实践](tech/tech-practice/intro.md)
 
   - [技术书阅读](tech/tech-book/intro.md)
       - [计算机科学](tech/tech-book/cs/intro.md)
@@ -310,12 +310,7 @@
           - [Eventually Consistent](tech/paper/eventually-consistent.md)
           - [A Survey on the Evolution of Stream Processing Systems](tech/paper/Stream-System-Evolution.md)
           - [Cassandra:A Decentralized Structured Storage System](tech/paper/Cassandra.md)
-        
-  - [数学](tech/tech-learning/math/intro.md)
-    - [概率论基础教程-原书第9版](tech/tech-learning/math/A-First-Course-in-Probability.md)
-  
-  - [英语](tech/tech-learning/english/intro.md)
-    - [什么是科学思维](tech/tech-learning/english/scientific-thinking.md)
+
 
 - [投资](investment/intro.md)
     - [投资体系](investment/system/intro.md)
@@ -540,9 +535,24 @@
   - [参考资料](guoxue/reference.md)
 
 - [其它](others/intro.md)
-  - [k12](others/k12/intro.md)
+  - [K12](others/k12/intro.md)
     - [生物](others/k12/biology.md)
     - [化学](others/k12/chemistry.md)
+  - [大学](others/college/intro.md)
+    - [信息与计算科学](others/college/ics/intro.md)
+      - [概率论与数理统计](others/college/ics/probability.md)
+      - [数学分析](others/college/ics/math-analysis.md)
+      - [高等代数](others/college/ics/advanced-algebra.md)
+      - [空间解析几何](others/college/ics/space-analytic-geometry.md)
+      - [数值分析](others/college/ics/numerical-analysis.md)
+      - [离散数学](others/college/ics/discrete-mathematics.md)
+  - [数学](others/math/intro.md)
+    - [概率论基础教程-原书第9版](others/math/A-First-Course-in-Probability.md)
+  - [英语](others/english/intro.md)
+    - [什么是科学思维](others/english/scientific-thinking.md)
+  - [考公](others/public/intro.md)
+    - [行测](others/public/administrative-aptitude-test.md)
+    - [申论](others/public/essay.md)
 
 - [阅读](books/intro.md)
     - [哲学](books/philosophy/intro.md)
@@ -585,9 +595,6 @@
     - [车](books/car/intro.md)
         - [车](books/car/car.md)
 
-    - [综合](books/comprehensive/intro.md)
-        - [行测](books/comprehensive/administrative-aptitude-test.md)
-        - [申论](books/comprehensive/essay.md)
       
 - [参考](reference/reference.md)
     - [简语](reference/jianyu.md)
