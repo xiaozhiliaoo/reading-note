@@ -5,9 +5,9 @@
     - [阅读目标](intro/goal.md)
     - [阅读记录](intro/record.md)
 
-- [技术](tech/tech-learning/README.md)
+- [技术](tech/intro.md)
 
-  - [技术学习](tech/tech-learning/README.md)
+  - [技术学习](tech/tech-learning/intro.md)
       - [Coding](tech/tech-learning/coding/toc.md)
           - [admin](tech/tech-learning/coding/admin.md)
           - [common-design](tech/tech-learning/coding/common-design.md)
