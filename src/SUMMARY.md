@@ -580,6 +580,7 @@
     - [西方经典著作](books/western/intro.md)
       - [圣经](books/western/shengjing.md)
       - [形而上学](books/western/xesx.md)
+      - [理想国](books/western/lxg.md)
       - [忏悔录](books/western/chl.md)
       - [梦的解析](books/western/mdjx.md)
       - [性学三论](books/western/xxsl.md)
