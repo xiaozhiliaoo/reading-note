@@ -565,6 +565,8 @@
     - [杂-历史的经验](guoxue/person/nanhuaijing/lsdjy.md)
     - [杂-亦新亦旧的一代](guoxue/person/nanhuaijing/yxyjdyd.md)
     - [杂-中国文化泛言](guoxue/person/nanhuaijing/zgwhfy.md)
+    - [杂-百年南师](guoxue/person/nanhuaijing/bnns.md)
+    - [杂-南怀瑾家风家教](guoxue/person/nanhuaijing/nhjjjjf.md)
   - [参考资料](guoxue/reference.md)
 
 - [其它](others/intro.md)
