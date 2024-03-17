@@ -563,6 +563,7 @@
     - [释-学佛者的基本信念](guoxue/person/nanhuaijing/xfzdjbxn.md)
     - [释-定慧初修](guoxue/person/nanhuaijing/dhcx.md)
     - [释-禅海蠡测](guoxue/person/nanhuaijing/chlc.md)
+    - [释-宗镜录略讲](guoxue/person/nanhuaijing/zjllj.md)
     - [杂-历史的经验](guoxue/person/nanhuaijing/lsdjy.md)
     - [杂-亦新亦旧的一代](guoxue/person/nanhuaijing/yxyjdyd.md)
     - [杂-中国文化泛言](guoxue/person/nanhuaijing/zgwhfy.md)
