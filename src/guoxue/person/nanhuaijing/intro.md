@@ -10,6 +10,10 @@ http://nhjsy.com/
 
 [在线阅读](http://nhjsy.com/nanshi/6.html)
 
+## 南怀瑾先生著作出版顺序
+
+[在线阅读](https://www.quanxue.cn/ct_nanhuaijin/other/other05.html)
+
 # 阅读框架
 
 ```text

@@ -443,6 +443,7 @@
     - [中国哲学书电子化计划](guoxue/gailan/zgzxdzsjh.md)
     - [名人自述](guoxue/gailan/mrzs.md)
     - [蒙学](guoxue/gailan/mengxue.md)
+    - [佛学](guoxue/gailan/foxue.md)
     - [杂](guoxue/gailan/za.md)
   - [经](guoxue/jing/intro.md)
     - [周易](guoxue/jing/yijing.md)
