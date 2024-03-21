@@ -6,6 +6,7 @@
 
 ## 阅读进度
 
+*https://ctext.org/xunzi/ru-xiao/zhs*
 
 ## 生僻字
 
