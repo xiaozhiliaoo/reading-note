@@ -4,13 +4,13 @@
 
 ## 南怀瑾著作全收录52本
 
-[南怀瑾著作全收录52本](../../materials/南怀瑾著作全收录52本.pdf)
+[PDF在线阅读](../../materials/南怀瑾著作全收录52本.pdf)
 
 ## 南怀瑾书院
 
-http://nhjsy.com/
+[http://nhjsy.com/](http://nhjsy.com/)
 
-## 南怀瑾著作
+## 南怀瑾著述
 
 [在线阅读](http://nhjsy.com/nanshi/6.html)
 
@@ -18,7 +18,7 @@ http://nhjsy.com/
 
 [在线阅读](https://www.quanxue.cn/ct_nanhuaijin/other/other05.html)
 
-## 著作
+## 著作出版时间
 
 1. 《禅海蠡测》1955
 2. 《楞严大义今译》1960
