@@ -441,6 +441,7 @@
 
 - [国学](guoxue/intro.md)
   - [概览](guoxue/gailan/intro.md)
+    - [中华传世藏书](guoxue/gailan/zhcscs.md)
     - [中华国学经典精粹](guoxue/gailan/fanxue.md)
     - [中国哲学书电子化计划](guoxue/gailan/zgzxdzsjh.md)
     - [名人自述](guoxue/gailan/mrzs.md)
@@ -605,6 +606,7 @@
       - [数值分析](others/college/ics/numerical-analysis.md)
       - [离散数学](others/college/ics/discrete-mathematics.md)
   - [数学](others/math/intro.md)
+    - [数学史-修订版](others/math/a-history-of-mathematics.md)
     - [概率论基础教程-原书第9版](others/math/A-First-Course-in-Probability.md)
   - [英语](others/english/intro.md)
     - [什么是科学思维](others/english/scientific-thinking.md)
