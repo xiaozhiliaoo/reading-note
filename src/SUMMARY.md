@@ -540,7 +540,7 @@
     - [道-庄子喃哗](guoxue/person/nanhuaijing/zznh.md)
     - [道-列子臆说](guoxue/person/nanhuaijing/lzys.md)
     - [道-我说参同契](guoxue/person/nanhuaijing/wsctq.md)
-    - [道-禅宗与道家](guoxue/person/nanhuaijing/czhdj.md)
+    - [道-禅宗与道家](guoxue/person/nanhuaijing/czydj.md)
     - [道-中国道教发展史略述](guoxue/person/nanhuaijing/zgdjfzsls.md)
     - [道-静坐修道与长生不老](guoxue/person/nanhuaijing/jzxdycsbl.md)
     - [儒-论语别裁](guoxue/person/nanhuaijing/lybc.md)

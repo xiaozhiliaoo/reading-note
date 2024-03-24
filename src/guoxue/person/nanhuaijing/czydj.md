@@ -6,6 +6,22 @@ https://www.quanxue.cn/ct_nanhuaijin/chandao/chandao25.html
 
 ## 提到概念
 
+老子摄生，庄子养生
+
+孔孟仁义，老庄道德
+
+伊尹做厨师，百里奚牧牛
+
+性命双修
+
+十二经脉，奇经八脉
+
+三教合一，五教同源
+
+四书五经六艺
+
+存神养性，内视返照，长生久视
+
 文史哲政不分
 
 东方圣人，西方圣人，此心同，此理同，其揆一也。
@@ -23,6 +39,8 @@ https://www.quanxue.cn/ct_nanhuaijin/chandao/chandao25.html
 不俗即仙骨，多情乃佛心
 
 寻找一个“不受人欺”的人
+
+史记八书：《礼》、《乐》、《律》、《历》、《天官》、《封禅》、《河渠》、《平准》
 
 吾有正法眼藏，涅槃妙心，实相无相，微妙法门，不立文字，教外别传，付嘱摩诃迦叶。
 
@@ -67,7 +85,19 @@ https://www.quanxue.cn/ct_nanhuaijin/chandao/chandao25.html
 
 中国读书的知识分子，文学上基本修养的诗、词、歌、赋，以及博古通今的史学，与人生基本修养的哲学，乃至琴、棋、书、画等艺术，都是不可分离的全科知识。
 
+《尚书 禹贡》
 
+《九章算术》
+
+金元四大家:刘完素的火热说、张从正的攻邪说、李东垣的脾胃说和朱震亨的养阴说
+
+邵康节：《皇级经世》，谭峭：《化书》
+
+汉代象数，纳甲。宋代易学河图，洛书
+
+《三国志 张鲁传》https://ctext.org/text.pl?node=602324&if=gb
+
+葛洪《神仙传》
 
 
 ```text
@@ -121,11 +151,53 @@ https://www.quanxue.cn/ct_nanhuaijin/chandao/chandao25.html
 
 “外示儒术，内用黄老”君师之道
 
+《史记·书·律书》：https://ctext.org/shiji/lv-shu/zh
+
+《史记·书·封禅书》：https://ctext.org/shiji/feng-chan-shu/zh
+
+生命根源的心物一元
+
+宋 张紫阳真人《张紫阳悟真篇》丹经地位与魏伯阳的《周易参同契》相仿
+
+《龙虎经》
+
+《素女经》https://ctext.org/wiki.pl?if=gb&res=494659
+
+《太玄经》
+
+神仙可学，立德为先，岂有轻心慢心妄求出世超人呢？
+
+唐代诗人：不归于佛，即归于道。
+
+李白：道。杜甫：儒。王维：佛。
+
+道藏：三洞四辅十二类
+
+大藏经
+
+《荆楚岁时记》
+
+知识分子以儒家思想做规范，道家精神做基础。
+
 
 
 
 
 ## 提到书文
+
+《日月奔磷经》
+
+《云笈七签》
+
+《焦氏易林》：https://ctext.org/jiaoshi-yilin/zh
+
+《黄庭经》
+
+《晋书 葛洪传》
+
+《魏书 释老志》
+
+《魏书 崔浩传》
 
 《儒行》[参考](https://ctext.org/liji/ru-xing/zhs)、《坊记》[参考](https://ctext.org/liji/fang-ji/zh)、《表记》[参考](https://ctext.org/liji/biao-ji/zh)、《学记》[参考](https://ctext.org/liji/xue-ji/zhs)
 
@@ -162,7 +234,7 @@ https://www.quanxue.cn/ct_nanhuaijin/chandao/chandao25.html
 
 《禅苑清规》
 
-《论六家要旨》
+《论六家要旨》: https://so.gushiwen.cn/shiwenv_691054c10ecf.aspx
 
 刘歆《七略》
 
@@ -170,8 +242,13 @@ https://www.quanxue.cn/ct_nanhuaijin/chandao/chandao25.html
 
 《礼记·月令》
 
+《穆天子传》
 
+《汉武外传》《汉武故事》
 
+《封神演义》《封神榜》，又名《商周列国全传》
+
+《清静经》
 
 
 
