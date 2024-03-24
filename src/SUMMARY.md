@@ -443,6 +443,7 @@
   - [概览](guoxue/gailan/intro.md)
     - [中华传世藏书](guoxue/gailan/zhcscs.md)
     - [中华国学经典精粹](guoxue/gailan/fanxue.md)
+    - [中华经典藏书-中华书局](guoxue/gailan/zhjdcs.md)
     - [中国哲学书电子化计划](guoxue/gailan/zgzxdzsjh.md)
     - [名人自述](guoxue/gailan/mrzs.md)
     - [蒙学](guoxue/gailan/mengxue.md)
