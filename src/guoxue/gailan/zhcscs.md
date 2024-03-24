@@ -4,7 +4,6 @@
 
 [目录](../materials/zhcscs/0001j.pdf)
 
-
 ## 十三经
 
 [春秋公羊传](../materials/zhcscs/1301j.pdf)
@@ -177,7 +176,6 @@
 
 [神农本草经·神农](../materials/zhcscs/yi05j.pdf)
 
-
 ## 法家
 
 [邓析子](../materials/zhcscs/fa01j.pdf)
@@ -271,5 +269,122 @@
 [增广贤文](../materials/zhcscs/m13j.pdf)
 
 [朱子家训](../materials/zhcscs/m14j.pdf)
+
+
+## 小说
+
+[梦溪笔谈](../materials/zhcscs/xs01j.pdf)
+
+[穆天子传](../materials/zhcscs/xs02j.pdf)
+
+[山海经](../materials/zhcscs/xs03j.pdf)
+
+[世说新语](../materials/zhcscs/xs04j.pdf)
+
+[搜神后记](../materials/zhcscs/xs05j.pdf)
+
+[太平广记一](../materials/zhcscs/xs06j.pdf)
+
+[太平广记二](../materials/zhcscs/xs07j.pdf)
+
+[太平广记三](../materials/zhcscs/xs08j.pdf)
+
+[太平广记四](../materials/zhcscs/xs09j.pdf)
+
+[太平广记五](../materials/zhcscs/xs10j.pdf)
+
+[西京杂记](../materials/zhcscs/xs11j.pdf)
+
+## 艺文
+
+[曹操诗词集](../materials/zhcscs/yw01j.pdf)
+
+[窦娥冤](../materials/zhcscs/yw02j.pdf)
+
+[范仲淹](../materials/zhcscs/yw03j.pdf)
+
+[浮生六记](../materials/zhcscs/yw04j.pdf)
+
+[古画品录](../materials/zhcscs/yw05j.pdf)
+
+[古文观止](../materials/zhcscs/yw06j.pdf)
+
+[顾宪成](../materials/zhcscs/yw07j.pdf)
+
+[薑斋诗话](../materials/zhcscs/yw08j.pdf)
+
+[乐府诗集一](../materials/zhcscs/yw09j.pdf)
+
+[乐府诗集二](../materials/zhcscs/yw10j.pdf)
+
+[乐府诗集三](../materials/zhcscs/yw11j.pdf)
+
+[乐府诗杂录](../materials/zhcscs/yw12j.pdf)
+
+[李白诗选](../materials/zhcscs/yw13j.pdf)
+
+[李文忠公事略](../materials/zhcscs/yw14j.pdf)
+
+[临泉高致](../materials/zhcscs/yw15j.pdf)
+
+[六一诗话](../materials/zhcscs/yw16j.pdf)
+
+[论诗三十首](../materials/zhcscs/yw17j.pdf)
+
+[罗隐集](../materials/zhcscs/yw18j.pdf)
+
+[孟郊集](../materials/zhcscs/yw19j.pdf)
+
+[千家诗](../materials/zhcscs/yw20j.pdf)
+
+[倩女离魂](../materials/zhcscs/yw21j.pdf)
+
+[诗品](../materials/zhcscs/yw22j.pdf)
+
+[宋诗一百首](../materials/zhcscs/yw23j.pdf)
+
+[苏洵集](../materials/zhcscs/yw24j.pdf)
+
+[桃花扇](../materials/zhcscs/yw25j.pdf)
+
+[陶庵梦忆](../materials/zhcscs/yw26j.pdf)
+
+[陶渊明文集](../materials/zhcscs/yw27j.pdf)
+
+[王阳明全集一](../materials/zhcscs/yw29j.pdf)
+
+[王阳明全集二](../materials/zhcscs/yw30j.pdf)
+
+[王阳明全集三](../materials/zhcscs/yw31j.pdf)
+
+[王阳明全集四](../materials/zhcscs/yw32j.pdf)
+
+[文心雕龙](../materials/zhcscs/yw33j.pdf)
+
+[中国官场学](../materials/zhcscs/yw34j.pdf)
+
+[西湖梦寻](../materials/zhcscs/yw35j.pdf)
+
+[西厢记](../materials/zhcscs/yw36j.pdf)
+
+[徐霞客游记](../materials/zhcscs/yw37j.pdf)
+
+[宣室志](../materials/zhcscs/yw38j.pdf)
+
+[杨维桢集](../materials/zhcscs/yw39j.pdf)
+
+[艺文类聚一](../materials/zhcscs/yw40j.pdf)
+
+[艺文类聚二](../materials/zhcscs/yw41j.pdf)
+
+[艺文类聚三](../materials/zhcscs/yw42j.pdf)
+
+[艺文类聚四](../materials/zhcscs/yw43j.pdf)
+
+[贞观政要](../materials/zhcscs/yw44j.pdf)
+
+## 
+
+## 
 
 
