@@ -226,4 +226,50 @@
 
 [忠经](../materials/zhcscs/zha17j.pdf)
 
+## 释家
+
+[心经](../materials/zhcscs/fo01j.pdf)
+
+[金刚经](../materials/zhcscs/fo03j.pdf)
+
+[六祖坛经](../materials/zhcscs/fo05j.pdf)
+
+[四十二章经](../materials/zhcscs/fo07j.pdf)
+
+[禅林僧宝传](../materials/zhcscs/fo08j.pdf)
+
+[佛说阿弥陀经](../materials/zhcscs/fo09j.pdf)
+
+[佛说观无量寿经](../materials/zhcscs/fo12j.pdf)
+
+## 蒙学
+
+[百家姓](../materials/zhcscs/m01j.pdf)
+
+[鉴略妥注](../materials/zhcscs/m02j.pdf)
+
+[了凡四训](../materials/zhcscs/m03j.pdf)
+
+[列女传](../materials/zhcscs/m04j.pdf)
+
+[千字文](../materials/zhcscs/m05j.pdf)
+
+[三字经](../materials/zhcscs/m06j.pdf)
+
+[声律启蒙](../materials/zhcscs/m07j.pdf)
+
+[围炉夜话](../materials/zhcscs/m08j.pdf)
+
+[小学诗](../materials/zhcscs/m09j.pdf)
+
+[训蒙骈句](../materials/zhcscs/m10j.pdf)
+
+[颜氏家训](../materials/zhcscs/m11j.pdf)
+
+[幼学琼林](../materials/zhcscs/m12j.pdf)
+
+[增广贤文](../materials/zhcscs/m13j.pdf)
+
+[朱子家训](../materials/zhcscs/m14j.pdf)
+
 
