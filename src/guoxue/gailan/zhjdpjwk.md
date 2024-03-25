@@ -15,3 +15,11 @@ https://book.douban.com/series/2006
 ## 佛教十三经
 
 [在线阅读](../materials/佛教十三经-中华经典普及文库.pdf)
+
+## 群书治要
+
+[在线阅读](../materials/群书治要-中华经典普及文库.pdf)
+
+## 纲鉴易知录
+
+[在线阅读](../materials/纲鉴易知录-中华经典普及文库.pdf)
