@@ -30,6 +30,7 @@
 - [中国哲学书电子化计划](https://ctext.org/zh)
 - [中华典藏网](https://www.zhonghuadiancang.com/)
 - [劝学网](https://www.quanxue.cn/)
+  - [南怀瑾全集](https://www.quanxue.cn/ct_nanhuaijin/)
 - [古文字典](https://www.zdic.net/)
   - [古籍](https://gj.zdic.net/)
   - [诗词](http://sc.zdic.net/)
@@ -51,7 +52,7 @@
 
 ## 通识概览
 
-中华国学经典精粹
+[中华国学经典精粹](./gailan/zhgxjdjc.md)
 
 ## 古文通识
 

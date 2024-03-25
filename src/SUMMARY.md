@@ -442,7 +442,7 @@
 - [国学](guoxue/intro.md)
   - [概览](guoxue/gailan/intro.md)
     - [中华传世藏书](guoxue/gailan/zhcscs.md)
-    - [中华国学经典精粹](guoxue/gailan/fanxue.md)
+    - [中华国学经典精粹](guoxue/gailan/zhgxjdjc.md)
     - [中华书局-中华经典藏书](guoxue/gailan/zhjdcs.md)
     - [中华书局-中华经典普及文库](guoxue/gailan/zhjdpjwk.md)
     - [中华书局-中华经典名著-全本全注全译丛书](guoxue/gailan/zhjdmzqbqzqy.md)
