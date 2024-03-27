@@ -441,6 +441,7 @@
 
 - [国学](guoxue/intro.md)
   - [概览](guoxue/gailan/intro.md)
+    - [国学原文悦读](guoxue/gailan/gxywyd.md)
     - [中华传世藏书](guoxue/gailan/zhcscs.md)
     - [中华国学经典精粹](guoxue/gailan/zhgxjdjc.md)
     - [中华书局-中华经典藏书](guoxue/gailan/zhjdcs.md)
