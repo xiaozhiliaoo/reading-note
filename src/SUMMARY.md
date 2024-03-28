@@ -440,6 +440,8 @@
       - [黄芪](health/chinese-medicine/zhongyao/huangqi.md)
 
 - [国学](guoxue/intro.md)
+  - [日课](guoxue/daily-course/intro.md)  
+    - [2024](guoxue/daily-course/2024.md)  
   - [概览](guoxue/gailan/intro.md)
     - [国学原文悦读](guoxue/gailan/gxywyd.md)
     - [中华传世藏书](guoxue/gailan/zhcscs.md)
