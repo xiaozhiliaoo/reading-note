@@ -13,3 +13,5 @@
 [道德经](../materials/ywyd/道德经.pdf)
 
 [金刚经](../materials/ywyd/金刚经.pdf)
+
+[心经](../materials/ywyd/心经.pdf)
