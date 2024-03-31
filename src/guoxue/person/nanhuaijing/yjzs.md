@@ -10,8 +10,6 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing47.html
 
 易经数理是归纳，西方是演绎。
 
-
-
 ### 六十四卦分宫图
 
 ![](../../materials/fengong.jpg)
@@ -23,7 +21,6 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing47.html
 ### 伏羲六十四卦次序图
 
 ![](../../materials/fxcxt.png)
-
 
 一切都是在不断变易之中，而一切的变易，并非乱动乱变，而是循了一种固定的法则而变的。如何去找到这一固定的法则，还是要靠各人自己智慧的成就；
 
@@ -120,9 +117,6 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing47.html
 一动便生吉凶悔吝。
 
 易经文化用来算命是小道文化，不是中华文化。
-
-
-
 
 卦的方位：
 ![](../../materials/fangwei.png)
