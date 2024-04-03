@@ -1,5 +1,75 @@
 # 易经杂说
 
+## 六十四卦
+
+
+```text
+䷀   乾
+䷁   坤
+䷂   屯
+䷃   蒙
+䷄   需
+䷅   讼
+䷆   师
+䷇   比
+䷈   小畜
+䷉   履
+䷊   泰
+䷋   否
+䷌   同人
+䷍   大有
+䷎   谦
+䷏   豫
+䷐   随
+䷑   蛊
+䷒   临
+䷓   观
+䷔   噬嗑
+䷕   贲
+䷖   剥
+䷗   复
+䷘   无妄
+䷙   大畜
+䷚   颐
+䷛   大过
+䷜   坎
+䷝   离
+䷞   咸
+䷟   恒
+䷠   遯
+䷡   大壮
+䷢   晋
+䷣   明夷
+䷤   家人
+䷥   睽
+䷦   蹇
+䷧   解
+䷨   损
+䷩   益
+䷪   夬
+䷫   姤
+䷬   萃
+䷭   升
+䷮   困
+䷯   井
+䷰   革
+䷱   鼎
+䷲   震
+䷳   艮
+䷴   渐
+䷵   归妹
+䷶   丰
+䷷   旅
+䷸   巽
+䷹   兑
+䷺   涣
+䷻   节
+䷼   中孚
+䷽   小过
+䷾   既济
+䷿   未济
+```
+
 ## 阅读进度
 
 https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing47.html
@@ -117,6 +187,8 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing47.html
 一动便生吉凶悔吝。
 
 易经文化用来算命是小道文化，不是中华文化。
+
+司马迁：报任安书 [参考](https://so.gushiwen.cn/shiwenv_d4b25931b841.aspx)
 
 卦的方位：
 ![](../../materials/fangwei.png)
@@ -298,5 +370,3 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing47.html
 蹇利西南小过来，解升二卦相为赘。
 鼎由巽变渐涣旅，涣自渐来终于是。
 ```
-
-
