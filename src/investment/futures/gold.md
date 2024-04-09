@@ -8,7 +8,7 @@ https://www.sge.com.cn/sjzx/goldEtf
 
 https://www.sge.com.cn/sjzx/mrhq
 
-期货业协会黄金书籍：https://www.cfachina.org/servicesupport/sspz/gjs/hj/qq_4878/ysyd_4885/tjcs_4886/202206/mobile/index.html
+期货业协会黄金书籍 期货投资者教育系列丛书：https://www.cfachina.org/servicesupport/sspz/gjs/hj/qq_4878/ysyd_4885/tjcs_4886/202206/mobile/index.html
 
 黄金研报：https://www.cfachina.org/servicesupport/analygarden/gjsl/
 

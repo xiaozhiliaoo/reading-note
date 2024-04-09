@@ -82,7 +82,7 @@
 
 [海内十洲三岛记](../materials/zhcscs/dao07j.pdf)
 
-[六十甲子本命元辰历](../materials/zhcscs/dao08j.pdf)
+[鹖冠子](../materials/zhcscs/dao08j.pdf)
 
 [皇帝阴符经](../materials/zhcscs/dao09j.pdf)
 
@@ -90,7 +90,7 @@
 
 [列子](../materials/zhcscs/dao11j.pdf)
 
-[鹖冠子](../materials/zhcscs/dao12j.pdf)
+[六十甲子本命元辰历](../materials/zhcscs/dao12j.pdf)
 
 [人伦大统赋](../materials/zhcscs/dao13j.pdf)
 
