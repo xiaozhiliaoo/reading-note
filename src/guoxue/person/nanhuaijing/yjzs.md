@@ -80,6 +80,10 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing47.html
 
 易经数理是归纳，西方是演绎。
 
+### 卦方位
+
+![](../../materials/fangwei.png)
+
 ### 六十四卦分宫图
 
 ![](../../materials/fengong.jpg)
@@ -91,6 +95,19 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing47.html
 ### 伏羲六十四卦次序图
 
 ![](../../materials/fxcxt.png)
+
+### 五行对应图
+
+![](../../materials/img.png)
+
+### 十二辟卦图
+
+![](../../materials/12pigua.png)
+
+### 京房十六卦变表
+
+![](../../materials/jf16.png)
+
 
 一切都是在不断变易之中，而一切的变易，并非乱动乱变，而是循了一种固定的法则而变的。如何去找到这一固定的法则，还是要靠各人自己智慧的成就；
 
@@ -190,8 +207,7 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing47.html
 
 司马迁：报任安书 [参考](https://so.gushiwen.cn/shiwenv_d4b25931b841.aspx)
 
-卦的方位：
-![](../../materials/fangwei.png)
+
 
 乾三连、坤六断、震仰盂、艮覆碗、离中虚、坎中满、兑上缺、巽下断
 
@@ -240,8 +256,7 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing47.html
 
 京房的易变名十六卦变:自初至五不动复，下飞四往伏用飞，上飞下飞复本体，便是十六变卦例。
 
-京房十六卦变表
-![](../../materials/jf16.png)
+
 
 邵康节
 
@@ -290,8 +305,6 @@ https://www.quanxue.cn/ct_nanhuaijin/yijing/yijing47.html
 天干十个：甲、乙、丙、丁、戊、己、庚、辛、壬、癸
 地支十二个：子、丑、寅、卯、辰、巳、午、未、申、酉、戌、亥。
 二生肖：子鼠、丑牛、寅虎、卯兔、辰龙、已蛇、午马、未羊、申猴、酉鸡、戌狗、亥猪
-
-![img.png](../../materials/img.png)
 
 京焦易：京房和焦赣
 
