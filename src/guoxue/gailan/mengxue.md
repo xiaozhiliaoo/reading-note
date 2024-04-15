@@ -1,4 +1,7 @@
-# 小孩国学之思
+# 蒙学
+
+三百千千，幼龙增格。
+笠声感阴，易经论道。
 
 认字：易经64卦，尔雅，说文解字，千字文。三百千千。
 
@@ -20,8 +23,8 @@
 童蒙须知 https://ctext.org/wiki.pl?if=gb&chapter=144320&remap=gb
 学记 https://ctext.org/liji/xue-ji/zhs
 太上感应篇 https://www.quanxue.cn/ct_daojia/ganying/ganying01.html
-文昌帝君阴骘文
-常礼举要
+文昌帝君阴骘文 https://baike.baidu.com/item/%E6%96%87%E6%98%8C%E5%B8%9D%E5%90%9B%E9%98%B4%E9%AA%98%E6%96%87/10381009
+常礼举要 https://baike.baidu.com/item/%E5%B8%B8%E7%A4%BC%E4%B8%BE%E8%A6%81/2988892
 ```
 
 ## 儿童中国文化导读1-18册，儿童西方文化导读1-4册【6-13岁，小学阶段】
