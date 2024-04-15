@@ -505,6 +505,8 @@
       - [道-烟波钓叟赋](guoxue/zi/ybdsf.md)
       - [道-无根树](guoxue/zi/wgs.md)
       - [道-百字铭](guoxue/zi/bzm.md)
+      - [道-灵源大道歌](guoxue/zi/lyddg.md)
+      - [道-青天歌](guoxue/zi/qtg.md)
     - [释-金刚经](guoxue/zi/jinggangjing.md)
     - [释-心经](guoxue/zi/xinjing.md)
     - [释-无量寿经](guoxue/zi/wuliangshoujing.md)
