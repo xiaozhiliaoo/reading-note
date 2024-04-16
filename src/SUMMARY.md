@@ -602,7 +602,7 @@
     - [释-般若正观略讲](guoxue/person/nanhuaijing/brzglj.md)
     - [释-维摩精舍丛书](guoxue/person/nanhuaijing/wmjscs.md)
     - [杂-南怀瑾与彼得·圣吉: 关于禅、生命和认知的对话](guoxue/person/nanhuaijing/nhjybdsj.md)
-    - [杂-南怀瑾讲演录](guoxue/person/nanhuaijing/nhjjyl.md)
+    - [杂-南怀瑾讲演录2004—2006](guoxue/person/nanhuaijing/nhjjyl.md)
     - [杂-漫谈中国文化-金融·企业·国学](guoxue/person/nanhuaijing/mtzgwh.md)
     - [杂-二十一世纪初的前言后语](guoxue/person/nanhuaijing/esysjdqyhy.md)
     - [杂-答问青壮年参禅者](guoxue/person/nanhuaijing/dwqznccz.md)
