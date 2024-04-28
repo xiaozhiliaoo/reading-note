@@ -615,6 +615,7 @@
     - [杂-南怀瑾说性格与人生](guoxue/person/nanhuaijing/nhjsxgyrs.md)
     - [杂-新旧教育的变与惑](guoxue/person/nanhuaijing/xjjydbyh.md)
     - [杂-南怀瑾著作诗词辑录](guoxue/person/nanhuaijing/nhjzzscjl.md)
+    - [杂-我读南怀瑾](guoxue/person/nanhuaijing/wdnhj.md)
   - [参考资料](guoxue/reference.md)
 
 - [其它](others/intro.md)
