@@ -2,11 +2,11 @@
 
 ## 阅读进度
 
-https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi133.html
+https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi145.html
 
 ## 提到概念
 
-
+现实的享受就是真享受，如果坐在这里，脑子什么都不想，人很清醒，既无欢喜也无痛苦，就是定境最舒服的享受。
 
 名利本为浮世重，世间能有几人抛。
 
@@ -245,9 +245,15 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi133.html
 
 万物的本身就有阴阳，不需要向外求，只要把握到“冲气以为和”，就可以把自己的生命掌握在自己的手里。
 
+“提得起”是做学问要“为学日益”；“放得下”是修道要“为道日损”
 
+中国的历史，是讲究无事取天下的，尧、舜、禹可以说是如此，禹以后商汤、文、武、周公、孔子，历代的圣王，差不多都是如此。
+
+善人可敬，坏人也令人可怜，可怜与可敬，只是两个方向的不同表达，而爱人的仁慈之心是一样的。
 
 ## 提到文章
+
+曾国藩-求阙斋记
 
 汉文帝赐南越王赵佗书 [参考](https://so.gushiwen.cn/shiwenv_ec44ebcbda42.aspx)
 
