@@ -57,6 +57,8 @@ https://ctext.org/liji/tan-gong-ii/zhs
 
 有其礼，无其财，君子弗行也；有其礼，有其财，无其时，君子弗行也
 
+## 檀弓下
+
 
 
 

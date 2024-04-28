@@ -235,6 +235,11 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi133.html
 不经之谈 《史记·孟子荀卿列传》
 其语闳大不经，必先验小物，推而大之，至于无垠。[参考](https://ctext.org/shiji/meng-zi-xun-qing-lie-zhuan/zhs)
 
+辩证法的正反合
+
+万物的本身就有阴阳，不需要向外求，只要把握到“冲气以为和”，就可以把自己的生命掌握在自己的手里。
+
+
 
 ## 提到文章
 
