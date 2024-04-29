@@ -550,6 +550,7 @@
   - [集](guoxue/ji/intro.md)
     - [唐诗三百首](guoxue/ji/tangshi.md)
     - [宋词三百首](guoxue/ji/congci.md)
+    - [楚辞](guoxue/ji/chuci.md)
     - [古文辞类纂](guoxue/ji/gwclz.md)
     - [经史百家杂钞](guoxue/ji/jsbjzc.md)
     - [古文观止](guoxue/ji/gwgz.md)
