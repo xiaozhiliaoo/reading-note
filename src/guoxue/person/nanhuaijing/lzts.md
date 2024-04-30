@@ -180,7 +180,7 @@ https://www.quanxue.cn/ct_nanhuaijin/laozi/laozi145.html
 
 牡牝：雌雄
 
-四子真经：
+四子真经（老子四配）：
 
 《庚桑子-洞灵真经》[参考](https://ctext.org/wiki.pl?if=gb&chapter=631044&remap=gb)
 
