@@ -502,6 +502,8 @@
     - [道-悟真篇](guoxue/zi/wzp.md)
     - [道-黄庭经](guoxue/zi/htj.md)
     - [道-化书](guoxue/zi/huashu.md)
+    - [道-养性延命录](guoxue/zi/yxyml.md)
+    - [道-性命圭旨](guoxue/zi/xmgz.md)
     - [道-列仙传](guoxue/zi/liexianzhuan.md)
     - [道-神仙传](guoxue/zi/shenxianxianzhuan.md)
     - [道-高士传](guoxue/zi/gaoshizhuan.md)
@@ -547,6 +549,7 @@
     - [名-公孙龙子](guoxue/zi/gongsunlongzi.md)
     - [杂-鬼谷子](guoxue/zi/guiguzi.md)
     - [杂-抱朴子外篇](guoxue/zi/baopuziwaipian.md)
+    - [杂-人物志](guoxue/zi/renwuzhi.md)
   - [集](guoxue/ji/intro.md)
     - [唐诗三百首](guoxue/ji/tangshi.md)
     - [宋词三百首](guoxue/ji/congci.md)
@@ -716,6 +719,7 @@
 
     - [房](books/house/intro.md)
         - [房](books/house/house.md)
+            - [学区房](books/house/xqf.md)
             - [华远枫悦一期](books/house/hyfyyq.md)
             - [碧桂园天玺](books/house/bgytx.md)
         - [田园-房产](books/house/tianyuan-house.md)
@@ -729,6 +733,7 @@
       
 - [参考](reference/reference.md)
     - [简语](reference/jianyu.md)
+    - [去妄](reference/quwang.md)
     - [百度网盘资源](reference/baidu-pan.md)
     - [电子书合集](reference/ebook-collection.md)
     - [书单](reference/booklist.md)
