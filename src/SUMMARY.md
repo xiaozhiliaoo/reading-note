@@ -502,6 +502,7 @@
     - [道-悟真篇](guoxue/zi/wzp.md)
     - [道-黄庭经](guoxue/zi/htj.md)
     - [道-化书](guoxue/zi/huashu.md)
+    - [道-无能子](guoxue/zi/wunengzi.md)
     - [道-养性延命录](guoxue/zi/yxyml.md)
     - [道-性命圭旨](guoxue/zi/xmgz.md)
     - [道-列仙传](guoxue/zi/liexianzhuan.md)
