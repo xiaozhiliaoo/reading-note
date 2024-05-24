@@ -68,6 +68,8 @@
 
 [国学网·子部·蒙学](http://www.guoxue.com/cp/gxbd_ml03_03.htm#04)
 
+[蒙学备览](http://www.guoxue.com/cp/mxbl.htm)
+
 ```text
 《三字经》　宋·王应麟　〔通行本〕　1卷
 《朱柏庐治家格言》　清·朱用纯　1卷
