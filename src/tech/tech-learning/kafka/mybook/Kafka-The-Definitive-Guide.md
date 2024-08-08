@@ -39,10 +39,24 @@ Kafka对可靠性保证：
 消费者提交偏移量+消费消息关系很重要。自动提交会导致重复消费。
 
 ```text
-可靠性配置：
-broker: replication.factor(复制系数)，unclean.leader.election.enable(不彻底的首领选举),min.insync.replicas(最少同步副本)，zookeeper.session.timeout.ms（broker发送zk心跳间隔），replica.lag.time.max.ms(指定时间从leader复制数据)，flush.message,flash.ms
-producer:acks，delivery.timeout.ms,enable.idempotence,
-consumer:group.id,auto.offset.reset,enable.auto.commit,auto.commit.interval.ms
+可靠性是配置出来的：
+
+broker配置：
+1. 复制系数：replication.factor
+2. 不彻底的首领选举：unclean.leader.election.enable
+3. 最少同步副本：min.insync.replicas 
+4. 保持副本同步 zookeeper.session.timeout.ms（broker发送zk心跳间隔）和 replica.lag.time.max.ms(指定时间从leader复制数据)，
+5. 磁盘持久化：flush.message flash.ms
+
+producer配置：
+1. 发送确认：acks
+2. 重试与幂等：delivery.timeout.ms enable.idempotence retries
+
+consumer配置：
+1. group.id
+2. auto.offset.reset
+3. enable.auto.commit
+4. auto.commit.interval.ms
 ```
 
 消费者经常重平衡，就不是可靠的。
@@ -75,13 +89,143 @@ kafka事务消息保证流处理模型：消费-处理-生产，保证原子多�
 
 kafka实现精确一次性语义：1 幂等生产者（避免重试机制导致的重复处理） 2 事务（Stream精确一次性语义基础） 
 
-### 配置参数
+# 配置参数
 
+## broker
 
+broker.id
 
+listeners
 
+zookeeper.connect
 
+log.dirs
 
+num.recovery.threads.per.data.dir
+
+auto.create.topics.enable
+
+auto.leader.rebalance.enable
+
+delete.topic.enable
+
+### broker in os
+
+vm.swappiness
+
+vm.dirty_background_ratio
+
+vm.overcommit_memory
+
+net.core.wmem_default
+
+net.core.rmem_default
+
+net.ipv4.tcp_window_scaling
+
+net.ipv4.tcp_max_syn_backlog
+
+net.core.netdev_max_backlog
+
+G1:MaxGCPauseMillis和InitiatingHeapOccupancyPercent
+
+## topic
+
+num.partitions=1
+
+default.replication.factor=1
+
+log.retention.ms
+
+log.retention.bytes
+
+log.segment.bytes
+
+log.roll.ms
+
+min.insync.replicas
+
+message.max.bytes
+
+## producer
+
+bootstrap.server
+
+key.serializer
+
+value.serializer
+
+client.id
+
+acks
+
+max.block.ms
+
+delivery.timeout.ms
+
+request.timeout.ms
+
+retries
+
+retry.backoff.ms
+
+linger.ms
+
+buffer.memory
+
+compression.type
+
+batch.size
+
+max.in.flight.requests.per.connection
+
+max.request.size
+
+receive.buffer.bytes
+
+send.buffer.bytes
+
+enable.idempotence
+
+## consumer
+
+fetch.min.bytes
+
+fetch.max.wait.ms
+
+fetch.max.bytes
+
+max.poll.records
+
+max.partition.fetch.bytes
+
+session.timeout.ms
+
+heart.interval.ms
+
+max.poll.interval.ms
+
+default.api.timeout.ms
+
+request.timeout.ms
+
+auto.offset.reset
+
+enable.auto.commit
+
+partition.assignment.strategy
+
+client.id
+
+client.rack
+
+group.instance.id
+
+receive.buffer.bytes
+
+send.buffer.bytes
+
+offsets.retention.minutes
 
 
 
