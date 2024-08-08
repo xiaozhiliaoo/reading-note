@@ -63,10 +63,6 @@ Red：部分主分片不可用。
 
 分片是一个功能完整的搜索引擎。
 
-
-
-
-
 CAP：CP系统一般用了共识协议，没用的一般AP。Cassandra 可调一致性调节到CP，用的是quorum策略。
 
 TF-IDF:词频/逆向文档频率(term frequency inverse document frequency)
@@ -122,7 +118,6 @@ DocValues的存在是因为倒排索引只对某些操作是高效的。
 搜索使用倒排索引查找文档，聚合操作收集和聚合DocValues里的数据。 
 DocValues本质上是一个序列化的列式存储。列式存储 适用于聚合、排序、脚本等操作DocValues 不支持 analyzed 字符串字段。
 聚合运行在 not_analyzed 字符串而不是analyzed 字符串，这样可以有效的利用DocValues。
-
 聚合一个分析字符串：FieldData
 ```
 

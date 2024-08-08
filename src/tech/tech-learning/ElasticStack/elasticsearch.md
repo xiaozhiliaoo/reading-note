@@ -196,11 +196,9 @@ stem 词干 stemmer  词干提取器
 Elasticsearch 为什么不能在 analyzed （分析过）的字符串字段上排序，并演示了如何为同一个域创建 复数域索引 ，
 其中analyzed域用来搜索，not_analyzed域用来排序。
 
-Analyzed 域无法排序并不是因为使用了分析器，而是因为分析器将字符串拆分成了很多词汇单元，就像一个 词汇袋 ，
-所以 Elasticsearch 不知道使用那一个词汇单元排序。
+Analyzed 域无法排序并不是因为使用了分析器，而是因为分析器将字符串拆分成了很多词汇单元，就像一个 词汇袋，所以 Elasticsearch 不知道使用那一个词汇单元排序。
 
-analyzed name域用来搜索。
-not_analyzed name.raw 域用来排序。
+analyzed name域用来搜索。not_analyzed name.raw 域用来排序。
 
 International Components for Unicode (ICU) 
 
@@ -235,8 +233,7 @@ International Components for Unicode (ICU)
 [参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/analyzer-anatomy.html)
 
 10.ES聚合分析的内部原理？
-聚合基于doc value正排索引实现的。用纯倒排索引实现性能很差。doc value也叫正排索引。
-搜索基于倒排索引实现。
+聚合基于doc value正排索引实现的。用纯倒排索引实现性能很差。doc value也叫正排索引。搜索基于倒排索引实现。
 
 11.doc value和filed data区别？
 
@@ -255,7 +252,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/doc-values.html
 
 14.如何解决ES深度分页问题？
 
-Scorll，Search After，From/Size
+Scroll，Search After，From/Size
 
 15.ES的相似度/分数是怎么计算的？（ES排序问题）
 [参考](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules-similarity.html)

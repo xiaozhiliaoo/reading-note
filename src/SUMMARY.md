@@ -276,12 +276,15 @@
       - [语言](tech/tech-book/language/intro.md)
           - [Java并发编程实战](tech/tech-book/language/java-concurrency-in-practoce.md)
           - [Java并发编程-设计原则与模式](tech/tech-book/language/concurrent-programming-in-java.md)
+          - [深入理解Java虚拟机](tech/tech-book/language/deep-jvm.md)
 
       - [数据库](tech/tech-book/database/intro.md)
           - [NoSQL精粹](tech/tech-book/database/nosql-distilled.md)
           - [Cassandra权威指南-第二版](tech/tech-book/database/cassandra-the-definitive-guide-2nd.md)
           - [数据密集型应用系统设计-中文](tech/tech-book/database/ddia-cn.md)
           - [数据密集型应用系统设计-英文](tech/tech-book/database/ddia-en.md)
+          - [MySQL技术内幕-InnoDB存储引擎](tech/tech-book/database/innodb-storage-engine.md)
+          - [Redis深度历险](tech/tech-book/database/redis-deep.md)
 
       - [分布式与中间件](tech/tech-book/middleware/intro.md)
           - [mongodb权威指南第二版](tech/tech-book/middleware/mongodb-the-definitive-guide-2nd.md)
