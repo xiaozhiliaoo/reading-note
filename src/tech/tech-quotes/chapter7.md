@@ -15,13 +15,13 @@
 
 * 702 异步IO实现：
 
-**问题：**异步IO
+**问题：** 异步IO
 
 **原理：**[EventLoop](https://en.wikipedia.org/wiki/Event_loop)
 
 **机制：**[epoll](http://www.kernel.org/doc/man-pages/online/pages/man4/epoll.4.html)\(Linux\)，[kqueue](http://en.wikipedia.org/wiki/Kqueue)\(FreeBSD, NetBSD, OpenBSD, Darwin\) ， [/dev/poll](http://developers.sun.com/solaris/articles/polling_efficient.html)\(Solaris, HPUX\)，[pollset](http://www.ibm.com/developerworks/aix/library/au-pollset/index.html)\(AIX\)，[Event Completion](http://developers.sun.com/solaris/articles/event_completion.html)\(Solaris 10\)，[I/O Completion Ports](http://msdn.microsoft.com/en-us/library/aa365198%28VS.85%29.aspx)（IOCP-Windows），event ports（SunOS）
 
-**实现库：**libev（select, poll, epoll, kqueue and event ports backends）
+**实现库：** libev（select, poll, epoll, kqueue and event ports backends）
 
 libevent（[/dev/poll](https://en.wikipedia.org/w/index.php?title=/dev/poll&action=edit&redlink=1),[kqueue\(2\)](https://en.wikipedia.org/wiki/Kqueue),POSIX [select\(2\)](https://en.wikipedia.org/wiki/Select_%28Unix%29),Windows [IOCP](https://en.wikipedia.org/wiki/Input/output_completion_port),[poll\(2\)](https://en.wikipedia.org/w/index.php?title=Poll%282%29&action=edit&redlink=1),[epoll\(4\)](https://en.wikipedia.org/wiki/Epoll) and [Solaris](https://en.wikipedia.org/wiki/Solaris_%28operating_system%29)[event ports](https://en.wikipedia.org/w/index.php?title=Event_port&action=edit&redlink=1)）。
 
@@ -41,15 +41,13 @@ libuv（event-driven asynchronous I/O model——Full-featured event loop backed
 
 ---
 
-* 706 [juc架构](https://www.uml-diagrams.org/java-7-concurrent-uml-class-diagram-example.html)
+* 706 [juc架构](https://www.uml-diagrams.org/java-7-concurrent-uml-class-diagram-example.html) 包括：任何和任务执行+并发集合。
 
 任务执行框架：![](assets/juc1.png)
 
-并发集合框架![](assets/juc2.png)
+并发集合框架：![](assets/juc2.png)
 
-任务种类框架
-
-![](assets/juc3.png)
+任务种类框架：![](assets/juc3.png)
 
 ---
 
@@ -67,7 +65,7 @@ libuv（event-driven asynchronous I/O model——Full-featured event loop backed
 
 ---
 
-* 710 IPC方法大全：
+* 710 IPC（进程间通信）方法大全：
 
 ![](assets/ipc-method-all.png)
 
