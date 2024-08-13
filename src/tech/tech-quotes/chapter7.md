@@ -93,7 +93,9 @@ libuv（event-driven asynchronous I/O model——Full-featured event loop backed
 
 ---
 
-* 715  redis senitnel：raft leader协议选主    redis cluster：raftleader协议选主，gossip传播更新。
+* 715  redis senitnel：raft leader协议选主    
+
+redis cluster：raft leader协议选主，gossip传播更新。
 
 ---
 
@@ -123,7 +125,7 @@ Architecture：
 
 ---
 
-* 721 测试视角：好的软件基本就是:：能用。
+* 721 测试视角：好的软件基本就是:能用。
 
 ---
 
@@ -229,7 +231,7 @@ Architecture：
 
 ---
 
-* 743 [系统设计](https://en.wikipedia.org/wiki/Systems_design)：**Systems design **is the process of defining the **architecture**, **modules**, **interfaces**, and **data**  for a system  to satisfy specified **requirements**  （架构，模块，接口，数据存储，特定需求），虽然需求在最后，但是必须第一考虑。
+* 743 [系统设计](https://en.wikipedia.org/wiki/Systems_design)：**Systems design** is the process of defining the **architecture**, **modules**, **interfaces**, and **data**  for a system  to satisfy specified **requirements**  （架构，模块，接口，数据存储，特定需求），虽然需求在最后，但是必须第一考虑。
 
 ---
 
@@ -255,11 +257,11 @@ Result\(结果\): 业界存在方案，日志\(elk，flume，kafka+hbase\)
 
 * 745 常见系统设计题目：
 
-* **基础设施：**design file system，design rate limter,design monitor system,design log colection，design cache，design big data platform,design tiny url, design database, design os, design kv store， design a gateway，design a Garbage Collection System，
+* **基础设施：** design file system，design rate limter,design monitor system,design log colection，design cache，design big data platform,design tiny url, design database, design os, design kv store， design a gateway，design a Garbage Collection System，
 
-* **中间件：**design rpc\(high performace\) framework, design mq, design mysql proxy,design sharding sharding proxy,design a lib,design web crawler,
+* **中间件：** design rpc\(high performace\) framework, design mq, design mysql proxy,design sharding sharding proxy,design a lib,design web crawler,
 
-* **领域业务：**design google search,design youtube,design netflix,design facebook, design linkedIn,design uber, design recommender system, design wechat,design hit counter, design e-Commerce website
+* **领域业务：** design google search,design youtube,design netflix,design facebook, design linkedIn,design uber, design recommender system, design wechat,design hit counter, design e-Commerce website
 
 ---
 
@@ -299,9 +301,7 @@ Result\(结果\): 业界存在方案，日志\(elk，flume，kafka+hbase\)
 
 map-reduce的实现：![](assets/map-reduce.png)
 
-mongodb实现：从文件系统实现，逐渐加功能，
-
-你看到的mongodb之所以复杂，因为是最终成品，包含了大量优化和工程考虑。切记：存储系统都是从文件系统演化而来的。
+mongodb实现：从文件系统实现，逐渐加功能，你看到的mongodb之所以复杂，因为是最终成品，包含了大量优化和工程考虑。切记：存储系统都是从文件系统演化而来的。
 
 ---
 
@@ -321,7 +321,7 @@ mongodb实现：从文件系统实现，逐渐加功能，
 
 * 752 clean architecture:设计原则
 
-**类**层设计原则：SRP,OCP,LSP,IPS,DIP
+**类**层设计原则：SOLID：SRP（单一职责）,OCP（开放封闭）,LSP（里氏替换）,IPS（接口隔离）,DIP（依赖反转）
 
 **组件**层设计原则：组件内：REP,CCP,CRP  组件间：ADP,SDP,ADP
 
@@ -371,7 +371,7 @@ mongodb实现：从文件系统实现，逐渐加功能，
 
 ---
 
-* 763 十万，百万：高性能，7\*24小时i连续服务。  千万：高可用，高可运维。亿级：高性能，高可用，高可运维，高灵活性。
+* 763 十万，百万：高性能，7\*24小时连续服务。  千万：高可用，高可运维。亿级：高性能，高可用，高可运维，高灵活性。
 
 ---
 
@@ -406,11 +406,11 @@ mongodb实现：从文件系统实现，逐渐加功能，
 ---
 
 * 771 工作内容：产品设计，系统设计，软件设计，编码实现，测试，部署，运维。这些工作中，什么是最核心的？从业务的角度看**产品设计**和**系统设计**是最核心的，编码实现则更像某种翻译工作。因此，我们得到第二个有关研发的事实：
-  **软件研发本质上是设计，**如果我们将产品设计的工作交给TPM（类似产品经理）或者PM（业务人员），我们可以将这个事实针对研发人员进行改写：**软件研发能力最关键的是设计能力**
+  **软件研发本质上是设计，** 如果我们将产品设计的工作交给TPM（类似产品经理）或者PM（业务人员），我们可以将这个事实针对研发人员进行改写：**软件研发能力最关键的是设计能力**
 
 ---
 
-* 772 软件开发两个事实：1 **软件研发本质上是一个学习的过程，研发要有快速学习能力。**2  **软件研发本质上是设计，软件研发能力最关键的是设计能力**
+* 772 软件开发两个事实：1 **软件研发本质上是一个学习的过程，研发要有快速学习能力。** 2  **软件研发本质上是设计，软件研发能力最关键的是设计能力**
 
 ---
 
@@ -533,6 +533,7 @@ Java和C++之间有一堵内存动态分配和垃圾收集技术所围成的高�
 ---
 
 * 792 如何重构超级大的一个Controller？？？先写Service，然后加单元测试，拆分Service，消除重复。
+
     如何重构一个超级大的Service？？？先写单元测试，拆分Service。找到粒度最小的服务。  
 ---
 
@@ -548,7 +549,11 @@ Java和C++之间有一堵内存动态分配和垃圾收集技术所围成的高�
 
 ---
 
-* 796 Java并发提供了三个核心抽象概念(任务，任务提交，任务执行)，具体来说：1 任务，从Runnable，Callable，FutureTask，到ForkJoinTask 2 任务提交 ExecutorService，实现submit，invoke方法，核心子类：AbstractExecutorService作为骨架实现 3 是任务执行Executor，核心子类ThreadPoolExecutor(核心方法execute)，ForkjoinPool(因为重写了提交机制，所以核心方法submit和execute)，纯接口包含了命令模式，模板模式，状态机模式等等。这就意味着你可以自定义提交和执行机制。体现了多种策略和实现分别，非常漂亮。
+* 796 Java并发提供了三个核心抽象概念(任务，任务提交，任务执行)，具体来说：
+* 1 任务，从Runnable，Callable，FutureTask，到ForkJoinTask 
+* 2 任务提交 ExecutorService，实现submit，invoke方法，核心子类：AbstractExecutorService作为骨架实现 
+* 3 是任务执行Executor，核心子类ThreadPoolExecutor(核心方法execute)，ForkjoinPool(因为重写了提交机制，所以核心方法submit和execute)，纯接口包含了命令模式，模板模式，状态机模式等等。
+* 这就意味着你可以自定义提交和执行机制。体现了多种策略和实现分别，非常漂亮。
 
 ---
 

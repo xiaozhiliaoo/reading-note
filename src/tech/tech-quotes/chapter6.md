@@ -99,7 +99,7 @@ Platform Security：Strong data typing，Automatic memory management，Bytecode 
 
 ---
 
-* 621 [Map](http://falkhausen.de/Java-8/java.util/Map-Hierarchy.html)![](assets/吗 picture.png)
+* 621 [Map](http://falkhausen.de/Java-8/java.util/Map-Hierarchy.html)
 
 ---
 

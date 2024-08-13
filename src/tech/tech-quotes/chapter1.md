@@ -332,53 +332,53 @@ D：变化可行性  Vn：当前价值 Vf：未来价值  Ei：开发成本 Em�
 
 * 71 POSA2:Patterns for Concurrent and Nerwork Objects
 
-**服务访问和配置模式：**包装器外观\[Wrapper Facade\]，组件配置器\[Component Configurator\]，拦截器\[Interceptor\]，扩展接口\[Extension Interface\]
+**服务访问和配置模式：** 包装器外观\[Wrapper Facade\]，组件配置器\[Component Configurator\]，拦截器\[Interceptor\]，扩展接口\[Extension Interface\]
 
-**事件处理模式：**反应器\[Reactor\]，主动器\[Proactor\]，异步完成标记\[Asynchronous Completion Token\]，接受器-连接器\[Acceptor-Connector\]
+**事件处理模式：** 反应器\[Reactor\]，主动器\[Proactor\]，异步完成标记\[Asynchronous Completion Token\]，接受器-连接器\[Acceptor-Connector\]
 
-**同步模式：**定界加锁\[Scoped Locking\]，策略加锁\[Strategized Locking\]，线程安全接口\[Thread-Safe Interface\]，双重加锁优化\[Double-Checked Locking Optimization\]
+**同步模式：** 定界加锁\[Scoped Locking\]，策略加锁\[Strategized Locking\]，线程安全接口\[Thread-Safe Interface\]，双重加锁优化\[Double-Checked Locking Optimization\]
 
-**并发模式：**主动对象\[Active Object\]，监视器对象\[Monitor Object\]，半同步半异步\[Half-Sync\/Half-Async\]，领导者追随者\[Leader\/Flowers\]，线程特定存储\[Thread-Specific Storage\]
+**并发模式：** 主动对象\[Active Object\]，监视器对象\[Monitor Object\]，半同步半异步\[Half-Sync\/Half-Async\]，领导者追随者\[Leader\/Flowers\]，线程特定存储\[Thread-Specific Storage\]
 
 ---
 
 * 72 POSA3: Patterns for Resource Management
 
-**资源获取：**查找模式\[Lookup\]，延迟获取\[Lazy Acquisition\]，预先获取\[Eager Acquisition\]，部分获取\[Partial  Acquisition \]
+**资源获取：** 查找模式\[Lookup\]，延迟获取\[Lazy Acquisition\]，预先获取\[Eager Acquisition\]，部分获取\[Partial  Acquisition \]
 
-**资源生命周期：**缓存\[Caching\]，池\[Pooling\]，协调者\[Coordinator\]，资源生命周期管理器\[Resource Lifecycle Manage\]
+**资源生命周期：**缓存 \[Caching\]，池\[Pooling\]，协调者\[Coordinator\]，资源生命周期管理器\[Resource Lifecycle Manage\]
 
-**资源释放：**租约\[Leasing\]，驱逐者\[Evitor\]
+**资源释放：** 租约 \[Leasing\]，驱逐者\[Evitor\]
 
 ---
 
 * 73 POSA4:A Pattern Language for Distributed Computing  114个模式
 
-**从混沌到结构：**Domain Model\[领域模式\] ，Layer\[分层\]， Model-View-Controller\[模式-视图-控制器\]，Presentation-Abstraction-Controller\[表现-抽象-控制\]，Microkernel\[微内核\]，Reflection\[反射\]，Pipes And Filters\[管道和过滤器\]，Shared Respository\[共享仓库\]，Blackboard\[黑板报\]，Domain Object\[领域对象\]
+**从混沌到结构：** Domain Model\[领域模式\] ，Layer\[分层\]， Model-View-Controller\[模式-视图-控制器\]，Presentation-Abstraction-Controller\[表现-抽象-控制\]，Microkernel\[微内核\]，Reflection\[反射\]，Pipes And Filters\[管道和过滤器\]，Shared Respository\[共享仓库\]，Blackboard\[黑板报\]，Domain Object\[领域对象\]
 
-**分布式基础设施：**Messaging\[消息传递\] 【 Message Channel\[信道\],Message Endpoint\[消息端点\],Message Translator\[消息转换器\],Message Router\[消息路由\] 】 ,Pub-Sub\[发布者-订阅者\],Broker\[经纪人\],【Client Proxy\[客户端代码\],Requestor\[请求者\],Invoker\[调用者\],Client Request Handler\[客户端请求处理\],Server Request Handler\[服务端请求处理\]】
+**分布式基础设施：** Messaging\[消息传递\] 【 Message Channel\[信道\],Message Endpoint\[消息端点\],Message Translator\[消息转换器\],Message Router\[消息路由\] 】 ,Pub-Sub\[发布者-订阅者\],Broker\[经纪人\],【Client Proxy\[客户端代码\],Requestor\[请求者\],Invoker\[调用者\],Client Request Handler\[客户端请求处理\],Server Request Handler\[服务端请求处理\]】
 
-**事件分离和分发：**Reactor\[反应器\],Proactor\[前摄器\],Acceptor-Connector\[接受器-连接器\],Asynchronous Completion Token\[异步完成令牌\]
+**事件分离和分发：** Reactor\[反应器\],Proactor\[前摄器\],Acceptor-Connector\[接受器-连接器\],Asynchronous Completion Token\[异步完成令牌\]
 
-**接口划分：**Explicit Interface\[显示接口\],Extension Interface\[扩展接口\],Introspective Interface\[内省接口\],Dynamic Invocation  Interface\[动态调用接口\],Proxy\[代理\],Bussiness Delegate\[业务委派\],Facade \[外观\],Combined Method\[组合方法\], Iterator \[迭代器\],Enumeration Method\[枚举方法\],Batch Method\[批处理方法\]
+**接口划分：** Explicit Interface\[显示接口\],Extension Interface\[扩展接口\],Introspective Interface\[内省接口\],Dynamic Invocation  Interface\[动态调用接口\],Proxy\[代理\],Bussiness Delegate\[业务委派\],Facade \[外观\],Combined Method\[组合方法\], Iterator \[迭代器\],Enumeration Method\[枚举方法\],Batch Method\[批处理方法\]
 
-**组件划分：**Encapsulated Implementation\[封装实现\],Whole-Part\[整体-部分\],Composite\[组合\],Master-Slave\[主-从\],Half-Object plus Protocol\[半对象加协议\],Replicated Component Group\[复制组件组\]
+**组件划分：** Encapsulated Implementation\[封装实现\],Whole-Part\[整体-部分\],Composite\[组合\],Master-Slave\[主-从\],Half-Object plus Protocol\[半对象加协议\],Replicated Component Group\[复制组件组\]
 
-**应用控制：**Page Controller\[页面控制器\],Front  Controller \[前端控制器\],Application  Controller \[应用控制器\],Command Processor\[命令处理程序\],Template View\[模板视图\],Transform View\[转换视图\], Firewall Proxy\[防火墙代理\],Authrization\[授权\]
+**应用控制：** Page Controller\[页面控制器\],Front  Controller \[前端控制器\],Application  Controller \[应用控制器\],Command Processor\[命令处理程序\],Template View\[模板视图\],Transform View\[转换视图\], Firewall Proxy\[防火墙代理\],Authrization\[授权\]
 
-**并发：**Half-Sync\/Half-Async\[半同步-半异步\],Leader-Followers\[领导者-追随者\],Active Object\[活动对象\],Monitor Object\[监控对象\]
+**并发：** Half-Sync\/Half-Async\[半同步-半异步\],Leader-Followers\[领导者-追随者\],Active Object\[活动对象\],Monitor Object\[监控对象\]
 
-**同步：**Grarded Suspension\[守护挂起\],Future\[未来\/期货\],Thread-Safe Interface\[线程安全接口\],Double-Checked Locking\[双重锁检测\],Stategized Locking\[策略锁\],Scoped Locking\[区域锁\],Thread-Special Storage\[线程专属存储\],Copied Value\[副本值\],Immutable Value\[不变模式\]
+**同步：** Grarded Suspension\[守护挂起\],Future\[未来\/期货\],Thread-Safe Interface\[线程安全接口\],Double-Checked Locking\[双重锁检测\],Stategized Locking\[策略锁\],Scoped Locking\[区域锁\],Thread-Special Storage\[线程专属存储\],Copied Value\[副本值\],Immutable Value\[不变模式\]
 
-**对象间交互：**Observer\[观察者\],Double Dispatch\[双分派\],Mediator\[中介者\],Command\[命令\],Memonto\[备忘录\],Context Object\[上下文对象\],Data Transfer Object\[数据传输对象\],Message\[消息\]
+**对象间交互：** Observer\[观察者\],Double Dispatch\[双分派\],Mediator\[中介者\],Command\[命令\],Memonto\[备忘录\],Context Object\[上下文对象\],Data Transfer Object\[数据传输对象\],Message\[消息\]
 
-**适配和扩展：**Bridge\[桥接\],Object Adapter\[对象适配\],Chain of Responsibility\[职责链\],Interpreter\[解释器\],Interceptor\[拦截器\],Visitor\[访问者\],Decorator\[装饰者\],Execute-Around Object\[环绕执行对象\],Template Method\[模板方法\],Strategy\[策略\],Null Object\[空对象\],Wrapper Facade\[包装外观\],Declarative Component Configuration\[声明组件配置\]
+**适配和扩展：** Bridge\[桥接\],Object Adapter\[对象适配\],Chain of Responsibility\[职责链\],Interpreter\[解释器\],Interceptor\[拦截器\],Visitor\[访问者\],Decorator\[装饰者\],Execute-Around Object\[环绕执行对象\],Template Method\[模板方法\],Strategy\[策略\],Null Object\[空对象\],Wrapper Facade\[包装外观\],Declarative Component Configuration\[声明组件配置\]
 
-**模态行为：**Objects for States\[状态对象\],Method for States\[状态方法\],Collections for States\[状态集合\]
+**模态行为：** Objects for States\[状态对象\],Method for States\[状态方法\],Collections for States\[状态集合\]
 
-**资源管理：**Container\[容器\],Component Configurator\[组件配置\],Object Manager\[对象管理器\],Lookup\[查找\],Virtual Proxy\[虚代理\],Lifecycle CallBack\[生命周期回调\],Task Coordinator\[任务协调者\],Resourse Pool\[资源池\],Resourse Cache\[资源缓存\], Lazy Acquisition \[延迟获取\/懒加载\],Eager Acquisition\[提前获取\],Partial Acqusition\[局部获取\],Activator\[激励器\],Evictor\[驱逐器\],Leasing\[租借\],Automated Garbage\[自动回收\],Counting Handles\[计数句柄\],Abstract Factory\[抽象工厂\],Builder\[构建者\],Factory Method\[工厂方法\],Disposal Method\[销毁方法\]
+**资源管理：** Container\[容器\],Component Configurator\[组件配置\],Object Manager\[对象管理器\],Lookup\[查找\],Virtual Proxy\[虚代理\],Lifecycle CallBack\[生命周期回调\],Task Coordinator\[任务协调者\],Resourse Pool\[资源池\],Resourse Cache\[资源缓存\], Lazy Acquisition \[延迟获取\/懒加载\],Eager Acquisition\[提前获取\],Partial Acqusition\[局部获取\],Activator\[激励器\],Evictor\[驱逐器\],Leasing\[租借\],Automated Garbage\[自动回收\],Counting Handles\[计数句柄\],Abstract Factory\[抽象工厂\],Builder\[构建者\],Factory Method\[工厂方法\],Disposal Method\[销毁方法\]
 
-**数据库访问：**Database Access Layer\[数据库访问层\],Data Mapper\[数据映射器\],Row Data Gateway\[行数据网关\],Table Data Gateway\[表数据网关\],Active Record\[活动记录\]
+**数据库访问：** Database Access Layer\[数据库访问层\],Data Mapper\[数据映射器\],Row Data Gateway\[行数据网关\],Table Data Gateway\[表数据网关\],Active Record\[活动记录\]
 
 ---
 
@@ -392,31 +392,31 @@ D：变化可行性  Vn：当前价值 Vf：未来价值  Ei：开发成本 Em�
 
 **数据源架构模式：** Table Data GateWay\[表数据入口\],Row Data GateWay\[行数据入口\],Active Record\[活动记录\],Data Mapper\[数据映射器\]
 
-**对象-关系行为模式：**Unit of Work\[工作单元\],Identity Map\[标识映射\],Lazy Load\[延迟加载\]
+**对象-关系行为模式：** Unit of Work\[工作单元\],Identity Map\[标识映射\],Lazy Load\[延迟加载\]
 
-**对象-关系结构模式：**Indentity Field\[标识域\],Foreign Key Mapping\[外键映射\],Association Table Mapping\[关联表映射\],Dependent Mapping\[依赖映射\],Embedded Value\[嵌入值\],Serialized LOB\[序列化LOB\],Single Table Inheritance\[单表继承\],Class Table Inheritance\[类表继承\],Concrete Table Inheritance\[具体表继承\],Inheritance Mappers\[继承映射器\]
+**对象-关系结构模式：** Indentity Field\[标识域\],Foreign Key Mapping\[外键映射\],Association Table Mapping\[关联表映射\],Dependent Mapping\[依赖映射\],Embedded Value\[嵌入值\],Serialized LOB\[序列化LOB\],Single Table Inheritance\[单表继承\],Class Table Inheritance\[类表继承\],Concrete Table Inheritance\[具体表继承\],Inheritance Mappers\[继承映射器\]
 
-**对象-关系元数据映射模式：**Metadata Mapping\[元数据映射\],Query Object\[查询对象\],Repository\[资源\],
+**对象-关系元数据映射模式：** Metadata Mapping\[元数据映射\],Query Object\[查询对象\],Repository\[资源\],
 
-**Web表现层模式：**Model-View-Controller\[模型-视图-控制器\],Page Controller\[页面控制器\],Front Controller\[前端控制器\],Template View\[模板视图\],Transform View\[转换视图\],Two-Step View\[两步视图\],Application Controller\[应用控制器\]
+**Web表现层模式：** Model-View-Controller\[模型-视图-控制器\],Page Controller\[页面控制器\],Front Controller\[前端控制器\],Template View\[模板视图\],Transform View\[转换视图\],Two-Step View\[两步视图\],Application Controller\[应用控制器\]
 
-**分布模式：**Remote Facade\[远程外观\],Data Transfer Object\[数据传输对象\]
+**分布模式：** Remote Facade\[远程外观\],Data Transfer Object\[数据传输对象\]
 
-**离线并发模式：**Optimistic Offline Lock\[乐观离线锁\],Pessimistic Offline Lock\[悲观离线锁\],Coarse Grained Lock\[粗粒度锁\],Implicit Lock\[隐含锁\]
+**离线并发模式：** Optimistic Offline Lock\[乐观离线锁\],Pessimistic Offline Lock\[悲观离线锁\],Coarse Grained Lock\[粗粒度锁\],Implicit Lock\[隐含锁\]
 
-**会话状态模式：**Client Session State\[客户端会话状态\],Server Session State\[服务器会话状态\],Database Session State\[数据库会话状态\]
+**会话状态模式：** Client Session State\[客户端会话状态\],Server Session State\[服务器会话状态\],Database Session State\[数据库会话状态\]
 
-**基本模式：**GateWay\[入口\],Mapper\[映射器\],Layer Supertype\[层超类型\],Separated Interface\[分离接口\],Registry\[注册表\],Value Object\[值对象\],Money\[货币\],Special Case\[特殊情况\],Plugin\[插件\],Service Stub\[服务桩\],Record Set\[记录集\]
+**基本模式：** GateWay\[入口\],Mapper\[映射器\],Layer Supertype\[层超类型\],Separated Interface\[分离接口\],Registry\[注册表\],Value Object\[值对象\],Money\[货币\],Special Case\[特殊情况\],Plugin\[插件\],Service Stub\[服务桩\],Record Set\[记录集\]
 
 ---
 
 * 76 Core J2EE Patterns:
 
-**表现层：**Intercepting Filter \[拦截过滤器\],Context Object \[上下文对象\],Front Controller\[前端控制器\],Application Controller\[应用控制器\],View Helper\[视图助手\],Composite View\[复合视图\],Dispatcher View\[分配器视图\],Service To Worker\[服务到工作者\]
+**表现层：** Intercepting Filter \[拦截过滤器\],Context Object \[上下文对象\],Front Controller\[前端控制器\],Application Controller\[应用控制器\],View Helper\[视图助手\],Composite View\[复合视图\],Dispatcher View\[分配器视图\],Service To Worker\[服务到工作者\]
 
-**业务层：**Business Delegate\[业务代表\],Service Locator\[服务定位器\],Session Facade\[会话门面\],Application Service\[应用服务\],Business Objec\[业务对象\],Composite Entity\[复合实体\],Transfer Object\[传输对象\],T O Assembler\[传输对象包装器\],Value List Handler\[值列表处理器\]
+**业务层：** Business Delegate\[业务代表\],Service Locator\[服务定位器\],Session Facade\[会话门面\],Application Service\[应用服务\],Business Objec\[业务对象\],Composite Entity\[复合实体\],Transfer Object\[传输对象\],T O Assembler\[传输对象包装器\],Value List Handler\[值列表处理器\]
 
-**集成层：**Data Access Object\[数据访问对象\],Service Activator\[服务激活器\],Domain Store\[业务领域存储\],Web Service Broker\[Web Service中转\]
+**集成层：* *Data Access Object\[数据访问对象\],Service Activator\[服务激活器\],Domain Store\[业务领域存储\],Web Service Broker\[Web Service中转\]
 
 ---
 
@@ -476,7 +476,11 @@ D：变化可行性  Vn：当前价值 Vf：未来价值  Ei：开发成本 Em�
 
 ---
 
-* 91 面向对象设计原则：SOLID，DRY，YAGNI，GRASP，KISS。
+* 91 面向对象设计原则：SOLID，DRY(Don’t Repeat Yourself)，YAGNI(You Ain’t Gonna Need It)，GRASP(General Responsibility Assignment Software Patterns)，KISS(Keep It Simple & Stupid)。
+
+GRASP:Infomation Expert,Creator,Low coupling,High cohesion,Controller,Polymorphism,Pure Fabrication,Indirection,Protected Variations
+
+比设计模型更重要的是设计原则。
 
 ---
 
@@ -508,7 +512,7 @@ D：变化可行性  Vn：当前价值 Vf：未来价值  Ei：开发成本 Em�
 
 * 98 **对象池**有Config，**池对象**有Info or State。**对象池**不需要Factory，本身就具备Factory的特性。但是**池对象**需要。因为Config不同Info才不同。线程池，连接池，缓存亦如此。
 
-参考设计:     ![](assets/pool.png)
+参考设计:![](assets/pool.png)
 
 ---
 
@@ -516,7 +520,6 @@ D：变化可行性  Vn：当前价值 Vf：未来价值  Ei：开发成本 Em�
 
 ---
 
-* 100 我的技术学习方法论: 规范 + 实现 + 应用。 JSR51\[NIO Since J2SE 1.4\] + Grizzly, Netty + 基于Netty的应用。
+* 100 我的技术学习方法论: 规范 + 实现 + 应用。 JSR51[NIO Since J2SE 1.4] + Grizzly, Netty + 基于Netty的应用。
 
-
-
+---

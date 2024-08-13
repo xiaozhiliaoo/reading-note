@@ -139,7 +139,7 @@
 
 场景：1 volatile最适用一个线程写，多个线程读的场合  2  检查某个状态标记以判断是否退出循环。
 
-
+```java
 volatile boolean shutdownRequested;  //不加volatile可能会导致指令重排，-server模式产生死循环
 public void shutdown() { 
      shutdownRequested = true; 
@@ -149,6 +149,7 @@ public void doWork() {
         // do stuff
     }
 }
+```
 
 
 ---
@@ -609,14 +610,14 @@ Future.get  指定时间内没有完成，则取消任务    任务没有完成�
 
 1  Tomcat，Nginx 最大限度发挥单机server最大并发量。
 
-2   CPU密集：N$$cpu$$+1  or N$$cpu$$ -1   IO密集型  2 \* N$$cpu$$
+2   CPU密集：N+1  IO密集型  2 * N
 
-3   IO+CPU差不多：   \(N$$cpu$$+1  +  2 \* N$$cpu$$\)/2
+3   IO+CPU差不多：(N+1 + 2 * N)/2
 
 ---
 
-* 240 _**线程安全：**_当多个线程访问某个类时，不管运行时环境采用何种调度方式，或者这些线程将如何交替执行，并且在主调代码中不需要任何额外的同步或协同，这个类都能表现出正确的行为，那么就称这个类是线程安全的。
-* 简单定义：**当多个线程访问某个类的时候，这个类始终表现出正确的行为，那么这个类就是线程安全的。**
+* 240 **线程安全:** 当多个线程访问某个类时，不管运行时环境采用何种调度方式，或者这些线程将如何交替执行，并且在主调代码中不需要任何额外的同步或协同，这个类都能表现出正确的行为，那么就称这个类是线程安全的。
+* 简单定义：**:当多个线程访问某个类的时候，这个类始终表现出正确的行为，那么这个类就是线程安全的。**
 
 ---
 
@@ -633,7 +634,7 @@ Future.get  指定时间内没有完成，则取消任务    任务没有完成�
 
 ---
 
-* 243 **AQS **  ![](assets/aqs.png)
+* 243 **AQS**  ![](assets/aqs.png)
 
 ---
 
@@ -641,7 +642,7 @@ Future.get  指定时间内没有完成，则取消任务    任务没有完成�
 
 ---
 
-* 245 **Lock  **![](assets/lock.png)
+* 245 **Lock** ![](assets/lock.png)
 
 ---
 
@@ -680,7 +681,7 @@ Future.get  指定时间内没有完成，则取消任务    任务没有完成�
 
 ---
 
-* 253 通常，**中断**是实现取消的最合理方式。也可以循环检测某个**状态位\(volatile\)**取消。
+* 253 通常，**中断**是实现取消的最合理方式。也可以循环检测某个**状态位\(volatile\)** 取消。
 
 ---
 
@@ -700,7 +701,7 @@ Future.get  指定时间内没有完成，则取消任务    任务没有完成�
 
 ---
 
-* 258 线程池作用：_**1**_ **提高执行任务性能**   _ **2** _**资源管理**  
+* 258 线程池作用：**1** 提高执行任务性能  **2** 资源管理  
 
 从ThreadPoolExecutor理解线程池的原理：Core and maximum pool sizes，On-demand construction，Creating new threads，Keep-alive times，Queuing，Rejected tasks，Hook methods，Queue maintenance，Finalization。
 
@@ -708,12 +709,12 @@ Future.get  指定时间内没有完成，则取消任务    任务没有完成�
 
 ```java
 public ThreadPoolExecutor(int corePoolSize,
-                                int maximumPoolSize,
-                                long keepAliveTime,
-                                TimeUnit unit,
-                                BlockingQueue<Runnable> workQueue,
-                                ThreadFactory threadFactory,
-                                RejectedExecutionHandler handler){}
+                          int maximumPoolSize,
+                          long keepAliveTime,
+                          TimeUnit unit,
+                          BlockingQueue<Runnable> workQueue,
+                          ThreadFactory threadFactory,
+                          RejectedExecutionHandler handler){}
 ```
 
 ---
@@ -893,7 +894,7 @@ CP-》分布式DB
 
 ---
 
-* 294 垃圾回收算法： 1  标记-清除  2  复制算法  3 标记-整理   4  分代收集算法\(hotspot\)
+* 294 垃圾回收算法： 1  标记-清除  2  标记-复制  3 标记-整理   4  分代收集算法\(hotspot\)
 
 ---
 
@@ -925,9 +926,11 @@ CP-》分布式DB
 
 * 300 理解字节码：
 
-**SuppressPropertiesBeanIntrospector.class**和** String.class**
+**SuppressPropertiesBeanIntrospector.class**和**String.class**
 
-![](assets/SuppressProperties.png)  @@VS@@![](assets/String.png)
+![](assets/SuppressProperties.png)  
+
+![](assets/String.png)
 
 ---
 

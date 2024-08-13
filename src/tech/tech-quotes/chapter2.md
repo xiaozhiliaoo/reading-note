@@ -140,29 +140,29 @@ Object isInstanceOf Class,System isRepresentedBy Model.
 
 ---
 
-* 133 模式在分类\[[http://java-design-patterns.com\](http://java-design-patterns.com\)\]
+* 133 [模式在分类](http://java-design-patterns.com\](http://java-design-patterns.com)
 
-**Architechtural:**API GateWay,Aggregator Microservices,CQRS,Data Bus, Data Transfer Object,Event Driven Architecture,Event Source,Hexagonal Architecture, Layers, Naked Objects, Server Layer
+**Architechtural:** API GateWay,Aggregator Microservices,CQRS,Data Bus, Data Transfer Object,Event Driven Architecture,Event Source,Hexagonal Architecture, Layers, Naked Objects, Server Layer
 
-**Behavioral:**Chain of Responsoibility, Command, Delegation, Dependency Injection, Extension Ojects, Feature Toggle, Intercepting Filter,Interpreter,Iterator,Mediator, Memeto,Null Object, Observer, Specification, State, Strategy, Template method, Visitor
+**Behavioral:** Chain of Responsoibility, Command, Delegation, Dependency Injection, Extension Ojects, Feature Toggle, Intercepting Filter,Interpreter,Iterator,Mediator, Memeto,Null Object, Observer, Specification, State, Strategy, Template method, Visitor
 
-**Bussiness Tier:**Bussiness Delegate
+**Bussiness Tier:** Bussiness Delegate
 
-**Concurrency:**Async Method Invocation, Balking, Double Checked Locking,Event Queue, Event-based Asynchronous, Guarded Suspension,Half-Sync/Half-Async,Mutex,Producer-Consumer,Promise,Reactor,Reader Writer Lock,Semaphore, Thread Local Storage,Thread Pool
+**Concurrency:** Async Method Invocation, Balking, Double Checked Locking,Event Queue, Event-based Asynchronous, Guarded Suspension,Half-Sync/Half-Async,Mutex,Producer-Consumer,Promise,Reactor,Reader Writer Lock,Semaphore, Thread Local Storage,Thread Pool
 
-**Creational:**Abstract Factory,Builder,Factory Kit,Factory Method,Moudle,MonoState,Multiton,Object Mother,Object Pool,Property,Prototype,Singleton,Step Builder,Twin,Value Object
+**Creational:** Abstract Factory,Builder,Factory Kit,Factory Method,Moudle,MonoState,Multiton,Object Mother,Object Pool,Property,Prototype,Singleton,Step Builder,Twin,Value Object
 
-**Integration:**Message Channel,Publish-Subscribe,Tolerant Reader
+**Integration:** Message Channel,Publish-Subscribe,Tolerant Reader
 
-**Other:**Caching,CallBack,Double Dispatch,Execute Around,Fluent Interface,Lazy Loading,Monad,Mute Idiom,Poison Pill,Private Class Data,Queue based load leveling,Resource Acquisition Is Initilazation
+**Other:** Caching,CallBack,Double Dispatch,Execute Around,Fluent Interface,Lazy Loading,Monad,Mute Idiom,Poison Pill,Private Class Data,Queue based load leveling,Resource Acquisition Is Initilazation
 
-**Persistence Tier:**DAO,DataMapper,Repository
+**Persistence Tier:** DAO,DataMapper,Repository
 
-**Presentation Tier:**Flux,Front Controller,MVC,MVP
+**Presentation Tier:** Flux,Front Controller,MVC,MVP
 
-**Structural:**Abstract Document,Adapter,Bridge,Composite,Decorator,Event Aggregator,Facade,FlyWeight,Proxy,Servant,Service Locator
+**Structural:** Abstract Document,Adapter,Bridge,Composite,Decorator,Event Aggregator,Facade,FlyWeight,Proxy,Servant,Service Locator
 
-**Testing:**Page Object
+**Testing:** Page Object
 
 ---
 

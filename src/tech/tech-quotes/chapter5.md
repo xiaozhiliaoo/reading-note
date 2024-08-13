@@ -243,19 +243,19 @@ NL：Null 对资源不访问   CR/W：并发读/写   PR/W :保护性读写 Ex�
 
 ![](assets/DingTalk20180128114457.png)![](assets/DingTalk20180128114635.png)
 
-**核心运行时：**Extension Object，IAdaptable，AdapterFactories
+**核心运行时：** Extension Object，IAdaptable，AdapterFactories
 
-**核心工作区：**访问文件系统资源Proxy，Bridge，工作区：Composite，遍历资源树：Visitor，跟踪资源变化：Observer，批量修改：Execute Around Method
+**核心工作区：** 访问文件系统资源Proxy，Bridge，工作区：Composite，遍历资源树：Visitor，跟踪资源变化：Observer，批量修改：Execute Around Method
 
-**JavaCore：**从资源到java元素：Adapter，Java元素：Virual Proxy，Java元素树：Composite，类型体系：Objectify Assocations
+**JavaCore：** 从资源到java元素：Adapter，Java元素：Virual Proxy，Java元素树：Composite，类型体系：Objectify Assocations
 
 ，跟踪Java元素变化：Observer，收集结果：Builder，抽象语法树：Visitor
 
-**SWT：**组合窗体组件：Composite，定义布局：Strategy，响应事件：Observer
+**SWT：** 组合窗体组件：Composite，定义布局：Strategy，响应事件：Observer
 
-**JFace：**Viewer：连接窗体组件和领域模型：Pluggable Adapter，动作：Command
+**JFace：** Viewer ：连接窗体组件和领域模型：Pluggable Adapter，动作：Command
 
-**UI工作台：**懒加载：Virtual Proxy，持久化UI状态：Memento，工作台服务：IAdaptable
+**UI工作台：** 懒加载：Virtual Proxy，持久化UI状态：Memento，工作台服务：IAdaptable
 
 ---
 
