@@ -199,6 +199,7 @@
               - [这就是ChatGPT](tech/tech-learning/company/tencentcloud-tech/ChatGPT.md)
             - [大模型](tech/tech-learning/company/tencentcloud-tech/llm.md)
             - [iCode](tech/tech-learning/company/tencentcloud-tech/iCode.md)
+            - [模型评测](tech/tech-learning/company/tencentcloud-tech/model-evaluation.md)
         - [IDST-对话平台技术](tech/tech-learning/company/dialogue-tech/toc.md)
             - [etcd](tech/tech-learning/company/dialogue-tech/etcd.md)
             - [mongodb](tech/tech-learning/company/dialogue-tech/mongodb.md)
