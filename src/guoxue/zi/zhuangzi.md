@@ -16,6 +16,7 @@ https://ctext.org/zhuangzi/ze-yang/zhs
 
 # 章节总结
 
+```text
 逍遥游：北冥大鹏
 齐物论：方生方死
 养生主：庖丁解牛
@@ -51,6 +52,7 @@ https://ctext.org/zhuangzi/ze-yang/zhs
 渔父：四患八疵
 列御寇：虚而敖游
 天下：百家道术
+```
 
 # 庄子中的寓言，成语故事
 
