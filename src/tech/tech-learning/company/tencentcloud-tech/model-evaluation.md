@@ -221,3 +221,7 @@ opencompass：https://github.com/open-compass/OpenCompass/
 COT：https://cloud.tencent.com/developer/article/2428185
 
 ICL：https://cloud.tencent.com/developer/article/2428186
+
+一文总结提示工程框架，除了CoT还有ToT、GoT、AoT、SoT、PoT：https://blog.csdn.net/xixiaoyaoww/article/details/133101929
+
+增强LLM推理：Chain-of-Thought，Chain-of-Thought-Self-Consistency，Tree-of-Thoughts，Graph-of-Thoughts，Algorithm-of-Thoughts，Skeleton-of-Thought，Program-of-Thoughts
