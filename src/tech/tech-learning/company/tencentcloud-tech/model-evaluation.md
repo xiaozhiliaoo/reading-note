@@ -55,7 +55,11 @@ BLEU（Bilingual Evaluation Understudy）：机器翻译系统生成结果的质
 
 准确率（Accuracy）：准确率 = (正确预测的样本数 / 总样本数) * 100%
 
-精确率（precision）、召回率（Recall）、F-score等
+精确率（precision）：TP/TP+FP
+
+召回率（Recall）：TP/TP+FN
+
+F-score
 
 ## 评测方案
 
@@ -95,11 +99,17 @@ GAOKAO：https://gitee.com/hf-models/telechat-7B
 
 鲁棒性评测主要看diff百分比，Diff=(最佳-最差)/最佳
 
-抗干扰评测
+抗干扰评测：添加干扰信息观察模型时候可以正确作答
 
-5. 学习能力评测
-    1. gpt4学习能力遥遥领先，chatgpt对比国内模型依然有明显优势；
-    2. 例子数量K与Acc成正相关，但对于国内模型，K超过5之后Acc存在一定震荡。
+5. FewShot学习能力评测
+   
+gpt4学习能力遥遥领先，chatgpt对比国内模型依然有明显优势；
+   
+例子数量K与Acc成正相关，但对于国内模型，K超过5之后Acc存在一定震荡。
+
+强调学习能力，与知识储备无关。
+
+Single-Turn-ICL/Multi-Turn-ICL(In-Context Learning)
 
 6. 思维链COT评测（**思考分析推导+Prompt激活词**）
 
@@ -107,6 +117,8 @@ GAOKAO：https://gitee.com/hf-models/telechat-7B
 非推理类，加COT没有提升反而下降。
 推理类的，没训练过，加COT后可能有提升。
 推理类的，训练过的，加COT不一定有提升。
+
+激活词：请一步步的推理分析解决以下问题/请逐步推理回答问题
 
 7. 开放性问答评测
 
@@ -120,7 +132,15 @@ GPT4自动评分效果行业主流认可：1 聊天 2 主观问题 3 推理分�
 
 缺乏配套的平台支撑工具、缺少闭源业务评测集、评测覆盖面不够细，OpenAI Evals主要还是做了NLP基础能力评测这块
 
-9. 多模态评测
+9. 长文本评测
+
+大海捞针评测
+
+长文本FAQ问答评测
+
+多文档阅读理解评测
+
+10. 多模态评测
 
 图生文、文生图
 
