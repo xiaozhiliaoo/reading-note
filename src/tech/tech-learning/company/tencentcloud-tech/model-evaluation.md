@@ -217,3 +217,7 @@ opencompass自动化评测平台：https://opencompass.org.cn/home https://githu
 阿里云大模型自动化评测平台：https://help.aliyun.com/zh/model-studio/model-evaluation/
 
 opencompass：https://github.com/open-compass/OpenCompass/
+
+COT：https://cloud.tencent.com/developer/article/2428185
+
+ICL：https://cloud.tencent.com/developer/article/2428186
