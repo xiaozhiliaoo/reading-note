@@ -225,3 +225,17 @@ ICL：https://cloud.tencent.com/developer/article/2428186
 一文总结提示工程框架，除了CoT还有ToT、GoT、AoT、SoT、PoT：https://blog.csdn.net/xixiaoyaoww/article/details/133101929
 
 增强LLM推理：Chain-of-Thought，Chain-of-Thought-Self-Consistency，Tree-of-Thoughts，Graph-of-Thoughts，Algorithm-of-Thoughts，Skeleton-of-Thought，Program-of-Thoughts
+
+```text
+COT：与其直接输出答案，不如为语言模型提供中间推理示例来指导其响应。
+COTC：构建多个思维链，对每个思维链进行评估，最终选择最有效、最连贯的思维链。
+TOT：以树状形式展开思维链。允许回溯，探索从一个基本想法产生的多个推理分支。 https://arxiv.org/pdf/2305.10601
+GOT：将树结构演化为直接非循环图，引入了自我循环。自我循环可以巩固一条特定的思路，也可以将多个想法聚合成一个连贯的思路。
+AOT：维护单个不断发展的上下文链，消除了对思维树中冗余查询的需求。它探索了一条多变的推理之路。
+SOT：首先生成一个答案蓝图，然后并行地充实细节，从而减少生成完整答案所需的时间。
+PoT：将问答背后的推理过程公式化为一个可执行程序，将程序解释器输出作为最终答案的一部分。
+```
+
+## Prompt Engineering Guide 学习笔记
+
+LLM研究：Agent（记忆，规划，工具），RAG（输入，索引，检索，生成），推理，忠实度，上下文记忆，减少幻觉，
