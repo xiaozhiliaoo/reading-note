@@ -6,6 +6,29 @@
 
 **Prompt Engineering Guide** : [https://www.promptingguide.ai/zh](https://www.promptingguide.ai/zh)
 
+Prompt Engineering 技术：
+```text
+Zero-Shot Prompting
+Few-Shot Prompting
+Chain-of-Thought Prompting
+Self-Consistency
+Generated Knowledge Prompting
+Prompt Chaining
+Tree of Thoughts (ToT)
+Retrieval Augmented Generation (RAG)
+Automatic Reasoning and Tool-use (ART)
+Automatic Prompt Engineer (APE)
+Active-Prompt
+Directional Stimulus Prompting
+PAL (Program-Aided Language Models)
+ReAct Prompting
+Reflexion
+Multimodal CoT Prompting
+GraphPrompts
+```
+
+
+
 ## 评测目的
 
 1. 了解模型好坏程度和优缺点。
@@ -55,7 +78,7 @@ BLEU（Bilingual Evaluation Understudy）：机器翻译系统生成结果的质
 
 准确率（Accuracy）：准确率 = (正确预测的样本数 / 总样本数) * 100%
 
-精确率（precision）：TP/TP+FP
+精确率（Precision）：TP/TP+FP
 
 召回率（Recall）：TP/TP+FN
 
