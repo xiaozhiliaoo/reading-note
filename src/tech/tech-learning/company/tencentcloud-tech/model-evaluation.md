@@ -218,9 +218,17 @@ opencompass自动化评测平台：https://opencompass.org.cn/home https://githu
 
 opencompass：https://github.com/open-compass/OpenCompass/
 
-COT：https://cloud.tencent.com/developer/article/2428185
+```text
+COT（Chain Of Thought）：https://cloud.tencent.com/developer/article/2428185 比如数学推理，给出步骤，包括Few-shot CoT，Zero-shot CoT
 
-ICL：https://cloud.tencent.com/developer/article/2428186
+模版：Question ChainOfThought Answer ｜ Test Question
+
+Question Answer ｜ Test Question
+
+Zero-Shot-CoT方法存在不稳定性，而Manual-CoT方法需要大量人工成本投入。作者提出了一种基于Auto-CoT的方法
+```
+
+ICL（In-Context Learning）：https://cloud.tencent.com/developer/article/2428186
 
 一文总结提示工程框架，除了CoT还有ToT、GoT、AoT、SoT、PoT：https://blog.csdn.net/xixiaoyaoww/article/details/133101929
 
