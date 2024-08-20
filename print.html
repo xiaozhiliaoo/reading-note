@@ -3714,11 +3714,35 @@ Trace：追踪链路、并发、根因、性能</p>
 <p>https://github.com/langgenius/dify</p>
 <h2 id="教程"><a class="header" href="#教程">教程</a></h2>
 <p>【清华NLP】刘知远团队大模型公开课全网首发｜带你从入门到实战 https://www.bilibili.com/video/BV1UG411p7zv/</p>
+<p>Fine-tuning（大模型微调）</p>
+<p>Pre-Learning（预训练）</p>
+<p>预训练 就是指预先训练的一个模型或者指预先训练模型的过程。</p>
+<p>微调 就是指将预训练过的模型作用于自己的数据集，并使参数适应自己数据集的过程。</p>
+<p>预训练（Pre-training）是预先在大量数据上训练模型以学习通用特征，而微调（Fine-tuning）是在特定任务的小数据集上微调预训练模型以优化性能。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="icode"><a class="header" href="#icode">iCode</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="llm模型评测"><a class="header" href="#llm模型评测">LLM模型评测</a></h1>
 <h2 id="核心论文"><a class="header" href="#核心论文">核心论文</a></h2>
 <p><strong>A Survey on Evaluation of Large Language Models</strong>: <a href="https://arxiv.org/pdf/2307.03109">https://arxiv.org/pdf/2307.03109</a></p>
 <p><strong>Prompt Engineering Guide</strong> : <a href="https://www.promptingguide.ai/zh">https://www.promptingguide.ai/zh</a></p>
+<p>Prompt Engineering 技术：</p>
+<pre><code class="language-text">Zero-Shot Prompting
+Few-Shot Prompting
+Chain-of-Thought Prompting
+Self-Consistency
+Generated Knowledge Prompting
+Prompt Chaining
+Tree of Thoughts (ToT)
+Retrieval Augmented Generation (RAG)
+Automatic Reasoning and Tool-use (ART)
+Automatic Prompt Engineer (APE)
+Active-Prompt
+Directional Stimulus Prompting
+PAL (Program-Aided Language Models)
+ReAct Prompting
+Reflexion
+Multimodal CoT Prompting
+GraphPrompts
+</code></pre>
 <h2 id="评测目的"><a class="header" href="#评测目的">评测目的</a></h2>
 <ol>
 <li>了解模型好坏程度和优缺点。</li>
@@ -3757,7 +3781,7 @@ Trace：追踪链路、并发、根因、性能</p>
 <p>ROUGE（Recall-Oriented Understudy for Gisting Evaluation）：自动摘要评价指标</p>
 <p>BLEU（Bilingual Evaluation Understudy）：机器翻译系统生成结果的质量的指标</p>
 <p>准确率（Accuracy）：准确率 = (正确预测的样本数 / 总样本数) * 100%</p>
-<p>精确率（precision）：TP/TP+FP</p>
+<p>精确率（Precision）：TP/TP+FP</p>
 <p>召回率（Recall）：TP/TP+FN</p>
 <p>F-score</p>
 <h2 id="评测方案"><a class="header" href="#评测方案">评测方案</a></h2>
