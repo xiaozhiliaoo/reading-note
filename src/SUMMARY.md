@@ -669,6 +669,7 @@
   - [考公](others/public/intro.md)
     - [行测](others/public/administrative-aptitude-test.md)
     - [申论](others/public/essay.md)
+  - [简历](others/resume/intro.md)
 
 - [阅读](books/intro.md)
     - [西方经典著作](books/western/intro.md)
